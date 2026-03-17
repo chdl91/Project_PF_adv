@@ -50,34 +50,53 @@ This project is intended to:
 
 ---
 
-### User stories
+## User Stories
 
-### User stories
+### 1. View Pizza Menu
+**As a user, I want to see the pizza menu in the Browser App.**  
+**Description:** The application displays all available pizzas with relevant information.  
+**Inputs:** none  
+**Outputs:** pizza menu displayed (internally: `list[Pizza]`)  
 
-1. **As a user, I want to see the pizza menu in the Browser App.**  
-   **Description:** The application displays all available pizzas with relevant information.  
-   **Inputs:** optional filter as `str`  
-   **Outputs:** pizza list as `list[Pizza]`
+---
 
-2. **As a user, I want to select pizzas and see the running total.**  
-   **Description:** The user adds pizzas with quantities to the current order, and the total updates automatically.  
-   **Inputs:** pizza ID as `int`, quantity as `int`  
-   **Outputs:** current order as `Order`, subtotal as `float`
+### 2. Manage Order and View Running Total
+**As a user, I want to add or remove pizzas and see the running total.**  
+**Description:** The user adds or removes pizzas from the current order, and the totals update automatically.  
+**Inputs:** pizza ID as `int`, action as `add | remove`  
+**Outputs:**  
+- updated cart/order  
+- subtotal as `float`  
+- discount as `float`  
+- total as `float`  
 
-3. **As a user, I want a discount of 10% to be applied automatically, if the sum exceeds 50 Swiss Franks.**  
-   **Description:** The application checks the subtotal and applies the discount automatically when the threshold is reached.  
-   **Inputs:** subtotal as `float`  
-   **Outputs:** discount as `float`, total as `float`
+---
 
-4. **As a user, I want an invoice to be created and saved as a file.**  
-   **Description:** After checkout, the application generates and stores an invoice file.  
-   **Inputs:** completed order as `Order`, customer name as `str`  
-   **Outputs:** invoice file path as `str`
+### 3. Automatic Discount
+**As a user, I want a discount of 10% to be applied automatically if the subtotal exceeds 50 CHF.**  
+**Description:** The application checks the subtotal and applies the discount automatically when the threshold is reached.  
+**Inputs:** subtotal as `float`  
+**Outputs:**  
+- discount as `float`  
+- total as `float`  
 
-5. **As an admin, I want to see all past transactions, ordered by date.**  
-   **Description:** The admin can view saved orders sorted by date.  
-   **Inputs:** optional sort direction as `str`  
-   **Outputs:** transaction list as `list[Transaction]`
+---
+
+### 4. Generate Invoice
+**As a user, I want an invoice to be created and saved as a file.**  
+**Description:** After checkout, the application generates and stores an invoice file.  
+**Inputs:** completed order/cart  
+**Outputs:**  
+- invoice file (PDF)  
+- invoice file path as `str`  
+
+---
+
+### 5. View Past Transactions (Admin)
+**As an admin, I want to see past transactions ordered by date.**  
+**Description:** The admin can view saved orders sorted by date.  
+**Inputs:** optional limit as `int`  
+**Outputs:** transaction list displayed (internally: `list[Order]`)  
 
 ---
 
@@ -88,15 +107,18 @@ This project is intended to:
 ![UML Use Case Diagram](docs/architecture-diagrams/uml_use_case_diagram.png)
 
 **Use cases**
-- Show Menu (Customer)
-- Create Order / Add Items (Customer)
-- Show Current Order and Total (Customer)
-- Checkout & Print Invoice (Staff) → generates `invoice_xxx.pdf`
-- View Past Transactions (Admin)
+## Main Use Cases
+
+- Show Menu (Customer)  
+- Manage Order (Customer)  
+  - Add items  
+  - Remove items  
+- View Current Order and Total (Customer)  
+- Checkout & Generate Invoice (Customer)  
+- View Past Transactions (Admin)  
 
 **Actors**
 - Customer (places orders)
-- Staff (processes/prints invoices)
 - Admin (reviews transactions)
 
 ---
@@ -105,8 +127,7 @@ This project is intended to:
 
 > 🚧 Add screenshots of the wireframe mockups you chose to implement.
 
-![Wireframe – Home](docs/ui-images/wireframe_home.png)
-![Wireframe – Checkout](docs/ui-images/wireframe_checkout.png)
+![Wireframes – Home/Transactions](docs/ui-images/wireframes.png)
 
 ---
 
@@ -202,26 +223,47 @@ All relevant data is managed via an ORM (e.g. SQLModel or SQLAlchemy). For the p
 
 - Python 3.x
 - Environment: GitHub Codespaces
-- External libraries (e.g. NiceGUI, SQLAlchemy, Pydantic)
+- External libraries: nicegui, sqlmodel, sqlalchemy, reportlab, python-dotenv, pytest, tzdata
 
 ---
 
 ### 📂 Repository Structure
 
 ```text
-pizza-nicegui/
+pizza-app/
 ├─ README.md
-├─ pyproject.toml                 # or requirements.txt
-├─ .env.example                   # DATABASE_URL=sqlite:///data/pizza.db
+├─ pyproject.toml
+├─ .env.example
 ├─ .gitignore
 │
-├─ docs/                          # screenshots, diagrams, additional documentation if needed
+├─ pizza_app/
+│  ├─ __main__.py               # entrypoint (py -m pizza_app)
+│  ├─ application.py            # composition root
+│  │
+│  ├─ domain/
+│  │  └─ models.py
+│  │
+│  ├─ infra/
+│  │  ├─ db.py
+│  │  ├─ repositories.py
+│  │  └─ seed.py
+│  │
+│  ├─ services/
+│  │  ├─ pricing.py
+│  │  └─ invoice.py
+│  │
+│  ├─ ui/
+│  │  ├─ pages.py
+│  │  └─ controllers.py
+│
+├─ docs/
 │  ├─ ui-images/
 │  │  ├─ ui_showcase.png
 │  │  ├─ ui_menu.png
 │  │  ├─ ui_checkout.png
 │  │  ├─ wireframe_home.png
 │  │  └─ wireframe_checkout.png
+│  │
 │  └─ architecture-diagrams/
 │     ├─ uml_use_case_diagram.png
 │     ├─ uml_class_architecture.png
@@ -229,24 +271,13 @@ pizza-nicegui/
 │     ├─ uml_class_persistence.png
 │     └─ er_diagram.png
 │
-├─ app/
-│  ├─ main.py                        # entrypoint, starts the main module(s)
-|  └─ pizzarp/                       # main module
-│     ├─ __main__.py                 # entrypoint of the module, starts NiceGui
-|     ├─ persistence/                # example of a module; organize in modules according to the architecture
-│     |  ├─ __main.py__              # initializes data access
-│     |  ├─ models.py                # ORM models (User, Pizza, Order, OrderItem)
-│     |  ├─ queries.py               # query helpers (menu, orders)
-|     |  └─ db.py                    # create_engine + session factory + init_db()
-│     ├─ pricing.py                  # subtotal/discount/total logic
-│     ├─ invoice.py                  # generate invoice file
-│     └─ seed.py                     # seed pizzas/users
+├─ data/                        # sqlite DB (gitignored)
+├─ invoices/                    # generated PDFs (gitignored)
 │
-├─ data/                          # sqlite database (gitignored)
-├─ invoices/                      # generated invoices (gitignored)
 └─ tests/
+   ├─ conftest.py
    ├─ test_pricing.py
-   └─ test_invoice.py
+   └─ test_checkout_and_invoice.py
 ```
 
 ---
@@ -279,7 +310,7 @@ pizza-nicegui/
 ### 3. Launch
 - Start the NiceGUI app (example):
    ```bash
-   python app/main.py
+   py -m pizza_app
    ```
 - Open the URL printed in the console.
 
@@ -296,7 +327,7 @@ Order Pizza:
 > 🚧 Add UI screenshots of the main screens (or a short video link):
 
 ![UI – Menu](docs/ui-images/ui_menu.png)
-![UI – Checkout](docs/ui-images/ui_checkout.png)
+![UI – Menu](docs/ui-images/ui_invoice.png)
 
 ---
 
@@ -304,9 +335,22 @@ Order Pizza:
 
 > 🚧 Explain what you test and how to run tests.
 
-**Types (examples):**
-- Unit tests: pricing/discount rules, validators
-- Integration tests: ORM mappings + queries against a test SQLite DB
+**Test mix:**
+- Overall 12 tests
+- 6 Unit tests: e.g. subtotal calculation, discount application above CHF 50, no discount at or below threshold, total calculation
+- 3 DB tests: e.g. menu query returns seeded pizzas, saving an order persists order + order items, empty DB / empty transactions behavior
+- 3 Integration tests: e.g. checkout with one pizza creates order and invoice, checkout with multiple pizzas applies discount correctly
+
+**Template for writing test cases**
+1. Test case ID – unique identifier (e.g., TC_001)
+2. Test case title/description – What is the test about?
+3. Preconditions: Requirements before executing the test
+4. Test steps: Actions to perform
+5. Test data/input
+6. Expected result
+7. Actual result
+8. Status – pass or fail
+9. Comments – Additional notes or defect found
 
 **Run:**
 ```bash
@@ -319,10 +363,7 @@ pytest
 
 ### Libraries Used
 
-- nicegui
-- sqlalchemy / sqlmodel
-- pydantic
-- ...
+- see above
 
 ## 👥 Team & Contributions
 
