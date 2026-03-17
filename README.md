@@ -52,11 +52,32 @@ This project is intended to:
 
 ### User stories
 
-1. As a user, I want to see the pizza menu in the Browser App.
-2. As a user, I want to select pizzas and see the running total.
-3. As a user, I want a discount of 10% to be applied automatically, if the sum exceeds 50 Swiss Franks. 
-4. As a user, I want an invoice to be created and saved as a file.
-5. As an admin, I want to see all past transactions, ordered by date.
+### User stories
+
+1. **As a user, I want to see the pizza menu in the Browser App.**  
+   **Description:** The application displays all available pizzas with relevant information.  
+   **Inputs:** optional filter as `str`  
+   **Outputs:** pizza list as `list[Pizza]`
+
+2. **As a user, I want to select pizzas and see the running total.**  
+   **Description:** The user adds pizzas with quantities to the current order, and the total updates automatically.  
+   **Inputs:** pizza ID as `int`, quantity as `int`  
+   **Outputs:** current order as `Order`, subtotal as `float`
+
+3. **As a user, I want a discount of 10% to be applied automatically, if the sum exceeds 50 Swiss Franks.**  
+   **Description:** The application checks the subtotal and applies the discount automatically when the threshold is reached.  
+   **Inputs:** subtotal as `float`  
+   **Outputs:** discount as `float`, total as `float`
+
+4. **As a user, I want an invoice to be created and saved as a file.**  
+   **Description:** After checkout, the application generates and stores an invoice file.  
+   **Inputs:** completed order as `Order`, customer name as `str`  
+   **Outputs:** invoice file path as `str`
+
+5. **As an admin, I want to see all past transactions, ordered by date.**  
+   **Description:** The admin can view saved orders sorted by date.  
+   **Inputs:** optional sort direction as `str`  
+   **Outputs:** transaction list as `list[Transaction]`
 
 ---
 
