@@ -326,8 +326,8 @@ Order Pizza:
 
 > 🚧 Add UI screenshots of the main screens (or a short video link):
 
-![UI – Menu](docs/ui-images/ui_menu.png)
-![UI – Menu](docs/ui-images/ui_invoice.png)
+![UI – Menu](docs/ui-images/ui_checkout.png)
+![UI – Menu](docs/ui-images/ui_past_transactions.png)
 
 ---
 
