@@ -1,0 +1,2802 @@
+[
+  {
+    "topic": "Management Basics",
+    "question": "What best describes 'Management' in management context?",
+    "answers": {
+      "1": "Planning, organizing, leading, and controlling.",
+      "2": "Interpersonal, informational, and decisional roles performed by managers.",
+      "3": "Regards the organization as a system of interrelated parts.",
+      "4": "The pursuit of organizational goals efficiently and effectively by integrating people, resources, and processes."
+    },
+    "correct_answer": 4,
+    "explanation": "'Management' means: The pursuit of organizational goals efficiently and effectively by integrating people, resources, and processes..",
+    "difficulty": "easy",
+    "id": "Q001"
+  },
+  {
+    "topic": "Management Basics",
+    "question": "What best describes 'Conceptual Skills' in management context?",
+    "answers": {
+      "1": "The ability to think analytically and see the organization as a whole.",
+      "2": "The ability to work well in cooperation with others.",
+      "3": "Organization that actively creates, acquires, and transfers knowledge within itself.",
+      "4": "Approach emphasizing scientific study of work methods to improve productivity."
+    },
+    "correct_answer": 1,
+    "explanation": "'Conceptual Skills' means: The ability to think analytically and see the organization as a whole..",
+    "difficulty": "easy",
+    "id": "Q002"
+  },
+  {
+    "topic": "Management Basics",
+    "question": "What best describes 'Competitive Advantage' in management context?",
+    "answers": {
+      "1": "The ability to work well in cooperation with others.",
+      "2": "Interpersonal, informational, and decisional roles performed by managers.",
+      "3": "Approach emphasizing scientific study of work methods to improve productivity.",
+      "4": "The ability of an organization to produce goods or services more effectively than competitors."
+    },
+    "correct_answer": 4,
+    "explanation": "'Competitive Advantage' means: The ability of an organization to produce goods or services more effectively than competitors..",
+    "difficulty": "easy",
+    "id": "Q003"
+  },
+  {
+    "topic": "Management Basics",
+    "question": "What best describes 'Management' in management context?",
+    "answers": {
+      "1": "Achieving organizational goals successfully.",
+      "2": "Belief that management approach depends on the situation.",
+      "3": "Organization that actively creates, acquires, and transfers knowledge within itself.",
+      "4": "The pursuit of organizational goals efficiently and effectively by integrating people, resources, and processes."
+    },
+    "correct_answer": 4,
+    "explanation": "'Management' means: The pursuit of organizational goals efficiently and effectively by integrating people, resources, and processes..",
+    "difficulty": "easy",
+    "id": "Q004"
+  },
+  {
+    "topic": "Management Basics",
+    "question": "What best describes 'Effectiveness' in management context?",
+    "answers": {
+      "1": "The ability of an organization to produce goods or services more effectively than competitors.",
+      "2": "The ability to work well in cooperation with others.",
+      "3": "Planning, organizing, leading, and controlling.",
+      "4": "Achieving organizational goals successfully."
+    },
+    "correct_answer": 4,
+    "explanation": "'Effectiveness' means: Achieving organizational goals successfully..",
+    "difficulty": "easy",
+    "id": "Q005"
+  },
+  {
+    "topic": "Management Basics",
+    "question": "What best describes 'Competitive Advantage' in management context?",
+    "answers": {
+      "1": "Job-specific knowledge needed to perform well in a specialized field.",
+      "2": "The ability of an organization to produce goods or services more effectively than competitors.",
+      "3": "Using resources wisely and minimizing waste.",
+      "4": "Achieving organizational goals successfully."
+    },
+    "correct_answer": 2,
+    "explanation": "'Competitive Advantage' means: The ability of an organization to produce goods or services more effectively than competitors..",
+    "difficulty": "easy",
+    "id": "Q006"
+  },
+  {
+    "topic": "Management Basics",
+    "question": "What best describes 'Effectiveness' in management context?",
+    "answers": {
+      "1": "Planning, organizing, leading, and controlling.",
+      "2": "Achieving organizational goals successfully.",
+      "3": "The pursuit of organizational goals efficiently and effectively by integrating people, resources, and processes.",
+      "4": "Interpersonal, informational, and decisional roles performed by managers."
+    },
+    "correct_answer": 2,
+    "explanation": "'Effectiveness' means: Achieving organizational goals successfully..",
+    "difficulty": "easy",
+    "id": "Q007"
+  },
+  {
+    "topic": "Management Basics",
+    "question": "What best describes 'Contingency Viewpoint' in management context?",
+    "answers": {
+      "1": "Approach emphasizing scientific study of work methods to improve productivity.",
+      "2": "The ability of an organization to produce goods or services more effectively than competitors.",
+      "3": "Belief that management approach depends on the situation.",
+      "4": "Organization that actively creates, acquires, and transfers knowledge within itself."
+    },
+    "correct_answer": 3,
+    "explanation": "'Contingency Viewpoint' means: Belief that management approach depends on the situation..",
+    "difficulty": "easy",
+    "id": "Q008"
+  },
+  {
+    "topic": "Management Basics",
+    "question": "What best describes 'Systems Viewpoint' in management context?",
+    "answers": {
+      "1": "Approach emphasizing scientific study of work methods to improve productivity.",
+      "2": "Emphasizes managing the total organization efficiently.",
+      "3": "Regards the organization as a system of interrelated parts.",
+      "4": "Interpersonal, informational, and decisional roles performed by managers."
+    },
+    "correct_answer": 3,
+    "explanation": "'Systems Viewpoint' means: Regards the organization as a system of interrelated parts..",
+    "difficulty": "easy",
+    "id": "Q009"
+  },
+  {
+    "topic": "Management Basics",
+    "question": "What best describes 'Effectiveness' in management context?",
+    "answers": {
+      "1": "Achieving organizational goals successfully.",
+      "2": "Using resources wisely and minimizing waste.",
+      "3": "Job-specific knowledge needed to perform well in a specialized field.",
+      "4": "Planning, organizing, leading, and controlling."
+    },
+    "correct_answer": 1,
+    "explanation": "'Effectiveness' means: Achieving organizational goals successfully..",
+    "difficulty": "medium",
+    "id": "Q010"
+  },
+  {
+    "topic": "Management Basics",
+    "question": "What best describes 'Mintzberg’s Managerial Roles' in management context?",
+    "answers": {
+      "1": "Achieving organizational goals successfully.",
+      "2": "Interpersonal, informational, and decisional roles performed by managers.",
+      "3": "Emphasizes managing the total organization efficiently.",
+      "4": "Regards the organization as a system of interrelated parts."
+    },
+    "correct_answer": 2,
+    "explanation": "'Mintzberg’s Managerial Roles' means: Interpersonal, informational, and decisional roles performed by managers..",
+    "difficulty": "medium",
+    "id": "Q011"
+  },
+  {
+    "topic": "Management Basics",
+    "question": "What best describes 'Levels of Management' in management context?",
+    "answers": {
+      "1": "The ability to work well in cooperation with others.",
+      "2": "Belief that management approach depends on the situation.",
+      "3": "Top, middle, and first-line managers plus team leaders.",
+      "4": "Regards the organization as a system of interrelated parts."
+    },
+    "correct_answer": 3,
+    "explanation": "'Levels of Management' means: Top, middle, and first-line managers plus team leaders..",
+    "difficulty": "medium",
+    "id": "Q012"
+  },
+  {
+    "topic": "Management Basics",
+    "question": "What best describes 'Management' in management context?",
+    "answers": {
+      "1": "Approach emphasizing scientific study of work methods to improve productivity.",
+      "2": "The pursuit of organizational goals efficiently and effectively by integrating people, resources, and processes.",
+      "3": "The ability to think analytically and see the organization as a whole.",
+      "4": "The ability to work well in cooperation with others."
+    },
+    "correct_answer": 2,
+    "explanation": "'Management' means: The pursuit of organizational goals efficiently and effectively by integrating people, resources, and processes..",
+    "difficulty": "medium",
+    "id": "Q013"
+  },
+  {
+    "topic": "Management Basics",
+    "question": "What best describes 'Scientific Management' in management context?",
+    "answers": {
+      "1": "Using resources wisely and minimizing waste.",
+      "2": "Approach emphasizing scientific study of work methods to improve productivity.",
+      "3": "Regards the organization as a system of interrelated parts.",
+      "4": "Emphasizes managing the total organization efficiently."
+    },
+    "correct_answer": 2,
+    "explanation": "'Scientific Management' means: Approach emphasizing scientific study of work methods to improve productivity..",
+    "difficulty": "medium",
+    "id": "Q014"
+  },
+  {
+    "topic": "Management Basics",
+    "question": "What best describes 'Efficiency' in management context?",
+    "answers": {
+      "1": "The ability of an organization to produce goods or services more effectively than competitors.",
+      "2": "Regards the organization as a system of interrelated parts.",
+      "3": "The ability to think analytically and see the organization as a whole.",
+      "4": "Using resources wisely and minimizing waste."
+    },
+    "correct_answer": 4,
+    "explanation": "'Efficiency' means: Using resources wisely and minimizing waste..",
+    "difficulty": "medium",
+    "id": "Q015"
+  },
+  {
+    "topic": "Management Basics",
+    "question": "What best describes 'Effectiveness' in management context?",
+    "answers": {
+      "1": "Achieving organizational goals successfully.",
+      "2": "The pursuit of organizational goals efficiently and effectively by integrating people, resources, and processes.",
+      "3": "Belief that management approach depends on the situation.",
+      "4": "Using resources wisely and minimizing waste."
+    },
+    "correct_answer": 1,
+    "explanation": "'Effectiveness' means: Achieving organizational goals successfully..",
+    "difficulty": "medium",
+    "id": "Q016"
+  },
+  {
+    "topic": "Management Basics",
+    "question": "What best describes 'Systems Viewpoint' in management context?",
+    "answers": {
+      "1": "Regards the organization as a system of interrelated parts.",
+      "2": "Belief that management approach depends on the situation.",
+      "3": "Interpersonal, informational, and decisional roles performed by managers.",
+      "4": "Organization that actively creates, acquires, and transfers knowledge within itself."
+    },
+    "correct_answer": 1,
+    "explanation": "'Systems Viewpoint' means: Regards the organization as a system of interrelated parts..",
+    "difficulty": "medium",
+    "id": "Q017"
+  },
+  {
+    "topic": "Management Basics",
+    "question": "What best describes 'Levels of Management' in management context?",
+    "answers": {
+      "1": "Top, middle, and first-line managers plus team leaders.",
+      "2": "Belief that management approach depends on the situation.",
+      "3": "Regards the organization as a system of interrelated parts.",
+      "4": "The ability to work well in cooperation with others."
+    },
+    "correct_answer": 1,
+    "explanation": "'Levels of Management' means: Top, middle, and first-line managers plus team leaders..",
+    "difficulty": "medium",
+    "id": "Q018"
+  },
+  {
+    "topic": "Management Basics",
+    "question": "What best describes 'Administrative Management' in management context?",
+    "answers": {
+      "1": "The pursuit of organizational goals efficiently and effectively by integrating people, resources, and processes.",
+      "2": "Emphasizes managing the total organization efficiently.",
+      "3": "Regards the organization as a system of interrelated parts.",
+      "4": "Using resources wisely and minimizing waste."
+    },
+    "correct_answer": 2,
+    "explanation": "'Administrative Management' means: Emphasizes managing the total organization efficiently..",
+    "difficulty": "hard",
+    "id": "Q019"
+  },
+  {
+    "topic": "Management Basics",
+    "question": "What best describes 'Four Functions of Management' in management context?",
+    "answers": {
+      "1": "Emphasizes managing the total organization efficiently.",
+      "2": "Approach emphasizing scientific study of work methods to improve productivity.",
+      "3": "Planning, organizing, leading, and controlling.",
+      "4": "The ability to think analytically and see the organization as a whole."
+    },
+    "correct_answer": 3,
+    "explanation": "'Four Functions of Management' means: Planning, organizing, leading, and controlling..",
+    "difficulty": "hard",
+    "id": "Q020"
+  },
+  {
+    "topic": "Management Basics",
+    "question": "What best describes 'Learning Organization' in management context?",
+    "answers": {
+      "1": "Interpersonal, informational, and decisional roles performed by managers.",
+      "2": "Organization that actively creates, acquires, and transfers knowledge within itself.",
+      "3": "Regards the organization as a system of interrelated parts.",
+      "4": "Job-specific knowledge needed to perform well in a specialized field."
+    },
+    "correct_answer": 2,
+    "explanation": "'Learning Organization' means: Organization that actively creates, acquires, and transfers knowledge within itself..",
+    "difficulty": "hard",
+    "id": "Q021"
+  },
+  {
+    "topic": "Management Basics",
+    "question": "What best describes 'Human Skills' in management context?",
+    "answers": {
+      "1": "Belief that management approach depends on the situation.",
+      "2": "The ability to work well in cooperation with others.",
+      "3": "Planning, organizing, leading, and controlling.",
+      "4": "Achieving organizational goals successfully."
+    },
+    "correct_answer": 2,
+    "explanation": "'Human Skills' means: The ability to work well in cooperation with others..",
+    "difficulty": "hard",
+    "id": "Q022"
+  },
+  {
+    "topic": "Management Basics",
+    "question": "What best describes 'Levels of Management' in management context?",
+    "answers": {
+      "1": "Planning, organizing, leading, and controlling.",
+      "2": "Organization that actively creates, acquires, and transfers knowledge within itself.",
+      "3": "Top, middle, and first-line managers plus team leaders.",
+      "4": "Job-specific knowledge needed to perform well in a specialized field."
+    },
+    "correct_answer": 3,
+    "explanation": "'Levels of Management' means: Top, middle, and first-line managers plus team leaders..",
+    "difficulty": "hard",
+    "id": "Q023"
+  },
+  {
+    "topic": "Management Basics",
+    "question": "What best describes 'Four Functions of Management' in management context?",
+    "answers": {
+      "1": "The ability to work well in cooperation with others.",
+      "2": "The ability of an organization to produce goods or services more effectively than competitors.",
+      "3": "Planning, organizing, leading, and controlling.",
+      "4": "The pursuit of organizational goals efficiently and effectively by integrating people, resources, and processes."
+    },
+    "correct_answer": 3,
+    "explanation": "'Four Functions of Management' means: Planning, organizing, leading, and controlling..",
+    "difficulty": "hard",
+    "id": "Q024"
+  },
+  {
+    "topic": "Management Basics",
+    "question": "What best describes 'Management' in management context?",
+    "answers": {
+      "1": "The pursuit of organizational goals efficiently and effectively by integrating people, resources, and processes.",
+      "2": "Approach emphasizing scientific study of work methods to improve productivity.",
+      "3": "Organization that actively creates, acquires, and transfers knowledge within itself.",
+      "4": "The ability of an organization to produce goods or services more effectively than competitors."
+    },
+    "correct_answer": 1,
+    "explanation": "'Management' means: The pursuit of organizational goals efficiently and effectively by integrating people, resources, and processes..",
+    "difficulty": "hard",
+    "id": "Q025"
+  },
+  {
+    "topic": "Management Basics",
+    "question": "What best describes 'Levels of Management' in management context?",
+    "answers": {
+      "1": "Achieving organizational goals successfully.",
+      "2": "The ability to work well in cooperation with others.",
+      "3": "Planning, organizing, leading, and controlling.",
+      "4": "Top, middle, and first-line managers plus team leaders."
+    },
+    "correct_answer": 4,
+    "explanation": "'Levels of Management' means: Top, middle, and first-line managers plus team leaders..",
+    "difficulty": "hard",
+    "id": "Q026"
+  },
+  {
+    "topic": "Management Basics",
+    "question": "What best describes 'Management' in management context?",
+    "answers": {
+      "1": "The pursuit of organizational goals efficiently and effectively by integrating people, resources, and processes.",
+      "2": "Regards the organization as a system of interrelated parts.",
+      "3": "Top, middle, and first-line managers plus team leaders.",
+      "4": "Achieving organizational goals successfully."
+    },
+    "correct_answer": 1,
+    "explanation": "'Management' means: The pursuit of organizational goals efficiently and effectively by integrating people, resources, and processes..",
+    "difficulty": "hard",
+    "id": "Q027"
+  },
+  {
+    "topic": "Ethics & Corporate Social Responsibility",
+    "question": "What best describes 'Utilitarian Approach' in management context?",
+    "answers": {
+      "1": "Situation in which you must decide whether to pursue a course of action that may benefit you or your organization but is unethical or illegal.",
+      "2": "Systematic assessment of a company’s performance in implementing socially responsible programs.",
+      "3": "Guided by what will result in the greatest good for the greatest number.",
+      "4": "The notion that corporations are expected to go beyond following the law and making a profit to actively improve society."
+    },
+    "correct_answer": 3,
+    "explanation": "'Utilitarian Approach' means: Guided by what will result in the greatest good for the greatest number..",
+    "difficulty": "easy",
+    "id": "Q028"
+  },
+  {
+    "topic": "Ethics & Corporate Social Responsibility",
+    "question": "What best describes 'Ethical Dilemma' in management context?",
+    "answers": {
+      "1": "Situation in which you must decide whether to pursue a course of action that may benefit you or your organization but is unethical or illegal.",
+      "2": "Guided by respect for impartial standards of fairness and equity.",
+      "3": "Respects the fundamental rights of human beings.",
+      "4": "Systematic assessment of a company’s performance in implementing socially responsible programs."
+    },
+    "correct_answer": 1,
+    "explanation": "'Ethical Dilemma' means: Situation in which you must decide whether to pursue a course of action that may benefit you or your organization but is unethical or illegal..",
+    "difficulty": "easy",
+    "id": "Q029"
+  },
+  {
+    "topic": "Ethics & Corporate Social Responsibility",
+    "question": "What best describes 'Code of Ethics' in management context?",
+    "answers": {
+      "1": "Measuring success through people, planet, and profit.",
+      "2": "Systematic assessment of a company’s performance in implementing socially responsible programs.",
+      "3": "Formal written set of ethical standards guiding an organization’s actions.",
+      "4": "Guided by what will result in the greatest good for the greatest number."
+    },
+    "correct_answer": 3,
+    "explanation": "'Code of Ethics' means: Formal written set of ethical standards guiding an organization’s actions..",
+    "difficulty": "easy",
+    "id": "Q030"
+  },
+  {
+    "topic": "Ethics & Corporate Social Responsibility",
+    "question": "What best describes 'Corporate Social Responsibility (CSR)' in management context?",
+    "answers": {
+      "1": "The notion that corporations are expected to go beyond following the law and making a profit to actively improve society.",
+      "2": "Formal written set of ethical standards guiding an organization’s actions.",
+      "3": "Guided by what will result in the individual's best long-term interests.",
+      "4": "Managerial actions aimed at protecting the environment."
+    },
+    "correct_answer": 1,
+    "explanation": "'Corporate Social Responsibility (CSR)' means: The notion that corporations are expected to go beyond following the law and making a profit to actively improve society..",
+    "difficulty": "easy",
+    "id": "Q031"
+  },
+  {
+    "topic": "Ethics & Corporate Social Responsibility",
+    "question": "What best describes 'Values' in management context?",
+    "answers": {
+      "1": "Standards of right and wrong that influence behavior.",
+      "2": "Guided by respect for impartial standards of fairness and equity.",
+      "3": "Relatively permanent and deeply held underlying beliefs and attitudes.",
+      "4": "Guided by what will result in the individual's best long-term interests."
+    },
+    "correct_answer": 3,
+    "explanation": "'Values' means: Relatively permanent and deeply held underlying beliefs and attitudes..",
+    "difficulty": "easy",
+    "id": "Q032"
+  },
+  {
+    "topic": "Ethics & Corporate Social Responsibility",
+    "question": "What best describes 'Individual Approach' in management context?",
+    "answers": {
+      "1": "An employee who reports organizational misconduct to the public.",
+      "2": "Formal written set of ethical standards guiding an organization’s actions.",
+      "3": "Guided by what will result in the individual's best long-term interests.",
+      "4": "Economic development that meets present needs without compromising the ability of future generations to meet theirs."
+    },
+    "correct_answer": 3,
+    "explanation": "'Individual Approach' means: Guided by what will result in the individual's best long-term interests..",
+    "difficulty": "easy",
+    "id": "Q033"
+  },
+  {
+    "topic": "Ethics & Corporate Social Responsibility",
+    "question": "What best describes 'Corporate Social Responsibility (CSR)' in management context?",
+    "answers": {
+      "1": "Guided by what will result in the individual's best long-term interests.",
+      "2": "Measuring success through people, planet, and profit.",
+      "3": "Managerial actions aimed at protecting the environment.",
+      "4": "The notion that corporations are expected to go beyond following the law and making a profit to actively improve society."
+    },
+    "correct_answer": 4,
+    "explanation": "'Corporate Social Responsibility (CSR)' means: The notion that corporations are expected to go beyond following the law and making a profit to actively improve society..",
+    "difficulty": "easy",
+    "id": "Q034"
+  },
+  {
+    "topic": "Ethics & Corporate Social Responsibility",
+    "question": "What best describes 'Code of Ethics' in management context?",
+    "answers": {
+      "1": "Economic development that meets present needs without compromising the ability of future generations to meet theirs.",
+      "2": "The people whose interests are affected by an organization’s activities.",
+      "3": "Formal written set of ethical standards guiding an organization’s actions.",
+      "4": "Guided by respect for impartial standards of fairness and equity."
+    },
+    "correct_answer": 3,
+    "explanation": "'Code of Ethics' means: Formal written set of ethical standards guiding an organization’s actions..",
+    "difficulty": "easy",
+    "id": "Q035"
+  },
+  {
+    "topic": "Ethics & Corporate Social Responsibility",
+    "question": "What best describes 'Stakeholders' in management context?",
+    "answers": {
+      "1": "Standards of right and wrong that influence behavior.",
+      "2": "The people whose interests are affected by an organization’s activities.",
+      "3": "Formal written set of ethical standards guiding an organization’s actions.",
+      "4": "Managerial actions aimed at protecting the environment."
+    },
+    "correct_answer": 2,
+    "explanation": "'Stakeholders' means: The people whose interests are affected by an organization’s activities..",
+    "difficulty": "easy",
+    "id": "Q036"
+  },
+  {
+    "topic": "Ethics & Corporate Social Responsibility",
+    "question": "What best describes 'Social Audit' in management context?",
+    "answers": {
+      "1": "Systematic assessment of a company’s performance in implementing socially responsible programs.",
+      "2": "Guided by what will result in the greatest good for the greatest number.",
+      "3": "Managerial actions aimed at protecting the environment.",
+      "4": "An employee who reports organizational misconduct to the public."
+    },
+    "correct_answer": 1,
+    "explanation": "'Social Audit' means: Systematic assessment of a company’s performance in implementing socially responsible programs..",
+    "difficulty": "medium",
+    "id": "Q037"
+  },
+  {
+    "topic": "Ethics & Corporate Social Responsibility",
+    "question": "What best describes 'Individual Approach' in management context?",
+    "answers": {
+      "1": "Measuring success through people, planet, and profit.",
+      "2": "Relatively permanent and deeply held underlying beliefs and attitudes.",
+      "3": "Economic development that meets present needs without compromising the ability of future generations to meet theirs.",
+      "4": "Guided by what will result in the individual's best long-term interests."
+    },
+    "correct_answer": 4,
+    "explanation": "'Individual Approach' means: Guided by what will result in the individual's best long-term interests..",
+    "difficulty": "medium",
+    "id": "Q038"
+  },
+  {
+    "topic": "Ethics & Corporate Social Responsibility",
+    "question": "What best describes 'Moral-Rights Approach' in management context?",
+    "answers": {
+      "1": "Respects the fundamental rights of human beings.",
+      "2": "Economic development that meets present needs without compromising the ability of future generations to meet theirs.",
+      "3": "Systematic assessment of a company’s performance in implementing socially responsible programs.",
+      "4": "Managerial actions aimed at protecting the environment."
+    },
+    "correct_answer": 1,
+    "explanation": "'Moral-Rights Approach' means: Respects the fundamental rights of human beings..",
+    "difficulty": "medium",
+    "id": "Q039"
+  },
+  {
+    "topic": "Ethics & Corporate Social Responsibility",
+    "question": "What best describes 'Ethical Dilemma' in management context?",
+    "answers": {
+      "1": "Situation in which you must decide whether to pursue a course of action that may benefit you or your organization but is unethical or illegal.",
+      "2": "Measuring success through people, planet, and profit.",
+      "3": "Guided by respect for impartial standards of fairness and equity.",
+      "4": "Systematic assessment of a company’s performance in implementing socially responsible programs."
+    },
+    "correct_answer": 1,
+    "explanation": "'Ethical Dilemma' means: Situation in which you must decide whether to pursue a course of action that may benefit you or your organization but is unethical or illegal..",
+    "difficulty": "medium",
+    "id": "Q040"
+  },
+  {
+    "topic": "Ethics & Corporate Social Responsibility",
+    "question": "What best describes 'Green Management' in management context?",
+    "answers": {
+      "1": "Managerial actions aimed at protecting the environment.",
+      "2": "Guided by respect for impartial standards of fairness and equity.",
+      "3": "Formal written set of ethical standards guiding an organization’s actions.",
+      "4": "The notion that corporations are expected to go beyond following the law and making a profit to actively improve society."
+    },
+    "correct_answer": 1,
+    "explanation": "'Green Management' means: Managerial actions aimed at protecting the environment..",
+    "difficulty": "medium",
+    "id": "Q041"
+  },
+  {
+    "topic": "Ethics & Corporate Social Responsibility",
+    "question": "What best describes 'Utilitarian Approach' in management context?",
+    "answers": {
+      "1": "Measuring success through people, planet, and profit.",
+      "2": "Guided by what will result in the greatest good for the greatest number.",
+      "3": "Economic development that meets present needs without compromising the ability of future generations to meet theirs.",
+      "4": "Relatively permanent and deeply held underlying beliefs and attitudes."
+    },
+    "correct_answer": 2,
+    "explanation": "'Utilitarian Approach' means: Guided by what will result in the greatest good for the greatest number..",
+    "difficulty": "medium",
+    "id": "Q042"
+  },
+  {
+    "topic": "Ethics & Corporate Social Responsibility",
+    "question": "What best describes 'Utilitarian Approach' in management context?",
+    "answers": {
+      "1": "Respects the fundamental rights of human beings.",
+      "2": "An employee who reports organizational misconduct to the public.",
+      "3": "Guided by what will result in the greatest good for the greatest number.",
+      "4": "Systematic assessment of a company’s performance in implementing socially responsible programs."
+    },
+    "correct_answer": 3,
+    "explanation": "'Utilitarian Approach' means: Guided by what will result in the greatest good for the greatest number..",
+    "difficulty": "medium",
+    "id": "Q043"
+  },
+  {
+    "topic": "Ethics & Corporate Social Responsibility",
+    "question": "What best describes 'Social Audit' in management context?",
+    "answers": {
+      "1": "Systematic assessment of a company’s performance in implementing socially responsible programs.",
+      "2": "Measuring success through people, planet, and profit.",
+      "3": "Relatively permanent and deeply held underlying beliefs and attitudes.",
+      "4": "Managerial actions aimed at protecting the environment."
+    },
+    "correct_answer": 1,
+    "explanation": "'Social Audit' means: Systematic assessment of a company’s performance in implementing socially responsible programs..",
+    "difficulty": "medium",
+    "id": "Q044"
+  },
+  {
+    "topic": "Ethics & Corporate Social Responsibility",
+    "question": "What best describes 'Code of Ethics' in management context?",
+    "answers": {
+      "1": "An employee who reports organizational misconduct to the public.",
+      "2": "Economic development that meets present needs without compromising the ability of future generations to meet theirs.",
+      "3": "Formal written set of ethical standards guiding an organization’s actions.",
+      "4": "The people whose interests are affected by an organization’s activities."
+    },
+    "correct_answer": 3,
+    "explanation": "'Code of Ethics' means: Formal written set of ethical standards guiding an organization’s actions..",
+    "difficulty": "medium",
+    "id": "Q045"
+  },
+  {
+    "topic": "Ethics & Corporate Social Responsibility",
+    "question": "What best describes 'Justice Approach' in management context?",
+    "answers": {
+      "1": "Guided by respect for impartial standards of fairness and equity.",
+      "2": "Relatively permanent and deeply held underlying beliefs and attitudes.",
+      "3": "Guided by what will result in the individual's best long-term interests.",
+      "4": "The people whose interests are affected by an organization’s activities."
+    },
+    "correct_answer": 1,
+    "explanation": "'Justice Approach' means: Guided by respect for impartial standards of fairness and equity..",
+    "difficulty": "hard",
+    "id": "Q046"
+  },
+  {
+    "topic": "Ethics & Corporate Social Responsibility",
+    "question": "What best describes 'Values' in management context?",
+    "answers": {
+      "1": "The notion that corporations are expected to go beyond following the law and making a profit to actively improve society.",
+      "2": "Relatively permanent and deeply held underlying beliefs and attitudes.",
+      "3": "Situation in which you must decide whether to pursue a course of action that may benefit you or your organization but is unethical or illegal.",
+      "4": "Respects the fundamental rights of human beings."
+    },
+    "correct_answer": 2,
+    "explanation": "'Values' means: Relatively permanent and deeply held underlying beliefs and attitudes..",
+    "difficulty": "hard",
+    "id": "Q047"
+  },
+  {
+    "topic": "Ethics & Corporate Social Responsibility",
+    "question": "What best describes 'Stakeholders' in management context?",
+    "answers": {
+      "1": "The people whose interests are affected by an organization’s activities.",
+      "2": "Guided by respect for impartial standards of fairness and equity.",
+      "3": "Economic development that meets present needs without compromising the ability of future generations to meet theirs.",
+      "4": "Managerial actions aimed at protecting the environment."
+    },
+    "correct_answer": 1,
+    "explanation": "'Stakeholders' means: The people whose interests are affected by an organization’s activities..",
+    "difficulty": "hard",
+    "id": "Q048"
+  },
+  {
+    "topic": "Ethics & Corporate Social Responsibility",
+    "question": "What best describes 'Whistleblower' in management context?",
+    "answers": {
+      "1": "Systematic assessment of a company’s performance in implementing socially responsible programs.",
+      "2": "Economic development that meets present needs without compromising the ability of future generations to meet theirs.",
+      "3": "An employee who reports organizational misconduct to the public.",
+      "4": "The notion that corporations are expected to go beyond following the law and making a profit to actively improve society."
+    },
+    "correct_answer": 3,
+    "explanation": "'Whistleblower' means: An employee who reports organizational misconduct to the public..",
+    "difficulty": "hard",
+    "id": "Q049"
+  },
+  {
+    "topic": "Ethics & Corporate Social Responsibility",
+    "question": "What best describes 'Corporate Social Responsibility (CSR)' in management context?",
+    "answers": {
+      "1": "Situation in which you must decide whether to pursue a course of action that may benefit you or your organization but is unethical or illegal.",
+      "2": "The notion that corporations are expected to go beyond following the law and making a profit to actively improve society.",
+      "3": "Guided by what will result in the individual's best long-term interests.",
+      "4": "Systematic assessment of a company’s performance in implementing socially responsible programs."
+    },
+    "correct_answer": 2,
+    "explanation": "'Corporate Social Responsibility (CSR)' means: The notion that corporations are expected to go beyond following the law and making a profit to actively improve society..",
+    "difficulty": "hard",
+    "id": "Q050"
+  },
+  {
+    "topic": "Ethics & Corporate Social Responsibility",
+    "question": "What best describes 'Corporate Social Responsibility (CSR)' in management context?",
+    "answers": {
+      "1": "Formal written set of ethical standards guiding an organization’s actions.",
+      "2": "Managerial actions aimed at protecting the environment.",
+      "3": "Situation in which you must decide whether to pursue a course of action that may benefit you or your organization but is unethical or illegal.",
+      "4": "The notion that corporations are expected to go beyond following the law and making a profit to actively improve society."
+    },
+    "correct_answer": 4,
+    "explanation": "'Corporate Social Responsibility (CSR)' means: The notion that corporations are expected to go beyond following the law and making a profit to actively improve society..",
+    "difficulty": "hard",
+    "id": "Q051"
+  },
+  {
+    "topic": "Ethics & Corporate Social Responsibility",
+    "question": "What best describes 'Values' in management context?",
+    "answers": {
+      "1": "Relatively permanent and deeply held underlying beliefs and attitudes.",
+      "2": "Guided by respect for impartial standards of fairness and equity.",
+      "3": "Standards of right and wrong that influence behavior.",
+      "4": "Situation in which you must decide whether to pursue a course of action that may benefit you or your organization but is unethical or illegal."
+    },
+    "correct_answer": 1,
+    "explanation": "'Values' means: Relatively permanent and deeply held underlying beliefs and attitudes..",
+    "difficulty": "hard",
+    "id": "Q052"
+  },
+  {
+    "topic": "Ethics & Corporate Social Responsibility",
+    "question": "What best describes 'Ethical Dilemma' in management context?",
+    "answers": {
+      "1": "Situation in which you must decide whether to pursue a course of action that may benefit you or your organization but is unethical or illegal.",
+      "2": "Guided by respect for impartial standards of fairness and equity.",
+      "3": "Guided by what will result in the greatest good for the greatest number.",
+      "4": "The people whose interests are affected by an organization’s activities."
+    },
+    "correct_answer": 1,
+    "explanation": "'Ethical Dilemma' means: Situation in which you must decide whether to pursue a course of action that may benefit you or your organization but is unethical or illegal..",
+    "difficulty": "hard",
+    "id": "Q053"
+  },
+  {
+    "topic": "Ethics & Corporate Social Responsibility",
+    "question": "What best describes 'Utilitarian Approach' in management context?",
+    "answers": {
+      "1": "Situation in which you must decide whether to pursue a course of action that may benefit you or your organization but is unethical or illegal.",
+      "2": "The notion that corporations are expected to go beyond following the law and making a profit to actively improve society.",
+      "3": "Guided by respect for impartial standards of fairness and equity.",
+      "4": "Guided by what will result in the greatest good for the greatest number."
+    },
+    "correct_answer": 4,
+    "explanation": "'Utilitarian Approach' means: Guided by what will result in the greatest good for the greatest number..",
+    "difficulty": "hard",
+    "id": "Q054"
+  },
+  {
+    "topic": "Planning & Decision-Making",
+    "question": "What best describes 'Satisficing' in management context?",
+    "answers": {
+      "1": "Expresses the purpose of the organization.",
+      "2": "Determining long-term goals for the next 1–5 years.",
+      "3": "Choosing an option that is good enough rather than optimal.",
+      "4": "Group members’ striving for unanimity overrides their motivation to realistically appraise alternatives."
+    },
+    "correct_answer": 3,
+    "explanation": "'Satisficing' means: Choosing an option that is good enough rather than optimal..",
+    "difficulty": "easy",
+    "id": "Q055"
+  },
+  {
+    "topic": "Planning & Decision-Making",
+    "question": "What best describes 'Strategic Planning' in management context?",
+    "answers": {
+      "1": "Forecasting future possibilities and developing plans accordingly.",
+      "2": "Process of identifying and choosing alternative courses of action.",
+      "3": "Determining long-term goals for the next 1–5 years.",
+      "4": "Setting goals and deciding how to achieve them."
+    },
+    "correct_answer": 3,
+    "explanation": "'Strategic Planning' means: Determining long-term goals for the next 1–5 years..",
+    "difficulty": "easy",
+    "id": "Q056"
+  },
+  {
+    "topic": "Planning & Decision-Making",
+    "question": "What best describes 'Tactical Planning' in management context?",
+    "answers": {
+      "1": "Setting goals and deciding how to achieve them.",
+      "2": "Choosing an option that is good enough rather than optimal.",
+      "3": "Determining what contributions departments can make over 6–24 months.",
+      "4": "Expresses the purpose of the organization."
+    },
+    "correct_answer": 3,
+    "explanation": "'Tactical Planning' means: Determining what contributions departments can make over 6–24 months..",
+    "difficulty": "easy",
+    "id": "Q057"
+  },
+  {
+    "topic": "Planning & Decision-Making",
+    "question": "What best describes 'SMART Goals' in management context?",
+    "answers": {
+      "1": "Choosing an option that is good enough rather than optimal.",
+      "2": "Goals that are specific, measurable, attainable, results-oriented, and time-bound.",
+      "3": "Describes what the organization wants to become.",
+      "4": "Forecasting future possibilities and developing plans accordingly."
+    },
+    "correct_answer": 2,
+    "explanation": "'SMART Goals' means: Goals that are specific, measurable, attainable, results-oriented, and time-bound..",
+    "difficulty": "easy",
+    "id": "Q058"
+  },
+  {
+    "topic": "Planning & Decision-Making",
+    "question": "What best describes 'Satisficing' in management context?",
+    "answers": {
+      "1": "Group members’ striving for unanimity overrides their motivation to realistically appraise alternatives.",
+      "2": "Choosing an option that is good enough rather than optimal.",
+      "3": "Goals that are specific, measurable, attainable, results-oriented, and time-bound.",
+      "4": "Translating best evidence into organizational practice."
+    },
+    "correct_answer": 2,
+    "explanation": "'Satisficing' means: Choosing an option that is good enough rather than optimal..",
+    "difficulty": "easy",
+    "id": "Q059"
+  },
+  {
+    "topic": "Planning & Decision-Making",
+    "question": "What best describes 'Bounded Rationality' in management context?",
+    "answers": {
+      "1": "Group members’ striving for unanimity overrides their motivation to realistically appraise alternatives.",
+      "2": "Determining long-term goals for the next 1–5 years.",
+      "3": "Process of identifying and choosing alternative courses of action.",
+      "4": "Decision-making limited by complexity, time, and information constraints."
+    },
+    "correct_answer": 4,
+    "explanation": "'Bounded Rationality' means: Decision-making limited by complexity, time, and information constraints..",
+    "difficulty": "easy",
+    "id": "Q060"
+  },
+  {
+    "topic": "Planning & Decision-Making",
+    "question": "What best describes 'Scenario Planning' in management context?",
+    "answers": {
+      "1": "Logical four-step approach to decision-making: identify problem, think of alternatives, evaluate alternatives, implement and evaluate solution.",
+      "2": "Describes what the organization wants to become.",
+      "3": "Setting goals and deciding how to achieve them.",
+      "4": "Forecasting future possibilities and developing plans accordingly."
+    },
+    "correct_answer": 4,
+    "explanation": "'Scenario Planning' means: Forecasting future possibilities and developing plans accordingly..",
+    "difficulty": "easy",
+    "id": "Q061"
+  },
+  {
+    "topic": "Planning & Decision-Making",
+    "question": "What best describes 'Groupthink' in management context?",
+    "answers": {
+      "1": "Forecasting future possibilities and developing plans accordingly.",
+      "2": "Expresses the purpose of the organization.",
+      "3": "Process of involving all managers in the formulation and implementation of strategies.",
+      "4": "Group members’ striving for unanimity overrides their motivation to realistically appraise alternatives."
+    },
+    "correct_answer": 4,
+    "explanation": "'Groupthink' means: Group members’ striving for unanimity overrides their motivation to realistically appraise alternatives..",
+    "difficulty": "easy",
+    "id": "Q062"
+  },
+  {
+    "topic": "Planning & Decision-Making",
+    "question": "What best describes 'Mission Statement' in management context?",
+    "answers": {
+      "1": "Describes what the organization wants to become.",
+      "2": "Setting goals and deciding how to achieve them.",
+      "3": "Expresses the purpose of the organization.",
+      "4": "Translating best evidence into organizational practice."
+    },
+    "correct_answer": 3,
+    "explanation": "'Mission Statement' means: Expresses the purpose of the organization..",
+    "difficulty": "easy",
+    "id": "Q063"
+  },
+  {
+    "topic": "Planning & Decision-Making",
+    "question": "What best describes 'Strategic Planning' in management context?",
+    "answers": {
+      "1": "Logical four-step approach to decision-making: identify problem, think of alternatives, evaluate alternatives, implement and evaluate solution.",
+      "2": "Setting goals and deciding how to achieve them.",
+      "3": "Determining long-term goals for the next 1–5 years.",
+      "4": "Forecasting future possibilities and developing plans accordingly."
+    },
+    "correct_answer": 3,
+    "explanation": "'Strategic Planning' means: Determining long-term goals for the next 1–5 years..",
+    "difficulty": "medium",
+    "id": "Q064"
+  },
+  {
+    "topic": "Planning & Decision-Making",
+    "question": "What best describes 'Mission Statement' in management context?",
+    "answers": {
+      "1": "Describes what the organization wants to become.",
+      "2": "Expresses the purpose of the organization.",
+      "3": "Determining long-term goals for the next 1–5 years.",
+      "4": "Process of identifying and choosing alternative courses of action."
+    },
+    "correct_answer": 2,
+    "explanation": "'Mission Statement' means: Expresses the purpose of the organization..",
+    "difficulty": "medium",
+    "id": "Q065"
+  },
+  {
+    "topic": "Planning & Decision-Making",
+    "question": "What best describes 'Satisficing' in management context?",
+    "answers": {
+      "1": "Goals that are specific, measurable, attainable, results-oriented, and time-bound.",
+      "2": "Setting goals and deciding how to achieve them.",
+      "3": "Choosing an option that is good enough rather than optimal.",
+      "4": "Expresses the purpose of the organization."
+    },
+    "correct_answer": 3,
+    "explanation": "'Satisficing' means: Choosing an option that is good enough rather than optimal..",
+    "difficulty": "medium",
+    "id": "Q066"
+  },
+  {
+    "topic": "Planning & Decision-Making",
+    "question": "What best describes 'Rational Decision-Making Model' in management context?",
+    "answers": {
+      "1": "Logical four-step approach to decision-making: identify problem, think of alternatives, evaluate alternatives, implement and evaluate solution.",
+      "2": "Process of involving all managers in the formulation and implementation of strategies.",
+      "3": "Goals that are specific, measurable, attainable, results-oriented, and time-bound.",
+      "4": "Decision-making limited by complexity, time, and information constraints."
+    },
+    "correct_answer": 1,
+    "explanation": "'Rational Decision-Making Model' means: Logical four-step approach to decision-making: identify problem, think of alternatives, evaluate alternatives, implement and evaluate solution..",
+    "difficulty": "medium",
+    "id": "Q067"
+  },
+  {
+    "topic": "Planning & Decision-Making",
+    "question": "What best describes 'Operational Planning' in management context?",
+    "answers": {
+      "1": "Process of identifying and choosing alternative courses of action.",
+      "2": "Determining how to accomplish specific tasks with available resources within 1 year.",
+      "3": "Translating best evidence into organizational practice.",
+      "4": "Determining what contributions departments can make over 6–24 months."
+    },
+    "correct_answer": 2,
+    "explanation": "'Operational Planning' means: Determining how to accomplish specific tasks with available resources within 1 year..",
+    "difficulty": "medium",
+    "id": "Q068"
+  },
+  {
+    "topic": "Planning & Decision-Making",
+    "question": "What best describes 'Planning' in management context?",
+    "answers": {
+      "1": "Setting goals and deciding how to achieve them.",
+      "2": "Forecasting future possibilities and developing plans accordingly.",
+      "3": "Expresses the purpose of the organization.",
+      "4": "Choosing an option that is good enough rather than optimal."
+    },
+    "correct_answer": 1,
+    "explanation": "'Planning' means: Setting goals and deciding how to achieve them..",
+    "difficulty": "medium",
+    "id": "Q069"
+  },
+  {
+    "topic": "Planning & Decision-Making",
+    "question": "What best describes 'Tactical Planning' in management context?",
+    "answers": {
+      "1": "Determining what contributions departments can make over 6–24 months.",
+      "2": "Determining how to accomplish specific tasks with available resources within 1 year.",
+      "3": "Decision-making limited by complexity, time, and information constraints.",
+      "4": "Process of involving all managers in the formulation and implementation of strategies."
+    },
+    "correct_answer": 1,
+    "explanation": "'Tactical Planning' means: Determining what contributions departments can make over 6–24 months..",
+    "difficulty": "medium",
+    "id": "Q070"
+  },
+  {
+    "topic": "Planning & Decision-Making",
+    "question": "What best describes 'Tactical Planning' in management context?",
+    "answers": {
+      "1": "Setting goals and deciding how to achieve them.",
+      "2": "Translating best evidence into organizational practice.",
+      "3": "Expresses the purpose of the organization.",
+      "4": "Determining what contributions departments can make over 6–24 months."
+    },
+    "correct_answer": 4,
+    "explanation": "'Tactical Planning' means: Determining what contributions departments can make over 6–24 months..",
+    "difficulty": "medium",
+    "id": "Q071"
+  },
+  {
+    "topic": "Planning & Decision-Making",
+    "question": "What best describes 'Groupthink' in management context?",
+    "answers": {
+      "1": "Expresses the purpose of the organization.",
+      "2": "Group members’ striving for unanimity overrides their motivation to realistically appraise alternatives.",
+      "3": "Process of involving all managers in the formulation and implementation of strategies.",
+      "4": "Determining how to accomplish specific tasks with available resources within 1 year."
+    },
+    "correct_answer": 2,
+    "explanation": "'Groupthink' means: Group members’ striving for unanimity overrides their motivation to realistically appraise alternatives..",
+    "difficulty": "medium",
+    "id": "Q072"
+  },
+  {
+    "topic": "Planning & Decision-Making",
+    "question": "What best describes 'Rational Decision-Making Model' in management context?",
+    "answers": {
+      "1": "Expresses the purpose of the organization.",
+      "2": "Goals that are specific, measurable, attainable, results-oriented, and time-bound.",
+      "3": "Logical four-step approach to decision-making: identify problem, think of alternatives, evaluate alternatives, implement and evaluate solution.",
+      "4": "Determining how to accomplish specific tasks with available resources within 1 year."
+    },
+    "correct_answer": 3,
+    "explanation": "'Rational Decision-Making Model' means: Logical four-step approach to decision-making: identify problem, think of alternatives, evaluate alternatives, implement and evaluate solution..",
+    "difficulty": "hard",
+    "id": "Q073"
+  },
+  {
+    "topic": "Planning & Decision-Making",
+    "question": "What best describes 'Tactical Planning' in management context?",
+    "answers": {
+      "1": "Goals that are specific, measurable, attainable, results-oriented, and time-bound.",
+      "2": "Determining what contributions departments can make over 6–24 months.",
+      "3": "Expresses the purpose of the organization.",
+      "4": "Logical four-step approach to decision-making: identify problem, think of alternatives, evaluate alternatives, implement and evaluate solution."
+    },
+    "correct_answer": 2,
+    "explanation": "'Tactical Planning' means: Determining what contributions departments can make over 6–24 months..",
+    "difficulty": "hard",
+    "id": "Q074"
+  },
+  {
+    "topic": "Planning & Decision-Making",
+    "question": "What best describes 'SMART Goals' in management context?",
+    "answers": {
+      "1": "Process of identifying and choosing alternative courses of action.",
+      "2": "Goals that are specific, measurable, attainable, results-oriented, and time-bound.",
+      "3": "Describes what the organization wants to become.",
+      "4": "Logical four-step approach to decision-making: identify problem, think of alternatives, evaluate alternatives, implement and evaluate solution."
+    },
+    "correct_answer": 2,
+    "explanation": "'SMART Goals' means: Goals that are specific, measurable, attainable, results-oriented, and time-bound..",
+    "difficulty": "hard",
+    "id": "Q075"
+  },
+  {
+    "topic": "Planning & Decision-Making",
+    "question": "What best describes 'Tactical Planning' in management context?",
+    "answers": {
+      "1": "Determining what contributions departments can make over 6–24 months.",
+      "2": "Process of identifying and choosing alternative courses of action.",
+      "3": "Translating best evidence into organizational practice.",
+      "4": "Logical four-step approach to decision-making: identify problem, think of alternatives, evaluate alternatives, implement and evaluate solution."
+    },
+    "correct_answer": 1,
+    "explanation": "'Tactical Planning' means: Determining what contributions departments can make over 6–24 months..",
+    "difficulty": "hard",
+    "id": "Q076"
+  },
+  {
+    "topic": "Planning & Decision-Making",
+    "question": "What best describes 'Tactical Planning' in management context?",
+    "answers": {
+      "1": "Expresses the purpose of the organization.",
+      "2": "Forecasting future possibilities and developing plans accordingly.",
+      "3": "Choosing an option that is good enough rather than optimal.",
+      "4": "Determining what contributions departments can make over 6–24 months."
+    },
+    "correct_answer": 4,
+    "explanation": "'Tactical Planning' means: Determining what contributions departments can make over 6–24 months..",
+    "difficulty": "hard",
+    "id": "Q077"
+  },
+  {
+    "topic": "Planning & Decision-Making",
+    "question": "What best describes 'Evidence-Based Management' in management context?",
+    "answers": {
+      "1": "Choosing an option that is good enough rather than optimal.",
+      "2": "Determining what contributions departments can make over 6–24 months.",
+      "3": "Forecasting future possibilities and developing plans accordingly.",
+      "4": "Translating best evidence into organizational practice."
+    },
+    "correct_answer": 4,
+    "explanation": "'Evidence-Based Management' means: Translating best evidence into organizational practice..",
+    "difficulty": "hard",
+    "id": "Q078"
+  },
+  {
+    "topic": "Planning & Decision-Making",
+    "question": "What best describes 'Planning' in management context?",
+    "answers": {
+      "1": "Expresses the purpose of the organization.",
+      "2": "Translating best evidence into organizational practice.",
+      "3": "Setting goals and deciding how to achieve them.",
+      "4": "Forecasting future possibilities and developing plans accordingly."
+    },
+    "correct_answer": 3,
+    "explanation": "'Planning' means: Setting goals and deciding how to achieve them..",
+    "difficulty": "hard",
+    "id": "Q079"
+  },
+  {
+    "topic": "Planning & Decision-Making",
+    "question": "What best describes 'Evidence-Based Management' in management context?",
+    "answers": {
+      "1": "Translating best evidence into organizational practice.",
+      "2": "Decision-making limited by complexity, time, and information constraints.",
+      "3": "Determining how to accomplish specific tasks with available resources within 1 year.",
+      "4": "Choosing an option that is good enough rather than optimal."
+    },
+    "correct_answer": 1,
+    "explanation": "'Evidence-Based Management' means: Translating best evidence into organizational practice..",
+    "difficulty": "hard",
+    "id": "Q080"
+  },
+  {
+    "topic": "Planning & Decision-Making",
+    "question": "What best describes 'Strategic Management' in management context?",
+    "answers": {
+      "1": "Decision-making limited by complexity, time, and information constraints.",
+      "2": "Goals that are specific, measurable, attainable, results-oriented, and time-bound.",
+      "3": "Process of involving all managers in the formulation and implementation of strategies.",
+      "4": "Setting goals and deciding how to achieve them."
+    },
+    "correct_answer": 3,
+    "explanation": "'Strategic Management' means: Process of involving all managers in the formulation and implementation of strategies..",
+    "difficulty": "hard",
+    "id": "Q081"
+  },
+  {
+    "topic": "Organizational Structure & Culture",
+    "question": "What best describes 'Matrix Structure' in management context?",
+    "answers": {
+      "1": "Degree to which decision-making is concentrated at higher levels.",
+      "2": "Combines functional and divisional chains of command.",
+      "3": "External focus and value on flexibility; innovative and adaptable.",
+      "4": "Degree to which decision-making is distributed throughout the organization."
+    },
+    "correct_answer": 2,
+    "explanation": "'Matrix Structure' means: Combines functional and divisional chains of command..",
+    "difficulty": "easy",
+    "id": "Q082"
+  },
+  {
+    "topic": "Organizational Structure & Culture",
+    "question": "What best describes 'Organizational Culture' in management context?",
+    "answers": {
+      "1": "Set of shared assumptions that a group holds and that determines how it perceives and reacts to its environment.",
+      "2": "Number of people reporting directly to a manager.",
+      "3": "External focus and value on stability; driven by competition and results.",
+      "4": "Degree to which decision-making is distributed throughout the organization."
+    },
+    "correct_answer": 1,
+    "explanation": "'Organizational Culture' means: Set of shared assumptions that a group holds and that determines how it perceives and reacts to its environment..",
+    "difficulty": "easy",
+    "id": "Q083"
+  },
+  {
+    "topic": "Organizational Structure & Culture",
+    "question": "What best describes 'Centralization' in management context?",
+    "answers": {
+      "1": "Internal focus and value on flexibility; family-type organization.",
+      "2": "Degree to which decision-making is concentrated at higher levels.",
+      "3": "Number of people reporting directly to a manager.",
+      "4": "Chain of command specifying who reports to whom."
+    },
+    "correct_answer": 2,
+    "explanation": "'Centralization' means: Degree to which decision-making is concentrated at higher levels..",
+    "difficulty": "easy",
+    "id": "Q084"
+  },
+  {
+    "topic": "Organizational Structure & Culture",
+    "question": "What best describes 'Centralization' in management context?",
+    "answers": {
+      "1": "Chain of command specifying who reports to whom.",
+      "2": "Degree to which decision-making is distributed throughout the organization.",
+      "3": "External focus and value on flexibility; innovative and adaptable.",
+      "4": "Degree to which decision-making is concentrated at higher levels."
+    },
+    "correct_answer": 4,
+    "explanation": "'Centralization' means: Degree to which decision-making is concentrated at higher levels..",
+    "difficulty": "easy",
+    "id": "Q085"
+  },
+  {
+    "topic": "Organizational Structure & Culture",
+    "question": "What best describes 'Organizational Design' in management context?",
+    "answers": {
+      "1": "Formal system of task and reporting relationships that coordinate and motivate members.",
+      "2": "Chain of command specifying who reports to whom.",
+      "3": "Creating or changing an organization’s structure.",
+      "4": "People with similar occupational specialties put together in formal groups."
+    },
+    "correct_answer": 3,
+    "explanation": "'Organizational Design' means: Creating or changing an organization’s structure..",
+    "difficulty": "easy",
+    "id": "Q086"
+  },
+  {
+    "topic": "Organizational Structure & Culture",
+    "question": "What best describes 'Matrix Structure' in management context?",
+    "answers": {
+      "1": "Combines functional and divisional chains of command.",
+      "2": "Degree to which decision-making is distributed throughout the organization.",
+      "3": "Internal focus and value on flexibility; family-type organization.",
+      "4": "Creating or changing an organization’s structure."
+    },
+    "correct_answer": 1,
+    "explanation": "'Matrix Structure' means: Combines functional and divisional chains of command..",
+    "difficulty": "easy",
+    "id": "Q087"
+  },
+  {
+    "topic": "Organizational Structure & Culture",
+    "question": "What best describes 'Adhocracy Culture' in management context?",
+    "answers": {
+      "1": "Formal system of task and reporting relationships that coordinate and motivate members.",
+      "2": "Degree to which decision-making is distributed throughout the organization.",
+      "3": "Internal focus and value on flexibility; family-type organization.",
+      "4": "External focus and value on flexibility; innovative and adaptable."
+    },
+    "correct_answer": 4,
+    "explanation": "'Adhocracy Culture' means: External focus and value on flexibility; innovative and adaptable..",
+    "difficulty": "easy",
+    "id": "Q088"
+  },
+  {
+    "topic": "Organizational Structure & Culture",
+    "question": "What best describes 'Market Culture' in management context?",
+    "answers": {
+      "1": "Formal system of task and reporting relationships that coordinate and motivate members.",
+      "2": "Internal focus and value on stability; structured and controlled environment.",
+      "3": "Chain of command specifying who reports to whom.",
+      "4": "External focus and value on stability; driven by competition and results."
+    },
+    "correct_answer": 4,
+    "explanation": "'Market Culture' means: External focus and value on stability; driven by competition and results..",
+    "difficulty": "easy",
+    "id": "Q089"
+  },
+  {
+    "topic": "Organizational Structure & Culture",
+    "question": "What best describes 'Decentralization' in management context?",
+    "answers": {
+      "1": "Degree to which decision-making is concentrated at higher levels.",
+      "2": "Degree to which decision-making is distributed throughout the organization.",
+      "3": "People with diverse occupational specialties are grouped by product, customer, or region.",
+      "4": "Set of shared assumptions that a group holds and that determines how it perceives and reacts to its environment."
+    },
+    "correct_answer": 2,
+    "explanation": "'Decentralization' means: Degree to which decision-making is distributed throughout the organization..",
+    "difficulty": "easy",
+    "id": "Q090"
+  },
+  {
+    "topic": "Organizational Structure & Culture",
+    "question": "What best describes 'Flat Organization' in management context?",
+    "answers": {
+      "1": "Has few or no levels of middle management between staff and executives.",
+      "2": "External focus and value on stability; driven by competition and results.",
+      "3": "Creating or changing an organization’s structure.",
+      "4": "External focus and value on flexibility; innovative and adaptable."
+    },
+    "correct_answer": 1,
+    "explanation": "'Flat Organization' means: Has few or no levels of middle management between staff and executives..",
+    "difficulty": "medium",
+    "id": "Q091"
+  },
+  {
+    "topic": "Organizational Structure & Culture",
+    "question": "What best describes 'Hierarchy of Authority' in management context?",
+    "answers": {
+      "1": "Chain of command specifying who reports to whom.",
+      "2": "Degree to which decision-making is concentrated at higher levels.",
+      "3": "Creating or changing an organization’s structure.",
+      "4": "Number of people reporting directly to a manager."
+    },
+    "correct_answer": 1,
+    "explanation": "'Hierarchy of Authority' means: Chain of command specifying who reports to whom..",
+    "difficulty": "medium",
+    "id": "Q092"
+  },
+  {
+    "topic": "Organizational Structure & Culture",
+    "question": "What best describes 'Clan Culture' in management context?",
+    "answers": {
+      "1": "Internal focus and value on flexibility; family-type organization.",
+      "2": "External focus and value on flexibility; innovative and adaptable.",
+      "3": "Set of shared assumptions that a group holds and that determines how it perceives and reacts to its environment.",
+      "4": "People with similar occupational specialties put together in formal groups."
+    },
+    "correct_answer": 1,
+    "explanation": "'Clan Culture' means: Internal focus and value on flexibility; family-type organization..",
+    "difficulty": "medium",
+    "id": "Q093"
+  },
+  {
+    "topic": "Organizational Structure & Culture",
+    "question": "What best describes 'Span of Control' in management context?",
+    "answers": {
+      "1": "Has few or no levels of middle management between staff and executives.",
+      "2": "Degree to which decision-making is concentrated at higher levels.",
+      "3": "People with diverse occupational specialties are grouped by product, customer, or region.",
+      "4": "Number of people reporting directly to a manager."
+    },
+    "correct_answer": 4,
+    "explanation": "'Span of Control' means: Number of people reporting directly to a manager..",
+    "difficulty": "medium",
+    "id": "Q094"
+  },
+  {
+    "topic": "Organizational Structure & Culture",
+    "question": "What best describes 'Adhocracy Culture' in management context?",
+    "answers": {
+      "1": "Creating or changing an organization’s structure.",
+      "2": "Degree to which decision-making is distributed throughout the organization.",
+      "3": "Number of people reporting directly to a manager.",
+      "4": "External focus and value on flexibility; innovative and adaptable."
+    },
+    "correct_answer": 4,
+    "explanation": "'Adhocracy Culture' means: External focus and value on flexibility; innovative and adaptable..",
+    "difficulty": "medium",
+    "id": "Q095"
+  },
+  {
+    "topic": "Organizational Structure & Culture",
+    "question": "What best describes 'Decentralization' in management context?",
+    "answers": {
+      "1": "Degree to which decision-making is distributed throughout the organization.",
+      "2": "Combines functional and divisional chains of command.",
+      "3": "Formal system of task and reporting relationships that coordinate and motivate members.",
+      "4": "External focus and value on stability; driven by competition and results."
+    },
+    "correct_answer": 1,
+    "explanation": "'Decentralization' means: Degree to which decision-making is distributed throughout the organization..",
+    "difficulty": "medium",
+    "id": "Q096"
+  },
+  {
+    "topic": "Organizational Structure & Culture",
+    "question": "What best describes 'Organizational Culture' in management context?",
+    "answers": {
+      "1": "People with similar occupational specialties put together in formal groups.",
+      "2": "Formal system of task and reporting relationships that coordinate and motivate members.",
+      "3": "Set of shared assumptions that a group holds and that determines how it perceives and reacts to its environment.",
+      "4": "Degree to which decision-making is distributed throughout the organization."
+    },
+    "correct_answer": 3,
+    "explanation": "'Organizational Culture' means: Set of shared assumptions that a group holds and that determines how it perceives and reacts to its environment..",
+    "difficulty": "medium",
+    "id": "Q097"
+  },
+  {
+    "topic": "Organizational Structure & Culture",
+    "question": "What best describes 'Functional Structure' in management context?",
+    "answers": {
+      "1": "Set of shared assumptions that a group holds and that determines how it perceives and reacts to its environment.",
+      "2": "People with similar occupational specialties put together in formal groups.",
+      "3": "External focus and value on flexibility; innovative and adaptable.",
+      "4": "External focus and value on stability; driven by competition and results."
+    },
+    "correct_answer": 2,
+    "explanation": "'Functional Structure' means: People with similar occupational specialties put together in formal groups..",
+    "difficulty": "medium",
+    "id": "Q098"
+  },
+  {
+    "topic": "Organizational Structure & Culture",
+    "question": "What best describes 'Divisional Structure' in management context?",
+    "answers": {
+      "1": "Number of people reporting directly to a manager.",
+      "2": "People with diverse occupational specialties are grouped by product, customer, or region.",
+      "3": "People with similar occupational specialties put together in formal groups.",
+      "4": "Formal system of task and reporting relationships that coordinate and motivate members."
+    },
+    "correct_answer": 2,
+    "explanation": "'Divisional Structure' means: People with diverse occupational specialties are grouped by product, customer, or region..",
+    "difficulty": "medium",
+    "id": "Q099"
+  },
+  {
+    "topic": "Organizational Structure & Culture",
+    "question": "What best describes 'Market Culture' in management context?",
+    "answers": {
+      "1": "Combines functional and divisional chains of command.",
+      "2": "External focus and value on stability; driven by competition and results.",
+      "3": "Degree to which decision-making is distributed throughout the organization.",
+      "4": "Formal system of task and reporting relationships that coordinate and motivate members."
+    },
+    "correct_answer": 2,
+    "explanation": "'Market Culture' means: External focus and value on stability; driven by competition and results..",
+    "difficulty": "hard",
+    "id": "Q100"
+  },
+  {
+    "topic": "Organizational Structure & Culture",
+    "question": "What best describes 'Market Culture' in management context?",
+    "answers": {
+      "1": "Set of shared assumptions that a group holds and that determines how it perceives and reacts to its environment.",
+      "2": "Formal system of task and reporting relationships that coordinate and motivate members.",
+      "3": "External focus and value on stability; driven by competition and results.",
+      "4": "People with diverse occupational specialties are grouped by product, customer, or region."
+    },
+    "correct_answer": 3,
+    "explanation": "'Market Culture' means: External focus and value on stability; driven by competition and results..",
+    "difficulty": "hard",
+    "id": "Q101"
+  },
+  {
+    "topic": "Organizational Structure & Culture",
+    "question": "What best describes 'Flat Organization' in management context?",
+    "answers": {
+      "1": "People with similar occupational specialties put together in formal groups.",
+      "2": "Combines functional and divisional chains of command.",
+      "3": "Has few or no levels of middle management between staff and executives.",
+      "4": "Internal focus and value on flexibility; family-type organization."
+    },
+    "correct_answer": 3,
+    "explanation": "'Flat Organization' means: Has few or no levels of middle management between staff and executives..",
+    "difficulty": "hard",
+    "id": "Q102"
+  },
+  {
+    "topic": "Organizational Structure & Culture",
+    "question": "What best describes 'Organizational Structure' in management context?",
+    "answers": {
+      "1": "People with diverse occupational specialties are grouped by product, customer, or region.",
+      "2": "Degree to which decision-making is distributed throughout the organization.",
+      "3": "Formal system of task and reporting relationships that coordinate and motivate members.",
+      "4": "Degree to which decision-making is concentrated at higher levels."
+    },
+    "correct_answer": 3,
+    "explanation": "'Organizational Structure' means: Formal system of task and reporting relationships that coordinate and motivate members..",
+    "difficulty": "hard",
+    "id": "Q103"
+  },
+  {
+    "topic": "Organizational Structure & Culture",
+    "question": "What best describes 'Divisional Structure' in management context?",
+    "answers": {
+      "1": "Formal system of task and reporting relationships that coordinate and motivate members.",
+      "2": "Internal focus and value on flexibility; family-type organization.",
+      "3": "People with diverse occupational specialties are grouped by product, customer, or region.",
+      "4": "External focus and value on flexibility; innovative and adaptable."
+    },
+    "correct_answer": 3,
+    "explanation": "'Divisional Structure' means: People with diverse occupational specialties are grouped by product, customer, or region..",
+    "difficulty": "hard",
+    "id": "Q104"
+  },
+  {
+    "topic": "Organizational Structure & Culture",
+    "question": "What best describes 'Functional Structure' in management context?",
+    "answers": {
+      "1": "Number of people reporting directly to a manager.",
+      "2": "People with diverse occupational specialties are grouped by product, customer, or region.",
+      "3": "Degree to which decision-making is concentrated at higher levels.",
+      "4": "People with similar occupational specialties put together in formal groups."
+    },
+    "correct_answer": 4,
+    "explanation": "'Functional Structure' means: People with similar occupational specialties put together in formal groups..",
+    "difficulty": "hard",
+    "id": "Q105"
+  },
+  {
+    "topic": "Organizational Structure & Culture",
+    "question": "What best describes 'Organizational Design' in management context?",
+    "answers": {
+      "1": "Chain of command specifying who reports to whom.",
+      "2": "Creating or changing an organization’s structure.",
+      "3": "Internal focus and value on flexibility; family-type organization.",
+      "4": "Degree to which decision-making is distributed throughout the organization."
+    },
+    "correct_answer": 2,
+    "explanation": "'Organizational Design' means: Creating or changing an organization’s structure..",
+    "difficulty": "hard",
+    "id": "Q106"
+  },
+  {
+    "topic": "Organizational Structure & Culture",
+    "question": "What best describes 'Adhocracy Culture' in management context?",
+    "answers": {
+      "1": "Degree to which decision-making is distributed throughout the organization.",
+      "2": "Set of shared assumptions that a group holds and that determines how it perceives and reacts to its environment.",
+      "3": "Combines functional and divisional chains of command.",
+      "4": "External focus and value on flexibility; innovative and adaptable."
+    },
+    "correct_answer": 4,
+    "explanation": "'Adhocracy Culture' means: External focus and value on flexibility; innovative and adaptable..",
+    "difficulty": "hard",
+    "id": "Q107"
+  },
+  {
+    "topic": "Organizational Structure & Culture",
+    "question": "What best describes 'Divisional Structure' in management context?",
+    "answers": {
+      "1": "Combines functional and divisional chains of command.",
+      "2": "Chain of command specifying who reports to whom.",
+      "3": "People with diverse occupational specialties are grouped by product, customer, or region.",
+      "4": "People with similar occupational specialties put together in formal groups."
+    },
+    "correct_answer": 3,
+    "explanation": "'Divisional Structure' means: People with diverse occupational specialties are grouped by product, customer, or region..",
+    "difficulty": "hard",
+    "id": "Q108"
+  },
+  {
+    "topic": "Leadership & Motivation",
+    "question": "What best describes 'Expectancy Theory' in management context?",
+    "answers": {
+      "1": "Motivation depends on expectancy, instrumentality, and valence.",
+      "2": "Ability to influence employees to voluntarily pursue organizational goals.",
+      "3": "Power derived from personal attraction.",
+      "4": "People are motivated by five levels of needs: physiological, safety, love, esteem, and self-actualization."
+    },
+    "correct_answer": 1,
+    "explanation": "'Expectancy Theory' means: Motivation depends on expectancy, instrumentality, and valence..",
+    "difficulty": "easy",
+    "id": "Q109"
+  },
+  {
+    "topic": "Leadership & Motivation",
+    "question": "What best describes 'Transformational Leadership' in management context?",
+    "answers": {
+      "1": "Motivation depends on expectancy, instrumentality, and valence.",
+      "2": "People seek fairness in social exchanges.",
+      "3": "Motivating factors drive satisfaction; hygiene factors prevent dissatisfaction.",
+      "4": "Inspires employees to pursue organizational goals over self-interests."
+    },
+    "correct_answer": 4,
+    "explanation": "'Transformational Leadership' means: Inspires employees to pursue organizational goals over self-interests..",
+    "difficulty": "easy",
+    "id": "Q110"
+  },
+  {
+    "topic": "Leadership & Motivation",
+    "question": "What best describes 'Expectancy Theory' in management context?",
+    "answers": {
+      "1": "Power resulting from specialized information or expertise.",
+      "2": "Power from authority to reward subordinates.",
+      "3": "Power from authority to punish subordinates.",
+      "4": "Motivation depends on expectancy, instrumentality, and valence."
+    },
+    "correct_answer": 4,
+    "explanation": "'Expectancy Theory' means: Motivation depends on expectancy, instrumentality, and valence..",
+    "difficulty": "easy",
+    "id": "Q111"
+  },
+  {
+    "topic": "Leadership & Motivation",
+    "question": "What best describes 'Herzberg’s Two-Factor Theory' in management context?",
+    "answers": {
+      "1": "Motivating factors drive satisfaction; hygiene factors prevent dissatisfaction.",
+      "2": "Power derived from personal attraction.",
+      "3": "Ability to monitor one’s and others’ emotions and use this information to guide behavior.",
+      "4": "Inspires employees to pursue organizational goals over self-interests."
+    },
+    "correct_answer": 1,
+    "explanation": "'Herzberg’s Two-Factor Theory' means: Motivating factors drive satisfaction; hygiene factors prevent dissatisfaction..",
+    "difficulty": "easy",
+    "id": "Q112"
+  },
+  {
+    "topic": "Leadership & Motivation",
+    "question": "What best describes 'Goal-Setting Theory' in management context?",
+    "answers": {
+      "1": "Power resulting from specialized information or expertise.",
+      "2": "People are motivated by five levels of needs: physiological, safety, love, esteem, and self-actualization.",
+      "3": "Specific and challenging goals enhance motivation and performance.",
+      "4": "Power resulting from managerial position in the hierarchy."
+    },
+    "correct_answer": 3,
+    "explanation": "'Goal-Setting Theory' means: Specific and challenging goals enhance motivation and performance..",
+    "difficulty": "easy",
+    "id": "Q113"
+  },
+  {
+    "topic": "Leadership & Motivation",
+    "question": "What best describes 'Transactional Leadership' in management context?",
+    "answers": {
+      "1": "Clarifies employees’ roles and provides rewards and punishments.",
+      "2": "Ability to monitor one’s and others’ emotions and use this information to guide behavior.",
+      "3": "Ability to influence employees to voluntarily pursue organizational goals.",
+      "4": "People are motivated by five levels of needs: physiological, safety, love, esteem, and self-actualization."
+    },
+    "correct_answer": 1,
+    "explanation": "'Transactional Leadership' means: Clarifies employees’ roles and provides rewards and punishments..",
+    "difficulty": "easy",
+    "id": "Q114"
+  },
+  {
+    "topic": "Leadership & Motivation",
+    "question": "What best describes 'Transformational Leadership' in management context?",
+    "answers": {
+      "1": "Ability to influence employees to voluntarily pursue organizational goals.",
+      "2": "Inspires employees to pursue organizational goals over self-interests.",
+      "3": "Power derived from personal attraction.",
+      "4": "People seek fairness in social exchanges."
+    },
+    "correct_answer": 2,
+    "explanation": "'Transformational Leadership' means: Inspires employees to pursue organizational goals over self-interests..",
+    "difficulty": "easy",
+    "id": "Q115"
+  },
+  {
+    "topic": "Leadership & Motivation",
+    "question": "What best describes 'Transformational Leadership' in management context?",
+    "answers": {
+      "1": "Power from authority to reward subordinates.",
+      "2": "Ability to influence employees to voluntarily pursue organizational goals.",
+      "3": "Power derived from personal attraction.",
+      "4": "Inspires employees to pursue organizational goals over self-interests."
+    },
+    "correct_answer": 4,
+    "explanation": "'Transformational Leadership' means: Inspires employees to pursue organizational goals over self-interests..",
+    "difficulty": "easy",
+    "id": "Q116"
+  },
+  {
+    "topic": "Leadership & Motivation",
+    "question": "What best describes 'Legitimate Power' in management context?",
+    "answers": {
+      "1": "Power resulting from managerial position in the hierarchy.",
+      "2": "Ability to monitor one’s and others’ emotions and use this information to guide behavior.",
+      "3": "People are motivated by five levels of needs: physiological, safety, love, esteem, and self-actualization.",
+      "4": "Inspires employees to pursue organizational goals over self-interests."
+    },
+    "correct_answer": 1,
+    "explanation": "'Legitimate Power' means: Power resulting from managerial position in the hierarchy..",
+    "difficulty": "easy",
+    "id": "Q117"
+  },
+  {
+    "topic": "Leadership & Motivation",
+    "question": "What best describes 'Reward Power' in management context?",
+    "answers": {
+      "1": "Ability to marshal resources to get things done.",
+      "2": "Power resulting from specialized information or expertise.",
+      "3": "Power from authority to reward subordinates.",
+      "4": "Ability to monitor one’s and others’ emotions and use this information to guide behavior."
+    },
+    "correct_answer": 3,
+    "explanation": "'Reward Power' means: Power from authority to reward subordinates..",
+    "difficulty": "medium",
+    "id": "Q118"
+  },
+  {
+    "topic": "Leadership & Motivation",
+    "question": "What best describes 'Coercive Power' in management context?",
+    "answers": {
+      "1": "Power from authority to punish subordinates.",
+      "2": "Power resulting from specialized information or expertise.",
+      "3": "Inspires employees to pursue organizational goals over self-interests.",
+      "4": "Motivating factors drive satisfaction; hygiene factors prevent dissatisfaction."
+    },
+    "correct_answer": 1,
+    "explanation": "'Coercive Power' means: Power from authority to punish subordinates..",
+    "difficulty": "medium",
+    "id": "Q119"
+  },
+  {
+    "topic": "Leadership & Motivation",
+    "question": "What best describes 'Leadership' in management context?",
+    "answers": {
+      "1": "People seek fairness in social exchanges.",
+      "2": "Ability to influence employees to voluntarily pursue organizational goals.",
+      "3": "Power resulting from managerial position in the hierarchy.",
+      "4": "Power derived from personal attraction."
+    },
+    "correct_answer": 2,
+    "explanation": "'Leadership' means: Ability to influence employees to voluntarily pursue organizational goals..",
+    "difficulty": "medium",
+    "id": "Q120"
+  },
+  {
+    "topic": "Leadership & Motivation",
+    "question": "What best describes 'Herzberg’s Two-Factor Theory' in management context?",
+    "answers": {
+      "1": "Motivating factors drive satisfaction; hygiene factors prevent dissatisfaction.",
+      "2": "Power from authority to reward subordinates.",
+      "3": "Power from authority to punish subordinates.",
+      "4": "Ability to monitor one’s and others’ emotions and use this information to guide behavior."
+    },
+    "correct_answer": 1,
+    "explanation": "'Herzberg’s Two-Factor Theory' means: Motivating factors drive satisfaction; hygiene factors prevent dissatisfaction..",
+    "difficulty": "medium",
+    "id": "Q121"
+  },
+  {
+    "topic": "Leadership & Motivation",
+    "question": "What best describes 'Herzberg’s Two-Factor Theory' in management context?",
+    "answers": {
+      "1": "People seek fairness in social exchanges.",
+      "2": "Power from authority to reward subordinates.",
+      "3": "Motivating factors drive satisfaction; hygiene factors prevent dissatisfaction.",
+      "4": "Power derived from personal attraction."
+    },
+    "correct_answer": 3,
+    "explanation": "'Herzberg’s Two-Factor Theory' means: Motivating factors drive satisfaction; hygiene factors prevent dissatisfaction..",
+    "difficulty": "medium",
+    "id": "Q122"
+  },
+  {
+    "topic": "Leadership & Motivation",
+    "question": "What best describes 'Expert Power' in management context?",
+    "answers": {
+      "1": "People seek fairness in social exchanges.",
+      "2": "People are motivated by five levels of needs: physiological, safety, love, esteem, and self-actualization.",
+      "3": "Specific and challenging goals enhance motivation and performance.",
+      "4": "Power resulting from specialized information or expertise."
+    },
+    "correct_answer": 4,
+    "explanation": "'Expert Power' means: Power resulting from specialized information or expertise..",
+    "difficulty": "medium",
+    "id": "Q123"
+  },
+  {
+    "topic": "Leadership & Motivation",
+    "question": "What best describes 'Equity Theory' in management context?",
+    "answers": {
+      "1": "Power from authority to punish subordinates.",
+      "2": "People seek fairness in social exchanges.",
+      "3": "Ability to influence employees to voluntarily pursue organizational goals.",
+      "4": "Power resulting from specialized information or expertise."
+    },
+    "correct_answer": 2,
+    "explanation": "'Equity Theory' means: People seek fairness in social exchanges..",
+    "difficulty": "medium",
+    "id": "Q124"
+  },
+  {
+    "topic": "Leadership & Motivation",
+    "question": "What best describes 'Reward Power' in management context?",
+    "answers": {
+      "1": "People seek fairness in social exchanges.",
+      "2": "People are motivated by five levels of needs: physiological, safety, love, esteem, and self-actualization.",
+      "3": "Power from authority to reward subordinates.",
+      "4": "Power derived from personal attraction."
+    },
+    "correct_answer": 3,
+    "explanation": "'Reward Power' means: Power from authority to reward subordinates..",
+    "difficulty": "medium",
+    "id": "Q125"
+  },
+  {
+    "topic": "Leadership & Motivation",
+    "question": "What best describes 'Equity Theory' in management context?",
+    "answers": {
+      "1": "Motivation depends on expectancy, instrumentality, and valence.",
+      "2": "Motivating factors drive satisfaction; hygiene factors prevent dissatisfaction.",
+      "3": "Power derived from personal attraction.",
+      "4": "People seek fairness in social exchanges."
+    },
+    "correct_answer": 4,
+    "explanation": "'Equity Theory' means: People seek fairness in social exchanges..",
+    "difficulty": "medium",
+    "id": "Q126"
+  },
+  {
+    "topic": "Leadership & Motivation",
+    "question": "What best describes 'Transactional Leadership' in management context?",
+    "answers": {
+      "1": "Ability to marshal resources to get things done.",
+      "2": "Power derived from personal attraction.",
+      "3": "Clarifies employees’ roles and provides rewards and punishments.",
+      "4": "Power from authority to punish subordinates."
+    },
+    "correct_answer": 3,
+    "explanation": "'Transactional Leadership' means: Clarifies employees’ roles and provides rewards and punishments..",
+    "difficulty": "hard",
+    "id": "Q127"
+  },
+  {
+    "topic": "Leadership & Motivation",
+    "question": "What best describes 'Referent Power' in management context?",
+    "answers": {
+      "1": "People seek fairness in social exchanges.",
+      "2": "Power resulting from specialized information or expertise.",
+      "3": "Power from authority to reward subordinates.",
+      "4": "Power derived from personal attraction."
+    },
+    "correct_answer": 4,
+    "explanation": "'Referent Power' means: Power derived from personal attraction..",
+    "difficulty": "hard",
+    "id": "Q128"
+  },
+  {
+    "topic": "Leadership & Motivation",
+    "question": "What best describes 'Emotional Intelligence' in management context?",
+    "answers": {
+      "1": "Ability to monitor one’s and others’ emotions and use this information to guide behavior.",
+      "2": "Power resulting from managerial position in the hierarchy.",
+      "3": "Motivation depends on expectancy, instrumentality, and valence.",
+      "4": "Motivating factors drive satisfaction; hygiene factors prevent dissatisfaction."
+    },
+    "correct_answer": 1,
+    "explanation": "'Emotional Intelligence' means: Ability to monitor one’s and others’ emotions and use this information to guide behavior..",
+    "difficulty": "hard",
+    "id": "Q129"
+  },
+  {
+    "topic": "Leadership & Motivation",
+    "question": "What best describes 'Legitimate Power' in management context?",
+    "answers": {
+      "1": "Ability to marshal resources to get things done.",
+      "2": "Power resulting from managerial position in the hierarchy.",
+      "3": "Power from authority to punish subordinates.",
+      "4": "Ability to influence employees to voluntarily pursue organizational goals."
+    },
+    "correct_answer": 2,
+    "explanation": "'Legitimate Power' means: Power resulting from managerial position in the hierarchy..",
+    "difficulty": "hard",
+    "id": "Q130"
+  },
+  {
+    "topic": "Leadership & Motivation",
+    "question": "What best describes 'Emotional Intelligence' in management context?",
+    "answers": {
+      "1": "Clarifies employees’ roles and provides rewards and punishments.",
+      "2": "Ability to influence employees to voluntarily pursue organizational goals.",
+      "3": "Ability to monitor one’s and others’ emotions and use this information to guide behavior.",
+      "4": "Motivation depends on expectancy, instrumentality, and valence."
+    },
+    "correct_answer": 3,
+    "explanation": "'Emotional Intelligence' means: Ability to monitor one’s and others’ emotions and use this information to guide behavior..",
+    "difficulty": "hard",
+    "id": "Q131"
+  },
+  {
+    "topic": "Leadership & Motivation",
+    "question": "What best describes 'Herzberg’s Two-Factor Theory' in management context?",
+    "answers": {
+      "1": "Power from authority to punish subordinates.",
+      "2": "Motivating factors drive satisfaction; hygiene factors prevent dissatisfaction.",
+      "3": "Power from authority to reward subordinates.",
+      "4": "Motivation depends on expectancy, instrumentality, and valence."
+    },
+    "correct_answer": 2,
+    "explanation": "'Herzberg’s Two-Factor Theory' means: Motivating factors drive satisfaction; hygiene factors prevent dissatisfaction..",
+    "difficulty": "hard",
+    "id": "Q132"
+  },
+  {
+    "topic": "Leadership & Motivation",
+    "question": "What best describes 'Leadership' in management context?",
+    "answers": {
+      "1": "Ability to influence employees to voluntarily pursue organizational goals.",
+      "2": "Power resulting from specialized information or expertise.",
+      "3": "Power derived from personal attraction.",
+      "4": "Clarifies employees’ roles and provides rewards and punishments."
+    },
+    "correct_answer": 1,
+    "explanation": "'Leadership' means: Ability to influence employees to voluntarily pursue organizational goals..",
+    "difficulty": "hard",
+    "id": "Q133"
+  },
+  {
+    "topic": "Leadership & Motivation",
+    "question": "What best describes 'Maslow’s Hierarchy of Needs' in management context?",
+    "answers": {
+      "1": "Motivating factors drive satisfaction; hygiene factors prevent dissatisfaction.",
+      "2": "Power from authority to reward subordinates.",
+      "3": "Power from authority to punish subordinates.",
+      "4": "People are motivated by five levels of needs: physiological, safety, love, esteem, and self-actualization."
+    },
+    "correct_answer": 4,
+    "explanation": "'Maslow’s Hierarchy of Needs' means: People are motivated by five levels of needs: physiological, safety, love, esteem, and self-actualization..",
+    "difficulty": "hard",
+    "id": "Q134"
+  },
+  {
+    "topic": "Leadership & Motivation",
+    "question": "What best describes 'Coercive Power' in management context?",
+    "answers": {
+      "1": "Ability to marshal resources to get things done.",
+      "2": "Power from authority to punish subordinates.",
+      "3": "Inspires employees to pursue organizational goals over self-interests.",
+      "4": "Ability to influence employees to voluntarily pursue organizational goals."
+    },
+    "correct_answer": 2,
+    "explanation": "'Coercive Power' means: Power from authority to punish subordinates..",
+    "difficulty": "hard",
+    "id": "Q135"
+  },
+  {
+    "topic": "Communication & Teams",
+    "question": "What best describes 'Functional Conflict' in management context?",
+    "answers": {
+      "1": "Constructive conflict that benefits the organization.",
+      "2": "Messages expressed by body language and tone of voice.",
+      "3": "Fully concentrating on what is being said rather than passively hearing.",
+      "4": "Follow the chain of command and are recognized as official."
+    },
+    "correct_answer": 1,
+    "explanation": "'Functional Conflict' means: Constructive conflict that benefits the organization..",
+    "difficulty": "easy",
+    "id": "Q136"
+  },
+  {
+    "topic": "Communication & Teams",
+    "question": "What best describes 'Active Listening' in management context?",
+    "answers": {
+      "1": "Fully concentrating on what is being said rather than passively hearing.",
+      "2": "Process in which one party perceives that its interests are being opposed.",
+      "3": "Obstacles that block or distort understanding between sender and receiver.",
+      "4": "Any disturbance that interferes with transmission of a message."
+    },
+    "correct_answer": 1,
+    "explanation": "'Active Listening' means: Fully concentrating on what is being said rather than passively hearing..",
+    "difficulty": "easy",
+    "id": "Q137"
+  },
+  {
+    "topic": "Communication & Teams",
+    "question": "What best describes 'Group Cohesiveness' in management context?",
+    "answers": {
+      "1": "Tendency of a group to stick together.",
+      "2": "Any disturbance that interferes with transmission of a message.",
+      "3": "Obstacles that block or distort understanding between sender and receiver.",
+      "4": "Messages expressed by body language and tone of voice."
+    },
+    "correct_answer": 1,
+    "explanation": "'Group Cohesiveness' means: Tendency of a group to stick together..",
+    "difficulty": "easy",
+    "id": "Q138"
+  },
+  {
+    "topic": "Communication & Teams",
+    "question": "What best describes 'Functional Conflict' in management context?",
+    "answers": {
+      "1": "Interpreting and trying to make sense of the message.",
+      "2": "Constructive conflict that benefits the organization.",
+      "3": "Receiver expresses reaction to the sender’s message.",
+      "4": "Follow the chain of command and are recognized as official."
+    },
+    "correct_answer": 2,
+    "explanation": "'Functional Conflict' means: Constructive conflict that benefits the organization..",
+    "difficulty": "easy",
+    "id": "Q139"
+  },
+  {
+    "topic": "Communication & Teams",
+    "question": "What best describes 'Encoding' in management context?",
+    "answers": {
+      "1": "The transfer of information and understanding from one person to another.",
+      "2": "Process in which one party perceives that its interests are being opposed.",
+      "3": "Group whose members work intensely on a specific, common goal.",
+      "4": "Translating a message into understandable symbols or language."
+    },
+    "correct_answer": 4,
+    "explanation": "'Encoding' means: Translating a message into understandable symbols or language..",
+    "difficulty": "easy",
+    "id": "Q140"
+  },
+  {
+    "topic": "Communication & Teams",
+    "question": "What best describes 'Nonverbal Communication' in management context?",
+    "answers": {
+      "1": "Fully concentrating on what is being said rather than passively hearing.",
+      "2": "Messages expressed by body language and tone of voice.",
+      "3": "Any disturbance that interferes with transmission of a message.",
+      "4": "Obstacles that block or distort understanding between sender and receiver."
+    },
+    "correct_answer": 2,
+    "explanation": "'Nonverbal Communication' means: Messages expressed by body language and tone of voice..",
+    "difficulty": "easy",
+    "id": "Q141"
+  },
+  {
+    "topic": "Communication & Teams",
+    "question": "What best describes 'Team' in management context?",
+    "answers": {
+      "1": "Any disturbance that interferes with transmission of a message.",
+      "2": "Develop outside the formal structure and do not follow chain of command.",
+      "3": "The transfer of information and understanding from one person to another.",
+      "4": "Group whose members work intensely on a specific, common goal."
+    },
+    "correct_answer": 4,
+    "explanation": "'Team' means: Group whose members work intensely on a specific, common goal..",
+    "difficulty": "easy",
+    "id": "Q142"
+  },
+  {
+    "topic": "Communication & Teams",
+    "question": "What best describes 'Barriers to Communication' in management context?",
+    "answers": {
+      "1": "Develop outside the formal structure and do not follow chain of command.",
+      "2": "Group whose members work intensely on a specific, common goal.",
+      "3": "Obstacles that block or distort understanding between sender and receiver.",
+      "4": "Process in which one party perceives that its interests are being opposed."
+    },
+    "correct_answer": 3,
+    "explanation": "'Barriers to Communication' means: Obstacles that block or distort understanding between sender and receiver..",
+    "difficulty": "easy",
+    "id": "Q143"
+  },
+  {
+    "topic": "Communication & Teams",
+    "question": "What best describes 'Decoding' in management context?",
+    "answers": {
+      "1": "Interpreting and trying to make sense of the message.",
+      "2": "Develop outside the formal structure and do not follow chain of command.",
+      "3": "Follow the chain of command and are recognized as official.",
+      "4": "Fully concentrating on what is being said rather than passively hearing."
+    },
+    "correct_answer": 1,
+    "explanation": "'Decoding' means: Interpreting and trying to make sense of the message..",
+    "difficulty": "easy",
+    "id": "Q144"
+  },
+  {
+    "topic": "Communication & Teams",
+    "question": "What best describes 'Active Listening' in management context?",
+    "answers": {
+      "1": "Follow the chain of command and are recognized as official.",
+      "2": "Fully concentrating on what is being said rather than passively hearing.",
+      "3": "Conflict that hinders the organization’s performance.",
+      "4": "Constructive conflict that benefits the organization."
+    },
+    "correct_answer": 2,
+    "explanation": "'Active Listening' means: Fully concentrating on what is being said rather than passively hearing..",
+    "difficulty": "medium",
+    "id": "Q145"
+  },
+  {
+    "topic": "Communication & Teams",
+    "question": "What best describes 'Group Cohesiveness' in management context?",
+    "answers": {
+      "1": "Tendency of a group to stick together.",
+      "2": "The transfer of information and understanding from one person to another.",
+      "3": "Interpreting and trying to make sense of the message.",
+      "4": "Messages expressed by body language and tone of voice."
+    },
+    "correct_answer": 1,
+    "explanation": "'Group Cohesiveness' means: Tendency of a group to stick together..",
+    "difficulty": "medium",
+    "id": "Q146"
+  },
+  {
+    "topic": "Communication & Teams",
+    "question": "What best describes 'Conflict' in management context?",
+    "answers": {
+      "1": "Group whose members work intensely on a specific, common goal.",
+      "2": "Process in which one party perceives that its interests are being opposed.",
+      "3": "Fully concentrating on what is being said rather than passively hearing.",
+      "4": "Interpreting and trying to make sense of the message."
+    },
+    "correct_answer": 2,
+    "explanation": "'Conflict' means: Process in which one party perceives that its interests are being opposed..",
+    "difficulty": "medium",
+    "id": "Q147"
+  },
+  {
+    "topic": "Communication & Teams",
+    "question": "What best describes 'Communication' in management context?",
+    "answers": {
+      "1": "Receiver expresses reaction to the sender’s message.",
+      "2": "Interpreting and trying to make sense of the message.",
+      "3": "The transfer of information and understanding from one person to another.",
+      "4": "Process in which one party perceives that its interests are being opposed."
+    },
+    "correct_answer": 3,
+    "explanation": "'Communication' means: The transfer of information and understanding from one person to another..",
+    "difficulty": "medium",
+    "id": "Q148"
+  },
+  {
+    "topic": "Communication & Teams",
+    "question": "What best describes 'Conflict' in management context?",
+    "answers": {
+      "1": "Process in which one party perceives that its interests are being opposed.",
+      "2": "Translating a message into understandable symbols or language.",
+      "3": "Obstacles that block or distort understanding between sender and receiver.",
+      "4": "Any disturbance that interferes with transmission of a message."
+    },
+    "correct_answer": 1,
+    "explanation": "'Conflict' means: Process in which one party perceives that its interests are being opposed..",
+    "difficulty": "medium",
+    "id": "Q149"
+  },
+  {
+    "topic": "Communication & Teams",
+    "question": "What best describes 'Team' in management context?",
+    "answers": {
+      "1": "Group whose members work intensely on a specific, common goal.",
+      "2": "Process in which one party perceives that its interests are being opposed.",
+      "3": "Translating a message into understandable symbols or language.",
+      "4": "Conflict that hinders the organization’s performance."
+    },
+    "correct_answer": 1,
+    "explanation": "'Team' means: Group whose members work intensely on a specific, common goal..",
+    "difficulty": "medium",
+    "id": "Q150"
+  },
+  {
+    "topic": "Communication & Teams",
+    "question": "What best describes 'Barriers to Communication' in management context?",
+    "answers": {
+      "1": "Receiver expresses reaction to the sender’s message.",
+      "2": "Any disturbance that interferes with transmission of a message.",
+      "3": "Obstacles that block or distort understanding between sender and receiver.",
+      "4": "The transfer of information and understanding from one person to another."
+    },
+    "correct_answer": 3,
+    "explanation": "'Barriers to Communication' means: Obstacles that block or distort understanding between sender and receiver..",
+    "difficulty": "medium",
+    "id": "Q151"
+  },
+  {
+    "topic": "Communication & Teams",
+    "question": "What best describes 'Active Listening' in management context?",
+    "answers": {
+      "1": "Group whose members work intensely on a specific, common goal.",
+      "2": "Develop outside the formal structure and do not follow chain of command.",
+      "3": "Translating a message into understandable symbols or language.",
+      "4": "Fully concentrating on what is being said rather than passively hearing."
+    },
+    "correct_answer": 4,
+    "explanation": "'Active Listening' means: Fully concentrating on what is being said rather than passively hearing..",
+    "difficulty": "medium",
+    "id": "Q152"
+  },
+  {
+    "topic": "Communication & Teams",
+    "question": "What best describes 'Communication' in management context?",
+    "answers": {
+      "1": "Constructive conflict that benefits the organization.",
+      "2": "Interpreting and trying to make sense of the message.",
+      "3": "Group whose members work intensely on a specific, common goal.",
+      "4": "The transfer of information and understanding from one person to another."
+    },
+    "correct_answer": 4,
+    "explanation": "'Communication' means: The transfer of information and understanding from one person to another..",
+    "difficulty": "medium",
+    "id": "Q153"
+  },
+  {
+    "topic": "Communication & Teams",
+    "question": "What best describes 'Barriers to Communication' in management context?",
+    "answers": {
+      "1": "Fully concentrating on what is being said rather than passively hearing.",
+      "2": "The transfer of information and understanding from one person to another.",
+      "3": "Translating a message into understandable symbols or language.",
+      "4": "Obstacles that block or distort understanding between sender and receiver."
+    },
+    "correct_answer": 4,
+    "explanation": "'Barriers to Communication' means: Obstacles that block or distort understanding between sender and receiver..",
+    "difficulty": "hard",
+    "id": "Q154"
+  },
+  {
+    "topic": "Communication & Teams",
+    "question": "What best describes 'Conflict' in management context?",
+    "answers": {
+      "1": "Process in which one party perceives that its interests are being opposed.",
+      "2": "Translating a message into understandable symbols or language.",
+      "3": "The transfer of information and understanding from one person to another.",
+      "4": "Constructive conflict that benefits the organization."
+    },
+    "correct_answer": 1,
+    "explanation": "'Conflict' means: Process in which one party perceives that its interests are being opposed..",
+    "difficulty": "hard",
+    "id": "Q155"
+  },
+  {
+    "topic": "Communication & Teams",
+    "question": "What best describes 'Decoding' in management context?",
+    "answers": {
+      "1": "The transfer of information and understanding from one person to another.",
+      "2": "Tendency of a group to stick together.",
+      "3": "Interpreting and trying to make sense of the message.",
+      "4": "Follow the chain of command and are recognized as official."
+    },
+    "correct_answer": 3,
+    "explanation": "'Decoding' means: Interpreting and trying to make sense of the message..",
+    "difficulty": "hard",
+    "id": "Q156"
+  },
+  {
+    "topic": "Communication & Teams",
+    "question": "What best describes 'Feedback' in management context?",
+    "answers": {
+      "1": "Messages expressed by body language and tone of voice.",
+      "2": "Translating a message into understandable symbols or language.",
+      "3": "Receiver expresses reaction to the sender’s message.",
+      "4": "Any disturbance that interferes with transmission of a message."
+    },
+    "correct_answer": 3,
+    "explanation": "'Feedback' means: Receiver expresses reaction to the sender’s message..",
+    "difficulty": "hard",
+    "id": "Q157"
+  },
+  {
+    "topic": "Communication & Teams",
+    "question": "What best describes 'Team' in management context?",
+    "answers": {
+      "1": "Constructive conflict that benefits the organization.",
+      "2": "Fully concentrating on what is being said rather than passively hearing.",
+      "3": "Group whose members work intensely on a specific, common goal.",
+      "4": "Tendency of a group to stick together."
+    },
+    "correct_answer": 3,
+    "explanation": "'Team' means: Group whose members work intensely on a specific, common goal..",
+    "difficulty": "hard",
+    "id": "Q158"
+  },
+  {
+    "topic": "Communication & Teams",
+    "question": "What best describes 'Encoding' in management context?",
+    "answers": {
+      "1": "Develop outside the formal structure and do not follow chain of command.",
+      "2": "Conflict that hinders the organization’s performance.",
+      "3": "Follow the chain of command and are recognized as official.",
+      "4": "Translating a message into understandable symbols or language."
+    },
+    "correct_answer": 4,
+    "explanation": "'Encoding' means: Translating a message into understandable symbols or language..",
+    "difficulty": "hard",
+    "id": "Q159"
+  },
+  {
+    "topic": "Communication & Teams",
+    "question": "What best describes 'Informal Communication Channels' in management context?",
+    "answers": {
+      "1": "Any disturbance that interferes with transmission of a message.",
+      "2": "Messages expressed by body language and tone of voice.",
+      "3": "Tendency of a group to stick together.",
+      "4": "Develop outside the formal structure and do not follow chain of command."
+    },
+    "correct_answer": 4,
+    "explanation": "'Informal Communication Channels' means: Develop outside the formal structure and do not follow chain of command..",
+    "difficulty": "hard",
+    "id": "Q160"
+  },
+  {
+    "topic": "Communication & Teams",
+    "question": "What best describes 'Encoding' in management context?",
+    "answers": {
+      "1": "Receiver expresses reaction to the sender’s message.",
+      "2": "Translating a message into understandable symbols or language.",
+      "3": "Interpreting and trying to make sense of the message.",
+      "4": "Fully concentrating on what is being said rather than passively hearing."
+    },
+    "correct_answer": 2,
+    "explanation": "'Encoding' means: Translating a message into understandable symbols or language..",
+    "difficulty": "hard",
+    "id": "Q161"
+  },
+  {
+    "topic": "Communication & Teams",
+    "question": "What best describes 'Nonverbal Communication' in management context?",
+    "answers": {
+      "1": "Follow the chain of command and are recognized as official.",
+      "2": "Any disturbance that interferes with transmission of a message.",
+      "3": "The transfer of information and understanding from one person to another.",
+      "4": "Messages expressed by body language and tone of voice."
+    },
+    "correct_answer": 4,
+    "explanation": "'Nonverbal Communication' means: Messages expressed by body language and tone of voice..",
+    "difficulty": "hard",
+    "id": "Q162"
+  },
+  {
+    "topic": "Control & Innovation",
+    "question": "What best describes 'Change Management' in management context?",
+    "answers": {
+      "1": "Process of helping employees adapt to organizational change.",
+      "2": "Comparing performance with that of high-performing organizations.",
+      "3": "Innovations that create new markets and disrupt existing ones.",
+      "4": "Three stages: unfreezing, changing, and refreezing."
+    },
+    "correct_answer": 1,
+    "explanation": "'Change Management' means: Process of helping employees adapt to organizational change..",
+    "difficulty": "easy",
+    "id": "Q163"
+  },
+  {
+    "topic": "Control & Innovation",
+    "question": "What best describes 'Total Quality Management (TQM)' in management context?",
+    "answers": {
+      "1": "Innovations that create new markets and disrupt existing ones.",
+      "2": "Concept that efficiency improves with experience.",
+      "3": "Comprehensive approach dedicated to continuous quality improvement, training, and customer satisfaction.",
+      "4": "Gives top managers a fast but comprehensive view of the organization via four indicators."
+    },
+    "correct_answer": 3,
+    "explanation": "'Total Quality Management (TQM)' means: Comprehensive approach dedicated to continuous quality improvement, training, and customer satisfaction..",
+    "difficulty": "easy",
+    "id": "Q164"
+  },
+  {
+    "topic": "Control & Innovation",
+    "question": "What best describes 'Benchmarking' in management context?",
+    "answers": {
+      "1": "Set of techniques for implementing planned change to improve effectiveness.",
+      "2": "Ongoing, small, incremental improvements in all parts of an organization.",
+      "3": "Comparing performance with that of high-performing organizations.",
+      "4": "Process of creating new ideas and converting them into useful applications."
+    },
+    "correct_answer": 3,
+    "explanation": "'Benchmarking' means: Comparing performance with that of high-performing organizations..",
+    "difficulty": "easy",
+    "id": "Q165"
+  },
+  {
+    "topic": "Control & Innovation",
+    "question": "What best describes 'Control' in management context?",
+    "answers": {
+      "1": "Innovations that create new markets and disrupt existing ones.",
+      "2": "Emotional or behavioral response to threats of change.",
+      "3": "Process of creating new ideas and converting them into useful applications.",
+      "4": "Monitoring performance, comparing it with goals, and taking corrective action."
+    },
+    "correct_answer": 4,
+    "explanation": "'Control' means: Monitoring performance, comparing it with goals, and taking corrective action..",
+    "difficulty": "easy",
+    "id": "Q166"
+  },
+  {
+    "topic": "Control & Innovation",
+    "question": "What best describes 'Innovation' in management context?",
+    "answers": {
+      "1": "Comprehensive approach dedicated to continuous quality improvement, training, and customer satisfaction.",
+      "2": "Process of creating new ideas and converting them into useful applications.",
+      "3": "Monitoring performance, comparing it with goals, and taking corrective action.",
+      "4": "Establish standards, measure performance, compare with standards, and take corrective action."
+    },
+    "correct_answer": 2,
+    "explanation": "'Innovation' means: Process of creating new ideas and converting them into useful applications..",
+    "difficulty": "easy",
+    "id": "Q167"
+  },
+  {
+    "topic": "Control & Innovation",
+    "question": "What best describes 'Control' in management context?",
+    "answers": {
+      "1": "Three stages: unfreezing, changing, and refreezing.",
+      "2": "Concept that efficiency improves with experience.",
+      "3": "Monitoring performance, comparing it with goals, and taking corrective action.",
+      "4": "Process of taking risks to create a new enterprise."
+    },
+    "correct_answer": 3,
+    "explanation": "'Control' means: Monitoring performance, comparing it with goals, and taking corrective action..",
+    "difficulty": "easy",
+    "id": "Q168"
+  },
+  {
+    "topic": "Control & Innovation",
+    "question": "What best describes 'Disruptive Innovation' in management context?",
+    "answers": {
+      "1": "Comprehensive approach dedicated to continuous quality improvement, training, and customer satisfaction.",
+      "2": "Process of creating new ideas and converting them into useful applications.",
+      "3": "Innovations that create new markets and disrupt existing ones.",
+      "4": "Monitoring performance, comparing it with goals, and taking corrective action."
+    },
+    "correct_answer": 3,
+    "explanation": "'Disruptive Innovation' means: Innovations that create new markets and disrupt existing ones..",
+    "difficulty": "easy",
+    "id": "Q169"
+  },
+  {
+    "topic": "Control & Innovation",
+    "question": "What best describes 'Continuous Improvement' in management context?",
+    "answers": {
+      "1": "Establish standards, measure performance, compare with standards, and take corrective action.",
+      "2": "Ongoing, small, incremental improvements in all parts of an organization.",
+      "3": "Process of creating new ideas and converting them into useful applications.",
+      "4": "Concept that efficiency improves with experience."
+    },
+    "correct_answer": 2,
+    "explanation": "'Continuous Improvement' means: Ongoing, small, incremental improvements in all parts of an organization..",
+    "difficulty": "easy",
+    "id": "Q170"
+  },
+  {
+    "topic": "Control & Innovation",
+    "question": "What best describes 'Continuous Improvement' in management context?",
+    "answers": {
+      "1": "Comparing performance with that of high-performing organizations.",
+      "2": "Ongoing, small, incremental improvements in all parts of an organization.",
+      "3": "Monitoring performance, comparing it with goals, and taking corrective action.",
+      "4": "Three stages: unfreezing, changing, and refreezing."
+    },
+    "correct_answer": 2,
+    "explanation": "'Continuous Improvement' means: Ongoing, small, incremental improvements in all parts of an organization..",
+    "difficulty": "easy",
+    "id": "Q171"
+  },
+  {
+    "topic": "Control & Innovation",
+    "question": "What best describes 'Innovation' in management context?",
+    "answers": {
+      "1": "Process of creating new ideas and converting them into useful applications.",
+      "2": "Philosophy of continuous, incremental improvement.",
+      "3": "Ongoing, small, incremental improvements in all parts of an organization.",
+      "4": "Comparing performance with that of high-performing organizations."
+    },
+    "correct_answer": 1,
+    "explanation": "'Innovation' means: Process of creating new ideas and converting them into useful applications..",
+    "difficulty": "medium",
+    "id": "Q172"
+  },
+  {
+    "topic": "Control & Innovation",
+    "question": "What best describes 'Resistance to Change' in management context?",
+    "answers": {
+      "1": "Innovations that create new markets and disrupt existing ones.",
+      "2": "Emotional or behavioral response to threats of change.",
+      "3": "Philosophy of continuous, incremental improvement.",
+      "4": "Three stages: unfreezing, changing, and refreezing."
+    },
+    "correct_answer": 2,
+    "explanation": "'Resistance to Change' means: Emotional or behavioral response to threats of change..",
+    "difficulty": "medium",
+    "id": "Q173"
+  },
+  {
+    "topic": "Control & Innovation",
+    "question": "What best describes 'Control Process Steps' in management context?",
+    "answers": {
+      "1": "Establish standards, measure performance, compare with standards, and take corrective action.",
+      "2": "Set of techniques for implementing planned change to improve effectiveness.",
+      "3": "Philosophy of continuous, incremental improvement.",
+      "4": "Emotional or behavioral response to threats of change."
+    },
+    "correct_answer": 1,
+    "explanation": "'Control Process Steps' means: Establish standards, measure performance, compare with standards, and take corrective action..",
+    "difficulty": "medium",
+    "id": "Q174"
+  },
+  {
+    "topic": "Control & Innovation",
+    "question": "What best describes 'Organizational Development (OD)' in management context?",
+    "answers": {
+      "1": "Concept that efficiency improves with experience.",
+      "2": "Set of techniques for implementing planned change to improve effectiveness.",
+      "3": "Ongoing, small, incremental improvements in all parts of an organization.",
+      "4": "Process of taking risks to create a new enterprise."
+    },
+    "correct_answer": 2,
+    "explanation": "'Organizational Development (OD)' means: Set of techniques for implementing planned change to improve effectiveness..",
+    "difficulty": "medium",
+    "id": "Q175"
+  },
+  {
+    "topic": "Control & Innovation",
+    "question": "What best describes 'Total Quality Management (TQM)' in management context?",
+    "answers": {
+      "1": "Set of techniques for implementing planned change to improve effectiveness.",
+      "2": "Comprehensive approach dedicated to continuous quality improvement, training, and customer satisfaction.",
+      "3": "Philosophy of continuous, incremental improvement.",
+      "4": "Three stages: unfreezing, changing, and refreezing."
+    },
+    "correct_answer": 2,
+    "explanation": "'Total Quality Management (TQM)' means: Comprehensive approach dedicated to continuous quality improvement, training, and customer satisfaction..",
+    "difficulty": "medium",
+    "id": "Q176"
+  },
+  {
+    "topic": "Control & Innovation",
+    "question": "What best describes 'Learning Curve' in management context?",
+    "answers": {
+      "1": "Comparing performance with that of high-performing organizations.",
+      "2": "Concept that efficiency improves with experience.",
+      "3": "Process of helping employees adapt to organizational change.",
+      "4": "Innovations that create new markets and disrupt existing ones."
+    },
+    "correct_answer": 2,
+    "explanation": "'Learning Curve' means: Concept that efficiency improves with experience..",
+    "difficulty": "medium",
+    "id": "Q177"
+  },
+  {
+    "topic": "Control & Innovation",
+    "question": "What best describes 'Control Process Steps' in management context?",
+    "answers": {
+      "1": "Set of techniques for implementing planned change to improve effectiveness.",
+      "2": "Comparing performance with that of high-performing organizations.",
+      "3": "Gives top managers a fast but comprehensive view of the organization via four indicators.",
+      "4": "Establish standards, measure performance, compare with standards, and take corrective action."
+    },
+    "correct_answer": 4,
+    "explanation": "'Control Process Steps' means: Establish standards, measure performance, compare with standards, and take corrective action..",
+    "difficulty": "medium",
+    "id": "Q178"
+  },
+  {
+    "topic": "Control & Innovation",
+    "question": "What best describes 'Control Process Steps' in management context?",
+    "answers": {
+      "1": "Process of helping employees adapt to organizational change.",
+      "2": "Philosophy of continuous, incremental improvement.",
+      "3": "Process of taking risks to create a new enterprise.",
+      "4": "Establish standards, measure performance, compare with standards, and take corrective action."
+    },
+    "correct_answer": 4,
+    "explanation": "'Control Process Steps' means: Establish standards, measure performance, compare with standards, and take corrective action..",
+    "difficulty": "medium",
+    "id": "Q179"
+  },
+  {
+    "topic": "Control & Innovation",
+    "question": "What best describes 'Organizational Development (OD)' in management context?",
+    "answers": {
+      "1": "Comparing performance with that of high-performing organizations.",
+      "2": "Set of techniques for implementing planned change to improve effectiveness.",
+      "3": "Emotional or behavioral response to threats of change.",
+      "4": "Monitoring performance, comparing it with goals, and taking corrective action."
+    },
+    "correct_answer": 2,
+    "explanation": "'Organizational Development (OD)' means: Set of techniques for implementing planned change to improve effectiveness..",
+    "difficulty": "medium",
+    "id": "Q180"
+  },
+  {
+    "topic": "Control & Innovation",
+    "question": "What best describes 'Organizational Development (OD)' in management context?",
+    "answers": {
+      "1": "Gives top managers a fast but comprehensive view of the organization via four indicators.",
+      "2": "Comprehensive approach dedicated to continuous quality improvement, training, and customer satisfaction.",
+      "3": "Set of techniques for implementing planned change to improve effectiveness.",
+      "4": "Comparing performance with that of high-performing organizations."
+    },
+    "correct_answer": 3,
+    "explanation": "'Organizational Development (OD)' means: Set of techniques for implementing planned change to improve effectiveness..",
+    "difficulty": "hard",
+    "id": "Q181"
+  },
+  {
+    "topic": "Control & Innovation",
+    "question": "What best describes 'Change Management' in management context?",
+    "answers": {
+      "1": "Emotional or behavioral response to threats of change.",
+      "2": "Concept that efficiency improves with experience.",
+      "3": "Three stages: unfreezing, changing, and refreezing.",
+      "4": "Process of helping employees adapt to organizational change."
+    },
+    "correct_answer": 4,
+    "explanation": "'Change Management' means: Process of helping employees adapt to organizational change..",
+    "difficulty": "hard",
+    "id": "Q182"
+  },
+  {
+    "topic": "Control & Innovation",
+    "question": "What best describes 'Disruptive Innovation' in management context?",
+    "answers": {
+      "1": "Establish standards, measure performance, compare with standards, and take corrective action.",
+      "2": "Ongoing, small, incremental improvements in all parts of an organization.",
+      "3": "Comparing performance with that of high-performing organizations.",
+      "4": "Innovations that create new markets and disrupt existing ones."
+    },
+    "correct_answer": 4,
+    "explanation": "'Disruptive Innovation' means: Innovations that create new markets and disrupt existing ones..",
+    "difficulty": "hard",
+    "id": "Q183"
+  },
+  {
+    "topic": "Control & Innovation",
+    "question": "What best describes 'Control' in management context?",
+    "answers": {
+      "1": "Gives top managers a fast but comprehensive view of the organization via four indicators.",
+      "2": "Monitoring performance, comparing it with goals, and taking corrective action.",
+      "3": "Comparing performance with that of high-performing organizations.",
+      "4": "Process of creating new ideas and converting them into useful applications."
+    },
+    "correct_answer": 2,
+    "explanation": "'Control' means: Monitoring performance, comparing it with goals, and taking corrective action..",
+    "difficulty": "hard",
+    "id": "Q184"
+  },
+  {
+    "topic": "Control & Innovation",
+    "question": "What best describes 'Control Process Steps' in management context?",
+    "answers": {
+      "1": "Concept that efficiency improves with experience.",
+      "2": "Comparing performance with that of high-performing organizations.",
+      "3": "Establish standards, measure performance, compare with standards, and take corrective action.",
+      "4": "Process of helping employees adapt to organizational change."
+    },
+    "correct_answer": 3,
+    "explanation": "'Control Process Steps' means: Establish standards, measure performance, compare with standards, and take corrective action..",
+    "difficulty": "hard",
+    "id": "Q185"
+  },
+  {
+    "topic": "Control & Innovation",
+    "question": "What best describes 'Resistance to Change' in management context?",
+    "answers": {
+      "1": "Comprehensive approach dedicated to continuous quality improvement, training, and customer satisfaction.",
+      "2": "Philosophy of continuous, incremental improvement.",
+      "3": "Process of taking risks to create a new enterprise.",
+      "4": "Emotional or behavioral response to threats of change."
+    },
+    "correct_answer": 4,
+    "explanation": "'Resistance to Change' means: Emotional or behavioral response to threats of change..",
+    "difficulty": "hard",
+    "id": "Q186"
+  },
+  {
+    "topic": "Control & Innovation",
+    "question": "What best describes 'Benchmarking' in management context?",
+    "answers": {
+      "1": "Process of helping employees adapt to organizational change.",
+      "2": "Philosophy of continuous, incremental improvement.",
+      "3": "Process of taking risks to create a new enterprise.",
+      "4": "Comparing performance with that of high-performing organizations."
+    },
+    "correct_answer": 4,
+    "explanation": "'Benchmarking' means: Comparing performance with that of high-performing organizations..",
+    "difficulty": "hard",
+    "id": "Q187"
+  },
+  {
+    "topic": "Control & Innovation",
+    "question": "What best describes 'Disruptive Innovation' in management context?",
+    "answers": {
+      "1": "Set of techniques for implementing planned change to improve effectiveness.",
+      "2": "Philosophy of continuous, incremental improvement.",
+      "3": "Emotional or behavioral response to threats of change.",
+      "4": "Innovations that create new markets and disrupt existing ones."
+    },
+    "correct_answer": 4,
+    "explanation": "'Disruptive Innovation' means: Innovations that create new markets and disrupt existing ones..",
+    "difficulty": "hard",
+    "id": "Q188"
+  },
+  {
+    "topic": "Control & Innovation",
+    "question": "What best describes 'Total Quality Management (TQM)' in management context?",
+    "answers": {
+      "1": "Monitoring performance, comparing it with goals, and taking corrective action.",
+      "2": "Establish standards, measure performance, compare with standards, and take corrective action.",
+      "3": "Comprehensive approach dedicated to continuous quality improvement, training, and customer satisfaction.",
+      "4": "Comparing performance with that of high-performing organizations."
+    },
+    "correct_answer": 3,
+    "explanation": "'Total Quality Management (TQM)' means: Comprehensive approach dedicated to continuous quality improvement, training, and customer satisfaction..",
+    "difficulty": "hard",
+    "id": "Q189"
+  },
+  {
+    "topic": "Leadership & Motivation",
+    "question": "What best describes 'Leadership' in management context?",
+    "answers": {
+      "1": "Motivation depends on expectancy, instrumentality, and valence.",
+      "2": "Ability to influence employees to voluntarily pursue organizational goals.",
+      "3": "Clarifies employees’ roles and provides rewards and punishments.",
+      "4": "Motivating factors drive satisfaction; hygiene factors prevent dissatisfaction."
+    },
+    "correct_answer": 2,
+    "explanation": "'Leadership' means: Ability to influence employees to voluntarily pursue organizational goals..",
+    "difficulty": "medium",
+    "id": "Q190"
+  },
+  {
+    "topic": "Organizational Structure & Culture",
+    "question": "What best describes 'Organizational Structure' in management context?",
+    "answers": {
+      "1": "Degree to which decision-making is distributed throughout the organization.",
+      "2": "Creating or changing an organization’s structure.",
+      "3": "Formal system of task and reporting relationships that coordinate and motivate members.",
+      "4": "Number of people reporting directly to a manager."
+    },
+    "correct_answer": 3,
+    "explanation": "'Organizational Structure' means: Formal system of task and reporting relationships that coordinate and motivate members..",
+    "difficulty": "hard",
+    "id": "Q191"
+  },
+  {
+    "topic": "Control & Innovation",
+    "question": "What best describes 'Benchmarking' in management context?",
+    "answers": {
+      "1": "Process of creating new ideas and converting them into useful applications.",
+      "2": "Ongoing, small, incremental improvements in all parts of an organization.",
+      "3": "Set of techniques for implementing planned change to improve effectiveness.",
+      "4": "Comparing performance with that of high-performing organizations."
+    },
+    "correct_answer": 4,
+    "explanation": "'Benchmarking' means: Comparing performance with that of high-performing organizations..",
+    "difficulty": "easy",
+    "id": "Q192"
+  },
+  {
+    "topic": "Ethics & Corporate Social Responsibility",
+    "question": "What best describes 'Whistleblower' in management context?",
+    "answers": {
+      "1": "Guided by what will result in the greatest good for the greatest number.",
+      "2": "Formal written set of ethical standards guiding an organization’s actions.",
+      "3": "An employee who reports organizational misconduct to the public.",
+      "4": "Relatively permanent and deeply held underlying beliefs and attitudes."
+    },
+    "correct_answer": 3,
+    "explanation": "'Whistleblower' means: An employee who reports organizational misconduct to the public..",
+    "difficulty": "hard",
+    "id": "Q193"
+  },
+  {
+    "topic": "Planning & Decision-Making",
+    "question": "What best describes 'Groupthink' in management context?",
+    "answers": {
+      "1": "Group members’ striving for unanimity overrides their motivation to realistically appraise alternatives.",
+      "2": "Process of involving all managers in the formulation and implementation of strategies.",
+      "3": "Choosing an option that is good enough rather than optimal.",
+      "4": "Setting goals and deciding how to achieve them."
+    },
+    "correct_answer": 1,
+    "explanation": "'Groupthink' means: Group members’ striving for unanimity overrides their motivation to realistically appraise alternatives..",
+    "difficulty": "easy",
+    "id": "Q194"
+  },
+  {
+    "topic": "Control & Innovation",
+    "question": "What best describes 'Total Quality Management (TQM)' in management context?",
+    "answers": {
+      "1": "Process of taking risks to create a new enterprise.",
+      "2": "Establish standards, measure performance, compare with standards, and take corrective action.",
+      "3": "Ongoing, small, incremental improvements in all parts of an organization.",
+      "4": "Comprehensive approach dedicated to continuous quality improvement, training, and customer satisfaction."
+    },
+    "correct_answer": 4,
+    "explanation": "'Total Quality Management (TQM)' means: Comprehensive approach dedicated to continuous quality improvement, training, and customer satisfaction..",
+    "difficulty": "easy",
+    "id": "Q195"
+  },
+  {
+    "topic": "Organizational Structure & Culture",
+    "question": "What best describes 'Flat Organization' in management context?",
+    "answers": {
+      "1": "Creating or changing an organization’s structure.",
+      "2": "Degree to which decision-making is distributed throughout the organization.",
+      "3": "Has few or no levels of middle management between staff and executives.",
+      "4": "External focus and value on flexibility; innovative and adaptable."
+    },
+    "correct_answer": 3,
+    "explanation": "'Flat Organization' means: Has few or no levels of middle management between staff and executives..",
+    "difficulty": "medium",
+    "id": "Q196"
+  },
+  {
+    "topic": "Communication & Teams",
+    "question": "What best describes 'Barriers to Communication' in management context?",
+    "answers": {
+      "1": "Follow the chain of command and are recognized as official.",
+      "2": "Interpreting and trying to make sense of the message.",
+      "3": "Constructive conflict that benefits the organization.",
+      "4": "Obstacles that block or distort understanding between sender and receiver."
+    },
+    "correct_answer": 4,
+    "explanation": "'Barriers to Communication' means: Obstacles that block or distort understanding between sender and receiver..",
+    "difficulty": "hard",
+    "id": "Q197"
+  },
+  {
+    "topic": "Management Basics",
+    "question": "What best describes 'Contingency Viewpoint' in management context?",
+    "answers": {
+      "1": "The ability to think analytically and see the organization as a whole.",
+      "2": "Emphasizes managing the total organization efficiently.",
+      "3": "The ability to work well in cooperation with others.",
+      "4": "Belief that management approach depends on the situation."
+    },
+    "correct_answer": 4,
+    "explanation": "'Contingency Viewpoint' means: Belief that management approach depends on the situation..",
+    "difficulty": "medium",
+    "id": "Q198"
+  },
+  {
+    "topic": "Leadership & Motivation",
+    "question": "What best describes 'Expectancy Theory' in management context?",
+    "answers": {
+      "1": "Power resulting from specialized information or expertise.",
+      "2": "Specific and challenging goals enhance motivation and performance.",
+      "3": "People seek fairness in social exchanges.",
+      "4": "Motivation depends on expectancy, instrumentality, and valence."
+    },
+    "correct_answer": 4,
+    "explanation": "'Expectancy Theory' means: Motivation depends on expectancy, instrumentality, and valence..",
+    "difficulty": "medium",
+    "id": "Q199"
+  },
+  {
+    "topic": "Organizational Structure & Culture",
+    "question": "What best describes 'Hierarchy Culture' in management context?",
+    "answers": {
+      "1": "External focus and value on stability; driven by competition and results.",
+      "2": "Internal focus and value on flexibility; family-type organization.",
+      "3": "Set of shared assumptions that a group holds and that determines how it perceives and reacts to its environment.",
+      "4": "Internal focus and value on stability; structured and controlled environment."
+    },
+    "correct_answer": 4,
+    "explanation": "'Hierarchy Culture' means: Internal focus and value on stability; structured and controlled environment..",
+    "difficulty": "medium",
+    "id": "Q200"
+  }
+]

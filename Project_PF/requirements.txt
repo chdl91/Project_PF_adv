@@ -1,0 +1,15 @@
+# For our Quiz Application to run smoothly, 
+# the following packages need to be imported.
+
+json
+random
+signal
+csv
+datetime
+zoneinfo
+
+# This will automatically load when the application is commanded to run. 
+
+# Naturally, we'll also need the following extensions: 
+python 
+
