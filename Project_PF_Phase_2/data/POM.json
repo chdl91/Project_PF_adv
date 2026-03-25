@@ -1,0 +1,106 @@
+{
+    "schema_version": "2.0",
+    "metadata": {
+        "name": "Principles of Management (POM) - Phase 2 OODB",
+        "description": "Object-oriented database structure for Principles of Management questions",
+        "created_at": "2026-03-25",
+        "version": "2.0"
+    },
+    "objects": {
+        "difficulties": [
+            {
+                "id": "D_E",
+                "name": "easy",
+                "weight": 1.0
+            },
+            {
+                "id": "D_M",
+                "name": "medium",
+                "weight": 2.0
+            },
+            {
+                "id": "D_H",
+                "name": "hard",
+                "weight": 3.0
+            }
+        ],
+        "topics": [
+            {
+                "id": "T_ManagementFundamentals",
+                "name": "Management Fundamentals",
+                "description": "Core concepts and definitions in management",
+                "metadata": {},
+                "created_at": "2026-03-25"
+            },
+            {
+                "id": "T_OrganizationalStructure",
+                "name": "Organizational Structure",
+                "description": "Types and designs of organizational structures",
+                "metadata": {},
+                "created_at": "2026-03-25"
+            },
+            {
+                "id": "T_Leadership",
+                "name": "Leadership",
+                "description": "Leadership theories, styles, and practices",
+                "metadata": {},
+                "created_at": "2026-03-25"
+            },
+            {
+                "id": "T_HumanResources",
+                "name": "Human Resources",
+                "description": "HR practices, motivation, and employee management",
+                "metadata": {},
+                "created_at": "2026-03-25"
+            },
+            {
+                "id": "T_StrategicManagement",
+                "name": "Strategic Management",
+                "description": "Strategic planning and business strategy",
+                "metadata": {},
+                "created_at": "2026-03-25"
+            }
+        ],
+        "questions": [
+            {
+                "id": "POM001",
+                "topic_id": "T_ManagementFundamentals",
+                "text": "What is the primary definition of management?",
+                "difficulty_id": "D_E",
+                "correct_choice_id": "POM001_C1",
+                "explanation": "Management is the process of planning, organizing, leading, and controlling organizational resources to achieve goals.",
+                "tags": [
+                    "definitions",
+                    "fundamentals"
+                ],
+                "created_at": "2026-03-25"
+            }
+        ],
+        "choices": [
+            {
+                "id": "POM001_C1",
+                "question_id": "POM001",
+                "label": "1",
+                "text": "The process of planning, organizing, leading, and controlling organizational resources"
+            },
+            {
+                "id": "POM001_C2",
+                "question_id": "POM001",
+                "label": "2",
+                "text": "Only supervising employees day-to-day"
+            },
+            {
+                "id": "POM001_C3",
+                "question_id": "POM001",
+                "label": "3",
+                "text": "Setting financial budgets exclusively"
+            },
+            {
+                "id": "POM001_C4",
+                "question_id": "POM001",
+                "label": "4",
+                "text": "Managing inventory in warehouses"
+            }
+        ]
+    }
+}

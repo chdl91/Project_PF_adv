@@ -1,0 +1,328 @@
+{
+    "schema_version": "2.0",
+    "metadata": {
+        "name": "Digital Business (DIB) - Phase 2 OODB",
+        "description": "Object-oriented database structure for Digital Business questions",
+        "created_at": "2026-03-25",
+        "version": "2.0"
+    },
+    "objects": {
+        "difficulties": [
+            {
+                "id": "D_E",
+                "name": "easy",
+                "weight": 1.0
+            },
+            {
+                "id": "D_M",
+                "name": "medium",
+                "weight": 2.0
+            },
+            {
+                "id": "D_H",
+                "name": "hard",
+                "weight": 3.0
+            }
+        ],
+        "topics": [
+            {
+                "id": "T_Digitalization",
+                "name": "Digitalization",
+                "description": "Core concepts and terminology related to digitalization, digital transformation, and emerging technologies",
+                "metadata": {},
+                "created_at": "2026-03-25"
+            },
+            {
+                "id": "T_BusinessModelCanvas",
+                "name": "Business Model Canvas",
+                "description": "Business model concepts, canvas elements, and related strategic frameworks",
+                "metadata": {},
+                "created_at": "2026-03-25"
+            },
+            {
+                "id": "T_EnterpriseArchitecture",
+                "name": "Enterprise Architecture",
+                "description": "Enterprise architecture frameworks, components, and management practices",
+                "metadata": {},
+                "created_at": "2026-03-25"
+            },
+            {
+                "id": "T_BusinessIT_Alignment",
+                "name": "Business–IT Alignment",
+                "description": "Strategies and approaches for aligning business and IT objectives",
+                "metadata": {},
+                "created_at": "2026-03-25"
+            },
+            {
+                "id": "T_ITResourceMgmt",
+                "name": "IT Resource Management",
+                "description": "IT service management, ITIL frameworks, and resource optimization",
+                "metadata": {},
+                "created_at": "2026-03-25"
+            }
+        ],
+        "questions": [
+            {
+                "id": "Q001",
+                "topic_id": "T_Digitalization",
+                "text": "What best describes 'Digitalization'?",
+                "difficulty_id": "D_E",
+                "correct_choice_id": "Q001_C2",
+                "explanation": "'Digitalization' is defined as: The broad socio-economic transformation enabled by digital technologies.",
+                "tags": [
+                    "fundamentals",
+                    "definitions"
+                ],
+                "created_at": "2026-03-25"
+            },
+            {
+                "id": "Q002",
+                "topic_id": "T_Digitalization",
+                "text": "What best describes 'Digitization'?",
+                "difficulty_id": "D_H",
+                "correct_choice_id": "Q002_C1",
+                "explanation": "'Digitization' is defined as: Converting analog information into digital form.",
+                "tags": [
+                    "fundamentals",
+                    "definitions"
+                ],
+                "created_at": "2026-03-25"
+            },
+            {
+                "id": "Q003",
+                "topic_id": "T_Digitalization",
+                "text": "What best describes 'Digital transformation'?",
+                "difficulty_id": "D_E",
+                "correct_choice_id": "Q003_C1",
+                "explanation": "'Digital transformation' is defined as: Strategic reinvention of business models, processes, and culture using digital technologies.",
+                "tags": [
+                    "fundamentals",
+                    "strategy"
+                ],
+                "created_at": "2026-03-25"
+            },
+            {
+                "id": "Q016",
+                "topic_id": "T_BusinessModelCanvas",
+                "text": "In the context of Business Model Canvas, which option best matches 'Key Partners'?",
+                "difficulty_id": "D_E",
+                "correct_choice_id": "Q016_C4",
+                "explanation": "'Key Partners' corresponds to: External parties that support the model.",
+                "tags": [
+                    "bmc",
+                    "canvas_elements"
+                ],
+                "created_at": "2026-03-25"
+            },
+            {
+                "id": "Q039",
+                "topic_id": "T_EnterpriseArchitecture",
+                "text": "What best describes 'Enterprise Architecture (EA)'?",
+                "difficulty_id": "D_M",
+                "correct_choice_id": "Q039_C1",
+                "explanation": "'Enterprise Architecture (EA)' is defined as: Coherent principles and models linking strategy, processes, information systems, and infrastructure.",
+                "tags": [
+                    "frameworks",
+                    "definitions"
+                ],
+                "created_at": "2026-03-25"
+            },
+            {
+                "id": "Q059",
+                "topic_id": "T_BusinessIT_Alignment",
+                "text": "In the context of Business–IT Alignment, which option best matches 'Interacting alignment'?",
+                "difficulty_id": "D_E",
+                "correct_choice_id": "Q059_C3",
+                "explanation": "'Interacting alignment' corresponds to: Business and IT co-develop strategy.",
+                "tags": [
+                    "alignment",
+                    "strategy"
+                ],
+                "created_at": "2026-03-25"
+            },
+            {
+                "id": "Q077",
+                "topic_id": "T_ITResourceMgmt",
+                "text": "What best describes 'IT resource management'?",
+                "difficulty_id": "D_H",
+                "correct_choice_id": "Q077_C4",
+                "explanation": "'IT resource management' is defined as: Planning, acquiring, operating, and controlling IT resources and services.",
+                "tags": [
+                    "itil",
+                    "management"
+                ],
+                "created_at": "2026-03-25"
+            }
+        ],
+        "choices": [
+            {
+                "id": "Q001_C1",
+                "question_id": "Q001",
+                "label": "1",
+                "text": "Converting analog information into digital form"
+            },
+            {
+                "id": "Q001_C2",
+                "question_id": "Q001",
+                "label": "2",
+                "text": "The broad socio-economic transformation enabled by digital technologies"
+            },
+            {
+                "id": "Q001_C3",
+                "question_id": "Q001",
+                "label": "3",
+                "text": "A pricing model for SaaS products"
+            },
+            {
+                "id": "Q001_C4",
+                "question_id": "Q001",
+                "label": "4",
+                "text": "A pricing model where a basic version is free and advanced features are paid"
+            },
+            {
+                "id": "Q002_C1",
+                "question_id": "Q002",
+                "label": "1",
+                "text": "Converting analog information into digital form"
+            },
+            {
+                "id": "Q002_C2",
+                "question_id": "Q002",
+                "label": "2",
+                "text": "Creating new digital business models"
+            },
+            {
+                "id": "Q002_C3",
+                "question_id": "Q002",
+                "label": "3",
+                "text": "Building a digital organization"
+            },
+            {
+                "id": "Q002_C4",
+                "question_id": "Q002",
+                "label": "4",
+                "text": "A pricing model where a basic version is free and advanced features are paid"
+            },
+            {
+                "id": "Q003_C1",
+                "question_id": "Q003",
+                "label": "1",
+                "text": "Strategic reinvention of business models, processes, and culture using digital technologies"
+            },
+            {
+                "id": "Q003_C2",
+                "question_id": "Q003",
+                "label": "2",
+                "text": "Converting analog information into digital form"
+            },
+            {
+                "id": "Q003_C3",
+                "question_id": "Q003",
+                "label": "3",
+                "text": "Implementing new software systems"
+            },
+            {
+                "id": "Q003_C4",
+                "question_id": "Q003",
+                "label": "4",
+                "text": "Converting analog information into digital form"
+            },
+            {
+                "id": "Q016_C1",
+                "question_id": "Q016",
+                "label": "1",
+                "text": "Critical assets for operating the model"
+            },
+            {
+                "id": "Q016_C2",
+                "question_id": "Q016",
+                "label": "2",
+                "text": "Important business relationships"
+            },
+            {
+                "id": "Q016_C3",
+                "question_id": "Q016",
+                "label": "3",
+                "text": "Internal business processes"
+            },
+            {
+                "id": "Q016_C4",
+                "question_id": "Q016",
+                "label": "4",
+                "text": "External parties that support the model"
+            },
+            {
+                "id": "Q039_C1",
+                "question_id": "Q039",
+                "label": "1",
+                "text": "Coherent principles and models linking strategy, processes, information systems, and infrastructure"
+            },
+            {
+                "id": "Q039_C2",
+                "question_id": "Q039",
+                "label": "2",
+                "text": "A software application for managing businesses"
+            },
+            {
+                "id": "Q039_C3",
+                "question_id": "Q039",
+                "label": "3",
+                "text": "The structural design of IT systems"
+            },
+            {
+                "id": "Q039_C4",
+                "question_id": "Q039",
+                "label": "4",
+                "text": "Ability of systems to handle growth in load or users"
+            },
+            {
+                "id": "Q059_C1",
+                "question_id": "Q059",
+                "label": "1",
+                "text": "Business strategy drives IT strategy"
+            },
+            {
+                "id": "Q059_C2",
+                "question_id": "Q059",
+                "label": "2",
+                "text": "IT strategy drives business strategy"
+            },
+            {
+                "id": "Q059_C3",
+                "question_id": "Q059",
+                "label": "3",
+                "text": "Business and IT co-develop strategy"
+            },
+            {
+                "id": "Q059_C4",
+                "question_id": "Q059",
+                "label": "4",
+                "text": "Preventing parties from denying their actions or commitments"
+            },
+            {
+                "id": "Q077_C1",
+                "question_id": "Q077",
+                "label": "1",
+                "text": "Maintaining IT systems only"
+            },
+            {
+                "id": "Q077_C2",
+                "question_id": "Q077",
+                "label": "2",
+                "text": "Acquiring hardware exclusively"
+            },
+            {
+                "id": "Q077_C3",
+                "question_id": "Q077",
+                "label": "3",
+                "text": "Managing IT services internally only"
+            },
+            {
+                "id": "Q077_C4",
+                "question_id": "Q077",
+                "label": "4",
+                "text": "Planning, acquiring, operating, and controlling IT resources and services"
+            }
+        ]
+    }
+}
