@@ -52,11 +52,55 @@ This project is intended to:
 
 ## User Stories
 
-### 1. View Pizza Menu
-**As a user, I want to see the pizza menu in the Browser App.**  
-**Description:** The application displays all available pizzas with relevant information.  
-**Inputs:** none  
-**Outputs:** pizza menu displayed (internally: `list[Pizza]`)  
+### 1. View Quiz Menu
+**As a user, I want to be able to choose between Digital Business (DIB) Quizes and Principles of Management (POM) Quizes**  
+**Description:** The application displays a menu and choice of quizes for the user to select
+**Inputs:**  The user can choose between two types of quizes
+**Outputs:** Confirmation of choice (internally calling selected quiz) 
+
+### 2. Select and run a quiz 
+**As a user, I want to be able to quiz my knowledge in DIB or POM**  
+**Description:** The application displays a collection of quiz questions and the a multiple choice selection of answers  
+**Inputs:**  Choice of an answer (Four choices) 
+**Outputs:** Confirmation of choice and correction if incorrect (internally: "list[attempt_answers]) 
+
+### 3. Select the difficulty of quiz 
+**As a user, I want to select the difficulty of the previously selected subject in order to challenge and improve my current knowledge**  
+**Description:** The application displays a menu with three possible difficulties (Easy, Medium and Hard) and a choice for a random selection of questions for the user to select and proceed with
+**Inputs:**  Choice of difficulty option (Three choices plus random choice)
+**Outputs:** Confirmation of choice (internally calling the next step in quiz_setup)
+
+### 4. Select the individual topics within the subject itself
+**As a user, I want to select the topic within the previously selected subject and quiz my knowledge in the selected topics only in order to focus my learning goals and possible weaknesses**  
+**Description:** The application displays available topics within the database in a menu, including a random option of questions 
+**Inputs:**  Choice of a single topic 
+**Outputs:** Confirmation of choice (internally calling the next step in quiz_setup)
+
+### 5. Quit and return to main menu 
+**As a user, I want to able to return to the menu at anytime in order to restart my quiz setup and the quiz itself**  
+**Description:** At all times, during the quiz setup and the quiz attempt itself, the user has the possibility to return to the starting menu
+**Inputs:**  User has a return choice
+**Outputs:** Confirmation of choice (internally, stop attempt and return to )
+
+### 6. Point Counter
+**As a user, I want a point counter/final grade/percentage presented, in order to check my performance.**  
+**Description:** The application displays the results of the finished attempt and shows the score (correct questions out of total), grade and percentage.
+**Inputs:**  internally recognizing the users choice and adding to counter if correct choice has been selected
+**Outputs:** internally calling the results.csv and creating a new entry with achieved score, date, time, final grade and percentage reached 
+
+### 7. Scoreboard (Arcade Format)
+**As a User, I want to be able to see my score in a scoreboard with other local users in order to compare my final attempt score with previous attempts**  
+**Description:** Once an attempt is complete, the user is able to view their score and input a user name into a scoreboard
+**Inputs:**  Username entry ("str" and limited characters, excluding special characters)
+**Outputs:** Confirmation of choice (internally: results.csv)
+
+**Possible improvements**
+
+### 8. Admin Rights
+**As an Admin, I want to be able to add and remove questions, in order to keep the quiz relevant.**  
+**Description:** 
+**Inputs:**  
+**Outputs:** 
 
 ---
 
