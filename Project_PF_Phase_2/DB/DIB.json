@@ -1,0 +1,2802 @@
+[
+  {
+    "topic": "Digitalization",
+    "question": "What best describes 'Digitalization'?",
+    "answers": {
+      "1": "Converting analog information into digital form",
+      "2": "The broad socio-economic transformation enabled by digital technologies",
+      "3": "Strategic reinvention of business models, processes, and culture using digital technologies",
+      "4": "A pricing model where a basic version is free and advanced features are paid"
+    },
+    "correct_answer": 2,
+    "explanation": "'Digitalization' is defined as: The broad socio-economic transformation enabled by digital technologies.",
+    "difficulty": "easy",
+    "id": "Q001"
+  },
+  {
+    "topic": "Digitalization",
+    "question": "What best describes 'Digitization'?",
+    "answers": {
+      "1": "Converting analog information into digital form",
+      "2": "Strategic reinvention of business models, processes, and culture using digital technologies",
+      "3": "Shifting sales/service interactions to digital channels",
+      "4": "A pricing model where a basic version is free and advanced features are paid"
+    },
+    "correct_answer": 1,
+    "explanation": "'Digitization' is defined as: Converting analog information into digital form.",
+    "difficulty": "hard",
+    "id": "Q002"
+  },
+  {
+    "topic": "Digitalization",
+    "question": "What best describes 'Digital transformation'?",
+    "answers": {
+      "1": "Strategic reinvention of business models, processes, and culture using digital technologies",
+      "2": "The broad socio-economic transformation enabled by digital technologies",
+      "3": "Networked physical objects that collect and exchange data",
+      "4": "Converting analog information into digital form"
+    },
+    "correct_answer": 1,
+    "explanation": "'Digital transformation' is defined as: Strategic reinvention of business models, processes, and culture using digital technologies.",
+    "difficulty": "easy",
+    "id": "Q003"
+  },
+  {
+    "topic": "Digitalization",
+    "question": "What best describes 'AI (Artificial Intelligence)'?",
+    "answers": {
+      "1": "Shifting sales/service interactions to digital channels",
+      "2": "A pricing model where a basic version is free and advanced features are paid",
+      "3": "Networked physical objects that collect and exchange data",
+      "4": "Systems that perform tasks requiring human intelligence, such as reasoning and learning"
+    },
+    "correct_answer": 4,
+    "explanation": "'AI (Artificial Intelligence)' is defined as: Systems that perform tasks requiring human intelligence, such as reasoning and learning.",
+    "difficulty": "easy",
+    "id": "Q004"
+  },
+  {
+    "topic": "Digitalization",
+    "question": "What best describes 'IoT (Internet of Things)'?",
+    "answers": {
+      "1": "Software bots that automate structured, repetitive tasks",
+      "2": "Networked physical objects that collect and exchange data",
+      "3": "The broad socio-economic transformation enabled by digital technologies",
+      "4": "Charging customers a recurring fee for ongoing access or services"
+    },
+    "correct_answer": 2,
+    "explanation": "'IoT (Internet of Things)' is defined as: Networked physical objects that collect and exchange data.",
+    "difficulty": "easy",
+    "id": "Q005"
+  },
+  {
+    "topic": "Digitalization",
+    "question": "What best describes 'Robotic process automation'?",
+    "answers": {
+      "1": "Strategic reinvention of business models, processes, and culture using digital technologies",
+      "2": "Software bots that automate structured, repetitive tasks",
+      "3": "Networked physical objects that collect and exchange data",
+      "4": "Systems that perform tasks requiring human intelligence, such as reasoning and learning"
+    },
+    "correct_answer": 2,
+    "explanation": "'Robotic process automation' is defined as: Software bots that automate structured, repetitive tasks.",
+    "difficulty": "easy",
+    "id": "Q006"
+  },
+  {
+    "topic": "Digitalization",
+    "question": "What best describes 'Platform business model'?",
+    "answers": {
+      "1": "A model that creates value by facilitating interactions between producers and consumers",
+      "2": "Software bots that automate structured, repetitive tasks",
+      "3": "Converting analog information into digital form",
+      "4": "Charging customers a recurring fee for ongoing access or services"
+    },
+    "correct_answer": 1,
+    "explanation": "'Platform business model' is defined as: A model that creates value by facilitating interactions between producers and consumers.",
+    "difficulty": "easy",
+    "id": "Q007"
+  },
+  {
+    "topic": "Digitalization",
+    "question": "What best describes 'Cloud computing'?",
+    "answers": {
+      "1": "Converting analog information into digital form",
+      "2": "A model that creates value by facilitating interactions between producers and consumers",
+      "3": "On-demand access to computing resources via the internet with pay-as-you-go pricing",
+      "4": "Charging based on the level or frequency of use"
+    },
+    "correct_answer": 3,
+    "explanation": "'Cloud computing' is defined as: On-demand access to computing resources via the internet with pay-as-you-go pricing.",
+    "difficulty": "easy",
+    "id": "Q008"
+  },
+  {
+    "topic": "Digitalization",
+    "question": "What best describes 'Data-driven decision-making'?",
+    "answers": {
+      "1": "A pricing model where a basic version is free and advanced features are paid",
+      "2": "Using analysis and evidence from data to guide managerial choices",
+      "3": "Converting analog information into digital form",
+      "4": "Systems that perform tasks requiring human intelligence, such as reasoning and learning"
+    },
+    "correct_answer": 2,
+    "explanation": "'Data-driven decision-making' is defined as: Using analysis and evidence from data to guide managerial choices.",
+    "difficulty": "easy",
+    "id": "Q009"
+  },
+  {
+    "topic": "Digitalization",
+    "question": "What best describes 'Industry 4.0'?",
+    "answers": {
+      "1": "Integration of cyber-physical systems and automation in manufacturing",
+      "2": "Systems that perform tasks requiring human intelligence, such as reasoning and learning",
+      "3": "Converting analog information into digital form",
+      "4": "Networked physical objects that collect and exchange data"
+    },
+    "correct_answer": 1,
+    "explanation": "'Industry 4.0' is defined as: Integration of cyber-physical systems and automation in manufacturing.",
+    "difficulty": "easy",
+    "id": "Q010"
+  },
+  {
+    "topic": "Digitalization",
+    "question": "What best describes 'Customer-centricity'?",
+    "answers": {
+      "1": "Designing offerings around customer needs and value",
+      "2": "Shifting sales/service interactions to digital channels",
+      "3": "Software bots that automate structured, repetitive tasks",
+      "4": "Strategic reinvention of business models, processes, and culture using digital technologies"
+    },
+    "correct_answer": 1,
+    "explanation": "'Customer-centricity' is defined as: Designing offerings around customer needs and value.",
+    "difficulty": "easy",
+    "id": "Q011"
+  },
+  {
+    "topic": "Digitalization",
+    "question": "What best describes 'Channel digitalization'?",
+    "answers": {
+      "1": "A pricing model where a basic version is free and advanced features are paid",
+      "2": "Shifting sales/service interactions to digital channels",
+      "3": "Designing offerings around customer needs and value",
+      "4": "Networked physical objects that collect and exchange data"
+    },
+    "correct_answer": 2,
+    "explanation": "'Channel digitalization' is defined as: Shifting sales/service interactions to digital channels.",
+    "difficulty": "hard",
+    "id": "Q012"
+  },
+  {
+    "topic": "Digitalization",
+    "question": "What best describes 'Freemium'?",
+    "answers": {
+      "1": "Shifting sales/service interactions to digital channels",
+      "2": "Strategic reinvention of business models, processes, and culture using digital technologies",
+      "3": "Systems that perform tasks requiring human intelligence, such as reasoning and learning",
+      "4": "A pricing model where a basic version is free and advanced features are paid"
+    },
+    "correct_answer": 4,
+    "explanation": "'Freemium' is defined as: A pricing model where a basic version is free and advanced features are paid.",
+    "difficulty": "medium",
+    "id": "Q013"
+  },
+  {
+    "topic": "Digitalization",
+    "question": "What best describes 'Subscription pricing'?",
+    "answers": {
+      "1": "Designing offerings around customer needs and value",
+      "2": "Charging customers a recurring fee for ongoing access or services",
+      "3": "Using analysis and evidence from data to guide managerial choices",
+      "4": "Shifting sales/service interactions to digital channels"
+    },
+    "correct_answer": 2,
+    "explanation": "'Subscription pricing' is defined as: Charging customers a recurring fee for ongoing access or services.",
+    "difficulty": "easy",
+    "id": "Q014"
+  },
+  {
+    "topic": "Digitalization",
+    "question": "What best describes 'Usage-based pricing'?",
+    "answers": {
+      "1": "The broad socio-economic transformation enabled by digital technologies",
+      "2": "Charging based on the level or frequency of use",
+      "3": "A pricing model where a basic version is free and advanced features are paid",
+      "4": "Charging customers a recurring fee for ongoing access or services"
+    },
+    "correct_answer": 2,
+    "explanation": "'Usage-based pricing' is defined as: Charging based on the level or frequency of use.",
+    "difficulty": "medium",
+    "id": "Q015"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "In the context of Business Model Canvas, which option best matches 'Key Partners'?",
+    "answers": {
+      "1": "Core actions required to deliver value",
+      "2": "Major cost categories to run the model",
+      "3": "Type of relationship with segments",
+      "4": "External parties that support the model"
+    },
+    "correct_answer": 4,
+    "explanation": "'Key Partners' corresponds to: External parties that support the model.",
+    "difficulty": "easy",
+    "id": "Q016"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "In the context of Business Model Canvas, which option best matches 'Key Resources'?",
+    "answers": {
+      "1": "Type of relationship with segments",
+      "2": "Critical assets for operating the model",
+      "3": "Major cost categories to run the model",
+      "4": "External parties that support the model"
+    },
+    "correct_answer": 2,
+    "explanation": "'Key Resources' corresponds to: Critical assets for operating the model.",
+    "difficulty": "easy",
+    "id": "Q017"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "In the context of Business Model Canvas, which option best matches 'Customer Segments'?",
+    "answers": {
+      "1": "External parties that support the model",
+      "2": "Touchpoints to reach customers",
+      "3": "Ways the firm earns money",
+      "4": "Groups of customers the firm serves"
+    },
+    "correct_answer": 4,
+    "explanation": "'Customer Segments' corresponds to: Groups of customers the firm serves.",
+    "difficulty": "easy",
+    "id": "Q018"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "In the context of Business Model Canvas, which option best matches 'Customer Relationships'?",
+    "answers": {
+      "1": "Ways the firm earns money",
+      "2": "Critical assets for operating the model",
+      "3": "Type of relationship with segments",
+      "4": "Groups of customers the firm serves"
+    },
+    "correct_answer": 3,
+    "explanation": "'Customer Relationships' corresponds to: Type of relationship with segments.",
+    "difficulty": "medium",
+    "id": "Q019"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "What best describes 'Value Propositions'?",
+    "answers": {
+      "1": "Removing intermediaries in a supply chain",
+      "2": "The types of relationships a company establishes with specific customer segments",
+      "3": "The cash a company generates from each customer segment",
+      "4": "The value delivered to a specific customer segment"
+    },
+    "correct_answer": 4,
+    "explanation": "'Value Propositions' is defined as: The value delivered to a specific customer segment.",
+    "difficulty": "easy",
+    "id": "Q020"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "In the context of Business Model Canvas, which option best matches 'Value Propositions'?",
+    "answers": {
+      "1": "Type of relationship with segments",
+      "2": "Groups of customers the firm serves",
+      "3": "Ways the firm earns money",
+      "4": "Benefits a product/service delivers to a segment"
+    },
+    "correct_answer": 4,
+    "explanation": "'Value Propositions' corresponds to: Benefits a product/service delivers to a segment.",
+    "difficulty": "easy",
+    "id": "Q021"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "What best describes 'Customer Segments'?",
+    "answers": {
+      "1": "Distinct groups of people or organizations a company aims to serve",
+      "2": "All costs incurred to operate a business model",
+      "3": "The value delivered to a specific customer segment",
+      "4": "The degree to which a product satisfies strong market demand"
+    },
+    "correct_answer": 1,
+    "explanation": "'Customer Segments' is defined as: Distinct groups of people or organizations a company aims to serve.",
+    "difficulty": "easy",
+    "id": "Q022"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "What best describes 'Channels'?",
+    "answers": {
+      "1": "The value of a service increases as more people use it",
+      "2": "The degree to which a product satisfies strong market demand",
+      "3": "How a company communicates with and reaches its customer segments",
+      "4": "Distinct groups of people or organizations a company aims to serve"
+    },
+    "correct_answer": 3,
+    "explanation": "'Channels' is defined as: How a company communicates with and reaches its customer segments.",
+    "difficulty": "easy",
+    "id": "Q023"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "What best describes 'Customer Relationships'?",
+    "answers": {
+      "1": "The degree to which a product satisfies strong market demand",
+      "2": "The types of relationships a company establishes with specific customer segments",
+      "3": "Removing intermediaries in a supply chain",
+      "4": "The cash a company generates from each customer segment"
+    },
+    "correct_answer": 2,
+    "explanation": "'Customer Relationships' is defined as: The types of relationships a company establishes with specific customer segments.",
+    "difficulty": "hard",
+    "id": "Q024"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "In the context of Business Model Canvas, which option best matches 'Cost Structure'?",
+    "answers": {
+      "1": "Touchpoints to reach customers",
+      "2": "Groups of customers the firm serves",
+      "3": "Major cost categories to run the model",
+      "4": "Ways the firm earns money"
+    },
+    "correct_answer": 3,
+    "explanation": "'Cost Structure' corresponds to: Major cost categories to run the model.",
+    "difficulty": "medium",
+    "id": "Q025"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "What best describes 'Revenue Streams'?",
+    "answers": {
+      "1": "The most important assets required to make a business model work",
+      "2": "The cash a company generates from each customer segment",
+      "3": "Distinct groups of people or organizations a company aims to serve",
+      "4": "How a company communicates with and reaches its customer segments"
+    },
+    "correct_answer": 2,
+    "explanation": "'Revenue Streams' is defined as: The cash a company generates from each customer segment.",
+    "difficulty": "medium",
+    "id": "Q026"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "What best describes 'Key Resources'?",
+    "answers": {
+      "1": "The cash a company generates from each customer segment",
+      "2": "How a company communicates with and reaches its customer segments",
+      "3": "Revenue from one product subsidizes another",
+      "4": "The most important assets required to make a business model work"
+    },
+    "correct_answer": 4,
+    "explanation": "'Key Resources' is defined as: The most important assets required to make a business model work.",
+    "difficulty": "medium",
+    "id": "Q027"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "What best describes 'Key Activities'?",
+    "answers": {
+      "1": "How a company communicates with and reaches its customer segments",
+      "2": "The most important actions a company must take to operate",
+      "3": "Revenue from one product subsidizes another",
+      "4": "Distinct groups of people or organizations a company aims to serve"
+    },
+    "correct_answer": 2,
+    "explanation": "'Key Activities' is defined as: The most important actions a company must take to operate.",
+    "difficulty": "medium",
+    "id": "Q028"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "In the context of Business Model Canvas, which option best matches 'Revenue Streams'?",
+    "answers": {
+      "1": "External parties that support the model",
+      "2": "Ways the firm earns money",
+      "3": "Core actions required to deliver value",
+      "4": "Benefits a product/service delivers to a segment"
+    },
+    "correct_answer": 2,
+    "explanation": "'Revenue Streams' corresponds to: Ways the firm earns money.",
+    "difficulty": "medium",
+    "id": "Q029"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "What best describes 'Key Partners'?",
+    "answers": {
+      "1": "The network of suppliers and partners that make the business model work",
+      "2": "The most important actions a company must take to operate",
+      "3": "Removing intermediaries in a supply chain",
+      "4": "A basic version of a product to test assumptions with minimal effort"
+    },
+    "correct_answer": 1,
+    "explanation": "'Key Partners' is defined as: The network of suppliers and partners that make the business model work.",
+    "difficulty": "medium",
+    "id": "Q030"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "What best describes 'Cost Structure'?",
+    "answers": {
+      "1": "How a company communicates with and reaches its customer segments",
+      "2": "All costs incurred to operate a business model",
+      "3": "The value delivered to a specific customer segment",
+      "4": "The most important actions a company must take to operate"
+    },
+    "correct_answer": 2,
+    "explanation": "'Cost Structure' is defined as: All costs incurred to operate a business model.",
+    "difficulty": "medium",
+    "id": "Q031"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "What best describes 'MVP (Minimum Viable Product)'?",
+    "answers": {
+      "1": "Revenue from one product subsidizes another",
+      "2": "Removing intermediaries in a supply chain",
+      "3": "A basic version of a product to test assumptions with minimal effort",
+      "4": "The value of a service increases as more people use it"
+    },
+    "correct_answer": 3,
+    "explanation": "'MVP (Minimum Viable Product)' is defined as: A basic version of a product to test assumptions with minimal effort.",
+    "difficulty": "medium",
+    "id": "Q032"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "What best describes 'Product–Market Fit'?",
+    "answers": {
+      "1": "The network of suppliers and partners that make the business model work",
+      "2": "The degree to which a product satisfies strong market demand",
+      "3": "The most important actions a company must take to operate",
+      "4": "The value delivered to a specific customer segment"
+    },
+    "correct_answer": 2,
+    "explanation": "'Product–Market Fit' is defined as: The degree to which a product satisfies strong market demand.",
+    "difficulty": "medium",
+    "id": "Q033"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "What best describes 'Network effects'?",
+    "answers": {
+      "1": "The cash a company generates from each customer segment",
+      "2": "The most important assets required to make a business model work",
+      "3": "The degree to which a product satisfies strong market demand",
+      "4": "The value of a service increases as more people use it"
+    },
+    "correct_answer": 4,
+    "explanation": "'Network effects' is defined as: The value of a service increases as more people use it.",
+    "difficulty": "hard",
+    "id": "Q034"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "What best describes 'Cross-subsidization'?",
+    "answers": {
+      "1": "How a company communicates with and reaches its customer segments",
+      "2": "Revenue from one product subsidizes another",
+      "3": "The cash a company generates from each customer segment",
+      "4": "A basic version of a product to test assumptions with minimal effort"
+    },
+    "correct_answer": 2,
+    "explanation": "'Cross-subsidization' is defined as: Revenue from one product subsidizes another.",
+    "difficulty": "hard",
+    "id": "Q035"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "What best describes 'Disintermediation'?",
+    "answers": {
+      "1": "Revenue from one product subsidizes another",
+      "2": "The value of a service increases as more people use it",
+      "3": "The most important assets required to make a business model work",
+      "4": "Removing intermediaries in a supply chain"
+    },
+    "correct_answer": 4,
+    "explanation": "'Disintermediation' is defined as: Removing intermediaries in a supply chain.",
+    "difficulty": "hard",
+    "id": "Q036"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "What best describes 'Upselling'?",
+    "answers": {
+      "1": "The cash a company generates from each customer segment",
+      "2": "Encouraging customers to purchase a higher-priced option",
+      "3": "The most important actions a company must take to operate",
+      "4": "The value of a service increases as more people use it"
+    },
+    "correct_answer": 2,
+    "explanation": "'Upselling' is defined as: Encouraging customers to purchase a higher-priced option.",
+    "difficulty": "hard",
+    "id": "Q037"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "In the context of Business Model Canvas, which option best matches 'Key Activities'?",
+    "answers": {
+      "1": "Type of relationship with segments",
+      "2": "Critical assets for operating the model",
+      "3": "External parties that support the model",
+      "4": "Core actions required to deliver value"
+    },
+    "correct_answer": 4,
+    "explanation": "'Key Activities' corresponds to: Core actions required to deliver value.",
+    "difficulty": "hard",
+    "id": "Q038"
+  },
+  {
+    "topic": "Enterprise Architecture",
+    "question": "What best describes 'Enterprise Architecture (EA)'?",
+    "answers": {
+      "1": "Coherent principles and models linking strategy, processes, information systems, and infrastructure",
+      "2": "Modeled business workflows that are supported by IT systems",
+      "3": "Upgrading or replacing outdated systems while preserving core functionality",
+      "4": "Ability of systems to handle growth in load or users"
+    },
+    "correct_answer": 1,
+    "explanation": "'Enterprise Architecture (EA)' is defined as: Coherent principles and models linking strategy, processes, information systems, and infrastructure.",
+    "difficulty": "medium",
+    "id": "Q039"
+  },
+  {
+    "topic": "Enterprise Architecture",
+    "question": "In the context of Enterprise Architecture, which option best matches 'Data Architecture'?",
+    "answers": {
+      "1": "Structure of organization and processes",
+      "2": "Hardware, networks, and platforms",
+      "3": "Models and principles for enterprise data",
+      "4": "Structure and interaction of applications"
+    },
+    "correct_answer": 3,
+    "explanation": "'Data Architecture' corresponds to: Models and principles for enterprise data.",
+    "difficulty": "hard",
+    "id": "Q040"
+  },
+  {
+    "topic": "Enterprise Architecture",
+    "question": "What best describes 'Business Architecture'?",
+    "answers": {
+      "1": "Describes information systems, their functional/technical components, and governance",
+      "2": "Ability of systems to exchange and use information",
+      "3": "Ability of systems to handle growth in load or users",
+      "4": "Describes business model, goals, and process/organizational structures"
+    },
+    "correct_answer": 4,
+    "explanation": "'Business Architecture' is defined as: Describes business model, goals, and process/organizational structures.",
+    "difficulty": "easy",
+    "id": "Q041"
+  },
+  {
+    "topic": "Enterprise Architecture",
+    "question": "What best describes 'IT Architecture'?",
+    "answers": {
+      "1": "Describes information systems, their functional/technical components, and governance",
+      "2": "Ensuring business objectives and IT capabilities reinforce each other",
+      "3": "Structure and interaction of applications supporting business processes",
+      "4": "Management discipline to align and evolve sub-architectures strategically"
+    },
+    "correct_answer": 1,
+    "explanation": "'IT Architecture' is defined as: Describes information systems, their functional/technical components, and governance.",
+    "difficulty": "easy",
+    "id": "Q042"
+  },
+  {
+    "topic": "Enterprise Architecture",
+    "question": "What best describes 'IT-supported Processes'?",
+    "answers": {
+      "1": "Management discipline to align and evolve sub-architectures strategically",
+      "2": "Modeled business workflows that are supported by IT systems",
+      "3": "Ability of systems to handle growth in load or users",
+      "4": "Describes business model, goals, and process/organizational structures"
+    },
+    "correct_answer": 2,
+    "explanation": "'IT-supported Processes' is defined as: Modeled business workflows that are supported by IT systems.",
+    "difficulty": "easy",
+    "id": "Q043"
+  },
+  {
+    "topic": "Enterprise Architecture",
+    "question": "In the context of Enterprise Architecture, which option best matches 'Business Architecture'?",
+    "answers": {
+      "1": "Workflows modeled and enabled by IT",
+      "2": "Structure of organization and processes",
+      "3": "Structure and interaction of applications",
+      "4": "Models and principles for enterprise data"
+    },
+    "correct_answer": 2,
+    "explanation": "'Business Architecture' corresponds to: Structure of organization and processes.",
+    "difficulty": "easy",
+    "id": "Q044"
+  },
+  {
+    "topic": "Enterprise Architecture",
+    "question": "What best describes 'Application Architecture'?",
+    "answers": {
+      "1": "Ensuring business objectives and IT capabilities reinforce each other",
+      "2": "Upgrading or replacing outdated systems while preserving core functionality",
+      "3": "Describes information systems, their functional/technical components, and governance",
+      "4": "Structure and interaction of applications supporting business processes"
+    },
+    "correct_answer": 4,
+    "explanation": "'Application Architecture' is defined as: Structure and interaction of applications supporting business processes.",
+    "difficulty": "easy",
+    "id": "Q045"
+  },
+  {
+    "topic": "Enterprise Architecture",
+    "question": "What best describes 'Data Architecture'?",
+    "answers": {
+      "1": "Structure and interaction of applications supporting business processes",
+      "2": "Approach to connecting applications and data flows",
+      "3": "Linking business capabilities to applications and technologies",
+      "4": "Structures and principles for managing and using data across the enterprise"
+    },
+    "correct_answer": 4,
+    "explanation": "'Data Architecture' is defined as: Structures and principles for managing and using data across the enterprise.",
+    "difficulty": "easy",
+    "id": "Q046"
+  },
+  {
+    "topic": "Enterprise Architecture",
+    "question": "In the context of Enterprise Architecture, which option best matches 'IT Infrastructure'?",
+    "answers": {
+      "1": "Hardware, networks, and platforms",
+      "2": "Structure of organization and processes",
+      "3": "Models and principles for enterprise data",
+      "4": "Structure and interaction of applications"
+    },
+    "correct_answer": 1,
+    "explanation": "'IT Infrastructure' corresponds to: Hardware, networks, and platforms.",
+    "difficulty": "easy",
+    "id": "Q047"
+  },
+  {
+    "topic": "Enterprise Architecture",
+    "question": "What best describes 'IT Infrastructure'?",
+    "answers": {
+      "1": "Underlying hardware, networks, and platforms enabling IT services",
+      "2": "Ensuring business objectives and IT capabilities reinforce each other",
+      "3": "Management discipline to align and evolve sub-architectures strategically",
+      "4": "Design of specific solutions within the enterprise landscape"
+    },
+    "correct_answer": 1,
+    "explanation": "'IT Infrastructure' is defined as: Underlying hardware, networks, and platforms enabling IT services.",
+    "difficulty": "medium",
+    "id": "Q048"
+  },
+  {
+    "topic": "Enterprise Architecture",
+    "question": "What best describes 'Enterprise Architecture Management (EAM)'?",
+    "answers": {
+      "1": "Linking business capabilities to applications and technologies",
+      "2": "Ability of systems to exchange and use information",
+      "3": "Management discipline to align and evolve sub-architectures strategically",
+      "4": "Underlying hardware, networks, and platforms enabling IT services"
+    },
+    "correct_answer": 3,
+    "explanation": "'Enterprise Architecture Management (EAM)' is defined as: Management discipline to align and evolve sub-architectures strategically.",
+    "difficulty": "medium",
+    "id": "Q049"
+  },
+  {
+    "topic": "Enterprise Architecture",
+    "question": "What best describes 'Strategic alignment'?",
+    "answers": {
+      "1": "Design of specific solutions within the enterprise landscape",
+      "2": "Underlying hardware, networks, and platforms enabling IT services",
+      "3": "Ensuring business objectives and IT capabilities reinforce each other",
+      "4": "Coherent principles and models linking strategy, processes, information systems, and infrastructure"
+    },
+    "correct_answer": 3,
+    "explanation": "'Strategic alignment' is defined as: Ensuring business objectives and IT capabilities reinforce each other.",
+    "difficulty": "medium",
+    "id": "Q050"
+  },
+  {
+    "topic": "Enterprise Architecture",
+    "question": "In the context of Enterprise Architecture, which option best matches 'Application Architecture'?",
+    "answers": {
+      "1": "Structure and interaction of applications",
+      "2": "Models and principles for enterprise data",
+      "3": "Structure of organization and processes",
+      "4": "Hardware, networks, and platforms"
+    },
+    "correct_answer": 1,
+    "explanation": "'Application Architecture' corresponds to: Structure and interaction of applications.",
+    "difficulty": "medium",
+    "id": "Q051"
+  },
+  {
+    "topic": "Enterprise Architecture",
+    "question": "What best describes 'Capability mapping'?",
+    "answers": {
+      "1": "Approach to connecting applications and data flows",
+      "2": "Describes business model, goals, and process/organizational structures",
+      "3": "Linking business capabilities to applications and technologies",
+      "4": "Modeled business workflows that are supported by IT systems"
+    },
+    "correct_answer": 3,
+    "explanation": "'Capability mapping' is defined as: Linking business capabilities to applications and technologies.",
+    "difficulty": "medium",
+    "id": "Q052"
+  },
+  {
+    "topic": "Enterprise Architecture",
+    "question": "In the context of Enterprise Architecture, which option best matches 'IT-supported Processes'?",
+    "answers": {
+      "1": "Structure of organization and processes",
+      "2": "Structure and interaction of applications",
+      "3": "Models and principles for enterprise data",
+      "4": "Workflows modeled and enabled by IT"
+    },
+    "correct_answer": 4,
+    "explanation": "'IT-supported Processes' corresponds to: Workflows modeled and enabled by IT.",
+    "difficulty": "medium",
+    "id": "Q053"
+  },
+  {
+    "topic": "Enterprise Architecture",
+    "question": "What best describes 'Solution architecture'?",
+    "answers": {
+      "1": "Upgrading or replacing outdated systems while preserving core functionality",
+      "2": "Design of specific solutions within the enterprise landscape",
+      "3": "Management discipline to align and evolve sub-architectures strategically",
+      "4": "Structure and interaction of applications supporting business processes"
+    },
+    "correct_answer": 2,
+    "explanation": "'Solution architecture' is defined as: Design of specific solutions within the enterprise landscape.",
+    "difficulty": "medium",
+    "id": "Q054"
+  },
+  {
+    "topic": "Enterprise Architecture",
+    "question": "What best describes 'Integration architecture'?",
+    "answers": {
+      "1": "Approach to connecting applications and data flows",
+      "2": "Linking business capabilities to applications and technologies",
+      "3": "Describes business model, goals, and process/organizational structures",
+      "4": "Structure and interaction of applications supporting business processes"
+    },
+    "correct_answer": 1,
+    "explanation": "'Integration architecture' is defined as: Approach to connecting applications and data flows.",
+    "difficulty": "medium",
+    "id": "Q055"
+  },
+  {
+    "topic": "Enterprise Architecture",
+    "question": "What best describes 'Legacy modernization'?",
+    "answers": {
+      "1": "Upgrading or replacing outdated systems while preserving core functionality",
+      "2": "Design of specific solutions within the enterprise landscape",
+      "3": "Linking business capabilities to applications and technologies",
+      "4": "Underlying hardware, networks, and platforms enabling IT services"
+    },
+    "correct_answer": 1,
+    "explanation": "'Legacy modernization' is defined as: Upgrading or replacing outdated systems while preserving core functionality.",
+    "difficulty": "hard",
+    "id": "Q056"
+  },
+  {
+    "topic": "Enterprise Architecture",
+    "question": "What best describes 'Scalability'?",
+    "answers": {
+      "1": "Management discipline to align and evolve sub-architectures strategically",
+      "2": "Ability of systems to handle growth in load or users",
+      "3": "Modeled business workflows that are supported by IT systems",
+      "4": "Structures and principles for managing and using data across the enterprise"
+    },
+    "correct_answer": 2,
+    "explanation": "'Scalability' is defined as: Ability of systems to handle growth in load or users.",
+    "difficulty": "hard",
+    "id": "Q057"
+  },
+  {
+    "topic": "Enterprise Architecture",
+    "question": "What best describes 'Interoperability'?",
+    "answers": {
+      "1": "Ability of systems to exchange and use information",
+      "2": "Coherent principles and models linking strategy, processes, information systems, and infrastructure",
+      "3": "Structure and interaction of applications supporting business processes",
+      "4": "Ensuring business objectives and IT capabilities reinforce each other"
+    },
+    "correct_answer": 1,
+    "explanation": "'Interoperability' is defined as: Ability of systems to exchange and use information.",
+    "difficulty": "hard",
+    "id": "Q058"
+  },
+  {
+    "topic": "Business–IT Alignment",
+    "question": "In the context of Business–IT Alignment, which option best matches 'Interacting alignment'?",
+    "answers": {
+      "1": "Modeled business workflows that are supported by IT systems",
+      "2": "Charging based on the level or frequency of use",
+      "3": "Business and IT co-develop strategy",
+      "4": "Preventing parties from denying their actions or commitments"
+    },
+    "correct_answer": 3,
+    "explanation": "'Interacting alignment' corresponds to: Business and IT co-develop strategy.",
+    "difficulty": "easy",
+    "id": "Q059"
+  },
+  {
+    "topic": "Business–IT Alignment",
+    "question": "What best describes 'Top–Down (Responsive) alignment'?",
+    "answers": {
+      "1": "IT actively supports implementation of corporate strategy",
+      "2": "Managing organizational/technical change to realize benefits",
+      "3": "IT strategy is derived from corporate/business strategy",
+      "4": "Justification for an investment based on benefits, costs, and risks"
+    },
+    "correct_answer": 3,
+    "explanation": "'Top–Down (Responsive) alignment' is defined as: IT strategy is derived from corporate/business strategy.",
+    "difficulty": "easy",
+    "id": "Q060"
+  },
+  {
+    "topic": "Business–IT Alignment",
+    "question": "In the context of Business–IT Alignment, which option best matches 'Bottom–Up alignment'?",
+    "answers": {
+      "1": "Networked physical objects that collect and exchange data",
+      "2": "Coherent principles and models linking strategy, processes, information systems, and infrastructure",
+      "3": "The most important actions a company must take to operate",
+      "4": "IT capabilities shape business strategy"
+    },
+    "correct_answer": 4,
+    "explanation": "'Bottom–Up alignment' corresponds to: IT capabilities shape business strategy.",
+    "difficulty": "easy",
+    "id": "Q061"
+  },
+  {
+    "topic": "Business–IT Alignment",
+    "question": "In the context of Business–IT Alignment, which option best matches 'Top–Down alignment'?",
+    "answers": {
+      "1": "The most important assets required to make a business model work",
+      "2": "Replacing identifiers with placeholders while allowing re-identification under controls",
+      "3": "IT follows business strategy",
+      "4": "Removing intermediaries in a supply chain"
+    },
+    "correct_answer": 3,
+    "explanation": "'Top–Down alignment' corresponds to: IT follows business strategy.",
+    "difficulty": "easy",
+    "id": "Q062"
+  },
+  {
+    "topic": "Business–IT Alignment",
+    "question": "What best describes 'Bottom–Up (Acting) alignment'?",
+    "answers": {
+      "1": "Justification for an investment based on benefits, costs, and risks",
+      "2": "Business and IT strategies are developed collaboratively",
+      "3": "IT capabilities and innovations shape business strategy",
+      "4": "Ensuring consistency across business and IT architectures"
+    },
+    "correct_answer": 3,
+    "explanation": "'Bottom–Up (Acting) alignment' is defined as: IT capabilities and innovations shape business strategy.",
+    "difficulty": "easy",
+    "id": "Q063"
+  },
+  {
+    "topic": "Business–IT Alignment",
+    "question": "What best describes 'Interacting (Parallel) alignment'?",
+    "answers": {
+      "1": "Building mutual understanding between business and IT",
+      "2": "A contract defining expected service performance and responsibilities",
+      "3": "Time-sequenced plan to evolve capabilities and systems",
+      "4": "Business and IT strategies are developed collaboratively"
+    },
+    "correct_answer": 4,
+    "explanation": "'Interacting (Parallel) alignment' is defined as: Business and IT strategies are developed collaboratively.",
+    "difficulty": "medium",
+    "id": "Q064"
+  },
+  {
+    "topic": "Business–IT Alignment",
+    "question": "What best describes 'Strategic level alignment'?",
+    "answers": {
+      "1": "IT drives innovation and new business models",
+      "2": "IT improves efficiency and quality in core processes",
+      "3": "Building mutual understanding between business and IT",
+      "4": "Aligning corporate and IT strategies"
+    },
+    "correct_answer": 4,
+    "explanation": "'Strategic level alignment' is defined as: Aligning corporate and IT strategies.",
+    "difficulty": "medium",
+    "id": "Q065"
+  },
+  {
+    "topic": "Business–IT Alignment",
+    "question": "What best describes 'Architectural level alignment'?",
+    "answers": {
+      "1": "Time-sequenced plan to evolve capabilities and systems",
+      "2": "Ensuring consistency across business and IT architectures",
+      "3": "IT improves efficiency and quality in core processes",
+      "4": "IT mainly supports admin processes and is seen as necessary expense"
+    },
+    "correct_answer": 2,
+    "explanation": "'Architectural level alignment' is defined as: Ensuring consistency across business and IT architectures.",
+    "difficulty": "medium",
+    "id": "Q066"
+  },
+  {
+    "topic": "Business–IT Alignment",
+    "question": "What best describes 'Cultural level alignment'?",
+    "answers": {
+      "1": "Ensuring consistency across business and IT architectures",
+      "2": "Business and IT strategies are developed collaboratively",
+      "3": "A contract defining expected service performance and responsibilities",
+      "4": "Building mutual understanding between business and IT"
+    },
+    "correct_answer": 4,
+    "explanation": "'Cultural level alignment' is defined as: Building mutual understanding between business and IT.",
+    "difficulty": "medium",
+    "id": "Q067"
+  },
+  {
+    "topic": "Business–IT Alignment",
+    "question": "What best describes 'IT as cost factor'?",
+    "answers": {
+      "1": "IT improves efficiency and quality in core processes",
+      "2": "Building mutual understanding between business and IT",
+      "3": "IT mainly supports admin processes and is seen as necessary expense",
+      "4": "Identifying parties affected by or influencing a change"
+    },
+    "correct_answer": 3,
+    "explanation": "'IT as cost factor' is defined as: IT mainly supports admin processes and is seen as necessary expense.",
+    "difficulty": "medium",
+    "id": "Q068"
+  },
+  {
+    "topic": "Business–IT Alignment",
+    "question": "What best describes 'IT as asset'?",
+    "answers": {
+      "1": "IT mainly supports admin processes and is seen as necessary expense",
+      "2": "Time-sequenced plan to evolve capabilities and systems",
+      "3": "IT improves efficiency and quality in core processes",
+      "4": "IT actively supports implementation of corporate strategy"
+    },
+    "correct_answer": 3,
+    "explanation": "'IT as asset' is defined as: IT improves efficiency and quality in core processes.",
+    "difficulty": "medium",
+    "id": "Q069"
+  },
+  {
+    "topic": "Business–IT Alignment",
+    "question": "What best describes 'IT as business partner'?",
+    "answers": {
+      "1": "IT strategy is derived from corporate/business strategy",
+      "2": "IT actively supports implementation of corporate strategy",
+      "3": "IT improves efficiency and quality in core processes",
+      "4": "IT capabilities and innovations shape business strategy"
+    },
+    "correct_answer": 2,
+    "explanation": "'IT as business partner' is defined as: IT actively supports implementation of corporate strategy.",
+    "difficulty": "medium",
+    "id": "Q070"
+  },
+  {
+    "topic": "Business–IT Alignment",
+    "question": "What best describes 'IT as strategic enabler'?",
+    "answers": {
+      "1": "IT improves efficiency and quality in core processes",
+      "2": "Justification for an investment based on benefits, costs, and risks",
+      "3": "Managing organizational/technical change to realize benefits",
+      "4": "IT drives innovation and new business models"
+    },
+    "correct_answer": 4,
+    "explanation": "'IT as strategic enabler' is defined as: IT drives innovation and new business models.",
+    "difficulty": "medium",
+    "id": "Q071"
+  },
+  {
+    "topic": "Business–IT Alignment",
+    "question": "What best describes 'SLA (Service Level Agreement)'?",
+    "answers": {
+      "1": "IT strategy is derived from corporate/business strategy",
+      "2": "Identifying parties affected by or influencing a change",
+      "3": "IT actively supports implementation of corporate strategy",
+      "4": "A contract defining expected service performance and responsibilities"
+    },
+    "correct_answer": 4,
+    "explanation": "'SLA (Service Level Agreement)' is defined as: A contract defining expected service performance and responsibilities.",
+    "difficulty": "hard",
+    "id": "Q072"
+  },
+  {
+    "topic": "Business–IT Alignment",
+    "question": "What best describes 'Business case'?",
+    "answers": {
+      "1": "IT capabilities and innovations shape business strategy",
+      "2": "Identifying parties affected by or influencing a change",
+      "3": "Justification for an investment based on benefits, costs, and risks",
+      "4": "IT improves efficiency and quality in core processes"
+    },
+    "correct_answer": 3,
+    "explanation": "'Business case' is defined as: Justification for an investment based on benefits, costs, and risks.",
+    "difficulty": "hard",
+    "id": "Q073"
+  },
+  {
+    "topic": "Business–IT Alignment",
+    "question": "What best describes 'Roadmap'?",
+    "answers": {
+      "1": "Managing organizational/technical change to realize benefits",
+      "2": "IT mainly supports admin processes and is seen as necessary expense",
+      "3": "Time-sequenced plan to evolve capabilities and systems",
+      "4": "IT improves efficiency and quality in core processes"
+    },
+    "correct_answer": 3,
+    "explanation": "'Roadmap' is defined as: Time-sequenced plan to evolve capabilities and systems.",
+    "difficulty": "hard",
+    "id": "Q074"
+  },
+  {
+    "topic": "Business–IT Alignment",
+    "question": "What best describes 'Change management'?",
+    "answers": {
+      "1": "IT drives innovation and new business models",
+      "2": "Ensuring consistency across business and IT architectures",
+      "3": "Justification for an investment based on benefits, costs, and risks",
+      "4": "Managing organizational/technical change to realize benefits"
+    },
+    "correct_answer": 4,
+    "explanation": "'Change management' is defined as: Managing organizational/technical change to realize benefits.",
+    "difficulty": "hard",
+    "id": "Q075"
+  },
+  {
+    "topic": "Business–IT Alignment",
+    "question": "What best describes 'Stakeholder analysis'?",
+    "answers": {
+      "1": "Building mutual understanding between business and IT",
+      "2": "Time-sequenced plan to evolve capabilities and systems",
+      "3": "IT actively supports implementation of corporate strategy",
+      "4": "Identifying parties affected by or influencing a change"
+    },
+    "correct_answer": 4,
+    "explanation": "'Stakeholder analysis' is defined as: Identifying parties affected by or influencing a change.",
+    "difficulty": "hard",
+    "id": "Q076"
+  },
+  {
+    "topic": "IT Resource Management",
+    "question": "What best describes 'IT resource management'?",
+    "answers": {
+      "1": "Ensuring IT resources meet current and future demand",
+      "2": "Ongoing effort to enhance services, processes, and outcomes",
+      "3": "Adhering to software usage rights and agreements",
+      "4": "Planning, acquiring, operating, and controlling IT resources and services"
+    },
+    "correct_answer": 4,
+    "explanation": "'IT resource management' is defined as: Planning, acquiring, operating, and controlling IT resources and services.",
+    "difficulty": "hard",
+    "id": "Q077"
+  },
+  {
+    "topic": "IT Resource Management",
+    "question": "What best describes 'ITIL'?",
+    "answers": {
+      "1": "Restoring normal service operation as quickly as possible after disruptions",
+      "2": "A best-practice framework for managing IT services across their lifecycle",
+      "3": "Comprehensive cost including direct and indirect expenses over lifecycle",
+      "4": "Controlling lifecycle of changes to minimize risk"
+    },
+    "correct_answer": 2,
+    "explanation": "'ITIL' is defined as: A best-practice framework for managing IT services across their lifecycle.",
+    "difficulty": "easy",
+    "id": "Q078"
+  },
+  {
+    "topic": "IT Resource Management",
+    "question": "In the context of IT Resource Management, which option best matches 'Availability management'?",
+    "answers": {
+      "1": "Published list of available IT services",
+      "2": "Meet uptime/availability targets",
+      "3": "Restore service fast after disruption",
+      "4": "Match resources to demand"
+    },
+    "correct_answer": 2,
+    "explanation": "'Availability management' corresponds to: Meet uptime/availability targets.",
+    "difficulty": "easy",
+    "id": "Q079"
+  },
+  {
+    "topic": "IT Resource Management",
+    "question": "In the context of IT Resource Management, which option best matches 'Change management'?",
+    "answers": {
+      "1": "Find and fix underlying causes",
+      "2": "Control changes to minimize risk",
+      "3": "Published list of available IT services",
+      "4": "Meet uptime/availability targets"
+    },
+    "correct_answer": 2,
+    "explanation": "'Change management' corresponds to: Control changes to minimize risk.",
+    "difficulty": "easy",
+    "id": "Q080"
+  },
+  {
+    "topic": "IT Resource Management",
+    "question": "What best describes 'Incident management'?",
+    "answers": {
+      "1": "Restoring normal service operation as quickly as possible after disruptions",
+      "2": "Measures such as MTTR, first-call resolution, and SLA compliance",
+      "3": "Single point of contact between users and IT",
+      "4": "Identifying root causes and preventing recurring incidents"
+    },
+    "correct_answer": 1,
+    "explanation": "'Incident management' is defined as: Restoring normal service operation as quickly as possible after disruptions.",
+    "difficulty": "hard",
+    "id": "Q081"
+  },
+  {
+    "topic": "IT Resource Management",
+    "question": "What best describes 'Problem management'?",
+    "answers": {
+      "1": "Maintaining information about IT assets and their relationships",
+      "2": "Restoring normal service operation as quickly as possible after disruptions",
+      "3": "Identifying root causes and preventing recurring incidents",
+      "4": "Comprehensive cost including direct and indirect expenses over lifecycle"
+    },
+    "correct_answer": 3,
+    "explanation": "'Problem management' is defined as: Identifying root causes and preventing recurring incidents.",
+    "difficulty": "easy",
+    "id": "Q082"
+  },
+  {
+    "topic": "IT Resource Management",
+    "question": "In the context of IT Resource Management, which option best matches 'Incident management'?",
+    "answers": {
+      "1": "Meet uptime/availability targets",
+      "2": "Restore service fast after disruption",
+      "3": "Match resources to demand",
+      "4": "Published list of available IT services"
+    },
+    "correct_answer": 2,
+    "explanation": "'Incident management' corresponds to: Restore service fast after disruption.",
+    "difficulty": "hard",
+    "id": "Q083"
+  },
+  {
+    "topic": "IT Resource Management",
+    "question": "What best describes 'Change management (ITIL)'?",
+    "answers": {
+      "1": "A structured list of available IT services and offerings",
+      "2": "Controlling lifecycle of changes to minimize risk",
+      "3": "Adhering to software usage rights and agreements",
+      "4": "Ensuring services meet agreed availability targets"
+    },
+    "correct_answer": 2,
+    "explanation": "'Change management (ITIL)' is defined as: Controlling lifecycle of changes to minimize risk.",
+    "difficulty": "easy",
+    "id": "Q084"
+  },
+  {
+    "topic": "IT Resource Management",
+    "question": "In the context of IT Resource Management, which option best matches 'Service catalog'?",
+    "answers": {
+      "1": "Restore service fast after disruption",
+      "2": "Find and fix underlying causes",
+      "3": "Published list of available IT services",
+      "4": "Match resources to demand"
+    },
+    "correct_answer": 3,
+    "explanation": "'Service catalog' corresponds to: Published list of available IT services.",
+    "difficulty": "easy",
+    "id": "Q085"
+  },
+  {
+    "topic": "IT Resource Management",
+    "question": "What best describes 'Service catalog'?",
+    "answers": {
+      "1": "Adhering to software usage rights and agreements",
+      "2": "A structured list of available IT services and offerings",
+      "3": "Planning, acquiring, operating, and controlling IT resources and services",
+      "4": "Ensuring services meet agreed availability targets"
+    },
+    "correct_answer": 2,
+    "explanation": "'Service catalog' is defined as: A structured list of available IT services and offerings.",
+    "difficulty": "easy",
+    "id": "Q086"
+  },
+  {
+    "topic": "IT Resource Management",
+    "question": "What best describes 'Capacity management'?",
+    "answers": {
+      "1": "Controlling lifecycle of changes to minimize risk",
+      "2": "Ensuring IT resources meet current and future demand",
+      "3": "Maintaining information about IT assets and their relationships",
+      "4": "Identifying root causes and preventing recurring incidents"
+    },
+    "correct_answer": 2,
+    "explanation": "'Capacity management' is defined as: Ensuring IT resources meet current and future demand.",
+    "difficulty": "medium",
+    "id": "Q087"
+  },
+  {
+    "topic": "IT Resource Management",
+    "question": "What best describes 'Availability management'?",
+    "answers": {
+      "1": "Ensuring services meet agreed availability targets",
+      "2": "Single point of contact between users and IT",
+      "3": "Adhering to software usage rights and agreements",
+      "4": "Deciding between in-house, outsourcing, or hybrid delivery"
+    },
+    "correct_answer": 1,
+    "explanation": "'Availability management' is defined as: Ensuring services meet agreed availability targets.",
+    "difficulty": "medium",
+    "id": "Q088"
+  },
+  {
+    "topic": "IT Resource Management",
+    "question": "What best describes 'Configuration management'?",
+    "answers": {
+      "1": "Maintaining information about IT assets and their relationships",
+      "2": "Controlling lifecycle of changes to minimize risk",
+      "3": "Ensuring services meet agreed availability targets",
+      "4": "Planning, acquiring, operating, and controlling IT resources and services"
+    },
+    "correct_answer": 1,
+    "explanation": "'Configuration management' is defined as: Maintaining information about IT assets and their relationships.",
+    "difficulty": "medium",
+    "id": "Q089"
+  },
+  {
+    "topic": "IT Resource Management",
+    "question": "What best describes 'Continual improvement'?",
+    "answers": {
+      "1": "A structured list of available IT services and offerings",
+      "2": "Deciding between in-house, outsourcing, or hybrid delivery",
+      "3": "Controlling lifecycle of changes to minimize risk",
+      "4": "Ongoing effort to enhance services, processes, and outcomes"
+    },
+    "correct_answer": 4,
+    "explanation": "'Continual improvement' is defined as: Ongoing effort to enhance services, processes, and outcomes.",
+    "difficulty": "medium",
+    "id": "Q090"
+  },
+  {
+    "topic": "IT Resource Management",
+    "question": "What best describes 'Total cost of ownership'?",
+    "answers": {
+      "1": "A best-practice framework for managing IT services across their lifecycle",
+      "2": "Ensuring services meet agreed availability targets",
+      "3": "Comprehensive cost including direct and indirect expenses over lifecycle",
+      "4": "Single point of contact between users and IT"
+    },
+    "correct_answer": 3,
+    "explanation": "'Total cost of ownership' is defined as: Comprehensive cost including direct and indirect expenses over lifecycle.",
+    "difficulty": "medium",
+    "id": "Q091"
+  },
+  {
+    "topic": "IT Resource Management",
+    "question": "What best describes 'Licensing compliance'?",
+    "answers": {
+      "1": "Adhering to software usage rights and agreements",
+      "2": "Ensuring IT resources meet current and future demand",
+      "3": "Comprehensive cost including direct and indirect expenses over lifecycle",
+      "4": "Maintaining information about IT assets and their relationships"
+    },
+    "correct_answer": 1,
+    "explanation": "'Licensing compliance' is defined as: Adhering to software usage rights and agreements.",
+    "difficulty": "medium",
+    "id": "Q092"
+  },
+  {
+    "topic": "IT Resource Management",
+    "question": "What best describes 'Sourcing strategy'?",
+    "answers": {
+      "1": "Identifying root causes and preventing recurring incidents",
+      "2": "Comprehensive cost including direct and indirect expenses over lifecycle",
+      "3": "A best-practice framework for managing IT services across their lifecycle",
+      "4": "Deciding between in-house, outsourcing, or hybrid delivery"
+    },
+    "correct_answer": 4,
+    "explanation": "'Sourcing strategy' is defined as: Deciding between in-house, outsourcing, or hybrid delivery.",
+    "difficulty": "medium",
+    "id": "Q093"
+  },
+  {
+    "topic": "IT Resource Management",
+    "question": "What best describes 'Service desk'?",
+    "answers": {
+      "1": "Comprehensive cost including direct and indirect expenses over lifecycle",
+      "2": "A best-practice framework for managing IT services across their lifecycle",
+      "3": "Measures such as MTTR, first-call resolution, and SLA compliance",
+      "4": "Single point of contact between users and IT"
+    },
+    "correct_answer": 4,
+    "explanation": "'Service desk' is defined as: Single point of contact between users and IT.",
+    "difficulty": "medium",
+    "id": "Q094"
+  },
+  {
+    "topic": "IT Resource Management",
+    "question": "What best describes 'KPIs for IT services'?",
+    "answers": {
+      "1": "Measures such as MTTR, first-call resolution, and SLA compliance",
+      "2": "Restoring normal service operation as quickly as possible after disruptions",
+      "3": "Planning, acquiring, operating, and controlling IT resources and services",
+      "4": "Deciding between in-house, outsourcing, or hybrid delivery"
+    },
+    "correct_answer": 1,
+    "explanation": "'KPIs for IT services' is defined as: Measures such as MTTR, first-call resolution, and SLA compliance.",
+    "difficulty": "hard",
+    "id": "Q095"
+  },
+  {
+    "topic": "IT Resource Management",
+    "question": "In the context of IT Resource Management, which option best matches 'Problem management'?",
+    "answers": {
+      "1": "Meet uptime/availability targets",
+      "2": "Match resources to demand",
+      "3": "Control changes to minimize risk",
+      "4": "Find and fix underlying causes"
+    },
+    "correct_answer": 4,
+    "explanation": "'Problem management' corresponds to: Find and fix underlying causes.",
+    "difficulty": "hard",
+    "id": "Q096"
+  },
+  {
+    "topic": "Data Protection & Security",
+    "question": "In the context of Data Protection & Security, which option best matches 'Non-repudiation'?",
+    "answers": {
+      "1": "Preventing unauthorized modification",
+      "2": "Preventing unauthorized disclosure",
+      "3": "Removing personal identifiers irreversibly",
+      "4": "Actions cannot be credibly denied"
+    },
+    "correct_answer": 4,
+    "explanation": "'Non-repudiation' corresponds to: Actions cannot be credibly denied.",
+    "difficulty": "easy",
+    "id": "Q097"
+  },
+  {
+    "topic": "Data Protection & Security",
+    "question": "What best describes 'Data protection'?",
+    "answers": {
+      "1": "Preventing unauthorized access to data",
+      "2": "Replacing identifiers with placeholders while allowing re-identification under controls",
+      "3": "Collecting only data that is necessary for a specific purpose",
+      "4": "Lawful, fair, and transparent processing of personal data with defined purposes"
+    },
+    "correct_answer": 4,
+    "explanation": "'Data protection' is defined as: Lawful, fair, and transparent processing of personal data with defined purposes.",
+    "difficulty": "easy",
+    "id": "Q098"
+  },
+  {
+    "topic": "Data Protection & Security",
+    "question": "In the context of Data Protection & Security, which option best matches 'Confidentiality'?",
+    "answers": {
+      "1": "Ensuring timely access to data and systems",
+      "2": "Preventing unauthorized disclosure",
+      "3": "Assurance of identity and source",
+      "4": "Actions cannot be credibly denied"
+    },
+    "correct_answer": 2,
+    "explanation": "'Confidentiality' corresponds to: Preventing unauthorized disclosure.",
+    "difficulty": "easy",
+    "id": "Q099"
+  },
+  {
+    "topic": "Data Protection & Security",
+    "question": "In the context of Data Protection & Security, which option best matches 'Authenticity'?",
+    "answers": {
+      "1": "Preventing unauthorized disclosure",
+      "2": "Ensuring timely access to data and systems",
+      "3": "Assurance of identity and source",
+      "4": "Removing personal identifiers irreversibly"
+    },
+    "correct_answer": 3,
+    "explanation": "'Authenticity' corresponds to: Assurance of identity and source.",
+    "difficulty": "easy",
+    "id": "Q100"
+  },
+  {
+    "topic": "Data Protection & Security",
+    "question": "What best describes 'Data security'?",
+    "answers": {
+      "1": "Replacing identifiers with placeholders while allowing re-identification under controls",
+      "2": "Preventing parties from denying their actions or commitments",
+      "3": "Irreversibly removing identifiers from data",
+      "4": "Technical/organizational measures to ensure confidentiality, integrity, and availability"
+    },
+    "correct_answer": 4,
+    "explanation": "'Data security' is defined as: Technical/organizational measures to ensure confidentiality, integrity, and availability.",
+    "difficulty": "hard",
+    "id": "Q101"
+  },
+  {
+    "topic": "Data Protection & Security",
+    "question": "In the context of Data Protection & Security, which option best matches 'Anonymization'?",
+    "answers": {
+      "1": "Actions cannot be credibly denied",
+      "2": "Preventing unauthorized disclosure",
+      "3": "Ensuring timely access to data and systems",
+      "4": "Removing personal identifiers irreversibly"
+    },
+    "correct_answer": 4,
+    "explanation": "'Anonymization' corresponds to: Removing personal identifiers irreversibly.",
+    "difficulty": "easy",
+    "id": "Q102"
+  },
+  {
+    "topic": "Data Protection & Security",
+    "question": "What best describes 'Confidentiality'?",
+    "answers": {
+      "1": "Technical/organizational measures to ensure confidentiality, integrity, and availability",
+      "2": "Preventing unauthorized access to data",
+      "3": "Irreversibly removing identifiers from data",
+      "4": "Restricting system/data access to authorized users"
+    },
+    "correct_answer": 2,
+    "explanation": "'Confidentiality' is defined as: Preventing unauthorized access to data.",
+    "difficulty": "easy",
+    "id": "Q103"
+  },
+  {
+    "topic": "Data Protection & Security",
+    "question": "What best describes 'Integrity'?",
+    "answers": {
+      "1": "Ensuring data is accurate and unaltered",
+      "2": "Collecting only data that is necessary for a specific purpose",
+      "3": "Preventing parties from denying their actions or commitments",
+      "4": "Embedding data protection into systems from the outset"
+    },
+    "correct_answer": 1,
+    "explanation": "'Integrity' is defined as: Ensuring data is accurate and unaltered.",
+    "difficulty": "hard",
+    "id": "Q104"
+  },
+  {
+    "topic": "Data Protection & Security",
+    "question": "What best describes 'Availability'?",
+    "answers": {
+      "1": "Irreversibly removing identifiers from data",
+      "2": "Restricting system/data access to authorized users",
+      "3": "Ensuring data and systems are accessible when needed",
+      "4": "Lawful, fair, and transparent processing of personal data with defined purposes"
+    },
+    "correct_answer": 3,
+    "explanation": "'Availability' is defined as: Ensuring data and systems are accessible when needed.",
+    "difficulty": "easy",
+    "id": "Q105"
+  },
+  {
+    "topic": "Data Protection & Security",
+    "question": "In the context of Data Protection & Security, which option best matches 'Availability'?",
+    "answers": {
+      "1": "Actions cannot be credibly denied",
+      "2": "Preventing unauthorized disclosure",
+      "3": "Ensuring timely access to data and systems",
+      "4": "Assurance of identity and source"
+    },
+    "correct_answer": 3,
+    "explanation": "'Availability' corresponds to: Ensuring timely access to data and systems.",
+    "difficulty": "medium",
+    "id": "Q106"
+  },
+  {
+    "topic": "Data Protection & Security",
+    "question": "What best describes 'Authenticity'?",
+    "answers": {
+      "1": "Ensuring data and systems are accessible when needed",
+      "2": "Restricting system/data access to authorized users",
+      "3": "Assurance that entities are who they claim to be",
+      "4": "Safeguarding data and restoring systems after failure"
+    },
+    "correct_answer": 3,
+    "explanation": "'Authenticity' is defined as: Assurance that entities are who they claim to be.",
+    "difficulty": "medium",
+    "id": "Q107"
+  },
+  {
+    "topic": "Data Protection & Security",
+    "question": "What best describes 'Non-repudiation'?",
+    "answers": {
+      "1": "Lawful, fair, and transparent processing of personal data with defined purposes",
+      "2": "Preventing parties from denying their actions or commitments",
+      "3": "Assurance that entities are who they claim to be",
+      "4": "Safeguarding data and restoring systems after failure"
+    },
+    "correct_answer": 2,
+    "explanation": "'Non-repudiation' is defined as: Preventing parties from denying their actions or commitments.",
+    "difficulty": "medium",
+    "id": "Q108"
+  },
+  {
+    "topic": "Data Protection & Security",
+    "question": "What best describes 'Anonymization'?",
+    "answers": {
+      "1": "Ensuring data is accurate and unaltered",
+      "2": "Preventing parties from denying their actions or commitments",
+      "3": "Irreversibly removing identifiers from data",
+      "4": "Lawful, fair, and transparent processing of personal data with defined purposes"
+    },
+    "correct_answer": 3,
+    "explanation": "'Anonymization' is defined as: Irreversibly removing identifiers from data.",
+    "difficulty": "medium",
+    "id": "Q109"
+  },
+  {
+    "topic": "Data Protection & Security",
+    "question": "In the context of Data Protection & Security, which option best matches 'Integrity'?",
+    "answers": {
+      "1": "Ensuring timely access to data and systems",
+      "2": "Removing personal identifiers irreversibly",
+      "3": "Preventing unauthorized modification",
+      "4": "Assurance of identity and source"
+    },
+    "correct_answer": 3,
+    "explanation": "'Integrity' corresponds to: Preventing unauthorized modification.",
+    "difficulty": "medium",
+    "id": "Q110"
+  },
+  {
+    "topic": "Data Protection & Security",
+    "question": "What best describes 'Pseudonymization'?",
+    "answers": {
+      "1": "Preventing unauthorized access to data",
+      "2": "Replacing identifiers with placeholders while allowing re-identification under controls",
+      "3": "Embedding data protection into systems from the outset",
+      "4": "Preventing parties from denying their actions or commitments"
+    },
+    "correct_answer": 2,
+    "explanation": "'Pseudonymization' is defined as: Replacing identifiers with placeholders while allowing re-identification under controls.",
+    "difficulty": "hard",
+    "id": "Q111"
+  },
+  {
+    "topic": "Data Protection & Security",
+    "question": "What best describes 'Privacy by design'?",
+    "answers": {
+      "1": "Ensuring data and systems are accessible when needed",
+      "2": "Embedding data protection into systems from the outset",
+      "3": "Preventing parties from denying their actions or commitments",
+      "4": "Collecting only data that is necessary for a specific purpose"
+    },
+    "correct_answer": 2,
+    "explanation": "'Privacy by design' is defined as: Embedding data protection into systems from the outset.",
+    "difficulty": "hard",
+    "id": "Q112"
+  },
+  {
+    "topic": "Data Protection & Security",
+    "question": "What best describes 'FADP/GDPR consent'?",
+    "answers": {
+      "1": "Freely given, specific, informed, and unambiguous agreement to data processing",
+      "2": "Embedding data protection into systems from the outset",
+      "3": "Protecting data by transforming it into unreadable form without a key",
+      "4": "Irreversibly removing identifiers from data"
+    },
+    "correct_answer": 1,
+    "explanation": "'FADP/GDPR consent' is defined as: Freely given, specific, informed, and unambiguous agreement to data processing.",
+    "difficulty": "hard",
+    "id": "Q113"
+  },
+  {
+    "topic": "Data Protection & Security",
+    "question": "What best describes 'Data minimization'?",
+    "answers": {
+      "1": "Collecting only data that is necessary for a specific purpose",
+      "2": "Safeguarding data and restoring systems after failure",
+      "3": "Embedding data protection into systems from the outset",
+      "4": "Preventing parties from denying their actions or commitments"
+    },
+    "correct_answer": 1,
+    "explanation": "'Data minimization' is defined as: Collecting only data that is necessary for a specific purpose.",
+    "difficulty": "hard",
+    "id": "Q114"
+  },
+  {
+    "topic": "Data Protection & Security",
+    "question": "What best describes 'Access control'?",
+    "answers": {
+      "1": "Protecting data by transforming it into unreadable form without a key",
+      "2": "Restricting system/data access to authorized users",
+      "3": "Preventing unauthorized access to data",
+      "4": "Assurance that entities are who they claim to be"
+    },
+    "correct_answer": 2,
+    "explanation": "'Access control' is defined as: Restricting system/data access to authorized users.",
+    "difficulty": "hard",
+    "id": "Q115"
+  },
+  {
+    "topic": "Data Protection & Security",
+    "question": "What best describes 'Encryption'?",
+    "answers": {
+      "1": "Protecting data by transforming it into unreadable form without a key",
+      "2": "Safeguarding data and restoring systems after failure",
+      "3": "Restricting system/data access to authorized users",
+      "4": "Assurance that entities are who they claim to be"
+    },
+    "correct_answer": 1,
+    "explanation": "'Encryption' is defined as: Protecting data by transforming it into unreadable form without a key.",
+    "difficulty": "hard",
+    "id": "Q116"
+  },
+  {
+    "topic": "Data Protection & Security",
+    "question": "What best describes 'Backup & recovery'?",
+    "answers": {
+      "1": "Embedding data protection into systems from the outset",
+      "2": "Safeguarding data and restoring systems after failure",
+      "3": "Irreversibly removing identifiers from data",
+      "4": "Preventing parties from denying their actions or commitments"
+    },
+    "correct_answer": 2,
+    "explanation": "'Backup & recovery' is defined as: Safeguarding data and restoring systems after failure.",
+    "difficulty": "hard",
+    "id": "Q117"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "What best describes 'Customer Relationships'?",
+    "answers": {
+      "1": "Distinct groups of people or organizations a company aims to serve",
+      "2": "The types of relationships a company establishes with specific customer segments",
+      "3": "The most important assets required to make a business model work",
+      "4": "How a company communicates with and reaches its customer segments"
+    },
+    "correct_answer": 2,
+    "explanation": "'Customer Relationships' is defined as: The types of relationships a company establishes with specific customer segments.",
+    "difficulty": "easy",
+    "id": "Q118"
+  },
+  {
+    "topic": "Data Protection & Security",
+    "question": "What best describes 'Authenticity'?",
+    "answers": {
+      "1": "Assurance that entities are who they claim to be",
+      "2": "Irreversibly removing identifiers from data",
+      "3": "Preventing unauthorized access to data",
+      "4": "Freely given, specific, informed, and unambiguous agreement to data processing"
+    },
+    "correct_answer": 1,
+    "explanation": "'Authenticity' is defined as: Assurance that entities are who they claim to be.",
+    "difficulty": "hard",
+    "id": "Q119"
+  },
+  {
+    "topic": "Data Protection & Security",
+    "question": "What best describes 'Access control'?",
+    "answers": {
+      "1": "Collecting only data that is necessary for a specific purpose",
+      "2": "Preventing unauthorized access to data",
+      "3": "Protecting data by transforming it into unreadable form without a key",
+      "4": "Restricting system/data access to authorized users"
+    },
+    "correct_answer": 4,
+    "explanation": "'Access control' is defined as: Restricting system/data access to authorized users.",
+    "difficulty": "hard",
+    "id": "Q120"
+  },
+  {
+    "topic": "Enterprise Architecture",
+    "question": "What best describes 'Solution architecture'?",
+    "answers": {
+      "1": "Modeled business workflows that are supported by IT systems",
+      "2": "Management discipline to align and evolve sub-architectures strategically",
+      "3": "Design of specific solutions within the enterprise landscape",
+      "4": "Linking business capabilities to applications and technologies"
+    },
+    "correct_answer": 3,
+    "explanation": "'Solution architecture' is defined as: Design of specific solutions within the enterprise landscape.",
+    "difficulty": "hard",
+    "id": "Q121"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "What best describes 'Cost Structure'?",
+    "answers": {
+      "1": "The cash a company generates from each customer segment",
+      "2": "The network of suppliers and partners that make the business model work",
+      "3": "All costs incurred to operate a business model",
+      "4": "Removing intermediaries in a supply chain"
+    },
+    "correct_answer": 3,
+    "explanation": "'Cost Structure' is defined as: All costs incurred to operate a business model.",
+    "difficulty": "easy",
+    "id": "Q122"
+  },
+  {
+    "topic": "Business–IT Alignment",
+    "question": "What best describes 'Roadmap'?",
+    "answers": {
+      "1": "IT mainly supports admin processes and is seen as necessary expense",
+      "2": "IT actively supports implementation of corporate strategy",
+      "3": "Managing organizational/technical change to realize benefits",
+      "4": "Time-sequenced plan to evolve capabilities and systems"
+    },
+    "correct_answer": 4,
+    "explanation": "'Roadmap' is defined as: Time-sequenced plan to evolve capabilities and systems.",
+    "difficulty": "medium",
+    "id": "Q123"
+  },
+  {
+    "topic": "IT Resource Management",
+    "question": "What best describes 'Incident management'?",
+    "answers": {
+      "1": "Adhering to software usage rights and agreements",
+      "2": "Planning, acquiring, operating, and controlling IT resources and services",
+      "3": "Restoring normal service operation as quickly as possible after disruptions",
+      "4": "Maintaining information about IT assets and their relationships"
+    },
+    "correct_answer": 3,
+    "explanation": "'Incident management' is defined as: Restoring normal service operation as quickly as possible after disruptions.",
+    "difficulty": "medium",
+    "id": "Q124"
+  },
+  {
+    "topic": "Data Protection & Security",
+    "question": "What best describes 'Encryption'?",
+    "answers": {
+      "1": "Ensuring data and systems are accessible when needed",
+      "2": "Technical/organizational measures to ensure confidentiality, integrity, and availability",
+      "3": "Protecting data by transforming it into unreadable form without a key",
+      "4": "Safeguarding data and restoring systems after failure"
+    },
+    "correct_answer": 3,
+    "explanation": "'Encryption' is defined as: Protecting data by transforming it into unreadable form without a key.",
+    "difficulty": "hard",
+    "id": "Q125"
+  },
+  {
+    "topic": "Business–IT Alignment",
+    "question": "What best describes 'Stakeholder analysis'?",
+    "answers": {
+      "1": "Business and IT strategies are developed collaboratively",
+      "2": "IT capabilities and innovations shape business strategy",
+      "3": "Identifying parties affected by or influencing a change",
+      "4": "IT mainly supports admin processes and is seen as necessary expense"
+    },
+    "correct_answer": 3,
+    "explanation": "'Stakeholder analysis' is defined as: Identifying parties affected by or influencing a change.",
+    "difficulty": "hard",
+    "id": "Q126"
+  },
+  {
+    "topic": "Digitalization",
+    "question": "What best describes 'Platform business model'?",
+    "answers": {
+      "1": "Software bots that automate structured, repetitive tasks",
+      "2": "On-demand access to computing resources via the internet with pay-as-you-go pricing",
+      "3": "A model that creates value by facilitating interactions between producers and consumers",
+      "4": "Integration of cyber-physical systems and automation in manufacturing"
+    },
+    "correct_answer": 3,
+    "explanation": "'Platform business model' is defined as: A model that creates value by facilitating interactions between producers and consumers.",
+    "difficulty": "easy",
+    "id": "Q127"
+  },
+  {
+    "topic": "Enterprise Architecture",
+    "question": "What best describes 'IT-supported Processes'?",
+    "answers": {
+      "1": "Describes business model, goals, and process/organizational structures",
+      "2": "Modeled business workflows that are supported by IT systems",
+      "3": "Underlying hardware, networks, and platforms enabling IT services",
+      "4": "Upgrading or replacing outdated systems while preserving core functionality"
+    },
+    "correct_answer": 2,
+    "explanation": "'IT-supported Processes' is defined as: Modeled business workflows that are supported by IT systems.",
+    "difficulty": "easy",
+    "id": "Q128"
+  },
+  {
+    "topic": "Digitalization",
+    "question": "What best describes 'IoT (Internet of Things)'?",
+    "answers": {
+      "1": "Charging based on the level or frequency of use",
+      "2": "A pricing model where a basic version is free and advanced features are paid",
+      "3": "Strategic reinvention of business models, processes, and culture using digital technologies",
+      "4": "Networked physical objects that collect and exchange data"
+    },
+    "correct_answer": 4,
+    "explanation": "'IoT (Internet of Things)' is defined as: Networked physical objects that collect and exchange data.",
+    "difficulty": "medium",
+    "id": "Q129"
+  },
+  {
+    "topic": "Digitalization",
+    "question": "What best describes 'Digitalization'?",
+    "answers": {
+      "1": "Integration of cyber-physical systems and automation in manufacturing",
+      "2": "Systems that perform tasks requiring human intelligence, such as reasoning and learning",
+      "3": "Networked physical objects that collect and exchange data",
+      "4": "The broad socio-economic transformation enabled by digital technologies"
+    },
+    "correct_answer": 4,
+    "explanation": "'Digitalization' is defined as: The broad socio-economic transformation enabled by digital technologies.",
+    "difficulty": "medium",
+    "id": "Q130"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "What best describes 'Revenue Streams'?",
+    "answers": {
+      "1": "The types of relationships a company establishes with specific customer segments",
+      "2": "The network of suppliers and partners that make the business model work",
+      "3": "The value delivered to a specific customer segment",
+      "4": "The cash a company generates from each customer segment"
+    },
+    "correct_answer": 4,
+    "explanation": "'Revenue Streams' is defined as: The cash a company generates from each customer segment.",
+    "difficulty": "easy",
+    "id": "Q131"
+  },
+  {
+    "topic": "Business–IT Alignment",
+    "question": "What best describes 'IT as strategic enabler'?",
+    "answers": {
+      "1": "IT drives innovation and new business models",
+      "2": "IT strategy is derived from corporate/business strategy",
+      "3": "IT actively supports implementation of corporate strategy",
+      "4": "Justification for an investment based on benefits, costs, and risks"
+    },
+    "correct_answer": 1,
+    "explanation": "'IT as strategic enabler' is defined as: IT drives innovation and new business models.",
+    "difficulty": "hard",
+    "id": "Q132"
+  },
+  {
+    "topic": "Enterprise Architecture",
+    "question": "What best describes 'IT Infrastructure'?",
+    "answers": {
+      "1": "Structures and principles for managing and using data across the enterprise",
+      "2": "Modeled business workflows that are supported by IT systems",
+      "3": "Design of specific solutions within the enterprise landscape",
+      "4": "Underlying hardware, networks, and platforms enabling IT services"
+    },
+    "correct_answer": 4,
+    "explanation": "'IT Infrastructure' is defined as: Underlying hardware, networks, and platforms enabling IT services.",
+    "difficulty": "medium",
+    "id": "Q133"
+  },
+  {
+    "topic": "IT Resource Management",
+    "question": "What best describes 'Service catalog'?",
+    "answers": {
+      "1": "A structured list of available IT services and offerings",
+      "2": "Single point of contact between users and IT",
+      "3": "Measures such as MTTR, first-call resolution, and SLA compliance",
+      "4": "Ongoing effort to enhance services, processes, and outcomes"
+    },
+    "correct_answer": 1,
+    "explanation": "'Service catalog' is defined as: A structured list of available IT services and offerings.",
+    "difficulty": "easy",
+    "id": "Q134"
+  },
+  {
+    "topic": "Digitalization",
+    "question": "What best describes 'Customer-centricity'?",
+    "answers": {
+      "1": "A pricing model where a basic version is free and advanced features are paid",
+      "2": "Designing offerings around customer needs and value",
+      "3": "Networked physical objects that collect and exchange data",
+      "4": "Software bots that automate structured, repetitive tasks"
+    },
+    "correct_answer": 2,
+    "explanation": "'Customer-centricity' is defined as: Designing offerings around customer needs and value.",
+    "difficulty": "medium",
+    "id": "Q135"
+  },
+  {
+    "topic": "Enterprise Architecture",
+    "question": "What best describes 'IT-supported Processes'?",
+    "answers": {
+      "1": "Ability of systems to exchange and use information",
+      "2": "Modeled business workflows that are supported by IT systems",
+      "3": "Approach to connecting applications and data flows",
+      "4": "Describes business model, goals, and process/organizational structures"
+    },
+    "correct_answer": 2,
+    "explanation": "'IT-supported Processes' is defined as: Modeled business workflows that are supported by IT systems.",
+    "difficulty": "hard",
+    "id": "Q136"
+  },
+  {
+    "topic": "Enterprise Architecture",
+    "question": "What best describes 'Strategic alignment'?",
+    "answers": {
+      "1": "Ability of systems to exchange and use information",
+      "2": "Approach to connecting applications and data flows",
+      "3": "Describes information systems, their functional/technical components, and governance",
+      "4": "Ensuring business objectives and IT capabilities reinforce each other"
+    },
+    "correct_answer": 4,
+    "explanation": "'Strategic alignment' is defined as: Ensuring business objectives and IT capabilities reinforce each other.",
+    "difficulty": "medium",
+    "id": "Q137"
+  },
+  {
+    "topic": "Data Protection & Security",
+    "question": "What best describes 'Confidentiality'?",
+    "answers": {
+      "1": "Replacing identifiers with placeholders while allowing re-identification under controls",
+      "2": "Preventing unauthorized access to data",
+      "3": "Restricting system/data access to authorized users",
+      "4": "Technical/organizational measures to ensure confidentiality, integrity, and availability"
+    },
+    "correct_answer": 2,
+    "explanation": "'Confidentiality' is defined as: Preventing unauthorized access to data.",
+    "difficulty": "easy",
+    "id": "Q138"
+  },
+  {
+    "topic": "Digitalization",
+    "question": "What best describes 'Freemium'?",
+    "answers": {
+      "1": "The broad socio-economic transformation enabled by digital technologies",
+      "2": "Software bots that automate structured, repetitive tasks",
+      "3": "Networked physical objects that collect and exchange data",
+      "4": "A pricing model where a basic version is free and advanced features are paid"
+    },
+    "correct_answer": 4,
+    "explanation": "'Freemium' is defined as: A pricing model where a basic version is free and advanced features are paid.",
+    "difficulty": "easy",
+    "id": "Q139"
+  },
+  {
+    "topic": "Enterprise Architecture",
+    "question": "What best describes 'Enterprise Architecture (EA)'?",
+    "answers": {
+      "1": "Coherent principles and models linking strategy, processes, information systems, and infrastructure",
+      "2": "Structures and principles for managing and using data across the enterprise",
+      "3": "Underlying hardware, networks, and platforms enabling IT services",
+      "4": "Structure and interaction of applications supporting business processes"
+    },
+    "correct_answer": 1,
+    "explanation": "'Enterprise Architecture (EA)' is defined as: Coherent principles and models linking strategy, processes, information systems, and infrastructure.",
+    "difficulty": "hard",
+    "id": "Q140"
+  },
+  {
+    "topic": "Enterprise Architecture",
+    "question": "What best describes 'Business Architecture'?",
+    "answers": {
+      "1": "Management discipline to align and evolve sub-architectures strategically",
+      "2": "Upgrading or replacing outdated systems while preserving core functionality",
+      "3": "Ability of systems to exchange and use information",
+      "4": "Describes business model, goals, and process/organizational structures"
+    },
+    "correct_answer": 4,
+    "explanation": "'Business Architecture' is defined as: Describes business model, goals, and process/organizational structures.",
+    "difficulty": "medium",
+    "id": "Q141"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "What best describes 'Key Partners'?",
+    "answers": {
+      "1": "The network of suppliers and partners that make the business model work",
+      "2": "The most important assets required to make a business model work",
+      "3": "All costs incurred to operate a business model",
+      "4": "A basic version of a product to test assumptions with minimal effort"
+    },
+    "correct_answer": 1,
+    "explanation": "'Key Partners' is defined as: The network of suppliers and partners that make the business model work.",
+    "difficulty": "hard",
+    "id": "Q142"
+  },
+  {
+    "topic": "Digitalization",
+    "question": "What best describes 'Platform business model'?",
+    "answers": {
+      "1": "A model that creates value by facilitating interactions between producers and consumers",
+      "2": "Charging based on the level or frequency of use",
+      "3": "Strategic reinvention of business models, processes, and culture using digital technologies",
+      "4": "Integration of cyber-physical systems and automation in manufacturing"
+    },
+    "correct_answer": 1,
+    "explanation": "'Platform business model' is defined as: A model that creates value by facilitating interactions between producers and consumers.",
+    "difficulty": "hard",
+    "id": "Q143"
+  },
+  {
+    "topic": "Digitalization",
+    "question": "What best describes 'Robotic process automation'?",
+    "answers": {
+      "1": "Using analysis and evidence from data to guide managerial choices",
+      "2": "Charging based on the level or frequency of use",
+      "3": "Networked physical objects that collect and exchange data",
+      "4": "Software bots that automate structured, repetitive tasks"
+    },
+    "correct_answer": 4,
+    "explanation": "'Robotic process automation' is defined as: Software bots that automate structured, repetitive tasks.",
+    "difficulty": "hard",
+    "id": "Q144"
+  },
+  {
+    "topic": "Enterprise Architecture",
+    "question": "What best describes 'Enterprise Architecture Management (EAM)'?",
+    "answers": {
+      "1": "Design of specific solutions within the enterprise landscape",
+      "2": "Upgrading or replacing outdated systems while preserving core functionality",
+      "3": "Structures and principles for managing and using data across the enterprise",
+      "4": "Management discipline to align and evolve sub-architectures strategically"
+    },
+    "correct_answer": 4,
+    "explanation": "'Enterprise Architecture Management (EAM)' is defined as: Management discipline to align and evolve sub-architectures strategically.",
+    "difficulty": "hard",
+    "id": "Q145"
+  },
+  {
+    "topic": "Digitalization",
+    "question": "What best describes 'Customer-centricity'?",
+    "answers": {
+      "1": "Designing offerings around customer needs and value",
+      "2": "Using analysis and evidence from data to guide managerial choices",
+      "3": "A model that creates value by facilitating interactions between producers and consumers",
+      "4": "Software bots that automate structured, repetitive tasks"
+    },
+    "correct_answer": 1,
+    "explanation": "'Customer-centricity' is defined as: Designing offerings around customer needs and value.",
+    "difficulty": "hard",
+    "id": "Q146"
+  },
+  {
+    "topic": "IT Resource Management",
+    "question": "What best describes 'Total cost of ownership'?",
+    "answers": {
+      "1": "Planning, acquiring, operating, and controlling IT resources and services",
+      "2": "Comprehensive cost including direct and indirect expenses over lifecycle",
+      "3": "A best-practice framework for managing IT services across their lifecycle",
+      "4": "Restoring normal service operation as quickly as possible after disruptions"
+    },
+    "correct_answer": 2,
+    "explanation": "'Total cost of ownership' is defined as: Comprehensive cost including direct and indirect expenses over lifecycle.",
+    "difficulty": "medium",
+    "id": "Q147"
+  },
+  {
+    "topic": "Enterprise Architecture",
+    "question": "What best describes 'IT Infrastructure'?",
+    "answers": {
+      "1": "Coherent principles and models linking strategy, processes, information systems, and infrastructure",
+      "2": "Describes information systems, their functional/technical components, and governance",
+      "3": "Design of specific solutions within the enterprise landscape",
+      "4": "Underlying hardware, networks, and platforms enabling IT services"
+    },
+    "correct_answer": 4,
+    "explanation": "'IT Infrastructure' is defined as: Underlying hardware, networks, and platforms enabling IT services.",
+    "difficulty": "hard",
+    "id": "Q148"
+  },
+  {
+    "topic": "Business–IT Alignment",
+    "question": "What best describes 'Roadmap'?",
+    "answers": {
+      "1": "IT drives innovation and new business models",
+      "2": "Time-sequenced plan to evolve capabilities and systems",
+      "3": "Business and IT strategies are developed collaboratively",
+      "4": "IT actively supports implementation of corporate strategy"
+    },
+    "correct_answer": 2,
+    "explanation": "'Roadmap' is defined as: Time-sequenced plan to evolve capabilities and systems.",
+    "difficulty": "easy",
+    "id": "Q149"
+  },
+  {
+    "topic": "Data Protection & Security",
+    "question": "What best describes 'Availability'?",
+    "answers": {
+      "1": "Technical/organizational measures to ensure confidentiality, integrity, and availability",
+      "2": "Restricting system/data access to authorized users",
+      "3": "Ensuring data and systems are accessible when needed",
+      "4": "Lawful, fair, and transparent processing of personal data with defined purposes"
+    },
+    "correct_answer": 3,
+    "explanation": "'Availability' is defined as: Ensuring data and systems are accessible when needed.",
+    "difficulty": "easy",
+    "id": "Q150"
+  },
+  {
+    "topic": "IT Resource Management",
+    "question": "What best describes 'ITIL'?",
+    "answers": {
+      "1": "Deciding between in-house, outsourcing, or hybrid delivery",
+      "2": "A structured list of available IT services and offerings",
+      "3": "Single point of contact between users and IT",
+      "4": "A best-practice framework for managing IT services across their lifecycle"
+    },
+    "correct_answer": 4,
+    "explanation": "'ITIL' is defined as: A best-practice framework for managing IT services across their lifecycle.",
+    "difficulty": "medium",
+    "id": "Q151"
+  },
+  {
+    "topic": "Data Protection & Security",
+    "question": "What best describes 'Backup & recovery'?",
+    "answers": {
+      "1": "Preventing unauthorized access to data",
+      "2": "Safeguarding data and restoring systems after failure",
+      "3": "Technical/organizational measures to ensure confidentiality, integrity, and availability",
+      "4": "Ensuring data is accurate and unaltered"
+    },
+    "correct_answer": 2,
+    "explanation": "'Backup & recovery' is defined as: Safeguarding data and restoring systems after failure.",
+    "difficulty": "medium",
+    "id": "Q152"
+  },
+  {
+    "topic": "Data Protection & Security",
+    "question": "What best describes 'Anonymization'?",
+    "answers": {
+      "1": "Collecting only data that is necessary for a specific purpose",
+      "2": "Protecting data by transforming it into unreadable form without a key",
+      "3": "Irreversibly removing identifiers from data",
+      "4": "Assurance that entities are who they claim to be"
+    },
+    "correct_answer": 3,
+    "explanation": "'Anonymization' is defined as: Irreversibly removing identifiers from data.",
+    "difficulty": "easy",
+    "id": "Q153"
+  },
+  {
+    "topic": "IT Resource Management",
+    "question": "What best describes 'Configuration management'?",
+    "answers": {
+      "1": "Deciding between in-house, outsourcing, or hybrid delivery",
+      "2": "Controlling lifecycle of changes to minimize risk",
+      "3": "Maintaining information about IT assets and their relationships",
+      "4": "Restoring normal service operation as quickly as possible after disruptions"
+    },
+    "correct_answer": 3,
+    "explanation": "'Configuration management' is defined as: Maintaining information about IT assets and their relationships.",
+    "difficulty": "medium",
+    "id": "Q154"
+  },
+  {
+    "topic": "Digitalization",
+    "question": "What best describes 'AI (Artificial Intelligence)'?",
+    "answers": {
+      "1": "Systems that perform tasks requiring human intelligence, such as reasoning and learning",
+      "2": "Using analysis and evidence from data to guide managerial choices",
+      "3": "Charging customers a recurring fee for ongoing access or services",
+      "4": "Networked physical objects that collect and exchange data"
+    },
+    "correct_answer": 1,
+    "explanation": "'AI (Artificial Intelligence)' is defined as: Systems that perform tasks requiring human intelligence, such as reasoning and learning.",
+    "difficulty": "easy",
+    "id": "Q155"
+  },
+  {
+    "topic": "Business–IT Alignment",
+    "question": "What best describes 'Roadmap'?",
+    "answers": {
+      "1": "Time-sequenced plan to evolve capabilities and systems",
+      "2": "IT capabilities and innovations shape business strategy",
+      "3": "IT drives innovation and new business models",
+      "4": "Business and IT strategies are developed collaboratively"
+    },
+    "correct_answer": 1,
+    "explanation": "'Roadmap' is defined as: Time-sequenced plan to evolve capabilities and systems.",
+    "difficulty": "hard",
+    "id": "Q156"
+  },
+  {
+    "topic": "Data Protection & Security",
+    "question": "What best describes 'Data minimization'?",
+    "answers": {
+      "1": "Protecting data by transforming it into unreadable form without a key",
+      "2": "Preventing parties from denying their actions or commitments",
+      "3": "Collecting only data that is necessary for a specific purpose",
+      "4": "Replacing identifiers with placeholders while allowing re-identification under controls"
+    },
+    "correct_answer": 3,
+    "explanation": "'Data minimization' is defined as: Collecting only data that is necessary for a specific purpose.",
+    "difficulty": "medium",
+    "id": "Q157"
+  },
+  {
+    "topic": "Data Protection & Security",
+    "question": "What best describes 'Data security'?",
+    "answers": {
+      "1": "Collecting only data that is necessary for a specific purpose",
+      "2": "Technical/organizational measures to ensure confidentiality, integrity, and availability",
+      "3": "Replacing identifiers with placeholders while allowing re-identification under controls",
+      "4": "Embedding data protection into systems from the outset"
+    },
+    "correct_answer": 2,
+    "explanation": "'Data security' is defined as: Technical/organizational measures to ensure confidentiality, integrity, and availability.",
+    "difficulty": "medium",
+    "id": "Q158"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "What best describes 'Key Activities'?",
+    "answers": {
+      "1": "Distinct groups of people or organizations a company aims to serve",
+      "2": "Encouraging customers to purchase a higher-priced option",
+      "3": "The most important actions a company must take to operate",
+      "4": "The value delivered to a specific customer segment"
+    },
+    "correct_answer": 3,
+    "explanation": "'Key Activities' is defined as: The most important actions a company must take to operate.",
+    "difficulty": "hard",
+    "id": "Q159"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "What best describes 'Key Resources'?",
+    "answers": {
+      "1": "The most important assets required to make a business model work",
+      "2": "The most important actions a company must take to operate",
+      "3": "The types of relationships a company establishes with specific customer segments",
+      "4": "A basic version of a product to test assumptions with minimal effort"
+    },
+    "correct_answer": 1,
+    "explanation": "'Key Resources' is defined as: The most important assets required to make a business model work.",
+    "difficulty": "hard",
+    "id": "Q160"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "What best describes 'Product–Market Fit'?",
+    "answers": {
+      "1": "How a company communicates with and reaches its customer segments",
+      "2": "The cash a company generates from each customer segment",
+      "3": "The degree to which a product satisfies strong market demand",
+      "4": "The value of a service increases as more people use it"
+    },
+    "correct_answer": 3,
+    "explanation": "'Product–Market Fit' is defined as: The degree to which a product satisfies strong market demand.",
+    "difficulty": "hard",
+    "id": "Q161"
+  },
+  {
+    "topic": "IT Resource Management",
+    "question": "What best describes 'Total cost of ownership'?",
+    "answers": {
+      "1": "Ongoing effort to enhance services, processes, and outcomes",
+      "2": "Comprehensive cost including direct and indirect expenses over lifecycle",
+      "3": "Restoring normal service operation as quickly as possible after disruptions",
+      "4": "Measures such as MTTR, first-call resolution, and SLA compliance"
+    },
+    "correct_answer": 2,
+    "explanation": "'Total cost of ownership' is defined as: Comprehensive cost including direct and indirect expenses over lifecycle.",
+    "difficulty": "easy",
+    "id": "Q162"
+  },
+  {
+    "topic": "IT Resource Management",
+    "question": "What best describes 'IT resource management'?",
+    "answers": {
+      "1": "A best-practice framework for managing IT services across their lifecycle",
+      "2": "Restoring normal service operation as quickly as possible after disruptions",
+      "3": "Planning, acquiring, operating, and controlling IT resources and services",
+      "4": "Adhering to software usage rights and agreements"
+    },
+    "correct_answer": 3,
+    "explanation": "'IT resource management' is defined as: Planning, acquiring, operating, and controlling IT resources and services.",
+    "difficulty": "easy",
+    "id": "Q163"
+  },
+  {
+    "topic": "IT Resource Management",
+    "question": "What best describes 'Capacity management'?",
+    "answers": {
+      "1": "Adhering to software usage rights and agreements",
+      "2": "Planning, acquiring, operating, and controlling IT resources and services",
+      "3": "Ensuring IT resources meet current and future demand",
+      "4": "Maintaining information about IT assets and their relationships"
+    },
+    "correct_answer": 3,
+    "explanation": "'Capacity management' is defined as: Ensuring IT resources meet current and future demand.",
+    "difficulty": "hard",
+    "id": "Q164"
+  },
+  {
+    "topic": "Business–IT Alignment",
+    "question": "What best describes 'Strategic level alignment'?",
+    "answers": {
+      "1": "Building mutual understanding between business and IT",
+      "2": "Aligning corporate and IT strategies",
+      "3": "IT actively supports implementation of corporate strategy",
+      "4": "IT improves efficiency and quality in core processes"
+    },
+    "correct_answer": 2,
+    "explanation": "'Strategic level alignment' is defined as: Aligning corporate and IT strategies.",
+    "difficulty": "hard",
+    "id": "Q165"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "What best describes 'Key Partners'?",
+    "answers": {
+      "1": "Encouraging customers to purchase a higher-priced option",
+      "2": "All costs incurred to operate a business model",
+      "3": "The network of suppliers and partners that make the business model work",
+      "4": "The types of relationships a company establishes with specific customer segments"
+    },
+    "correct_answer": 3,
+    "explanation": "'Key Partners' is defined as: The network of suppliers and partners that make the business model work.",
+    "difficulty": "medium",
+    "id": "Q166"
+  },
+  {
+    "topic": "Enterprise Architecture",
+    "question": "What best describes 'Scalability'?",
+    "answers": {
+      "1": "Ability of systems to exchange and use information",
+      "2": "Approach to connecting applications and data flows",
+      "3": "Structures and principles for managing and using data across the enterprise",
+      "4": "Ability of systems to handle growth in load or users"
+    },
+    "correct_answer": 4,
+    "explanation": "'Scalability' is defined as: Ability of systems to handle growth in load or users.",
+    "difficulty": "hard",
+    "id": "Q167"
+  },
+  {
+    "topic": "IT Resource Management",
+    "question": "What best describes 'Configuration management'?",
+    "answers": {
+      "1": "Maintaining information about IT assets and their relationships",
+      "2": "Ensuring services meet agreed availability targets",
+      "3": "Identifying root causes and preventing recurring incidents",
+      "4": "A structured list of available IT services and offerings"
+    },
+    "correct_answer": 1,
+    "explanation": "'Configuration management' is defined as: Maintaining information about IT assets and their relationships.",
+    "difficulty": "hard",
+    "id": "Q168"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "What best describes 'Channels'?",
+    "answers": {
+      "1": "The most important assets required to make a business model work",
+      "2": "The network of suppliers and partners that make the business model work",
+      "3": "The value delivered to a specific customer segment",
+      "4": "How a company communicates with and reaches its customer segments"
+    },
+    "correct_answer": 4,
+    "explanation": "'Channels' is defined as: How a company communicates with and reaches its customer segments.",
+    "difficulty": "easy",
+    "id": "Q169"
+  },
+  {
+    "topic": "Enterprise Architecture",
+    "question": "What best describes 'Interoperability'?",
+    "answers": {
+      "1": "Approach to connecting applications and data flows",
+      "2": "Modeled business workflows that are supported by IT systems",
+      "3": "Ability of systems to exchange and use information",
+      "4": "Structures and principles for managing and using data across the enterprise"
+    },
+    "correct_answer": 3,
+    "explanation": "'Interoperability' is defined as: Ability of systems to exchange and use information.",
+    "difficulty": "hard",
+    "id": "Q170"
+  },
+  {
+    "topic": "Business–IT Alignment",
+    "question": "What best describes 'Stakeholder analysis'?",
+    "answers": {
+      "1": "IT improves efficiency and quality in core processes",
+      "2": "IT strategy is derived from corporate/business strategy",
+      "3": "IT capabilities and innovations shape business strategy",
+      "4": "Identifying parties affected by or influencing a change"
+    },
+    "correct_answer": 4,
+    "explanation": "'Stakeholder analysis' is defined as: Identifying parties affected by or influencing a change.",
+    "difficulty": "medium",
+    "id": "Q171"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "What best describes 'Customer Relationships'?",
+    "answers": {
+      "1": "The most important actions a company must take to operate",
+      "2": "The types of relationships a company establishes with specific customer segments",
+      "3": "The value delivered to a specific customer segment",
+      "4": "Removing intermediaries in a supply chain"
+    },
+    "correct_answer": 2,
+    "explanation": "'Customer Relationships' is defined as: The types of relationships a company establishes with specific customer segments.",
+    "difficulty": "hard",
+    "id": "Q172"
+  },
+  {
+    "topic": "Enterprise Architecture",
+    "question": "What best describes 'Strategic alignment'?",
+    "answers": {
+      "1": "Ability of systems to exchange and use information",
+      "2": "Underlying hardware, networks, and platforms enabling IT services",
+      "3": "Ensuring business objectives and IT capabilities reinforce each other",
+      "4": "Describes business model, goals, and process/organizational structures"
+    },
+    "correct_answer": 3,
+    "explanation": "'Strategic alignment' is defined as: Ensuring business objectives and IT capabilities reinforce each other.",
+    "difficulty": "easy",
+    "id": "Q173"
+  },
+  {
+    "topic": "Business–IT Alignment",
+    "question": "What best describes 'Cultural level alignment'?",
+    "answers": {
+      "1": "IT improves efficiency and quality in core processes",
+      "2": "A contract defining expected service performance and responsibilities",
+      "3": "Building mutual understanding between business and IT",
+      "4": "IT strategy is derived from corporate/business strategy"
+    },
+    "correct_answer": 3,
+    "explanation": "'Cultural level alignment' is defined as: Building mutual understanding between business and IT.",
+    "difficulty": "easy",
+    "id": "Q174"
+  },
+  {
+    "topic": "Digitalization",
+    "question": "What best describes 'Platform business model'?",
+    "answers": {
+      "1": "Charging customers a recurring fee for ongoing access or services",
+      "2": "Using analysis and evidence from data to guide managerial choices",
+      "3": "A model that creates value by facilitating interactions between producers and consumers",
+      "4": "Integration of cyber-physical systems and automation in manufacturing"
+    },
+    "correct_answer": 3,
+    "explanation": "'Platform business model' is defined as: A model that creates value by facilitating interactions between producers and consumers.",
+    "difficulty": "hard",
+    "id": "Q175"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "What best describes 'Customer Segments'?",
+    "answers": {
+      "1": "Removing intermediaries in a supply chain",
+      "2": "Distinct groups of people or organizations a company aims to serve",
+      "3": "The most important actions a company must take to operate",
+      "4": "Encouraging customers to purchase a higher-priced option"
+    },
+    "correct_answer": 2,
+    "explanation": "'Customer Segments' is defined as: Distinct groups of people or organizations a company aims to serve.",
+    "difficulty": "medium",
+    "id": "Q176"
+  },
+  {
+    "topic": "IT Resource Management",
+    "question": "What best describes 'Configuration management'?",
+    "answers": {
+      "1": "Single point of contact between users and IT",
+      "2": "Planning, acquiring, operating, and controlling IT resources and services",
+      "3": "Maintaining information about IT assets and their relationships",
+      "4": "Ongoing effort to enhance services, processes, and outcomes"
+    },
+    "correct_answer": 3,
+    "explanation": "'Configuration management' is defined as: Maintaining information about IT assets and their relationships.",
+    "difficulty": "medium",
+    "id": "Q177"
+  },
+  {
+    "topic": "Business–IT Alignment",
+    "question": "What best describes 'IT as business partner'?",
+    "answers": {
+      "1": "Business and IT strategies are developed collaboratively",
+      "2": "IT drives innovation and new business models",
+      "3": "IT actively supports implementation of corporate strategy",
+      "4": "A contract defining expected service performance and responsibilities"
+    },
+    "correct_answer": 3,
+    "explanation": "'IT as business partner' is defined as: IT actively supports implementation of corporate strategy.",
+    "difficulty": "medium",
+    "id": "Q178"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "What best describes 'Key Activities'?",
+    "answers": {
+      "1": "Revenue from one product subsidizes another",
+      "2": "The cash a company generates from each customer segment",
+      "3": "The most important actions a company must take to operate",
+      "4": "The degree to which a product satisfies strong market demand"
+    },
+    "correct_answer": 3,
+    "explanation": "'Key Activities' is defined as: The most important actions a company must take to operate.",
+    "difficulty": "hard",
+    "id": "Q179"
+  },
+  {
+    "topic": "Data Protection & Security",
+    "question": "What best describes 'Privacy by design'?",
+    "answers": {
+      "1": "Lawful, fair, and transparent processing of personal data with defined purposes",
+      "2": "Irreversibly removing identifiers from data",
+      "3": "Embedding data protection into systems from the outset",
+      "4": "Assurance that entities are who they claim to be"
+    },
+    "correct_answer": 3,
+    "explanation": "'Privacy by design' is defined as: Embedding data protection into systems from the outset.",
+    "difficulty": "medium",
+    "id": "Q180"
+  },
+  {
+    "topic": "Business–IT Alignment",
+    "question": "What best describes 'IT as strategic enabler'?",
+    "answers": {
+      "1": "IT drives innovation and new business models",
+      "2": "Time-sequenced plan to evolve capabilities and systems",
+      "3": "Identifying parties affected by or influencing a change",
+      "4": "Managing organizational/technical change to realize benefits"
+    },
+    "correct_answer": 1,
+    "explanation": "'IT as strategic enabler' is defined as: IT drives innovation and new business models.",
+    "difficulty": "medium",
+    "id": "Q181"
+  },
+  {
+    "topic": "Enterprise Architecture",
+    "question": "What best describes 'Solution architecture'?",
+    "answers": {
+      "1": "Design of specific solutions within the enterprise landscape",
+      "2": "Modeled business workflows that are supported by IT systems",
+      "3": "Upgrading or replacing outdated systems while preserving core functionality",
+      "4": "Linking business capabilities to applications and technologies"
+    },
+    "correct_answer": 1,
+    "explanation": "'Solution architecture' is defined as: Design of specific solutions within the enterprise landscape.",
+    "difficulty": "hard",
+    "id": "Q182"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "What best describes 'Cost Structure'?",
+    "answers": {
+      "1": "All costs incurred to operate a business model",
+      "2": "Revenue from one product subsidizes another",
+      "3": "The most important actions a company must take to operate",
+      "4": "The degree to which a product satisfies strong market demand"
+    },
+    "correct_answer": 1,
+    "explanation": "'Cost Structure' is defined as: All costs incurred to operate a business model.",
+    "difficulty": "hard",
+    "id": "Q183"
+  },
+  {
+    "topic": "Digitalization",
+    "question": "What best describes 'Industry 4.0'?",
+    "answers": {
+      "1": "Converting analog information into digital form",
+      "2": "The broad socio-economic transformation enabled by digital technologies",
+      "3": "Systems that perform tasks requiring human intelligence, such as reasoning and learning",
+      "4": "Integration of cyber-physical systems and automation in manufacturing"
+    },
+    "correct_answer": 4,
+    "explanation": "'Industry 4.0' is defined as: Integration of cyber-physical systems and automation in manufacturing.",
+    "difficulty": "hard",
+    "id": "Q184"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "What best describes 'Key Activities'?",
+    "answers": {
+      "1": "The network of suppliers and partners that make the business model work",
+      "2": "The types of relationships a company establishes with specific customer segments",
+      "3": "A basic version of a product to test assumptions with minimal effort",
+      "4": "The most important actions a company must take to operate"
+    },
+    "correct_answer": 4,
+    "explanation": "'Key Activities' is defined as: The most important actions a company must take to operate.",
+    "difficulty": "hard",
+    "id": "Q185"
+  },
+  {
+    "topic": "Data Protection & Security",
+    "question": "What best describes 'Confidentiality'?",
+    "answers": {
+      "1": "Ensuring data and systems are accessible when needed",
+      "2": "Embedding data protection into systems from the outset",
+      "3": "Preventing parties from denying their actions or commitments",
+      "4": "Preventing unauthorized access to data"
+    },
+    "correct_answer": 4,
+    "explanation": "'Confidentiality' is defined as: Preventing unauthorized access to data.",
+    "difficulty": "hard",
+    "id": "Q186"
+  },
+  {
+    "topic": "Enterprise Architecture",
+    "question": "What best describes 'IT Architecture'?",
+    "answers": {
+      "1": "Linking business capabilities to applications and technologies",
+      "2": "Underlying hardware, networks, and platforms enabling IT services",
+      "3": "Describes information systems, their functional/technical components, and governance",
+      "4": "Ability of systems to exchange and use information"
+    },
+    "correct_answer": 3,
+    "explanation": "'IT Architecture' is defined as: Describes information systems, their functional/technical components, and governance.",
+    "difficulty": "medium",
+    "id": "Q187"
+  },
+  {
+    "topic": "IT Resource Management",
+    "question": "What best describes 'Availability management'?",
+    "answers": {
+      "1": "Ensuring services meet agreed availability targets",
+      "2": "Controlling lifecycle of changes to minimize risk",
+      "3": "Identifying root causes and preventing recurring incidents",
+      "4": "Ongoing effort to enhance services, processes, and outcomes"
+    },
+    "correct_answer": 1,
+    "explanation": "'Availability management' is defined as: Ensuring services meet agreed availability targets.",
+    "difficulty": "hard",
+    "id": "Q188"
+  },
+  {
+    "topic": "Enterprise Architecture",
+    "question": "What best describes 'Integration architecture'?",
+    "answers": {
+      "1": "Upgrading or replacing outdated systems while preserving core functionality",
+      "2": "Approach to connecting applications and data flows",
+      "3": "Ability of systems to exchange and use information",
+      "4": "Management discipline to align and evolve sub-architectures strategically"
+    },
+    "correct_answer": 2,
+    "explanation": "'Integration architecture' is defined as: Approach to connecting applications and data flows.",
+    "difficulty": "easy",
+    "id": "Q189"
+  },
+  {
+    "topic": "IT Resource Management",
+    "question": "What best describes 'KPIs for IT services'?",
+    "answers": {
+      "1": "Controlling lifecycle of changes to minimize risk",
+      "2": "A best-practice framework for managing IT services across their lifecycle",
+      "3": "Single point of contact between users and IT",
+      "4": "Measures such as MTTR, first-call resolution, and SLA compliance"
+    },
+    "correct_answer": 4,
+    "explanation": "'KPIs for IT services' is defined as: Measures such as MTTR, first-call resolution, and SLA compliance.",
+    "difficulty": "hard",
+    "id": "Q190"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "What best describes 'Revenue Streams'?",
+    "answers": {
+      "1": "The most important assets required to make a business model work",
+      "2": "The cash a company generates from each customer segment",
+      "3": "Revenue from one product subsidizes another",
+      "4": "Distinct groups of people or organizations a company aims to serve"
+    },
+    "correct_answer": 2,
+    "explanation": "'Revenue Streams' is defined as: The cash a company generates from each customer segment.",
+    "difficulty": "easy",
+    "id": "Q191"
+  },
+  {
+    "topic": "Data Protection & Security",
+    "question": "What best describes 'Anonymization'?",
+    "answers": {
+      "1": "Embedding data protection into systems from the outset",
+      "2": "Irreversibly removing identifiers from data",
+      "3": "Ensuring data is accurate and unaltered",
+      "4": "Ensuring data and systems are accessible when needed"
+    },
+    "correct_answer": 2,
+    "explanation": "'Anonymization' is defined as: Irreversibly removing identifiers from data.",
+    "difficulty": "easy",
+    "id": "Q192"
+  },
+  {
+    "topic": "IT Resource Management",
+    "question": "What best describes 'Licensing compliance'?",
+    "answers": {
+      "1": "Adhering to software usage rights and agreements",
+      "2": "Identifying root causes and preventing recurring incidents",
+      "3": "Planning, acquiring, operating, and controlling IT resources and services",
+      "4": "Measures such as MTTR, first-call resolution, and SLA compliance"
+    },
+    "correct_answer": 1,
+    "explanation": "'Licensing compliance' is defined as: Adhering to software usage rights and agreements.",
+    "difficulty": "hard",
+    "id": "Q193"
+  },
+  {
+    "topic": "Digitalization",
+    "question": "What best describes 'Digitization'?",
+    "answers": {
+      "1": "A pricing model where a basic version is free and advanced features are paid",
+      "2": "Converting analog information into digital form",
+      "3": "Using analysis and evidence from data to guide managerial choices",
+      "4": "A model that creates value by facilitating interactions between producers and consumers"
+    },
+    "correct_answer": 2,
+    "explanation": "'Digitization' is defined as: Converting analog information into digital form.",
+    "difficulty": "medium",
+    "id": "Q194"
+  },
+  {
+    "topic": "Digitalization",
+    "question": "What best describes 'Data-driven decision-making'?",
+    "answers": {
+      "1": "Shifting sales/service interactions to digital channels",
+      "2": "A model that creates value by facilitating interactions between producers and consumers",
+      "3": "On-demand access to computing resources via the internet with pay-as-you-go pricing",
+      "4": "Using analysis and evidence from data to guide managerial choices"
+    },
+    "correct_answer": 4,
+    "explanation": "'Data-driven decision-making' is defined as: Using analysis and evidence from data to guide managerial choices.",
+    "difficulty": "easy",
+    "id": "Q195"
+  },
+  {
+    "topic": "Enterprise Architecture",
+    "question": "What best describes 'Data Architecture'?",
+    "answers": {
+      "1": "Structures and principles for managing and using data across the enterprise",
+      "2": "Approach to connecting applications and data flows",
+      "3": "Describes business model, goals, and process/organizational structures",
+      "4": "Coherent principles and models linking strategy, processes, information systems, and infrastructure"
+    },
+    "correct_answer": 1,
+    "explanation": "'Data Architecture' is defined as: Structures and principles for managing and using data across the enterprise.",
+    "difficulty": "medium",
+    "id": "Q196"
+  },
+  {
+    "topic": "Business Model Canvas",
+    "question": "What best describes 'Key Activities'?",
+    "answers": {
+      "1": "The value delivered to a specific customer segment",
+      "2": "The most important actions a company must take to operate",
+      "3": "All costs incurred to operate a business model",
+      "4": "The network of suppliers and partners that make the business model work"
+    },
+    "correct_answer": 2,
+    "explanation": "'Key Activities' is defined as: The most important actions a company must take to operate.",
+    "difficulty": "easy",
+    "id": "Q197"
+  },
+  {
+    "topic": "Digitalization",
+    "question": "What best describes 'Digitalization'?",
+    "answers": {
+      "1": "Designing offerings around customer needs and value",
+      "2": "The broad socio-economic transformation enabled by digital technologies",
+      "3": "Charging based on the level or frequency of use",
+      "4": "Strategic reinvention of business models, processes, and culture using digital technologies"
+    },
+    "correct_answer": 2,
+    "explanation": "'Digitalization' is defined as: The broad socio-economic transformation enabled by digital technologies.",
+    "difficulty": "medium",
+    "id": "Q198"
+  },
+  {
+    "topic": "Data Protection & Security",
+    "question": "What best describes 'Pseudonymization'?",
+    "answers": {
+      "1": "Embedding data protection into systems from the outset",
+      "2": "Irreversibly removing identifiers from data",
+      "3": "Preventing unauthorized access to data",
+      "4": "Replacing identifiers with placeholders while allowing re-identification under controls"
+    },
+    "correct_answer": 4,
+    "explanation": "'Pseudonymization' is defined as: Replacing identifiers with placeholders while allowing re-identification under controls.",
+    "difficulty": "hard",
+    "id": "Q199"
+  },
+  {
+    "topic": "Digitalization",
+    "question": "What best describes 'Robotic process automation'?",
+    "answers": {
+      "1": "Using analysis and evidence from data to guide managerial choices",
+      "2": "A pricing model where a basic version is free and advanced features are paid",
+      "3": "Software bots that automate structured, repetitive tasks",
+      "4": "Shifting sales/service interactions to digital channels"
+    },
+    "correct_answer": 3,
+    "explanation": "'Robotic process automation' is defined as: Software bots that automate structured, repetitive tasks.",
+    "difficulty": "easy",
+    "id": "Q200"
+  }
+]
