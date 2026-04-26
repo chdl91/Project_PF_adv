@@ -20,13 +20,13 @@ def convert_json_to_db(json_file: str, db_file: str):
 
     data = load_json_file(json_file)
     with Session(engine) as session:
-        for question in question['questions']:
+        for question in data['questions']:
             question_id = str(uuid.uuid4())
             topic_name = question['topic']
             correct_answer_id = str(uuid.uuid4())
             new_question = Questions(
                 question_id=question_id,
-                topic_name=topic_name,
+                topic_id=get_or_create_topic(session, topic_name),
                 question_text=question['question_text'],
                 correct_answer=correct_answer_id,
                 difficulty=question['difficulty']
