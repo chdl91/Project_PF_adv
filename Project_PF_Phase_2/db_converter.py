@@ -1,10 +1,10 @@
 import json  # read json file
-import uuid  # generate unique id for each question, answer, topic and user
 import os  # check if the database file exists, if not create it
 from typing import List  # for type hinting
-from sqlmodel import SQLModel, create_engine, Session, select  # for database operations
+# for database operations  # pyright: ignore[reportMissingImports]
+from sqlmodel import SQLModel, create_engine, Session, select
 # import the database classes
-from DB_classes import Topics, Questions, Answers, Users
+from DB_classes import Topic, Question, Answer, User
 
 
 def load_json_file(file_path: str) -> dict:
@@ -13,33 +13,83 @@ def load_json_file(file_path: str) -> dict:
     return data
 
 
+def get_or_create_topic(session: Session, topic_name: str) -> int:
+    statement = select(Topic).where(Topic.topic_name == topic_name)
+    result = session.exec(statement).first()
+    if result:
+        return result.topic_id
+    else:
+        new_topic = Topic(topic_name=topic_name)
+        session.add(new_topic)
+        session.commit()
+        session.refresh(new_topic)
+        return new_topic.topic_id
+
+
 def convert_json_to_db(json_file: str, db_file: str):
-    if not os.path.exists(db_file):
-        engine = create_engine(f"sqlite:///{db_file}")
-        SQLModel.metadata.create_all(engine)
+    engine = create_engine(f"sqlite:///{db_file}")
+    SQLModel.metadata.create_all(engine)
 
     data = load_json_file(json_file)
-    with Session(engine) as session:
-        for question in data['questions']:
-            question_id = str(uuid.uuid4())
-            topic_name = question['topic']
-            correct_answer_id = str(uuid.uuid4())
-            new_question = Questions(
-                question_id=question_id,
-                topic_id=get_or_create_topic(session, topic_name),
-                question_text=question['question_text'],
-                correct_answer=correct_answer_id,
-                difficulty=question['difficulty']
-            )
-            session.add(new_question)
-            session.commit()
+    print(f"Loaded {len(data)} questions from {json_file}")
 
-            for answer in question['answers']:
-                answer_id = str(uuid.uuid4())
-                new_answer = Answers(
-                    answer_id=answer_id,
-                    question_id=question_id,
-                    answer_text=answer
+    with Session(engine) as session:
+        for idx, question in enumerate(data):
+            try:
+                topic_name = question['topic']
+                # This is the key (1, 2, 3, or 4)
+                correct_answer_index = question['correct_answer']
+
+                # Create question first (without correct_answer for now)
+                new_question = Question(
+                    topic_id=get_or_create_topic(session, topic_name),
+                    question_text=question['question'],
+                    correct_answer=None,  # Will set after creating answers
+                    difficulty=question['difficulty']
                 )
-                session.add(new_answer)
+                session.add(new_question)
                 session.commit()
+                session.refresh(new_question)
+
+                print(
+                    f"  [{idx+1}] Created question: {new_question.question_text[:50]}...")
+
+                # Create all answers and track the correct one
+                correct_answer_id = None
+                for answer_key, answer_text in question['answers'].items():
+                    new_answer = Answer(
+                        question_id=new_question.question_id,
+                        answer_text=answer_text
+                    )
+                    session.add(new_answer)
+                    session.commit()
+                    session.refresh(new_answer)
+
+                    # Check if this answer key matches the correct_answer index
+                    if int(answer_key) == correct_answer_index:
+                        correct_answer_id = new_answer.answer_id
+
+                # Update question with correct answer ID
+                if correct_answer_id:
+                    new_question.correct_answer = correct_answer_id
+                    session.add(new_question)
+                    session.commit()
+            except Exception as e:
+                print(f"  ERROR in question {idx+1}: {e}")
+                session.rollback()
+
+
+if __name__ == "__main__":
+    # Get the directory where this script is located
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+
+    # Convert DIB.json
+    dib_path = os.path.join(script_dir, "DB", "DIB.json")
+    db_path = os.path.join(script_dir, "quiz.db")
+    convert_json_to_db(dib_path, db_path)
+    print("✓ DIB.json converted successfully")
+
+    # Convert POM.json
+    pom_path = os.path.join(script_dir, "DB", "POM.json")
+    convert_json_to_db(pom_path, db_path)
+    print("✓ POM.json converted successfully")

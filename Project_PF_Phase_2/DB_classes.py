@@ -2,16 +2,17 @@ from typing import Optional
 from sqlmodel import SQLModel, Field
 
 
-class Topics(SQLModel, table=True):
+class Topic(SQLModel, table=True):
     topic_id: int = Field(default=None, primary_key=True)
     topic_name: str = Field(..., max_length=30)
 
 
 class Question(SQLModel, table=True):
     question_id: int = Field(default=None, primary_key=True)
-    topic_id: str = Field(..., foreign_key="topics.topic_id")
+    topic_id: int = Field(..., foreign_key="topic.topic_id")
     question_text: str = Field(..., max_length=255)
-    correct_answer: str = Field(..., foreign_key="answer.answer_id")
+    correct_answer: Optional[int] = Field(
+        default=None, foreign_key="answer.answer_id")
     difficulty: str = Field(..., max_length=10)
 
 
