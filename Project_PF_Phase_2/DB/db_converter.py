@@ -1,10 +1,15 @@
+# import the database models
+from DB_classes import Subject, Topic, Question, Answer, User
+from sqlmodel import SQLModel, create_engine, Session, select  # for database operations
 import json  # read json file
 import os  # check if the database file exists, if not create it
+import sys  # for path manipulation
 from typing import List  # for type hinting
-# for database operations  # pyright: ignore[reportMissingImports]
-from sqlmodel import SQLModel, create_engine, Session, select
-# import the database classes
-from DB_classes import Topic, Question, Answer, User
+
+# Add parent directory to path so we can import from parent folder FIRST
+parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if parent_dir not in sys.path:
+    sys.path.insert(0, parent_dir)
 
 
 def load_json_file(file_path: str) -> dict:
@@ -13,20 +18,34 @@ def load_json_file(file_path: str) -> dict:
     return data
 
 
-def get_or_create_topic(session: Session, topic_name: str) -> int:
-    statement = select(Topic).where(Topic.topic_name == topic_name)
+def get_or_create_subject(session: Session, subject_name: str) -> int:
+    statement = select(Subject).where(Subject.subject_name == subject_name)
+    result = session.exec(statement).first()
+    if result:
+        return result.subject_id
+    else:
+        new_subject = Subject(subject_name=subject_name)
+        session.add(new_subject)
+        session.commit()
+        session.refresh(new_subject)
+        return new_subject.subject_id
+
+
+def get_or_create_topic(session: Session, topic_name: str, subject_id: int) -> int:
+    statement = select(Topic).where(
+        (Topic.topic_name == topic_name) & (Topic.subject_id == subject_id))
     result = session.exec(statement).first()
     if result:
         return result.topic_id
     else:
-        new_topic = Topic(topic_name=topic_name)
+        new_topic = Topic(topic_name=topic_name, subject_id=subject_id)
         session.add(new_topic)
         session.commit()
         session.refresh(new_topic)
         return new_topic.topic_id
 
 
-def convert_json_to_db(json_file: str, db_file: str):
+def convert_json_to_db(json_file: str, db_file: str, subject_name: str):
     engine = create_engine(f"sqlite:///{db_file}")
     SQLModel.metadata.create_all(engine)
 
@@ -34,6 +53,9 @@ def convert_json_to_db(json_file: str, db_file: str):
     print(f"Loaded {len(data)} questions from {json_file}")
 
     with Session(engine) as session:
+        # Create/get the subject first
+        subject_id = get_or_create_subject(session, subject_name)
+
         for idx, question in enumerate(data):
             try:
                 topic_name = question['topic']
@@ -42,7 +64,8 @@ def convert_json_to_db(json_file: str, db_file: str):
 
                 # Create question first (without correct_answer for now)
                 new_question = Question(
-                    topic_id=get_or_create_topic(session, topic_name),
+                    topic_id=get_or_create_topic(
+                        session, topic_name, subject_id),
                     question_text=question['question'],
                     correct_answer=None,  # Will set after creating answers
                     difficulty=question['difficulty']
@@ -84,12 +107,12 @@ if __name__ == "__main__":
     script_dir = os.path.dirname(os.path.abspath(__file__))
 
     # Convert DIB.json
-    dib_path = os.path.join(script_dir, "DB", "DIB.json")
+    dib_path = os.path.join(script_dir, "Legacy Files", "DIB.json")
     db_path = os.path.join(script_dir, "quiz.db")
-    convert_json_to_db(dib_path, db_path)
+    convert_json_to_db(dib_path, db_path, "Digital Business")
     print("✓ DIB.json converted successfully")
 
     # Convert POM.json
-    pom_path = os.path.join(script_dir, "DB", "POM.json")
-    convert_json_to_db(pom_path, db_path)
+    pom_path = os.path.join(script_dir, "Legacy Files", "POM.json")
+    convert_json_to_db(pom_path, db_path, "Principles of Management")
     print("✓ POM.json converted successfully")

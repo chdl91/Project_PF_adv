@@ -34,19 +34,15 @@ This project is intended to:
 
 ---
 
-### Problem
+### Problem *Added from Phase 1*
 
-> 🚧 Describe the real-world problem your application solves. (Not HOW, but WHAT)
-
-💡 Example: In a small local pizzeria, the staff writes orders and calculates totals by hand. This causes mistakes and inconsistent orders or discounts.
+> We learn a lot of material in this semester that is crucial to our further education. This can be overwhelming or even frightening. The material is spread over various Moodles / Inside FHNW, which is chaotic.
 
 ---
 
-### Scenario
+### Scenario *Added  from Phase 1*
 
-> 🚧 Describe when and how a user will use your application
-
-💡 Example: PizzaRP solves the part of the problem where orders and totals are created by letting a user select items from a menu, validating the inputs, storing orders in a database, and automatically generating a correct invoice.
+> To enhance the learning process we aim to crate a catalouge of questions which will be presented as a quiz to prepare for our assesment exams. The quiz will be asking questions from one subject and split into chapters. The type of questions will be mulitple choice. The Answers will be validated and give an indication of right or wrong and will also show an explanation. At the end of the quiz, the user will be given a score.
 
 ---
 
@@ -102,47 +98,6 @@ This project is intended to:
 **Inputs:**  
 **Outputs:** 
 
----
-
-### 2. Manage Order and View Running Total
-**As a user, I want to add or remove pizzas and see the running total.**  
-**Description:** The user adds or removes pizzas from the current order, and the totals update automatically.  
-**Inputs:** pizza ID as `int`, action as `add | remove`  
-**Outputs:**  
-- updated cart/order  
-- subtotal as `float`  
-- discount as `float`  
-- total as `float`  
-
----
-
-### 3. Automatic Discount
-**As a user, I want a discount of 10% to be applied automatically if the subtotal exceeds 50 CHF.**  
-**Description:** The application checks the subtotal and applies the discount automatically when the threshold is reached.  
-**Inputs:** subtotal as `float`  
-**Outputs:**  
-- discount as `float`  
-- total as `float`  
-
----
-
-### 4. Generate Invoice
-**As a user, I want an invoice to be created and saved as a file.**  
-**Description:** After checkout, the application generates and stores an invoice file.  
-**Inputs:** completed order/cart  
-**Outputs:**  
-- invoice file (PDF)  
-- invoice file path as `str`  
-
----
-
-### 5. View Past Transactions (Admin)
-**As an admin, I want to see past transactions ordered by date.**  
-**Description:** The admin can view saved orders sorted by date.  
-**Inputs:** optional limit as `int`  
-**Outputs:** transaction list displayed (internally: `list[Order]`)  
-
----
 
 ### Use cases
 
@@ -177,7 +132,90 @@ This project is intended to:
 
 ## 🏛️ Architecture
 
-> 🚧 Document the architecture components, relationships, and key design decisions.
+Software Architecture (Layers)
+┌─────────────────────┐
+│   GUI Layer         │  ← Nice GUI
+├─────────────────────┤
+│   quiz.py (CLI)     │  ← User interface
+├─────────────────────┤
+│  QuizEngine         │  ← Core quiz logic (reusable)
+│  QuizService        │  ← Database operations
+├─────────────────────┤
+│  SQLModel + SQLite  │  ← Data persistence
+└─────────────────────┘
+
+User Story Flow (Now with Subject Selection)
+
+┌──────────────────────────────────────────────────────────────────┐
+│                    MAIN MENU                                     │
+├──────────────────────────────────────────────────────────────────┤
+│  1. User Mode (Stories 1-7)                                      │
+│  2. Admin Mode (Story 8)                                         │
+│  3. Exit                                                          │
+└──────────────────────────────────────────────────────────────────┘
+        │                                         │
+        ▼                                         ▼
+    ┌──────────────────────┐       ┌────────────────────────────┐
+    │   USER MODE          │       │     ADMIN MODE             │
+    ├──────────────────────┤       ├────────────────────────────┤
+    │ 1. Select Subject    │       │ 1. Add Question (S8)       │
+    │    (Story 1)         │       │    - Select subject/topic  │
+    │    DIB or POM        │       │    - Question text         │
+    │                      │       │    - 4 Answers             │
+    │ 2. Select Topic      │       │    - Correct answer        │
+    │    (Story 4)         │       │    - Explanation           │
+    │    (from selected    │       │    - Difficulty            │
+    │     subject)         │       │                            │
+    │                      │       │ 2. Remove Question (S8)    │
+    │ 3. Select Difficulty │       │    - Select subject/topic  │
+    │    (Story 3)         │       │    - List questions        │
+    │    Easy/Medium/Hard  │       │    - Confirm delete        │
+    │                      │       │                            │
+    │ 4. Run Quiz          │       │ 3. View Questions (admin)  │
+    │    (Story 2)         │       │    - Filter by subject     │
+    │    - Display Q&A     │       │    - Display all details   │
+    │    - Validate answer │       │                            │
+    │    - Show results    │       │ 4. Return to Main          │
+    │                      │       │ 5. Exit                    │
+    │ 5. View Scoreboard   │       │                            │
+    │    (Story 7)         │       │                            │
+    │    - Top scores      │       │                            │
+    │                      │       │                            │
+    │ 6. Exit              │       │                            │
+    │                      │       │                            │
+    │ (S1-S7)              │       │                            │
+    └──────────────────────┘       └────────────────────────────┘
+
+
+Database Schema (Hierarchical Structure)
+
+Subject (subject areas)
+├─ subject_id (primary key)
+└─ subject_name (e.g., "Digital Business", "Principles of Management")
+
+Topic (topics within subjects)
+├─ topic_id (primary key)
+├─ topic_name (e.g., "Digitalization", "Leadership")
+└─ subject_id (foreign key → Subject)
+
+Question (quiz questions)
+├─ question_id
+├─ topic_id (foreign key → Topic)
+├─ question_text
+├─ correct_answer (foreign key → Answer.answer_id)
+└─ difficulty ("easy", "medium", "hard")
+
+Answer (possible answers for each question)
+├─ answer_id
+├─ question_id (foreign key → Question)
+└─ answer_text
+
+User (quiz results & admin accounts)
+├─ user_id (primary key)
+├─ user_name (max 30 chars)
+├─ user_score
+├─ user_timestamp
+└─ admin_status (boolean)
 
 ### Software Architecture
 
