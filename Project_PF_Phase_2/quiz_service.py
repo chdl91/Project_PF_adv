@@ -59,6 +59,47 @@ def get_topics_by_subject(subject_name: str) -> List[str]:
             f"Error occurred while fetching topics for subject '{subject_name}': {e}")
 
 
+def get_topics_with_ids_by_subject(subject_name: str) -> List[dict]:
+    """
+    Retrieves all topic names AND IDs for a given subject (for quiz_engine).
+
+    Args:
+        subject_name (str): The name of the subject.
+
+    Returns:
+        List[dict]: List of dicts with "topic_id" and "topic_name" keys.
+
+        Example:
+        [
+            {"topic_id": 1, "topic_name": "Digitalization"},
+            {"topic_id": 2, "topic_name": "Business Model Canvas"},
+            ...
+        ]
+
+    Raises:
+        Exception: If there is an error during database access or if the subject is not found.
+    """
+    try:
+        with Session(ENGINE) as session:
+            subject_select = select(Subject).where(
+                Subject.subject_name == subject_name)
+            subject = session.exec(subject_select).first()
+            if not subject:
+                raise Exception(
+                    f"Subject '{subject_name}' not found in the database.")
+
+            topic_select = select(Topic).where(
+                Topic.subject_id == subject.subject_id)
+            topics = session.exec(topic_select).all()
+            return [
+                {"topic_id": topic.topic_id, "topic_name": topic.topic_name}
+                for topic in topics
+            ]
+    except Exception as e:
+        raise Exception(
+            f"Error occurred while fetching topics for subject '{subject_name}': {e}")
+
+
 def get_questions_with_answers(topic_id: int, difficulty: Optional[str] = None) -> List[dict]:
     """
     Retrieves questions and their corresponding answers for a given topic and optional difficulty level.
@@ -76,8 +117,9 @@ def get_questions_with_answers(topic_id: int, difficulty: Optional[str] = None) 
     try:
         with Session(ENGINE) as session:
             if difficulty:
+                # Compare difficulty in lowercase (both sides normalized)
                 statement = select(Question).where(
-                    (Question.topic_id == topic_id) & (Question.difficulty.lower() == difficulty.lower()))
+                    (Question.topic_id == topic_id) & (Question.difficulty == difficulty.lower()))
             else:
                 statement = select(Question).where(
                     Question.topic_id == topic_id)
