@@ -108,17 +108,21 @@ This project is intended to:
 **Use cases**
 ## Main Use Cases
 
-- Show Menu (Customer)  
-- Manage Order (Customer)  
-  - Add items  
-  - Remove items  
-- View Current Order and Total (Customer)  
-- Checkout & Generate Invoice (Customer)  
-- View Past Transactions (Admin)  
+- Show Menu
+- Select Subject 
+- Select Parameters for Quiz
+   - Select Topic
+   - Select Difficulty
+- Answer Questions
+- Show Grade / Points / Percentage
+- See the Scoreboard at the end of an attempt
+- Return to Menu at any point in time
+- As an Admin, have the ability to add and remove questions.
+
 
 **Actors**
-- Customer (places orders)
-- Admin (reviews transactions)
+- User (Attempts Quiz)
+- Admin (May manage questions for the quiz)
 
 ---
 
@@ -151,7 +155,7 @@ User Story Flow (Now with Subject Selection)
 ├──────────────────────────────────────────────────────────────────┤
 │  1. User Mode (Stories 1-7)                                      │
 │  2. Admin Mode (Story 8)                                         │
-│  3. Exit                                                          │
+│  3. Exit                                                         │
 └──────────────────────────────────────────────────────────────────┘
         │                                         │
         ▼                                         ▼
