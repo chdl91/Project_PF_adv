@@ -150,9 +150,6 @@ def validate_answer(session_id: str, selected_answer_id: int) -> bool:
     return is_correct
 
 
-# ============================================================================
-# FUNCTION 3: submit_answer() - We'll build this together
-# ============================================================================
 def submit_answer(session_id: str, selected_answer_id: int) -> dict:
     """
     Submit an answer and get validation + next question (Story 5, 6).

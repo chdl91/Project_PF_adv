@@ -241,6 +241,66 @@ def get_top_scores(limit: int = 10) -> List[dict]:
         return []
 
 
+def get_or_create_user(username: str) -> dict:
+    """
+    Get existing user or create new one if doesn't exist (Story 1 - Login).
+
+    **Purpose:**
+    Check if user exists in database. If not, create a new user account.
+    Return user info including admin_status to determine access level.
+
+    Args:
+        username (str): Username to look up or create.
+
+    Returns:
+        dict: User info {
+            "user_id": int,
+            "user_name": str,
+            "admin_status": bool,
+            "is_new": bool  # True if just created
+        }
+
+    Raises:
+        Exception: If there is an error during database access.
+    """
+    try:
+        with Session(ENGINE) as session:
+            # Try to find existing user
+            statement = select(User).where(User.user_name == username)
+            existing_user = session.exec(statement).first()
+
+            if existing_user:
+                # User exists
+                return {
+                    "user_id": existing_user.user_id,
+                    "user_name": existing_user.user_name,
+                    "admin_status": existing_user.admin_status,
+                    "is_new": False
+                }
+
+            # User doesn't exist - create new one
+            new_user = User(
+                user_name=username[:30],  # Max 30 chars
+                user_score=0,
+                admin_status=False  # New users are regular users by default
+            )
+            session.add(new_user)
+            session.commit()
+            session.refresh(new_user)
+
+            print(f"✓ Welcome {username}! New account created.")
+
+            return {
+                "user_id": new_user.user_id,
+                "user_name": new_user.user_name,
+                "admin_status": new_user.admin_status,
+                "is_new": True
+            }
+
+    except Exception as e:
+        raise Exception(f"Error during login: {e}")
+
+
 def add_subject(subject_name: str) -> bool:
     """
     Add a new subject to the database (Story 8 - Admin: Add Subject).
