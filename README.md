@@ -114,7 +114,10 @@ This project is intended to:
    - Select Topic
    - Select Difficulty
 - Answer Questions
-- Show Grade / Points / Percentage
+- Show result 
+   - Grade 
+   - Points 
+   - Percentage
 - See the Scoreboard at the end of an attempt
 - Return to Menu at any point in time
 - As an Admin, have the ability to add and remove questions.
