@@ -120,7 +120,8 @@ This project is intended to:
    - Percentage
 - See the Scoreboard at the end of an attempt
 - Return to Menu at any point in time
-- As an Admin, have the ability to add and remove questions.
+- As an Admin, have the ability to add questions
+- As an Admin, have the ability to remove questions
 
 
 **Actors**
