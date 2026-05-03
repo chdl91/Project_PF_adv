@@ -234,9 +234,9 @@ User (quiz results & admin accounts)
 
 **Design decisions (examples):**
 - Organize code using **MVC**:
-   - **Model:** domain + ORM entities (e.g. `models.py`)
+   - **Model:** domain + ORM entities (e.g. `quiz.py`)
    - **View:** NiceGUI UI components/pages
-   - **Controller:** event handlers and coordination logic between UI, services, and persistence
+   - **Controller:** event handlers and coordination logic between UI, services, and persistence (e.g.`quiz_service.py` )
 - Separate UI (`app/main.py`) from domain logic (e.g. `pricing.py`) and persistence (e.g. `models.py`, `db.py`)
 - Use and interaction of modules to minimize dependencies, by minimizing cohesion and maximizing coupling
 - Keep business rules testable without starting the UI
@@ -455,13 +455,32 @@ pytest
 
 ---
 
-> 🚧 Fill in the names of all team members and describe their individual contributions below.
+| Name              | Role     | Contribution                               |
+|-------------------|----------|--------------------------------------------|
+| Steven Joggi      | Support  | 1) User Stories and Use Cases (including Use Case Diagram)
+|                   |          | 2) ER Diagram Continuation
+|                   |          | 3) 
+|                   |          | 4) 
+|                   |          | 5) 
+|                   |          | 6) Proofreading and added comments for structure
+|                   |          | 7) Continuation of README.md 
+|                   |          |  
+| Noe Brönnimann    | VP       | 1) User Stories and Use Cases (including Use Case Diagram)
+|                   |          | 2) ER Diagram Continuation
+|                   |          | 3) 
+|                   |          | 4) 
+|                   |          | 5) 
+|                   |          | 6) 
+|                   |          | 7) Correction of Steven's code
+|                   |          | 
+| Christian Lehmann | Master   | 1) User Stories and User Story Flow
+|                   |          | 2) Created the db.converter
+|                   |          | 3) Created the quiz_engine.py
+|                   |          | 4) Created the quiz_service.py
+|                   |          | 5) Restructured the Database into classes
+|                   |          | 6)  
+|                   |          | 7) Overall Troubleshooting of Noe's and Steven's code
 
-| Name      | Contribution |
-|-----------|--------------|
-| Student A | NiceGUI UI + documentation |
-| Student B | Database & ORM + documentation |
-| Student C | Business logic + documentation |
 
 ---
 
