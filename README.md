@@ -1,9 +1,7 @@
-> 🚧 This is a template repository for student projects in the course Advanced Programming at FHNW, BSc BIT.  
-> 🚧 Do not keep this section in your final submission.
 
 ---
 
-# 🍕 PizzaRP – Pizzeria Reference Project (Browser App)
+# 🐍 Big Snek Quiz - Advanced Programming Project
 
 > 🚧 Replace the screenshot with one that shows your main screen.
 
@@ -101,9 +99,7 @@ This project is intended to:
 
 ### Use cases
 
-> 🚧 Name actors and briefly describe each use case. Ideally, a UML use case diagram specifies use cases and relationships.
-
-![UML Use Case Diagram](docs/architecture-diagrams/uml_use_case_diagram.png)
+![UML Use Case Diagram](docs/architecture-diagrams/UML_use_case_diagram_quiz.png)
 
 **Use cases**
 ## Main Use Cases
