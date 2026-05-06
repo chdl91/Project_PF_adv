@@ -100,7 +100,7 @@ This project is intended to:
 ### Use cases
 
 ![UML Use Case Diagram](docs/architecture-diagrams/UML_use_case_diagram_quiz.png)
-
+#This shit should work...
 **Use cases**
 ## Main Use Cases
 
