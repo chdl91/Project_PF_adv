@@ -79,7 +79,6 @@ def start_quiz_session(
         all_questions = []
         for topic in topics:
             topic_id = topic["topic_id"]
-            topic_name = topic["topic_name"]
 
             questions = get_questions_with_answers(topic_id, difficulty)
             all_questions.extend(questions)
@@ -254,12 +253,29 @@ def end_quiz_session(session_id: str) -> dict:
     )
 
     # Prepare summary
+    total = len(session["questions"])
+    percentage = round((session["score"] / total) * 100, 2)
+
+    if percentage >= 90:
+        grade = 6
+    elif percentage >= 80:
+        grade = 5
+    elif percentage >= 70:
+        grade = 4
+    elif percentage >= 60:
+        grade = 3
+    elif percentage >= 50:
+        grade = 2
+    else:
+        grade = 1
+
     summary = {
         "username": session["username"],
         "subject_name": session["subject_name"],
         "score": session["score"],
-        "total_questions": len(session["questions"]),
-        "percentage": round((session["score"] / len(session["questions"])) * 100, 2)
+        "total_questions": total,
+        "percentage": percentage,
+        "grade": grade
     }
 
     # Clean up session

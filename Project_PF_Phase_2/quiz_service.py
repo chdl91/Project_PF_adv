@@ -1,12 +1,25 @@
 import os
 from typing import List, Optional, Union
-from sqlmodel import SQLModel, create_engine, Session, select
+from sqlmodel import SQLModel, create_engine, Session, select, col
 from DB_classes import Subject, Topic, Question, Answer, User
 
 # Set up database connection (works even if Folder is moved, as it uses relative path)
 script_dir = os.path.dirname(os.path.abspath(__file__))
 DB_PATH = os.path.join(script_dir, "DB", "quiz.db")
 ENGINE = create_engine(f"sqlite:///{DB_PATH}")
+
+
+def get_subject_id_by_name(subject_name: str) -> Optional[int]:
+    """Return the subject_id for a given subject name, or None if not found."""
+    try:
+        with Session(ENGINE) as session:
+            statement = select(Subject).where(
+                Subject.subject_name == subject_name)
+            subject = session.exec(statement).first()
+            return subject.subject_id if subject else None
+    except Exception as e:
+        print(f"Error fetching subject ID: {e}")
+        return None
 
 
 def get_all_subjects() -> List[str]:
@@ -226,7 +239,7 @@ def get_top_scores(limit: int = 10) -> List[dict]:
     try:
         with Session(ENGINE) as session:
             statement = select(User).order_by(
-                User.user_score.desc()).limit(limit)
+                col(User.user_score).desc()).limit(limit)
             results = session.exec(statement).all()
             return [
                 {
@@ -266,7 +279,8 @@ def get_or_create_user(username: str) -> dict:
     try:
         with Session(ENGINE) as session:
             # Try to find existing user
-            statement = select(User).where(User.user_name == username)
+            statement = select(User).where(
+                User.user_name == username).order_by(col(User.user_id))
             existing_user = session.exec(statement).first()
 
             if existing_user:
