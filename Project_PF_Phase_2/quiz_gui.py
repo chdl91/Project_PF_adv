@@ -1,6 +1,7 @@
 from nicegui import ui
-
 from quiz_engine import end_quiz_session, start_quiz_session, submit_answer
+from sqlmodel import SQLModel, create_engine, Session, select, column
+from DB_classes import Subject, Topic, Question, Answer, User
 from quiz_service import (
     add_question,
     add_subject,
