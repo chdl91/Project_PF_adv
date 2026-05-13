@@ -24,6 +24,7 @@ from services.score_service import ScoreService
 from services.quiz_session_service import QuizSessionService
 
 from ui.cli import QuizCLI
+from ui.gui import QuizGUI
 
 
 def main():
@@ -43,9 +44,10 @@ def main():
     quiz_session_svc = QuizSessionService(subject_svc, question_svc, score_svc)
 
     # --- Presentation layer ---
-    # Switch QuizCLI -> QuizGUI here when the browser interface is ready
-    cli = QuizCLI(user_svc, subject_svc, question_svc, score_svc, quiz_session_svc)
-    cli.run()
+    # To run the browser app use QuizGUI; for the terminal use QuizCLI.
+    # Both accept the exact same arguments.
+    gui = QuizGUI(user_svc, subject_svc, question_svc, score_svc, quiz_session_svc)
+    gui.run()
 
 
 if __name__ == "__main__":
