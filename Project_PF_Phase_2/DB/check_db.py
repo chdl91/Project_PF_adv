@@ -1,6 +1,12 @@
 import os
+import sys
+
+parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if parent_dir not in sys.path:
+    sys.path.insert(0, parent_dir)
+
 from sqlmodel import SQLModel, create_engine, Session, select
-from DB_classes import Topic, Question, Answer
+from domain.models import Topic, Question, Answer
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 db_path = os.path.join(script_dir, "quiz.db")

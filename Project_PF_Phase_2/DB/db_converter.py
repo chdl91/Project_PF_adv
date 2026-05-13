@@ -1,16 +1,15 @@
-from DB_classes import Subject, Topic, Question, Answer, User
-import json  # read json file
-import os  # check if the database file exists, if not create it
-import sys  # for path manipulation
-from typing import List  # for type hinting
-from sqlmodel import SQLModel, create_engine, Session, select  # for database operations
+import json
+import os
+import sys
+from typing import List
+from sqlmodel import SQLModel, create_engine, Session, select
 
-# Add parent directory to path so we can import from parent folder FIRST (before importing DB_classes)
+# Add project root to path so domain.models can be imported
 parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if parent_dir not in sys.path:
     sys.path.insert(0, parent_dir)
 
-# import the database models (after path is set)
+from domain.models import Subject, Topic, Question, Answer, User
 
 
 def load_json_file(file_path: str) -> dict:
@@ -111,9 +110,9 @@ if __name__ == "__main__":
     dib_path = os.path.join(script_dir, "Legacy Files", "DIB.json")
     db_path = os.path.join(script_dir, "quiz.db")
     convert_json_to_db(dib_path, db_path, "Digital Business")
-    print("✓ DIB.json converted successfully")
+    print("DIB.json converted successfully")
 
     # Convert POM.json
     pom_path = os.path.join(script_dir, "Legacy Files", "POM.json")
     convert_json_to_db(pom_path, db_path, "Principles of Management")
-    print("✓ POM.json converted successfully")
+    print("POM.json converted successfully")
