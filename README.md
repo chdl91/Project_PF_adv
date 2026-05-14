@@ -338,54 +338,37 @@ All relevant data is managed via an ORM (e.g. SQLModel or SQLAlchemy). For the p
 ### 📂 Repository Structure
 
 ```text
-pizza-app/
-├─ README.md
-├─ pyproject.toml
-├─ .env.example
-├─ .gitignore
-│
-├─ pizza_app/
-│  ├─ __main__.py               # entrypoint (py -m pizza_app)
-│  ├─ application.py            # composition root
-│  │
-│  ├─ domain/
-│  │  └─ models.py
-│  │
-│  ├─ infra/
-│  │  ├─ db.py
-│  │  ├─ repositories.py
-│  │  └─ seed.py
-│  │
+PROJECT_PF_ADV/
+├─ .devcontainer
+├─ .pytest_cache
+├─ .venv
+├─ .vscode
+├─ .docs
+├─ Project_PF (Phase 1)
+│ 
+├─ Project_PF (Phase 2)  # entrypoint (py -m pizza_app)
+│  ├─ data_access             
+│  │  └─ 
+│  ├─ DB
+│  │  └─ 
+│  ├─ domain
+│  │  └─ 
 │  ├─ services/
 │  │  ├─ pricing.py
 │  │  └─ invoice.py
-│  │
-│  ├─ ui/
+│  ├─ test
+│  │  └─ 
+│  ├─ ui
 │  │  ├─ pages.py
 │  │  └─ controllers.py
-│
-├─ docs/
-│  ├─ ui-images/
-│  │  ├─ ui_showcase.png
-│  │  ├─ ui_menu.png
-│  │  ├─ ui_checkout.png
-│  │  ├─ wireframe_home.png
-│  │  └─ wireframe_checkout.png
-│  │
-│  └─ architecture-diagrams/
-│     ├─ uml_use_case_diagram.png
-│     ├─ uml_class_architecture.png
-│     ├─ uml_class_domain.png
-│     ├─ uml_class_persistence.png
-│     └─ er_diagram.png
-│
-├─ data/                        # sqlite DB (gitignored)
-├─ invoices/                    # generated PDFs (gitignored)
-│
-└─ tests/
-   ├─ conftest.py
-   ├─ test_pricing.py
-   └─ test_checkout_and_invoice.py
+│  ├─ __main__.py
+│  ├─ class.md
+│  └─ DESIGN_DECISIONS.md
+├─ README.md
+├─ requirements-dev.txt
+└─ requirements.txt
+
+
 ```
 
 ---
@@ -410,27 +393,27 @@ pizza-app/
 - Install dependencies:
    ```bash
    pip install -r requirements.txt
+   pip install -r requirements-dev.txt #specifically for Pytesting
    ```
 
 ### 2. Configuration
 - E.g., setup of parameters or environment variables
 
 ### 3. Launch
-- Start the NiceGUI app (example):
-   ```bash
-   py -m pizza_app
-   ```
-- Open the URL printed in the console.
+- Start the NiceGUI app in __main__.py by running the programm as a Python File. 
+   
 
 ### 4. Usage (document as steps)
 
 > 🚧 Describe the usage of the main functions
 
-Order Pizza:
-1. Open the menu page and browse pizzas.
-2. Add items (with quantities) to the current order.
-3. Review total (incl. discounts) and validate inputs.
-4. Checkout to persist the order and generate the invoice.
+Doing a Quiz:
+1. Login with a Username of your choice
+2. Select "Start Quiz"
+3. Set Parameters including what subject, which topics, difficulty and number of questions (minimum of 5).
+4. Start Attempt 
+5. Once the Attempt has been completed, either by answering all the questions or quitting the quiz beforehand, the user is shown their results, including their achieved points, percentage and grade. 
+6. The user may compare their score to previous attempts or other users in "View Scoreboard". 
 
 > 🚧 Add UI screenshots of the main screens (or a short video link):
 
@@ -471,7 +454,22 @@ pytest
 
 ### Libraries Used
 
-- see above
+1. sqlmodel
+2. nicegui
+3. pytest
+
+Additionally,
+
+4. os
+5. sys
+6. json
+7. random
+8. uuid
+9. datetime
+10. zoneinfo
+11. sqlite3
+12. pathlib
+13. typing
 
 ## 👥 Team & Contributions
 
@@ -479,18 +477,18 @@ pytest
 
 | Name              | Role     | Contribution                               |
 |-------------------|----------|--------------------------------------------|
-| Steven Joggi      | Support  | 1) User Stories and Use Cases (including Use Case Diagram)
+| Steven Joggi      | Support  | 1) User Stories and Use Cases
 |                   |          | 2) ER Diagram Continuation
-|                   |          | 3) Set up of NiceGUI
-|                   |          | 4) Troubleshooting Application
+|                   |          | 3) Initial set-up of NiceGUI
+|                   |          | 4) Initial set-up of Pytest
 |                   |          | 5) 
 |                   |          | 6) Proofreading and added comments for structure
 |                   |          | 7) Continuation of README.md 
 |                   |          |  
-| Noe Brönnimann    | VP       | 1) User Stories and Use Cases (including Use Case Diagram)
+| Noe Brönnimann    | VP       | 1) User Stories and Use Cases
 |                   |          | 2) ER Diagram Continuation
-|                   |          | 3) 
-|                   |          | 4) 
+|                   |          | 3) Continuation of NiceGUI
+|                   |          | 4) Continuation of Pytest
 |                   |          | 5) 
 |                   |          | 6) 
 |                   |          | 7) Correction of Steven's code
