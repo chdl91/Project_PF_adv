@@ -34,6 +34,7 @@ class User(SQLModel, table=True):
     user_id: int = Field(default=None, primary_key=True)
     user_name: str = Field(..., max_length=30)
     admin_status: bool = Field(default=False)
+    user_score: int = Field(default=0)
 
 
 class QuizResult(SQLModel, table=True):
