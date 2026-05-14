@@ -40,7 +40,7 @@ This project is intended to:
 
 ### Scenario *Added  from Phase 1*
 
-> To enhance the learning process we aim to crate a catalouge of questions which will be presented as a quiz to prepare for our assesment exams. The quiz will be asking questions from one subject and split into chapters. The type of questions will be mulitple choice. The Answers will be validated and give an indication of right or wrong and will also show an explanation. At the end of the quiz, the user will be given a score.
+> To enhance the learning process we aim to crate a catalouge of questions which will be presented as a quiz to prepare for our assesment exams. The quiz will be asking questions from one subject and split into chapters. The type of questions will be mulitple choice. The Answers will be validated and give an indication of right or wrong. At the end of the quiz, the user will be given a score.
 
 ---
 
@@ -94,13 +94,13 @@ This project is intended to:
 **Inputs:**  Username entry ("str" and limited characters, excluding special characters)
 **Outputs:** Confirmation of choice (internally: results.csv)
 
-**Possible improvements**
-
 ### 9. Admin Rights
 **As an Admin, I want to be able to add and remove questions, in order to keep the quiz relevant.**  
-**Description:** 
-**Inputs:**  
-**Outputs:** 
+**Description:** In the form of an Admin Panel, the Admin has the ability to delete questions from the database and also can add questions, including assigning them to a subject, topic and difficulty. 
+**Inputs:**  Admin Password (Hardcoded) and input from admin user
+**Outputs:** Confirmation of Update including deletion
+
+
 
 
 ### Use cases
@@ -117,6 +117,7 @@ This project is intended to:
    - Select Difficulty
    - Select Number of Questions
 - Answer Questions
+   - Receive an Explanation if incorrect answer was made
 - Show result 
    - Grade 
    - Points 
@@ -137,7 +138,7 @@ This project is intended to:
 
 > 🚧 Add screenshots of the wireframe mockups you chose to implement.
 
-![Wireframes – Home/Transactions](docs/ui-images/wireframes.png)
+![Wireframes – Home/Transactions]
 
 ---
 
@@ -149,8 +150,8 @@ Software Architecture (Layers)
 ├─────────────────────┤
 │   quiz.py (CLI)     │  ← User interface
 ├─────────────────────┤
-│  QuizEngine         │  ← Core quiz logic (reusable)
-│  QuizService        │  ← Database operations
+│  Services (Folder)  │  ← Core quiz logic (reusable)
+│                     │  ← Database operations
 ├─────────────────────┤
 │  SQLModel + SQLite  │  ← Data persistence
 └─────────────────────┘
@@ -247,19 +248,19 @@ User (quiz results & admin accounts)
 
 > 🚧 Insert your UML class diagram(s). Split into multiple diagrams if needed.
 
-![UML Class Diagram](docs/architecture-diagrams/uml_class_architecture.png)
+![UML Class Diagram] -> Diagrams.md
 
 **Layers / components:**
 - UI (NiceGUI pages/components, browser as thin client)
 - Application logic (controllers + domain/services)
 - Persistence (SQLite + ORM entities + repositories/queries)
 
-**Design decisions (examples):**
+**Design decisions (examples):**                                     #confused here
 - Organize code using **MVC**:
    - **Model:** domain + ORM entities (e.g. `quiz.py`)
    - **View:** NiceGUI UI components/pages
    - **Controller:** event handlers and coordination logic between UI, services, and persistence (e.g.`quiz_service.py` )
-- Separate UI (`app/main.py`) from domain logic (e.g. `pricing.py`) and persistence (e.g. `models.py`, `db.py`)
+- Separate UI (`app/main.py`) from domain logic (e.g. ``) and persistence (e.g. `models.py`, `db.py`)
 - Use and interaction of modules to minimize dependencies, by minimizing cohesion and maximizing coupling
 - Keep business rules testable without starting the UI
 
@@ -275,9 +276,15 @@ User (quiz results & admin accounts)
 
 > 🚧 Describe the database and your ORM entities. Ideally, a diagram documents the database and it is described together with the ORM entities.
 
-![ER Diagram](docs/architecture-diagrams/er_diagram.png)
+![ER Diagram] -> Diagrams.md
 
-**ORM and Entities (example):** In the database, order are stored in ... that are mapped an `Order` entity. The `Order` ↔ `OrderItem` relationship ... ensures that an `Order` has at least one `OrderItem` and an `OrderItem` always relates to an `Order`.
+**ORM and Entities (example):** In our project, data is persisted in an SQLite database and mapped to Python entities using SQLModel (ORM). The core entities are Subject, Topic, Question, Answer, User, and QuizResult. 
+The relationship chain:
+
+                     Subject -> Topic -> Question -> Answer 
+
+ensures hierarchical quiz data integrity: each Topic belongs to one Subject, each Question belongs to one Topic, and each Answer belongs to one Question. 
+In addition, Question.correct_answer references a valid Answer entry. User-related data is managed through User (account/admin information) and QuizResult (stored scores and attempt results).
 
 ---
 
@@ -324,7 +331,7 @@ These checks prevent crashes and guide the user to provide correct input, matchi
 
 ### 3. Database Management
 
-All relevant data is managed via an ORM (SQLModel). This Includes, "subjects, "topics", "question", "answer", "user, and " QuizResult" and "QuizSession".
+All relevant data is managed via an ORM (SQLModel). This Includes, "subjects, "topics", "question", "answer", "user", and " QuizResult" and "QuizSession".
 
 ---
 
@@ -342,7 +349,6 @@ All relevant data is managed via an ORM (SQLModel). This Includes, "subjects, "t
 
 ### 📂 Repository Structure
 
-```text
 PROJECT_PF_ADV/
 ├─ .devcontainer
 │  ├─ devcontainer.json
@@ -418,9 +424,6 @@ PROJECT_PF_ADV/
 ├─ requirements-dev.txt
 └─ requirements.txt
 
-
-```
-
 ---
 
 ### How to Run
@@ -495,7 +498,7 @@ Doing a Quiz:
 
 **Run:**
 ```bash
-pytest
+pytest  #dini mami
 ```
 
 > 🚧 If you provide separate commands, document them here (e.g. `pytest -m integration`).
@@ -507,9 +510,6 @@ pytest
 1. sqlmodel
 2. nicegui
 3. pytest
-
-Additionally,
-
 4. os
 5. sys
 6. json
@@ -527,7 +527,7 @@ Additionally,
 
 | Name              | Role     | Contribution                               |
 |-------------------|----------|--------------------------------------------|
-| Steven Joggi      | Support  | 1) User Stories and Use Cases
+| Steven Joggi      | NiceGuy  | 1) User Stories and Use Cases
 |                   |          | 2) ER Diagram Continuation
 |                   |          | 3) Initial set-up of NiceGUI
 |                   |          | 4) Initial set-up of Pytest
