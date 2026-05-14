@@ -75,7 +75,8 @@ class QuizGUI:
                     value="Medium",
                     label="Difficulty",
                 )
-                num_questions_input = ui.number(label="Number of questions", value=5, min=5, step=1)
+                num_questions_input = ui.number(
+                    label="Number of questions", value=5, min=5, step=1)
 
                 def start_selected_quiz():
                     subject = subject_select.value
@@ -85,11 +86,13 @@ class QuizGUI:
 
                     difficulty = None if difficulty_select.value == "All difficulties" else difficulty_select.value.lower()
 
-                    topics = self.subject_service.get_topics_with_ids_by_subject(subject)
+                    topics = self.subject_service.get_topics_with_ids_by_subject(
+                        subject)
                     available = []
                     for topic in topics:
                         available.extend(
-                            self.question_service.get_questions_with_answers(topic["topic_id"], difficulty)
+                            self.question_service.get_questions_with_answers(
+                                topic["topic_id"], difficulty)
                         )
 
                     if not available:
@@ -126,36 +129,44 @@ class QuizGUI:
     def show_question_dialog(self, session_id: str, question: dict):
         with ui.dialog() as dlg:
             with ui.card().classes("w-[32rem]"):
-                ui.label(question.get("question_text", "Question")).classes("text-h6")
+                ui.label(question.get("question_text", "Question")
+                         ).classes("text-h6")
                 ui.label(f"Difficulty: {question.get('difficulty', 'n/a')}")
 
                 def answer_clicked(answer_id: int):
                     try:
-                        result = self.quiz_session_service.submit_answer(session_id, answer_id)
+                        result = self.quiz_session_service.submit_answer(
+                            session_id, answer_id)
                     except Exception as exc:
                         ui.notify(f"Error submitting answer: {exc}")
                         return
 
                     dlg.close()
-                    ui.notify("Correct!" if result["is_correct"] else "Wrong answer")
+                    ui.notify(
+                        "Correct!" if result["is_correct"] else "Wrong answer")
 
                     if result["quiz_complete"]:
-                        summary = self.quiz_session_service.end_quiz_session(session_id)
+                        summary = self.quiz_session_service.end_quiz_session(
+                            session_id)
                         with ui.dialog() as summary_dlg:
                             with ui.card().classes("w-80"):
                                 ui.label("Quiz complete!").classes("text-h6")
-                                ui.label(f"Score: {summary['score']}/{summary['total_questions']}")
-                                ui.label(f"Percentage: {summary['percentage']}%")
+                                ui.label(
+                                    f"Score: {summary['score']}/{summary['total_questions']}")
+                                ui.label(
+                                    f"Percentage: {summary['percentage']}%")
                                 ui.label(f"Grade: {summary['grade']}/6")
                                 ui.button("OK", on_click=summary_dlg.close)
                         summary_dlg.open()
                     else:
-                        self.show_question_dialog(session_id, result["next_question"])
+                        self.show_question_dialog(
+                            session_id, result["next_question"])
 
                 for answer in question.get("answers", []):
                     ui.button(
                         answer["text"],
-                        on_click=lambda a=answer["answer_id"]: answer_clicked(a),
+                        on_click=lambda a=answer["answer_id"]: answer_clicked(
+                            a),
                     ).classes("w-full")
 
         dlg.open()
@@ -169,7 +180,8 @@ class QuizGUI:
                     ui.label("No scores yet.")
                 else:
                     for idx, score in enumerate(scores, 1):
-                        ui.label(f"{idx}. {score['username']} — {score['subject']} — {score['score']}/{score['total']} ({score['timestamp'][:16]})")
+                        ui.label(
+                            f"{idx}. {score['username']} — {score['subject']} — {score['score']}/{score['total']} ({score['timestamp'][:16]})")
                 ui.button("Close", on_click=dlg.close)
         dlg.open()
 
@@ -184,7 +196,8 @@ class QuizGUI:
                         ui.notify("Subject added")
                         dlg.close()
                     else:
-                        ui.notify("Could not add subject (might already exist)")
+                        ui.notify(
+                            "Could not add subject (might already exist)")
 
                 ui.button("Save", on_click=save_subject)
                 ui.button("Cancel", on_click=dlg.close)
@@ -203,7 +216,8 @@ class QuizGUI:
                 topic_input = ui.input("Topic name")
 
                 def save_topic():
-                    subject_id = self.subject_service.get_subject_id_by_name(subject_select.value)
+                    subject_id = self.subject_service.get_subject_id_by_name(
+                        subject_select.value)
                     if not subject_id:
                         ui.notify("Select a valid subject")
                         return
@@ -233,7 +247,8 @@ class QuizGUI:
                     subject = subject_select.value
                     if not subject:
                         return
-                    topics = self.subject_service.get_topics_with_ids_by_subject(subject)
+                    topics = self.subject_service.get_topics_with_ids_by_subject(
+                        subject)
                     topic_select.options = [t["topic_name"] for t in topics]
                     topic_select.update()
 
@@ -241,8 +256,10 @@ class QuizGUI:
 
                 question_input = ui.input("Question text")
                 answer_inputs = [ui.input(f"Answer {i}") for i in range(1, 5)]
-                correct_input = ui.number("Correct answer number (1-4)", value=1, min=1, max=4)
-                difficulty_input = ui.select(["easy", "medium", "hard"], value="medium", label="Difficulty")
+                correct_input = ui.number(
+                    "Correct answer number (1-4)", value=1, min=1, max=4)
+                difficulty_input = ui.select(
+                    ["easy", "medium", "hard"], value="medium", label="Difficulty")
 
                 def save_question():
                     subject = subject_select.value
@@ -251,8 +268,10 @@ class QuizGUI:
                         ui.notify("Select subject and topic")
                         return
 
-                    topics = self.subject_service.get_topics_with_ids_by_subject(subject)
-                    topic = next((t for t in topics if t["topic_name"] == topic_name), None)
+                    topics = self.subject_service.get_topics_with_ids_by_subject(
+                        subject)
+                    topic = next(
+                        (t for t in topics if t["topic_name"] == topic_name), None)
                     if not topic:
                         ui.notify("Invalid topic")
                         return
@@ -312,20 +331,21 @@ class QuizGUI:
             self.welcome_label = ui.label("")
             self.role_label = ui.label("")
 
+            with ui.column() as self.user_panel:
+                ui.label("User menu").classes("text-h6 text-weight-bold")
+
             with ui.row():
                 ui.button("Take a Quiz", on_click=self.open_subject_menu)
                 ui.button("View Scoreboard", on_click=self.view_scoreboard)
                 ui.button("Logout", on_click=self.logout_user)
-
-            with ui.column() as self.user_panel:
-                ui.label("User menu")
 
             with ui.column() as self.admin_panel:
                 ui.label("Admin menu")
                 ui.button("Add Subject", on_click=self.add_subject_dialog)
                 ui.button("Add Topic", on_click=self.add_topic_dialog)
                 ui.button("Add Question", on_click=self.add_question_dialog)
-                ui.button("Delete Question", on_click=self.delete_question_dialog)
+                ui.button("Delete Question",
+                          on_click=self.delete_question_dialog)
 
         self.refresh_screen()
         ui.run()
