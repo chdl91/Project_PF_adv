@@ -9,12 +9,14 @@ from nicegui import ui
 
 
 class QuizGUI:
-    def __init__(self, user_service, subject_service, question_service, score_service, quiz_session_service):
+    def __init__(self, user_service, subject_service, question_service, score_service, quiz_session_service, admin_users=None, admin_password: str = ""):
         self.user_service = user_service
         self.subject_service = subject_service
         self.question_service = question_service
         self.score_service = score_service
         self.quiz_session_service = quiz_session_service
+        self.admin_users = {user.lower() for user in (admin_users or [])}
+        self.admin_password = admin_password
 
         self.state = {"username": "", "admin_status": False}
 
@@ -24,6 +26,7 @@ class QuizGUI:
         self.user_panel = None
         self.admin_panel = None
         self.username_input = None
+        self.password_input = None
         self.welcome_label = None
         self.role_label = None
 
@@ -44,8 +47,15 @@ class QuizGUI:
         except Exception as exc:
             ui.notify(f"Login failed: {exc}")
             return
+        entered_password = self.password_input.value or ""
         self.state["username"] = user_info["user_name"]
-        self.state["admin_status"] = user_info["admin_status"]
+        self.state["admin_status"] = (
+            user_info["admin_status"]
+            or (
+                username.lower() in self.admin_users
+                and entered_password == self.admin_password
+            )
+        )
         self.welcome_label.text = f"Welcome, {self.state['username']}"
         self.role_label.text = "Admin access" if self.state["admin_status"] else "User access"
         self.refresh_screen()
@@ -55,6 +65,7 @@ class QuizGUI:
         self.state["username"] = ""
         self.state["admin_status"] = False
         self.username_input.value = ""
+        self.password_input.value = ""
         self.welcome_label.text = ""
         self.role_label.text = ""
         self.refresh_screen()
@@ -403,6 +414,18 @@ class QuizGUI:
         with ui.card().classes("w-96") as self.login_card:
             ui.label("Login").classes("text-h6")
             self.username_input = ui.input("Username")
+            self.password_input = ui.input(
+                "Admin password", password=True, password_toggle_button=True)
+            # hide the password field until an admin username is entered
+            self.password_input.visible = False
+
+            def _on_username_change(_=None):
+                uname = (self.username_input.value or "").strip().lower()
+                show = uname in self.admin_users
+                self.password_input.visible = show
+                self.password_input.update()
+
+            self.username_input.on("update:model-value", _on_username_change)
             ui.button("Login", on_click=self.login_user)
 
         with ui.column().classes("gap-2") as self.app_card:
@@ -418,12 +441,17 @@ class QuizGUI:
                 ui.button("Logout", on_click=self.logout_user)
 
             with ui.column() as self.admin_panel:
-                ui.label("Admin menu")
-                ui.button("Add Subject", on_click=self.add_subject_dialog)
-                ui.button("Add Topic", on_click=self.add_topic_dialog)
-                ui.button("Add Question", on_click=self.add_question_dialog)
-                ui.button("Delete Question",
-                          on_click=self.delete_question_dialog)
+                ui.label("Admin menu").classes("text-h6 text-weight-bold")
+                ui.label("Question management")
+                with ui.row():
+                    ui.button("Add Question",
+                              on_click=self.add_question_dialog)
+                    ui.button("Delete Question",
+                              on_click=self.delete_question_dialog)
+                ui.label("Content management")
+                with ui.row():
+                    ui.button("Add Subject", on_click=self.add_subject_dialog)
+                    ui.button("Add Topic", on_click=self.add_topic_dialog)
 
         self.refresh_screen()
         ui.run()

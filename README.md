@@ -105,16 +105,17 @@ This project is intended to:
 
 ### Use cases
 
-![UML Use Case Diagram](docs/architecture-diagrams/UML_use_case_diagram_quiz.png)
-#This shit should work...
+![UML Use Case Diagram]
+
 **Use cases**
 ## Main Use Cases
 
 - Show Menu
 - Select Subject 
 - Select Parameters for Quiz
-   - Select Topic
+   - Select Topic(s)
    - Select Difficulty
+   - Select Number of Questions
 - Answer Questions
 - Show result 
    - Grade 
