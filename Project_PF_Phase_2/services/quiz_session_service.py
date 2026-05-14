@@ -29,7 +29,8 @@ class QuizSessionService:
         username: str,
         subject_name: str,
         num_questions: int,
-        difficulty: Optional[str] = None
+        difficulty: Optional[str] = None,
+        topic_name: Optional[str] = None
     ) -> Tuple[str, dict]:
         """
         Start a new quiz session and return (session_id, first_question).
@@ -46,14 +47,23 @@ class QuizSessionService:
         }
         """
         try:
-            topics = self.subject_service.get_topics_with_ids_by_subject(subject_name)
+            topics = self.subject_service.get_topics_with_ids_by_subject(
+                subject_name)
             if not topics:
                 raise ValueError(f"Subject '{subject_name}' has no topics")
+
+            if topic_name:
+                topics = [
+                    topic for topic in topics if topic["topic_name"] == topic_name]
+                if not topics:
+                    raise ValueError(
+                        f"Topic '{topic_name}' not found in subject '{subject_name}'")
 
             all_questions = []
             for topic in topics:
                 all_questions.extend(
-                    self.question_service.get_questions_with_answers(topic["topic_id"], difficulty)
+                    self.question_service.get_questions_with_answers(
+                        topic["topic_id"], difficulty)
                 )
 
             if not all_questions:
@@ -140,7 +150,8 @@ class QuizSessionService:
             {username, subject_name, score, total_questions, percentage, grade}
         """
         session = self.active_sessions[session_id]
-        session["end_time"] = datetime.datetime.now(session["start_time"].tzinfo)
+        session["end_time"] = datetime.datetime.now(
+            session["start_time"].tzinfo)
 
         self.score_service.save_quiz_result(
             username=session["username"],
