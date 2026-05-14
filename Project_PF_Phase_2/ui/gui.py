@@ -27,6 +27,7 @@ class QuizGUI:
         self.admin_panel = None
         self.username_input = None
         self.password_input = None
+        self.admin_checkbox = None
         self.welcome_label = None
         self.role_label = None
 
@@ -47,14 +48,24 @@ class QuizGUI:
         except Exception as exc:
             ui.notify(f"Login failed: {exc}")
             return
-        entered_password = self.password_input.value or ""
+        entered_password = (self.password_input.value or "").strip()
+        # Determine admin intent: checkbox explicit OR username listed as admin
+        wants_admin = False
+        if hasattr(self, "admin_checkbox") and self.admin_checkbox is not None:
+            wants_admin = bool(self.admin_checkbox.value)
+        # If user explicitly wants admin, require password
+        if wants_admin:
+            if not entered_password:
+                ui.notify("Enter admin password to login as administrator")
+                return
+            if entered_password != self.admin_password:
+                ui.notify("Invalid admin password")
+                return
+
         self.state["username"] = user_info["user_name"]
         self.state["admin_status"] = (
-            user_info["admin_status"]
-            or (
-                username.lower() in self.admin_users
-                and entered_password == self.admin_password
-            )
+            user_info["admin_status"] or wants_admin or username.lower(
+            ) in self.admin_users
         )
         self.welcome_label.text = f"Welcome, {self.state['username']}"
         self.role_label.text = "Admin access" if self.state["admin_status"] else "User access"
@@ -414,18 +425,24 @@ class QuizGUI:
         with ui.card().classes("w-96") as self.login_card:
             ui.label("Login").classes("text-h6")
             self.username_input = ui.input("Username")
+            # Checkbox to request admin login
+            self.admin_checkbox = ui.checkbox("Login as administrator")
             self.password_input = ui.input(
                 "Admin password", password=True, password_toggle_button=True)
-            # hide the password field until an admin username is entered
+            # hide the password field until admin checkbox is checked or username is a known admin
             self.password_input.visible = False
 
-            def _on_username_change(_=None):
+            def _update_password_visibility(_=None):
                 uname = (self.username_input.value or "").strip().lower()
-                show = uname in self.admin_users
+                show = bool(self.admin_checkbox.value) or (
+                    uname in self.admin_users)
                 self.password_input.visible = show
                 self.password_input.update()
 
-            self.username_input.on("update:model-value", _on_username_change)
+            self.username_input.on("update:model-value",
+                                   _update_password_visibility)
+            self.admin_checkbox.on("update:model-value",
+                                   _update_password_visibility)
             ui.button("Login", on_click=self.login_user)
 
         with ui.column().classes("gap-2") as self.app_card:
