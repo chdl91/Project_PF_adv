@@ -223,6 +223,30 @@ class QuizGUI:
                             a),
                     ).classes("w-full")
 
+                def quit_quiz():
+                    try:
+                        summary = self.quiz_session_service.end_quiz_session(
+                            session_id)
+                    except Exception as exc:
+                        ui.notify(f"Could not quit quiz: {exc}")
+                        return
+
+                    dlg.close()
+                    with ui.dialog() as summary_dlg:
+                        with ui.card().classes("w-80"):
+                            ui.label("Quiz aborted").classes("text-h6")
+                            ui.label(
+                                f"Score: {summary['score']}/{summary['total_questions']}")
+                            ui.label(
+                                f"Percentage: {summary['percentage']}%")
+                            ui.label(f"Grade: {summary['grade']}/6")
+                            ui.button("OK", on_click=summary_dlg.close)
+                    summary_dlg.open()
+
+                with ui.row().classes("w-full"):
+                    ui.button("Quit Quiz", on_click=quit_quiz).props("color=negative").classes("w-full").style(
+                        "background-color: #dc2626 !important; color: white !important;")
+
         dlg.open()
 
     def view_scoreboard(self):
