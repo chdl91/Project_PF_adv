@@ -1,3 +1,4 @@
+
 """
 Application entry point.
 
@@ -11,20 +12,45 @@ Run from the Project_PF_Phase_2/ directory:
     python __main__.py
 """
 
-from data_access.db import Database
-from data_access.user_dao import UserDAO
-from data_access.subject_dao import SubjectDAO
-from data_access.question_dao import QuestionDAO
-from data_access.score_dao import ScoreDAO
+from pathlib import Path
+import sys
 
-from services.user_service import UserService
-from services.subject_service import SubjectService
-from services.question_service import QuestionService
-from services.score_service import ScoreService
-from services.quiz_session_service import QuizSessionService
 
-from ui.cli import QuizCLI
-from ui.gui import QuizGUI
+if __package__ in (None, ""):
+    project_root = Path(__file__).resolve().parent
+    if str(project_root) not in sys.path:
+        sys.path.insert(0, str(project_root))
+
+try:
+    from .data_access.db import Database
+    from .data_access.user_dao import UserDAO
+    from .data_access.subject_dao import SubjectDAO
+    from .data_access.question_dao import QuestionDAO
+    from .data_access.score_dao import ScoreDAO
+
+    from .services.user_service import UserService
+    from .services.subject_service import SubjectService
+    from .services.question_service import QuestionService
+    from .services.score_service import ScoreService
+    from .services.quiz_session_service import QuizSessionService
+
+    from .ui.cli import QuizCLI
+    from .ui.gui import QuizGUI
+except ImportError:
+    from data_access.db import Database
+    from data_access.user_dao import UserDAO
+    from data_access.subject_dao import SubjectDAO
+    from data_access.question_dao import QuestionDAO
+    from data_access.score_dao import ScoreDAO
+
+    from services.user_service import UserService
+    from services.subject_service import SubjectService
+    from services.question_service import QuestionService
+    from services.score_service import ScoreService
+    from services.quiz_session_service import QuizSessionService
+
+    from ui.cli import QuizCLI
+    from ui.gui import QuizGUI
 
 
 def main():
