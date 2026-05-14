@@ -68,7 +68,23 @@ class QuizGUI:
             ) in self.admin_users
         )
         self.welcome_label.text = f"Welcome, {self.state['username']}"
-        self.role_label.text = "Admin access" if self.state["admin_status"] else "User access"
+        # Set role label text and styling for admin vs user
+        if self.state["admin_status"]:
+            self.role_label.text = "Admin access"
+            # make it bold and red
+            try:
+                self.role_label.classes("text-weight-bold")
+            except Exception:
+                pass
+            self.role_label.style("color: #dc2626; font-weight: 700;")
+        else:
+            self.role_label.text = "User access"
+            # remove admin styling
+            try:
+                self.role_label.classes("")
+            except Exception:
+                pass
+            self.role_label.style("")
         self.refresh_screen()
         ui.notify(f"Logged in as {self.state['username']}")
 
@@ -78,7 +94,13 @@ class QuizGUI:
         self.username_input.value = ""
         self.password_input.value = ""
         self.welcome_label.text = ""
+        # clear role label and styling
         self.role_label.text = ""
+        try:
+            self.role_label.classes("")
+        except Exception:
+            pass
+        self.role_label.style("")
         self.refresh_screen()
         ui.notify("Logged out")
 
@@ -483,10 +505,6 @@ class QuizGUI:
                               on_click=self.add_question_dialog)
                     ui.button("Delete Question",
                               on_click=self.delete_question_dialog)
-                ui.label("Content management")
-                with ui.row():
-                    ui.button("Add Subject", on_click=self.add_subject_dialog)
-                    ui.button("Add Topic", on_click=self.add_topic_dialog)
 
         self.refresh_screen()
         ui.run(port=8080, reload=False)
