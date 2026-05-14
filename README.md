@@ -340,28 +340,70 @@ All relevant data is managed via an ORM (e.g. SQLModel or SQLAlchemy). For the p
 ```text
 PROJECT_PF_ADV/
 ├─ .devcontainer
+│  ├─ devcontainer.json
+│  └─ Dockerfile 
 ├─ .pytest_cache
 ├─ .venv
 ├─ .vscode
 ├─ .docs
+│  ├─ architecture-diagrams
+│  │  └─ DIAGRAMS.md
+│  └─ ui-images
+│     └─ FIGMA_DESIGN_SPEC.md
 ├─ Project_PF (Phase 1)
-│ 
-├─ Project_PF (Phase 2)  # entrypoint (py -m pizza_app)
+│  ├─ devcontainer
+│  │   └─ devcontainer.json
+│  │   └─ Dockerfile
+│  ├─ Data
+│  │   └─ DIB.json
+│  │   └─ POM.json
+│  ├─ Pictures
+│  │   └─ application.arcitecture_v1.jpg
+│  ├─ .gitignore
+│  ├─ main.py
+│  ├─ quiz.py
+│  ├─ README.md
+│  └─ requirements.txt
+│
+├─ Project_PF (Phase 2)  
 │  ├─ data_access             
-│  │  └─ 
+│  │  ├─ __pycache__
+│  │  ├─ __init__.py
+│  │  ├─ db.py
+│  │  ├─ question_dao.py
+│  │  ├─ score_dao.py
+│  │  ├─ subject_dao.py
+│  │  └─ user_dao.py
 │  ├─ DB
-│  │  └─ 
+│  │  ├─ Legacy Files
+│  │  │  ├─ DIB.json
+│  │  │  └─ POM.json
+│  │  ├─ check_db.py
+│  │  ├─ db_converter.py
+│  │  └─ quiz.db
 │  ├─ domain
+│  │  ├─ __pycache__
+│  │  ├─ 
+│  │  ├─ 
+│  │  ├─ 
+│  ├─ services
+│  │  ├─ __pycache__
+│  │  ├─ 
+│  │  ├─ 
+│  │  ├─ 
 │  │  └─ 
-│  ├─ services/
-│  │  ├─ pricing.py
-│  │  └─ invoice.py
 │  ├─ test
-│  │  └─ 
+│  │  ├─ __pycache__
+│  │  ├─ 
+│  │  ├─ 
+│  │  ├─ 
 │  ├─ ui
-│  │  ├─ pages.py
-│  │  └─ controllers.py
-│  ├─ __main__.py
+│  │  ├─ __pycache__
+│  │  ├─ 
+│  │  ├─ 
+│  │  ├─ 
+│  │  └─ 
+│  ├─ __main__.py             # entrypoint
 │  ├─ class.md
 │  └─ DESIGN_DECISIONS.md
 ├─ README.md
