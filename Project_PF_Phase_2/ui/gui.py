@@ -47,7 +47,9 @@ class QuizGUI:
         self.state["username"] = user_info["user_name"]
         self.state["admin_status"] = user_info["admin_status"]
         self.welcome_label.text = f"Welcome, {self.state['username']}"
-        self.role_label.text = "Admin access" if self.state["admin_status"] else "User access"
+        self.role_label.text = "Admin access" if self.state["admin_status"] else "Student access"
+        self.role_label.style(
+            "color: red" if self.state["admin_status"] else "color: inherit")
         self.refresh_screen()
         ui.notify(f"Logged in as {self.state['username']}")
 
@@ -57,6 +59,7 @@ class QuizGUI:
         self.username_input.value = ""
         self.welcome_label.text = ""
         self.role_label.text = ""
+        self.role_label.style("color: inherit")
         self.refresh_screen()
         ui.notify("Logged out")
 
