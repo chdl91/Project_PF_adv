@@ -1,4 +1,0 @@
-sqlmodel==0.0.14
-nicegui==2.0.1
-# == 0.0.14 refers to the latest version of sqlmodel (etc.)
-

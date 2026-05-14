@@ -155,6 +155,19 @@ Software Architecture (Layers)
 │  SQLModel + SQLite  │  ← Data persistence
 └─────────────────────┘
 
+## 🧪 Tests
+
+The repository now includes a separate `test/` folder for pytest-based checks.
+
+Install the dev dependency and run the suite with:
+
+```bash
+pip install -r requirements-dev.txt
+pytest
+```
+
+The starter tests avoid the live database and use in-memory or temporary SQLite files instead.
+
 User Story Flow (Now with Subject Selection)
 
 ┌──────────────────────────────────────────────────────────────────┐
