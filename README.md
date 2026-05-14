@@ -242,7 +242,7 @@ User (quiz results & admin accounts)
 ├─ user_timestamp
 └─ admin_status (boolean)
 
-
+ 
 
 ### Software Architecture
 
