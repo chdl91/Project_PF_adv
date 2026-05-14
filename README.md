@@ -179,15 +179,15 @@ User Story Flow (Now with Subject Selection)
     │     subject)         │       │                            │
     │                      │       │ 2. Remove Question (S8)    │
     │ 3. Select Difficulty │       │    - Select Question ID    │
-    │    (Story 3)         │       │                            │
-    │    Easy/Medium/Hard  │       │                            │
+    │    (Story 3)         │       │    - Confirmation of       │
+    │    Easy/Medium/Hard  │       │      Termination           │
     │                      │       │                            │
-    │ 4. Run Quiz          │       │ 3. View Questions (admin)  │
-    │    (Story 2)         │       │    - Filter by subject     │
-    │    - Display Q&A     │       │    - Display all details   │
+    │ 4. Run Quiz          │       │ 3. Return to Main          │
+    │    (Story 2)         │       │                            │
+    │    - Display Q&A     │       │ 4. Exit                    │
     │    - Validate answer │       │                            │
-    │    - Show results    │       │ 4. Return to Main          │
-    │                      │       │ 5. Exit                    │
+    │    - Show results    │       │                            │
+    │                      │       │                            │
     │ 5. View Scoreboard   │       │                            │
     │    (Story 7)         │       │                            │
     │    - Top scores      │       │                            │
@@ -227,6 +227,8 @@ User (quiz results & admin accounts)
 ├─ user_score
 ├─ user_timestamp
 └─ admin_status (boolean)
+
+
 
 ### Software Architecture
 
