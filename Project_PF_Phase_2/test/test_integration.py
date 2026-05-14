@@ -33,7 +33,7 @@ def _add_question_with_answers(db_session, topic_id, question_text, difficulty):
 
 
 def test_quiz_workflow_mixed_answers(db_session):
-    """TC_201: A quiz run should persist a non-perfect score correctly."""
+    """TC_010: A quiz run should persist a non-perfect score correctly."""
     subject = Subject(subject_name="Digital Business")
     db_session.add(subject)
     db_session.commit()
@@ -86,7 +86,7 @@ def test_quiz_workflow_mixed_answers(db_session):
 
 
 def test_admin_can_update_and_delete_question(db_session):
-    """TC_202: Admin can update a question and remove it with all answers."""
+    """TC_011: Admin can update a question and remove it with all answers."""
     subject = Subject(subject_name="POM")
     db_session.add(subject)
     db_session.commit()
@@ -131,7 +131,7 @@ def test_admin_can_update_and_delete_question(db_session):
 
 
 def test_scoreboard_orders_multiple_attempts(db_session):
-    """TC_203: Scoreboard should order several attempts from highest to lowest."""
+    """TC_012: Scoreboard should order several attempts from highest to lowest."""
     subject = Subject(subject_name="Digital Business")
     db_session.add(subject)
     db_session.commit()

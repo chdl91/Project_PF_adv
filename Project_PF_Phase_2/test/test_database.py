@@ -7,7 +7,7 @@ from domain.models import Answer, Question, QuizResult, Subject, Topic, User
 
 
 def test_persist_question_with_answers(seeded_subject_topic, db_session):
-    """TC_101: Save a question with four answers and verify the correct answer link."""
+    """TC_009: Save a question with four answers and verify the correct answer link."""
     _, topic = seeded_subject_topic
 
     question = Question(
@@ -47,7 +47,7 @@ def test_persist_question_with_answers(seeded_subject_topic, db_session):
 
 
 def test_filter_questions_by_difficulty_and_topic(seeded_subject_topic, db_session):
-    """TC_102: Query questions by both topic and difficulty in one statement."""
+    """TC_008: Query questions by both topic and difficulty in one statement."""
     _, topic = seeded_subject_topic
 
     other_topic = Topic(topic_name="IoT", subject_id=topic.subject_id)
@@ -80,7 +80,7 @@ def test_filter_questions_by_difficulty_and_topic(seeded_subject_topic, db_sessi
 
 
 def test_save_quiz_result_and_scoreboard_order(seeded_subject_topic, db_session):
-    """TC_103: Store quiz results and verify the leaderboard order and average score."""
+    """TC_012: Store quiz results and verify the leaderboard order and average score."""
     subject, _ = seeded_subject_topic
 
     for username, score in [("alice", 92), ("bob", 75), ("carla", 88)]:

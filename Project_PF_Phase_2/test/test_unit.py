@@ -2,13 +2,12 @@
 
 import pytest
 
-
 def calculate_percentage(correct_answers, total_questions):
     if total_questions <= 0:
         raise ValueError("total_questions must be greater than zero")
     return (correct_answers / total_questions) * 100
 
-
+"TC_002: A quiz with zero questions should fail fast."
 def grade_for_percentage(percentage):
     if percentage >= 90:
         return "A"
@@ -18,7 +17,7 @@ def grade_for_percentage(percentage):
         return "C"
     return "F"
 
-
+"TC_003: Difficulty values should be normalized before validation."
 def normalize_difficulty(value):
     allowed = {"easy", "medium", "hard"}
     normalized = value.strip().lower()
@@ -27,17 +26,26 @@ def normalize_difficulty(value):
     return normalized
 
 
+"TC_004: Unknown difficulty values must be rejected."
+def validate_difficulty(value):
+    try:
+        normalize_difficulty(value)
+        return True
+    except ValueError:
+        return False
+
+"TC_005: Username validation should handle blanks and length limits."
 def validate_username(value):
     cleaned = value.strip()
     return bool(cleaned) and len(cleaned) <= 30
 
 
+"TC_006: Answer choice must stay inside the valid range."
 def validate_answer_choice(choice):
     return choice in {1, 2, 3, 4}
 
-
+"TC_001: Score calculation should map to the right grade band."
 def test_score_calculation_and_grade_mapping():
-    """TC_001: Score calculation should map to the right grade band."""
     cases = [
         (10, 10, 100.0, "A"),
         (8, 10, 80.0, "B"),
