@@ -47,9 +47,7 @@ class QuizGUI:
         self.state["username"] = user_info["user_name"]
         self.state["admin_status"] = user_info["admin_status"]
         self.welcome_label.text = f"Welcome, {self.state['username']}"
-        self.role_label.text = "Admin access" if self.state["admin_status"] else "Student access"
-        self.role_label.style(
-            "color: red" if self.state["admin_status"] else "color: inherit")
+        self.role_label.text = "Admin access" if self.state["admin_status"] else "User access"
         self.refresh_screen()
         ui.notify(f"Logged in as {self.state['username']}")
 
@@ -59,7 +57,6 @@ class QuizGUI:
         self.username_input.value = ""
         self.welcome_label.text = ""
         self.role_label.text = ""
-        self.role_label.style("color: inherit")
         self.refresh_screen()
         ui.notify("Logged out")
 
@@ -72,6 +69,7 @@ class QuizGUI:
         with ui.dialog() as dlg:
             with ui.card().classes("w-96"):
                 ui.label("Select a Quiz Subject:").classes("text-h6")
+                ui.label("Subject")
                 subject_select = ui.select(subjects, label="Subject")
                 topic_select = ui.select([], label="Topics", multiple=True)
                 select_all_topics = ui.checkbox("Select all topics")
@@ -178,8 +176,6 @@ class QuizGUI:
 
                 ui.button("Start Quiz", on_click=start_selected_quiz)
                 ui.button("Cancel", on_click=dlg.close)
-
-            update_topics()
 
         dlg.open()
 

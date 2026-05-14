@@ -70,19 +70,25 @@ This project is intended to:
 **Inputs:**  Choice of a single topic 
 **Outputs:** Confirmation of choice (internally calling the next step in quiz_setup)
 
-### 5. Quit and return to main menu 
+### 5. Select the amount of questions the user can complete in their attempt
+**As a user, I want to select the amount of questions I can attempt in my quiz**  
+**Description:** The application displays an option to select an amount of questions
+**Inputs:**  Choice of a number of questions (minimum of 5 questions)
+**Outputs:** Confirmation of choice (internally calling the next step in quiz_setup)
+
+### 6. Quit and return to main menu 
 **As a user, I want to able to return to the menu at anytime in order to restart my quiz setup and the quiz itself**  
 **Description:** At all times, during the quiz setup and the quiz attempt itself, the user has the possibility to return to the starting menu
 **Inputs:**  User has a return choice
 **Outputs:** Confirmation of choice (internally, stop attempt and return to )
 
-### 6. Point Counter
+### 7. Point Counter
 **As a user, I want a point counter/final grade/percentage presented, in order to check my performance.**  
 **Description:** The application displays the results of the finished attempt and shows the score (correct questions out of total), grade and percentage.
 **Inputs:**  internally recognizing the users choice and adding to counter if correct choice has been selected
 **Outputs:** internally calling the results.csv and creating a new entry with achieved score, date, time, final grade and percentage reached 
 
-### 7. Scoreboard (Arcade Format)
+### 8. Scoreboard (Arcade Format)
 **As a User, I want to be able to see my score in a scoreboard with other local users in order to compare my final attempt score with previous attempts**  
 **Description:** Once an attempt is complete, the user is able to view their score and input a user name into a scoreboard
 **Inputs:**  Username entry ("str" and limited characters, excluding special characters)
@@ -90,7 +96,7 @@ This project is intended to:
 
 **Possible improvements**
 
-### 8. Admin Rights
+### 9. Admin Rights
 **As an Admin, I want to be able to add and remove questions, in order to keep the quiz relevant.**  
 **Description:** 
 **Inputs:**  
@@ -459,8 +465,8 @@ pytest
 |-------------------|----------|--------------------------------------------|
 | Steven Joggi      | Support  | 1) User Stories and Use Cases (including Use Case Diagram)
 |                   |          | 2) ER Diagram Continuation
-|                   |          | 3) 
-|                   |          | 4) 
+|                   |          | 3) Set up of NiceGUI
+|                   |          | 4) Troubleshooting Application
 |                   |          | 5) 
 |                   |          | 6) Proofreading and added comments for structure
 |                   |          | 7) Continuation of README.md 
@@ -478,7 +484,7 @@ pytest
 |                   |          | 3) Created the quiz_engine.py
 |                   |          | 4) Created the quiz_service.py
 |                   |          | 5) Restructured the Database into classes
-|                   |          | 6)  
+|                   |          | 6) Major Overhaul of Code and Restructure (13.05.2026)
 |                   |          | 7) Overall Troubleshooting of Noe's and Steven's code
 
 
