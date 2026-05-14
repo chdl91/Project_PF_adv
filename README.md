@@ -301,10 +301,15 @@ Each app must meet the following criteria in order to be accepted (see also the 
 
 The application interacts with the user via the browser. Users can:
 
-- View the pizza menu
-- Select pizzas and quantities
-- See the running total
-- Receive an invoice generated as a file
+- Login through a username of their choice
+- Select "Start Quiz"
+- Select the parameters of their quiz, including subject, topic, difficulty and number of questions
+- End their quiz at any time and still receive a grading based on achieved progress
+- View their score and compare it to previous and other users in "View Scoreboard"
+
+- Admins can log in through a (hardcoded) password
+- Admins have access to the Admin Panel and can manage questions (Add and Remove)
+- The added or removed questions are linked to the database.
 
 **Architecture note (per SS26 guidelines):** the browser is a thin client; UI state + business logic live on the server-side NiceGUI app.
 
@@ -319,7 +324,7 @@ These checks prevent crashes and guide the user to provide correct input, matchi
 
 ### 3. Database Management
 
-All relevant data is managed via an ORM (e.g. SQLModel or SQLAlchemy). For the pizza example this includes users, pizzas, and orders.
+All relevant data is managed via an ORM (SQLModel). This Includes, "subjects, "topics", "question", "answer", "user, and " QuizResult" and "QuizSession".
 
 ---
 
@@ -329,9 +334,9 @@ All relevant data is managed via an ORM (e.g. SQLModel or SQLAlchemy). For the p
 
 ### Technology
 
-- Python 3.x
+- Python 3.13.5
 - Environment: GitHub Codespaces
-- External libraries: nicegui, sqlmodel, sqlalchemy, reportlab, python-dotenv, pytest, tzdata
+- External libraries: nicegui, sqlmodel, sqlalchemy, pytest
 
 ---
 
@@ -350,7 +355,8 @@ PROJECT_PF_ADV/
 │  │  └─ DIAGRAMS.md
 │  └─ ui-images
 │     └─ FIGMA_DESIGN_SPEC.md
-├─ Project_PF (Phase 1)
+│
+├─ Project_PF (Phase 1)             #Previous Semester's Project (Autumn 2025)
 │  ├─ devcontainer
 │  │   └─ devcontainer.json
 │  │   └─ Dockerfile
@@ -383,27 +389,29 @@ PROJECT_PF_ADV/
 │  │  └─ quiz.db
 │  ├─ domain
 │  │  ├─ __pycache__
-│  │  ├─ 
-│  │  ├─ 
-│  │  ├─ 
+│  │  ├─ __init__.py
+│  │  └─ models.py
 │  ├─ services
 │  │  ├─ __pycache__
-│  │  ├─ 
-│  │  ├─ 
-│  │  ├─ 
-│  │  └─ 
+│  │  ├─ __init__.py
+│  │  ├─ question_service.py
+│  │  ├─ quiz_session_service.py
+│  │  ├─ score_service.py
+│  │  ├─ subject_session_service.py
+│  │  └─ user_service.py
 │  ├─ test
 │  │  ├─ __pycache__
-│  │  ├─ 
-│  │  ├─ 
-│  │  ├─ 
+│  │  ├─ conftest.py
+│  │  ├─ pytest.ini
+│  │  ├─ test_database.py
+│  │  ├─ test_integration.py
+│  │  └─ test_unit.py
 │  ├─ ui
 │  │  ├─ __pycache__
-│  │  ├─ 
-│  │  ├─ 
-│  │  ├─ 
-│  │  └─ 
-│  ├─ __main__.py             # entrypoint
+│  │  ├─ __init__.py
+│  │  ├─ cli.py
+│  │  └─  gui.py
+│  ├─ __main__.py                   # entrypoint
 │  ├─ class.md
 │  └─ DESIGN_DECISIONS.md
 ├─ README.md
