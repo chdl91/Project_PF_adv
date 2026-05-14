@@ -72,11 +72,10 @@ def main():
     # --- Presentation layer ---
     # To run the browser app use QuizGUI; for the terminal use QuizCLI.
     # Both accept the exact same arguments.
-    admin_users = {"admin"}
     admin_password = "admin.12345"
 
     gui = QuizGUI(user_svc, subject_svc, question_svc,
-                  score_svc, quiz_session_svc, admin_users=admin_users, admin_password=admin_password)
+                  score_svc, quiz_session_svc, admin_password=admin_password)
     gui.run()
 
 
