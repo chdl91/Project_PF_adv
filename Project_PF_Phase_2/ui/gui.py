@@ -409,11 +409,29 @@ class QuizGUI:
                     except Exception:
                         ui.notify("Enter a valid question ID")
                         return
-                    if self.question_service.delete_question(qid):
-                        ui.notify("Question deleted")
-                        dlg.close()
-                    else:
-                        ui.notify("Could not delete question")
+
+                    # Show confirmation dialog
+                    with ui.dialog() as confirm_dlg:
+                        with ui.card().classes("w-96"):
+                            ui.label(f"Are you sure you want to delete question with ID {qid}?").classes(
+                                "text-h6")
+
+                            def confirm_delete():
+                                if self.question_service.delete_question(qid):
+                                    ui.notify("Question deleted successfully")
+                                    dlg.close()
+                                    confirm_dlg.close()
+                                else:
+                                    ui.notify("Could not delete question")
+                                    confirm_dlg.close()
+
+                            with ui.row():
+                                ui.button("Yes, Delete", on_click=confirm_delete).classes(
+                                    "bg-red-500")
+                                ui.button("Cancel", on_click=confirm_dlg.close).classes(
+                                    "bg-gray-500")
+
+                    confirm_dlg.open()
 
                 ui.button("Delete", on_click=remove_question)
                 ui.button("Cancel", on_click=dlg.close)
@@ -471,4 +489,4 @@ class QuizGUI:
                     ui.button("Add Topic", on_click=self.add_topic_dialog)
 
         self.refresh_screen()
-        ui.run()
+        ui.run(port=8080, reload=False)

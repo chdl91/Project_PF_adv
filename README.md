@@ -129,7 +129,7 @@ This project is intended to:
 
 **Actors**
 - User (Attempts Quiz)
-- Admin (May manage questions for the quiz)
+- Admin (Manage questions for the quiz)
 
 ---
 
@@ -178,9 +178,9 @@ User Story Flow (Now with Subject Selection)
     │    (from selected    │       │    - Difficulty            │
     │     subject)         │       │                            │
     │                      │       │ 2. Remove Question (S8)    │
-    │ 3. Select Difficulty │       │    - Select subject/topic  │
-    │    (Story 3)         │       │    - List questions        │
-    │    Easy/Medium/Hard  │       │    - Confirm delete        │
+    │ 3. Select Difficulty │       │    - Select Question ID    │
+    │    (Story 3)         │       │                            │
+    │    Easy/Medium/Hard  │       │                            │
     │                      │       │                            │
     │ 4. Run Quiz          │       │ 3. View Questions (admin)  │
     │    (Story 2)         │       │    - Filter by subject     │
