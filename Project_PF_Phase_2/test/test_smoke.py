@@ -2,7 +2,7 @@ import sqlite3
 
 from sqlmodel import Session, select
 
-from Project_PF_Phase_2.domain.models import Subject
+from domain.models import Subject
 
 
 def test_sqlite_integrity_check_on_fresh_database(tmp_path):
