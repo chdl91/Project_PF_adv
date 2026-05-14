@@ -31,24 +31,25 @@ def main():
     # --- Data layer ---
     db = Database()
 
-    user_dao     = UserDAO(db)
-    subject_dao  = SubjectDAO(db)
+    user_dao = UserDAO(db)
+    subject_dao = SubjectDAO(db)
     question_dao = QuestionDAO(db)
-    score_dao    = ScoreDAO(db)
+    score_dao = ScoreDAO(db)
 
     # --- Service layer ---
-    user_svc         = UserService(user_dao)
-    subject_svc      = SubjectService(subject_dao)
-    question_svc     = QuestionService(question_dao)
-    score_svc        = ScoreService(score_dao)
+    user_svc = UserService(user_dao)
+    subject_svc = SubjectService(subject_dao)
+    question_svc = QuestionService(question_dao)
+    score_svc = ScoreService(score_dao)
     quiz_session_svc = QuizSessionService(subject_svc, question_svc, score_svc)
 
     # --- Presentation layer ---
     # To run the browser app use QuizGUI; for the terminal use QuizCLI.
     # Both accept the exact same arguments.
-    gui = QuizGUI(user_svc, subject_svc, question_svc, score_svc, quiz_session_svc)
+    gui = QuizGUI(user_svc, subject_svc, question_svc,
+                  score_svc, quiz_session_svc)
     gui.run()
 
 
-if __name__ == "__main__":
+if __name__ in {"__main__", "__mp_main__"}:
     main()
