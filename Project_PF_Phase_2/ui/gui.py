@@ -70,8 +70,9 @@ class QuizGUI:
             with ui.card().classes("w-96"):
                 ui.label("Select a Quiz Subject:").classes("text-h6")
                 ui.label("Subject")
-                subject_select = ui.select(subjects, label="Subject")
-                topic_select = ui.select([], label="Topics", multiple=True)
+                subject_select = ui.select(subjects)
+                ui.label("Topics")
+                topic_select = ui.select([], multiple=True)
                 select_all_topics = ui.checkbox("Select all topics")
 
                 def update_topics():
@@ -102,13 +103,13 @@ class QuizGUI:
                                   lambda _: update_topics())
                 select_all_topics.on("update:model-value",
                                      lambda _: toggle_all_topics())
+                ui.label("Difficulty")
                 difficulty_select = ui.select(
                     ["Easy", "Medium", "Hard", "All difficulties"],
                     value="Medium",
-                    label="Difficulty",
                 )
-                num_questions_input = ui.number(
-                    label="Number of questions", value=5, min=5, step=1)
+                ui.label("Number of questions")
+                num_questions_input = ui.number(value=5, min=5, step=1)
 
                 def start_selected_quiz():
                     subject = subject_select.value
