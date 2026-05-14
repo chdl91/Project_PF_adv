@@ -74,24 +74,36 @@ class QuizGUI:
                 ui.label("Select a Quiz Subject:").classes("text-h6")
                 subject_select = ui.select(subjects, label="Subject")
                 topic_select = ui.select([], label="Topics", multiple=True)
+                select_all_topics = ui.checkbox("Select all topics")
 
                 def update_topics():
                     subject = subject_select.value
                     if not subject:
                         topic_select.options = []
                         topic_select.value = []
+                        select_all_topics.value = False
                         topic_select.update()
+                        select_all_topics.update()
                         return
 
                     topics = self.subject_service.get_topics_with_ids_by_subject(
                         subject)
-                    topic_select.options = [
-                        topic["topic_name"] for topic in topics]
-                    topic_select.value = []
+                    topic_options = [topic["topic_name"] for topic in topics]
+                    topic_select.options = topic_options
+                    topic_select.value = topic_options if select_all_topics.value else []
+                    topic_select.update()
+
+                def toggle_all_topics():
+                    if select_all_topics.value:
+                        topic_select.value = list(topic_select.options)
+                    else:
+                        topic_select.value = []
                     topic_select.update()
 
                 subject_select.on("update:model-value",
                                   lambda _: update_topics())
+                select_all_topics.on("update:model-value",
+                                     lambda _: toggle_all_topics())
                 difficulty_select = ui.select(
                     ["Easy", "Medium", "Hard", "All difficulties"],
                     value="Medium",
@@ -110,6 +122,9 @@ class QuizGUI:
                     if not selected_topics:
                         ui.notify("Select at least one topic")
                         return
+
+                    if select_all_topics.value:
+                        selected_topics = list(topic_select.options)
 
                     difficulty = None if difficulty_select.value == "All difficulties" else difficulty_select.value.lower()
 
