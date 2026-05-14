@@ -30,6 +30,7 @@ class QuizSessionService:
         subject_name: str,
         num_questions: int,
         difficulty: Optional[str] = None,
+        topic_names: Optional[list[str]] = None,
         topic_name: Optional[str] = None
     ) -> Tuple[str, dict]:
         """
@@ -52,12 +53,14 @@ class QuizSessionService:
             if not topics:
                 raise ValueError(f"Subject '{subject_name}' has no topics")
 
-            if topic_name:
+            selected_topic_names = topic_names or (
+                [] if topic_name is None else [topic_name])
+            if selected_topic_names:
                 topics = [
-                    topic for topic in topics if topic["topic_name"] == topic_name]
+                    topic for topic in topics if topic["topic_name"] in selected_topic_names]
                 if not topics:
                     raise ValueError(
-                        f"Topic '{topic_name}' not found in subject '{subject_name}'")
+                        f"Topic '{', '.join(selected_topic_names)}' not found in subject '{subject_name}'")
 
             all_questions = []
             for topic in topics:

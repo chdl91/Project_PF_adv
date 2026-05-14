@@ -73,13 +73,13 @@ class QuizGUI:
             with ui.card().classes("w-96"):
                 ui.label("Select a Quiz Subject:").classes("text-h6")
                 subject_select = ui.select(subjects, label="Subject")
-                topic_select = ui.select([], label="Topic")
+                topic_select = ui.select([], label="Topics", multiple=True)
 
                 def update_topics():
                     subject = subject_select.value
                     if not subject:
                         topic_select.options = []
-                        topic_select.value = None
+                        topic_select.value = []
                         topic_select.update()
                         return
 
@@ -87,7 +87,7 @@ class QuizGUI:
                         subject)
                     topic_select.options = [
                         topic["topic_name"] for topic in topics]
-                    topic_select.value = None
+                    topic_select.value = []
                     topic_select.update()
 
                 subject_select.on("update:model-value",
@@ -106,25 +106,33 @@ class QuizGUI:
                         ui.notify("Select a subject")
                         return
 
-                    topic = topic_select.value
-                    if not topic:
-                        ui.notify("Select a topic")
+                    selected_topics = topic_select.value or []
+                    if not selected_topics:
+                        ui.notify("Select at least one topic")
                         return
 
                     difficulty = None if difficulty_select.value == "All difficulties" else difficulty_select.value.lower()
 
                     topics = self.subject_service.get_topics_with_ids_by_subject(
                         subject)
-                    selected_topic = next(
-                        (item for item in topics if item["topic_name"] == topic),
-                        None,
-                    )
-                    if not selected_topic:
-                        ui.notify("Select a valid topic")
-                        return
+                    selected_topic_ids = []
+                    for topic_name in selected_topics:
+                        selected_topic = next(
+                            (item for item in topics if item["topic_name"]
+                             == topic_name),
+                            None,
+                        )
+                        if not selected_topic:
+                            ui.notify("Select valid topics")
+                            return
+                        selected_topic_ids.append(selected_topic["topic_id"])
 
-                    available = self.question_service.get_questions_with_answers(
-                        selected_topic["topic_id"], difficulty)
+                    available = []
+                    for topic_id in selected_topic_ids:
+                        available.extend(
+                            self.question_service.get_questions_with_answers(
+                                topic_id, difficulty)
+                        )
 
                     if not available:
                         ui.notify("No questions available for that selection")
@@ -144,7 +152,7 @@ class QuizGUI:
                             subject_name=subject,
                             num_questions=num_q,
                             difficulty=difficulty,
-                            topic_name=topic,
+                            topic_names=selected_topics,
                         )
                     except Exception as exc:
                         ui.notify(f"Could not start quiz: {exc}")
