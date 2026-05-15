@@ -530,10 +530,11 @@ Doing a Quiz:
 
 **Run:**
 ```bash
-pytest  #dini mami
+pytest Project_PF_Phase_2/test/test_unit.py
+pytest Project_PF_Phase_2/test/test_database.py
+pytest Project_PF_Phase_2/test/test_integration.py
 ```
 
-> 🚧 If you provide separate commands, document them here (e.g. `pytest -m integration`).
 
 ---
 
