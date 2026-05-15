@@ -116,11 +116,12 @@ class QuizSessionService:
         session = self.active_sessions[session_id]
         is_correct = self.validate_answer(session_id, selected_answer_id)
         current_question = session["questions"][session["current_idx"]]
-        
+
         # Get the correct answer text
         correct_answer_id = current_question["correct_answer_id"]
         correct_answer_text = next(
-            (answer["text"] for answer in current_question["answers"] if answer["answer_id"] == correct_answer_id),
+            (answer["text"] for answer in current_question["answers"]
+             if answer["answer_id"] == correct_answer_id),
             "No answer available"
         )
 
@@ -175,18 +176,10 @@ class QuizSessionService:
         total = len(session["questions"])
         percentage = round((session["score"] / total) * 100, 2)
 
-        if percentage >= 90:
-            grade = 6
-        elif percentage >= 80:
-            grade = 5
-        elif percentage >= 70:
-            grade = 4
-        elif percentage >= 60:
-            grade = 3
-        elif percentage >= 50:
-            grade = 2
-        else:
-            grade = 1
+        # Grade calculation: (Achieved Points × 5 / Max. possible Points) + 1
+        grade = round((session["score"] * 5 / total) + 1, 1)
+        # Cap grade between 1 and 6
+        grade = max(1, min(6, grade))
 
         summary = {
             "username": session["username"],
