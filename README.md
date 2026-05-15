@@ -369,6 +369,8 @@ All relevant data is managed via an ORM (SQLModel). This Includes, "subjects, "t
 
 ## ⚙️ Implementation
 
+#what?
+
 ---
 
 ### Technology
@@ -392,7 +394,17 @@ PROJECT_PF_ADV/
 │  ├─ architecture-diagrams
 │  │  └─ DIAGRAMS.md
 │  └─ ui-images
-│     └─ FIGMA_DESIGN_SPEC.md
+│     ├─ FIGMA_DESIGN_SPEC.md
+│     ├─ ui_admin_add_question.png
+│     ├─ ui_admin_confirmation_delete.png
+│     ├─ ui_admin_delete_question.png
+│     ├─ ui_admin_login.png
+│     ├─ ui_admin_panel.png
+│     ├─ ui_login.png
+│     ├─ ui_question_and_answers.png
+│     ├─ ui_scoreboard.png
+│     ├─ ui_start_quiz.png
+│     └─ ui_user_menu.png
 │
 ├─ Project_PF (Phase 1)             #Previous Semester's Project (Autumn 2025)
 │  ├─ devcontainer
