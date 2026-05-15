@@ -103,7 +103,7 @@ This project is intended to:
 **Outputs:** Confirmation of choice (internally: results.csv)
 
 ### 9. Admin Login
-**As an Admin, I want to be able to login to a separate Admin Panel with a password**  
+**As an Admin, I want to be able to login to a separate Admin Panel with a password in order to manage to data**  
 **Description:** To gain entry into the Admin Panel, a correct answer must be entered.  
 **Inputs:**  Admin Password (Hardcoded) and input from admin user
 **Outputs:** -
@@ -288,10 +288,10 @@ User (quiz results & admin accounts)
 - Application logic (controllers + domain/services)
 - Persistence (SQLite + ORM entities + repositories/queries)
 
-**Design decisions (examples):**                                     #confused here
+**Design decisions (examples):**          #Composite Pattern
 - Organize code using **MVC**:
-   - **Model:** domain + ORM entities (e.g. `quiz.py`)
-   - **View:** NiceGUI UI components/pages
+   - **Model:** domain + ORM entities (e.g. "domain.models.Question")
+   - **View:** NiceGUI UI components/pages 
    - **Controller:** event handlers and coordination logic between UI, services, and persistence (e.g.`quiz_service.py` )
 - Separate UI (`app/main.py`) from domain logic (e.g. ``) and persistence (e.g. `models.py`, `db.py`)
 - Use and interaction of modules to minimize dependencies, by minimizing cohesion and maximizing coupling
@@ -370,15 +370,31 @@ All relevant data is managed via an ORM (SQLModel). This Includes, "subjects, "t
 
 ## ⚙️ Implementation
 
-#what?
-
----
 
 ### Technology
 
 - Python 3.13.5
 - Environment: GitHub Codespaces
 - External libraries: nicegui, sqlmodel, sqlalchemy, pytest
+
+### Libraries Used
+
+#Third Party Libraries 
+1. sqlmodel
+2. nicegui
+3. pytest
+
+#Standard Libraries and it's uses
+4. os
+5. sys
+6. json
+7. random
+8. uuid
+9. datetime
+10. zoneinfo
+11. sqlite3
+12. pathlib
+13. typing
 
 ---
 
@@ -554,21 +570,6 @@ pytest Project_PF_Phase_2/test/test_integration.py
 
 ---
 
-### Libraries Used
-
-1. sqlmodel
-2. nicegui
-3. pytest
-4. os
-5. sys
-6. json
-7. random
-8. uuid
-9. datetime
-10. zoneinfo
-11. sqlite3
-12. pathlib
-13. typing
 
 ## 👥 Team & Contributions
 

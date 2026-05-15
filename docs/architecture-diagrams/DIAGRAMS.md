@@ -41,7 +41,7 @@ erDiagram
     QUIZ_RESULT {
         int result_id PK
         string user_name
-        string subject_name
+        int subject_id FK
         int score
         int total_questions
         string timestamp
