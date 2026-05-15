@@ -111,10 +111,18 @@ class QuizSessionService:
         Record the answer, advance to the next question, and return feedback.
 
         Returns:
-            {is_correct, score, current_question_num, total_questions, next_question, quiz_complete}
+            {is_correct, score, current_question_num, total_questions, next_question, quiz_complete, correct_answer_text}
         """
         session = self.active_sessions[session_id]
         is_correct = self.validate_answer(session_id, selected_answer_id)
+        current_question = session["questions"][session["current_idx"]]
+        
+        # Get the correct answer text
+        correct_answer_id = current_question["correct_answer_id"]
+        correct_answer_text = next(
+            (answer["text"] for answer in current_question["answers"] if answer["answer_id"] == correct_answer_id),
+            "No answer available"
+        )
 
         session["user_answers"].append(selected_answer_id)
         if is_correct:
@@ -131,7 +139,8 @@ class QuizSessionService:
             "current_question_num": session["current_idx"],
             "total_questions": total,
             "next_question": next_question,
-            "quiz_complete": quiz_complete
+            "quiz_complete": quiz_complete,
+            "correct_answer_text": correct_answer_text
         }
 
     def get_quiz_progress(self, session_id: str) -> dict:

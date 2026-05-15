@@ -231,6 +231,8 @@ class QuizGUI:
                          ).classes("text-h6")
                 ui.label(f"Difficulty: {question.get('difficulty', 'n/a')}")
 
+                answer_buttons = []
+
                 def answer_clicked(answer_id: int):
                     try:
                         result = self.quiz_session_service.submit_answer(
@@ -239,33 +241,61 @@ class QuizGUI:
                         ui.notify(f"Error submitting answer: {exc}")
                         return
 
-                    dlg.close()
-                    ui.notify(
-                        "Correct!" if result["is_correct"] else "Wrong answer")
+                    # Disable all answer buttons
+                    for btn in answer_buttons:
+                        btn.enabled = False
 
-                    if result["quiz_complete"]:
-                        summary = self.quiz_session_service.end_quiz_session(
-                            session_id)
-                        with ui.dialog() as summary_dlg:
-                            with ui.card().classes("w-80"):
-                                ui.label("Quiz complete!").classes("text-h6")
-                                ui.label(
-                                    f"Score: {summary['score']}/{summary['total_questions']}")
-                                ui.label(
-                                    f"Percentage: {summary['percentage']}%")
-                                ui.label(f"Grade: {summary['grade']}/6")
-                                ui.button("OK", on_click=summary_dlg.close)
-                        summary_dlg.open()
-                    else:
-                        self.show_question_dialog(
-                            session_id, result["next_question"])
+                    # Show answer feedback dialog
+                    with ui.dialog() as feedback_dlg:
+                        with ui.card().classes("w-96"):
+                            # Show if answer was correct or wrong
+                            feedback_text = "✓ Correct!" if result["is_correct"] else "✗ Wrong answer"
+                            feedback_color = "#10b981" if result["is_correct"] else "#ef4444"
+                            ui.label(feedback_text).classes(
+                                "text-h6").style(f"color: {feedback_color}; font-weight: 700;")
+
+                            # Show the correct answer
+                            ui.label("Correct answer:").classes(
+                                "text-subtitle2 font-bold")
+                            ui.label(result["correct_answer_text"]).classes(
+                                "text-base").style("padding: 8px; background-color: #f3f4f6; border-radius: 4px;")
+
+                            def continue_quiz():
+                                feedback_dlg.close()
+                                dlg.close()
+
+                                if result["quiz_complete"]:
+                                    summary = self.quiz_session_service.end_quiz_session(
+                                        session_id)
+                                    with ui.dialog() as summary_dlg:
+                                        with ui.card().classes("w-80"):
+                                            ui.label("Quiz complete!").classes(
+                                                "text-h6")
+                                            ui.label(
+                                                f"Score: {summary['score']}/{summary['total_questions']}")
+                                            ui.label(
+                                                f"Percentage: {summary['percentage']}%")
+                                            ui.label(
+                                                f"Grade: {summary['grade']}/6")
+                                            ui.button(
+                                                "OK", on_click=summary_dlg.close)
+                                    summary_dlg.open()
+                                else:
+                                    self.show_question_dialog(
+                                        session_id, result["next_question"])
+
+                            ui.button("Next Question",
+                                      on_click=continue_quiz).classes("w-full")
+
+                    feedback_dlg.open()
 
                 for answer in question.get("answers", []):
-                    ui.button(
+                    btn = ui.button(
                         answer["text"],
                         on_click=lambda a=answer["answer_id"]: answer_clicked(
                             a),
                     ).classes("w-full")
+                    answer_buttons.append(btn)
 
                 def quit_quiz():
                     try:
