@@ -165,6 +165,7 @@ This project is intended to:
 [View UI Images & Mockups](docs/ui-images/ui_user_menu.png)
 [View UI Images & Mockups](docs/ui-images/ui_start_quiz.png)
 [View UI Images & Mockups](docs/ui-images/ui_question_and_answers.png)
+[View UI Images & Mockups](docs/ui-images/ui_question_and_answers_correction.png)
 [View UI Images & Mockups](docs/ui-images/ui_scoreboard.png)
 [View UI Images & Mockups](docs/ui-images/ui_admin_login.png)
 [View UI Images & Mockups](docs/ui-images/ui_admin_panel.png)
@@ -401,6 +402,7 @@ PROJECT_PF_ADV/
 │     ├─ ui_admin_login.png
 │     ├─ ui_admin_panel.png
 │     ├─ ui_login.png
+│     ├─ ui_question_and_answers_correction.png
 │     ├─ ui_question_and_answers.png
 │     ├─ ui_scoreboard.png
 │     ├─ ui_start_quiz.png
@@ -514,8 +516,10 @@ Doing a Quiz:
 
 > 🚧 Add UI screenshots of the main screens (or a short video link):
 
-![UI – Checkout](docs/ui-images/ui_checkout_screen.png)
-![UI – Past Transactions](docs/ui-images/ui_past_transactions_screen.png)
+[View UI Images & Mockups](docs/ui-images/ui_user_menu.png)
+[View UI Images & Mockups](docs/ui-images/ui_start_quiz.png)
+[View UI Images & Mockups](docs/ui-images/ui_question_and_answers.png)
+[View UI Images & Mockups](docs/ui-images/ui_scoreboard.png)
 
 ---
 
@@ -576,15 +580,15 @@ pytest Project_PF_Phase_2/test/test_integration.py
 |                   |          | 2) ER Diagram Continuation
 |                   |          | 3) Initial set-up of NiceGUI
 |                   |          | 4) Initial set-up of Pytest
-|                   |          | 5) 
+|                   |          | 5) Documentation 
 |                   |          | 6) Proofreading and added comments for structure
-|                   |          | 7) Continuation of README.md 
+|                   |          | 7)  
 |                   |          |  
 | Noe Brönnimann    | VP       | 1) User Stories and Use Cases
 |                   |          | 2) ER Diagram Continuation
 |                   |          | 3) Continuation of NiceGUI
 |                   |          | 4) Continuation of Pytest
-|                   |          | 5) 
+|                   |          | 5) NiceGUI Overhaul
 |                   |          | 6) 
 |                   |          | 7) Correction of Steven's code
 |                   |          | 
