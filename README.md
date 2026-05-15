@@ -5,7 +5,7 @@
 
 > 🚧 Replace the screenshot with one that shows your main screen.
 
-![UI Showcase](docs/ui-images/ui_showcase.png)
+[UI Showcase](docs/ui-images/ui_user_menu.png)
 
 ---
 
@@ -580,7 +580,7 @@ pytest Project_PF_Phase_2/test/test_integration.py
 |                   |          | 2) ER Diagram Continuation
 |                   |          | 3) Initial set-up of NiceGUI
 |                   |          | 4) Initial set-up of Pytest
-|                   |          | 5) Documentation 
+|                   |          | 5) Documentation and overhaul README
 |                   |          | 6) Proofreading and added comments for structure
 |                   |          | 7)  
 |                   |          |  
