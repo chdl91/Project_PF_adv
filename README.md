@@ -94,14 +94,29 @@ This project is intended to:
 **Inputs:**  Username entry ("str" and limited characters, excluding special characters)
 **Outputs:** Confirmation of choice (internally: results.csv)
 
-### 9. Admin Rights
-**As an Admin, I want to be able to add and remove questions, in order to keep the quiz relevant.**  
-**Description:** In the form of an Admin Panel, the Admin has the ability to delete questions from the database and also can add questions, including assigning them to a subject, topic and difficulty. 
+### 9. Admin Login
+**As an Admin, I want to be able to login to a separate Admin Panel with a password**  
+**Description:** To gain entry into the Admin Panel, a correct answer must be entered.  
 **Inputs:**  Admin Password (Hardcoded) and input from admin user
-**Outputs:** Confirmation of Update including deletion
+**Outputs:** -
 
+### 10. Admin - Add questions
+**As an Admin, I want to be able to add questions, in order to keep the quiz relevant.**  
+**Description:** In the form of an Admin Panel, the Admin has the ability to add questions, including assigning them to a subject, topic and difficulty. 
+**Inputs:**  Input from admin user
+**Outputs:** New Question is added to the database
 
+### 11. Admin - Remove questions
+**As an Admin, I want to be able to remove questions, in order to keep the quiz relevant.**  
+**Description:** In the form of an Admin Panel, the Admin has the ability to delete questions from the database.
+**Inputs:**  Input from admin user
+**Outputs:** (Confirmation of deletion)
 
+### 12. Admin - Confirmation of deletion
+**As an Admin, I want to receive a confirmation before permanently deleting a question**  
+**Description:** After having selected the Question ID and chosen "Delete", the admin must receieve a confirmation that this was correctly chosen.  
+**Inputs:**  Input from admin user 
+**Outputs:** Confirmation of deletion
 
 ### Use cases
 
