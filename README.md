@@ -28,7 +28,15 @@ This project is intended to:
 
 ---
 
-## 📝 Application Requirements
+## � Documentation & Resources
+
+- [UI Screenshots & Images](docs/ui-images/) - Visual documentation and UI mockups
+- [Architecture Diagrams](docs/architecture-diagrams/) - System design and architecture
+- [Design Decisions](Project_PF_Phase_2/DESIGN_DECISIONS.md) - Key design decisions and rationale
+
+---
+
+## �📝 Application Requirements
 
 ---
 
@@ -149,11 +157,20 @@ This project is intended to:
 
 ---
 
-### Wireframes / Mockups
+### Mockups
 
 > 🚧 Add screenshots of the wireframe mockups you chose to implement.
 
-![Wireframes – Home/Transactions]
+[View UI Images & Mockups](docs/ui-images/ui_login.png)
+[View UI Images & Mockups](docs/ui-images/ui_user_menu.png)
+[View UI Images & Mockups](docs/ui-images/ui_start_quiz.png)
+[View UI Images & Mockups](docs/ui-images/ui_question_and_answers.png)
+[View UI Images & Mockups](docs/ui-images/ui_scoreboard.png)
+[View UI Images & Mockups](docs/ui-images/ui_admin_login.png)
+[View UI Images & Mockups](docs/ui-images/ui_admin_panel.png)
+[View UI Images & Mockups](docs/ui-images/ui_admin_add_question.png)
+[View UI Images & Mockups](docs/ui-images/ui_admin_delete_question.png)
+[View UI Images & Mockups](docs/ui-images/ui_admin_confirmation_delete.png)
 
 ---
 
