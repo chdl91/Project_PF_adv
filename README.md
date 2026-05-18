@@ -59,72 +59,108 @@ This project is intended to:
 **Description:** The application displays a menu and choice of quizes for the user to select
 **Inputs:**  The user can choose between two types of quizes
 **Outputs:** Confirmation of choice (internally calling selected quiz) 
+**Why:** Enables an easy entry point and selection of the desired subject area.
+**Role affected:** Users (students) who want to start a quiz.
+**Benefit:** Faster orientation, fewer mistakes, and a clear starting point for quiz workflows.
 
 ### 2. Select and run a quiz 
 **As a user, I want to be able to quiz my knowledge in DIB or POM**  
 **Description:** The application displays a collection of quiz questions and the a multiple choice selection of answers  
 **Inputs:**  Choice of an answer (Four choices) 
 **Outputs:** Confirmation of choice and correction if incorrect (internally: "list[attempt_answers]) 
+**Why:** Core functionality for knowledge checking and reinforcement.
+**Role affected:** Learners practicing and repeating exam material.
+**Benefit:** Immediate feedback on knowledge level, supports focused learning and self-assessment.
 
 ### 3. Select the difficulty of quiz 
 **As a user, I want to select the difficulty of the previously selected subject in order to challenge and improve my current knowledge**  
 **Description:** The application displays a menu with three possible difficulties (Easy, Medium and Hard) and a choice for a random selection of questions for the user to select and proceed with
 **Inputs:**  Choice of difficulty option (Three choices plus random choice)
 **Outputs:** Confirmation of choice (internally calling the next step in quiz_setup)
+**Why:** Allows adjusting difficulty to the learner's level and goals.
+**Role affected:** Users who want easier or more challenging material.
+**Benefit:** Improved motivation, appropriate challenge, and personalized training.
 
 ### 4. Select the individual topics within the subject itself
 **As a user, I want to select the topic within the previously selected subject and quiz my knowledge in the selected topics only in order to focus my learning goals and possible weaknesses**  
 **Description:** The application displays available topics within the database in a menu, including a random option of questions 
 **Inputs:**  Choice of a single topic 
 **Outputs:** Confirmation of choice (internally calling the next step in quiz_setup)
+**Why:** Enables targeted practice of specific topic areas.
+**Role affected:** Learners with specific knowledge gaps or learning goals.
+**Benefit:** More efficient use of study time by focusing on weaknesses.
 
 ### 5. Select the amount of questions the user can complete in their attempt
 **As a user, I want to select the amount of questions I can attempt in my quiz**  
 **Description:** The application displays an option to select an amount of questions
 **Inputs:**  Choice of a number of questions (minimum of 5 questions)
 **Outputs:** Confirmation of choice (internally calling the next step in quiz_setup)
+**Why:** Allows flexible time planning and adjustment to available study time.
+**Role affected:** Users with varying availability or attention span.
+**Benefit:** Higher user satisfaction through control over quiz length and duration.
 
 ### 6. Quit and return to main menu 
 **As a user, I want to able to return to the menu at anytime in order to restart my quiz setup and the quiz itself**  
 **Description:** At all times, during the quiz setup and the quiz attempt itself, the user has the possibility to return to the starting menu
 **Inputs:**  User has a return choice
 **Outputs:** Confirmation of choice (internally, stop attempt and return to )
+**Why:** Necessary safety feature for interruptions and accidental actions.
+**Role affected:** All users, especially those with time constraints or technical issues.
+**Benefit:** Prevents data loss, improves UX, and gives users control over the flow.
 
 ### 7. Point Counter
 **As a user, I want a point counter/final grade/percentage presented, in order to check my performance.**  
 **Description:** The application displays the results of the finished attempt and shows the score (correct questions out of total), grade and percentage.
 **Inputs:**  internally recognizing the users choice and adding to counter if correct choice has been selected
 **Outputs:** internally calling the results.csv and creating a new entry with achieved score, date, time, final grade and percentage reached 
+**Why:** Measurable results are central for tracking learning progress and evaluation.
+**Role affected:** Learners who want to check their performance; instructors (optional).
+**Benefit:** Clear performance overview enabling reflection and targeted improvement.
 
 ### 8. Scoreboard (Arcade Format)
 **As a User, I want to be able to see my score in a scoreboard with other local users in order to compare my final attempt score with previous attempts**  
 **Description:** Once an attempt is complete, the user is able to view their score and input a user name into a scoreboard
 **Inputs:**  Username entry ("str" and limited characters, excluding special characters)
 **Outputs:** Confirmation of choice (internally: results.csv)
+**Why:** A competitive element that motivates repeated practice.
+**Role affected:** Users who seek motivation through comparison; community-oriented features.
+**Benefit:** Increases motivation, engagement, and encourages repeated practice.
 
 ### 9. Admin Login
 **As an Admin, I want to be able to login to a separate Admin Panel with a password in order to manage to data**  
 **Description:** To gain entry into the Admin Panel, a correct answer must be entered.  
 **Inputs:**  Admin Password (Hardcoded) and input from admin user
 **Outputs:** -
+**Why:** Protects administrative functions from unauthorized access.
+**Role affected:** Administrators (instructors/maintainers) with elevated privileges.
+**Benefit:** Ensures integrity of the question database and prevents unwanted changes.
 
 ### 10. Admin - Add questions
 **As an Admin, I want to be able to add questions, in order to keep the quiz relevant.**  
 **Description:** In the form of an Admin Panel, the Admin has the ability to add questions, including assigning them to a subject, topic and difficulty. 
 **Inputs:**  Input from admin user
 **Outputs:** New Question is added to the database
+**Why:** Allows updating and expanding the question pool.
+**Role affected:** Administrators / content owners.
+**Benefit:** Keeps the quiz up-to-date, supports course alignment and quality control.
 
 ### 11. Admin - Remove questions
 **As an Admin, I want to be able to remove questions, in order to keep the quiz relevant.**  
 **Description:** In the form of an Admin Panel, the Admin has the ability to delete questions from the database.
 **Inputs:**  Input from admin user
 **Outputs:** (Confirmation of deletion)
+**Why:** Removing outdated or incorrect questions is necessary for data quality.
+**Role affected:** Administrators with moderation privileges.
+**Benefit:** Clean, reliable question pool and avoidance of incorrect learning content.
 
 ### 12. Admin - Confirmation of deletion
 **As an Admin, I want to receive a confirmation before permanently deleting a question**  
 **Description:** After having selected the Question ID and chosen "Delete", the admin must receieve a confirmation that this was correctly chosen.  
 **Inputs:**  Input from admin user 
 **Outputs:** Confirmation of deletion
+**Why:** Prevents accidental deletion through an extra confirmation step.
+**Role affected:** Administrators performing delete actions.
+**Benefit:** Protects against data loss and enables controlled changes.
 
 ### Use cases
 
