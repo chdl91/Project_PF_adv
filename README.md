@@ -332,6 +332,9 @@ User (quiz results & admin accounts)
 - Separate UI (`app/main.py`) from domain logic (e.g. ``) and persistence (e.g. `models.py`, `db.py`)
 - Use and interaction of modules to minimize dependencies, by minimizing cohesion and maximizing coupling
 
+-**Data Access Object (DAO):**
+- Data access encapsulates all persistence logic so the application doesn't access the database directly. Additionally, it also separates the database into sections and doesn't access everything all at once. Finally, it makes testing easier and also allows the storage to be influenced without changing the logic and services. 
+
 **Design patterns used:**
 - MVC (Model–View–Controller) makes sense here because the application has a graphical user interface, user interaction and database access. MVC makes sense for this project because it cleanly separates our data (questions, answering and score results), our user interface, and the logic or engine that connects them (checking answers if correct or incorrect, moving between multiple questions). This keeps the code organized and prevents the project from turning into chaos as it grows. 
 
