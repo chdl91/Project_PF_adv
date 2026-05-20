@@ -327,17 +327,15 @@ User (quiz results & admin accounts)
 **Design decisions (examples):**          #Composite Pattern
 - Organize code using **MVC**:
    - **Model:** domain + ORM entities (e.g. "domain.models.Question")
-   - **View:** NiceGUI UI components/pages 
+   - **View:** NiceGUI UI components/pages
    - **Controller:** event handlers and coordination logic between UI, services, and persistence (e.g.`quiz_service.py` )
 - Separate UI (`app/main.py`) from domain logic (e.g. ``) and persistence (e.g. `models.py`, `db.py`)
 - Use and interaction of modules to minimize dependencies, by minimizing cohesion and maximizing coupling
-- Keep business rules testable without starting the UI
 
-**Design patterns used (examples):**
-- MVC (Model–View–Controller)
-- Repository/DAO for database access (e.g. `queries.py`)
-- Strategy for business rules (e.g. discount calculation)
-- Adapter for external services (e.g. invoice generation backend)
+**Design patterns used:**
+- MVC (Model–View–Controller) makes sense here because the application has a graphical user interface, user interaction and database access. MVC makes sense for this project because it cleanly separates our data (questions, answering and score results), our user interface, and the logic or engine that connects them (checking answers if correct or incorrect, moving between multiple questions). This keeps the code organized and prevents the project from turning into chaos as it grows. 
+
+Overall, MVC gives our Big Snek Quiz a scalable, maintainable structure that’s easy to extend later on in further improvements.
 
 ---
 
