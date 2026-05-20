@@ -72,7 +72,17 @@ def main():
     # --- Presentation layer ---
     # To run the browser app use QuizGUI; for the terminal use QuizCLI.
     # Both accept the exact same arguments.
-    admin_password = "admin.12345"
+
+    # Load admin password from local file or environment (password.env)
+    import os
+    try:
+        from dotenv import load_dotenv
+        load_dotenv(project_root / 'password.env')
+    except Exception:
+        # python-dotenv not installed or load failed; fall back to environment
+        pass
+    admin_password = os.getenv('ADMIN_PASSWORD', '')
+
 
     gui = QuizGUI(user_svc, subject_svc, question_svc,
                   score_svc, quiz_session_svc, admin_password=admin_password)
