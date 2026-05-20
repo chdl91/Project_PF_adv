@@ -14,17 +14,12 @@ This project is intended to:
 - Practice the complete process from **application requirements analysis to implementation**
 - Apply advanced **Python** concepts in a browser-based application (NiceGUI)
 - Demonstrate **data validation**, a clean architecture (presentation / application logic / persistence), and **database access via ORM**
-- Produce clean, well-structured, and documented code (incl. tests)
+- Produce clean, well-structured, and documented code (including tests)
 - Prepare students for **teamwork and professional documentation**
 - Use this repository as a starting point by importing it into your own GitHub account  
 - Work only within your own copy — do not push to the original template  
 - Commit regularly to track your progress
 
----
-
-# 🍕 TEMPLATE for documentation
-
-> 🚧 Please remove the paragraphs marked with "🚧". These are comments for preparing the documentation.
 
 ---
 
@@ -54,112 +49,121 @@ This project is intended to:
 
 ## User Stories
 
-### 1. View Quiz Menu
-**As a user, I want to be able to choose between Digital Business (DIB) Quizes and Principles of Management (POM) Quizes**  
-**Description:** The application displays a menu and choice of quizes for the user to select
-**Inputs:**  The user can choose between two types of quizes
-**Outputs:** Confirmation of choice (internally calling selected quiz) 
-**Why:** Enables an easy entry point and selection of the desired subject area.
-**Role affected:** Users (students) who want to start a quiz.
-**Benefit:** Faster orientation, fewer mistakes, and a clear starting point for quiz workflows.
-
-### 2. Select and run a quiz 
+### 1. Select and run a quiz 
 **As a user, I want to be able to quiz my knowledge in DIB or POM**  
 **Description:** The application displays a collection of quiz questions and the a multiple choice selection of answers  
 **Inputs:**  Choice of an answer (Four choices) 
-**Outputs:** Confirmation of choice and correction if incorrect (internally: "list[attempt_answers]) 
-**Why:** Core functionality for knowledge checking and reinforcement.
-**Role affected:** Learners practicing and repeating exam material.
+**Outputs:** Confirmation of choice and correction if incorrect (internally: "list[attempt_answers]") 
+**Why:** Core functionality for knowledge checking and reinforcement
+**Role affected:** Users practicing and repeating exam-relevant material
 **Benefit:** Immediate feedback on knowledge level, supports focused learning and self-assessment.
 
-### 3. Select the difficulty of quiz 
+### 2. Select a quiz subject
+**As a user, I want to be able to choose between Digital Business (DIB) Quizes and Principles of Management (POM) Quizes**  
+**Description:** The application offers the possibility to select between DIB and POM as a quiz subject
+**Inputs:**  The user can choose between two types of quizes (e.g. "subjects")
+**Outputs:** Confirmation of choice (internally calling selected quiz) 
+**Why:** Enables an easy entry point and selection of the desired subject area
+**Role affected:** Users who want to start a quiz
+**Benefit:** Faster orientation, fewer mistakes, and a clear starting point for quiz workflows.
+
+### 3. Select the difficulty of the quiz 
 **As a user, I want to select the difficulty of the previously selected subject in order to challenge and improve my current knowledge**  
 **Description:** The application displays a menu with three possible difficulties (Easy, Medium and Hard) and a choice for a random selection of questions for the user to select and proceed with
 **Inputs:**  Choice of difficulty option (Three choices plus random choice)
-**Outputs:** Confirmation of choice (internally calling the next step in quiz_setup)
-**Why:** Allows adjusting difficulty to the learner's level and goals.
-**Role affected:** Users who want easier or more challenging material.
+**Outputs:** Confirmation of choice (internally calling the next step in the setup)
+**Why:** Allows adjusting difficulty to the user's level and goals
+**Role affected:** Users who want easier or more challenging material
 **Benefit:** Improved motivation, appropriate challenge, and personalized training.
 
 ### 4. Select the individual topics within the subject itself
 **As a user, I want to select the topic within the previously selected subject and quiz my knowledge in the selected topics only in order to focus my learning goals and possible weaknesses**  
 **Description:** The application displays available topics within the database in a menu, including a random option of questions 
 **Inputs:**  Choice of a single topic 
-**Outputs:** Confirmation of choice (internally calling the next step in quiz_setup)
-**Why:** Enables targeted practice of specific topic areas.
-**Role affected:** Learners with specific knowledge gaps or learning goals.
+**Outputs:** Confirmation of choice (internally calling the next step in the setup)
+**Why:** Enables targeted practice of specific topic areas
+**Role affected:** Users with specific knowledge gaps or learning goals
 **Benefit:** More efficient use of study time by focusing on weaknesses.
 
 ### 5. Select the amount of questions the user can complete in their attempt
 **As a user, I want to select the amount of questions I can attempt in my quiz**  
 **Description:** The application displays an option to select an amount of questions
 **Inputs:**  Choice of a number of questions (minimum of 5 questions)
-**Outputs:** Confirmation of choice (internally calling the next step in quiz_setup)
-**Why:** Allows flexible time planning and adjustment to available study time.
-**Role affected:** Users with varying availability or attention span.
+**Outputs:** Confirmation of choice (internally calling the next step in the setup)
+**Why:** Allows flexible time planning and adjustment to available study time
+**Role affected:** Users with varying availability or attention span
 **Benefit:** Higher user satisfaction through control over quiz length and duration.
 
 ### 6. Quit and return to main menu 
 **As a user, I want to able to return to the menu at anytime in order to restart my quiz setup and the quiz itself**  
 **Description:** At all times, during the quiz setup and the quiz attempt itself, the user has the possibility to return to the starting menu
 **Inputs:**  User has a return choice
-**Outputs:** Confirmation of choice (internally, stop attempt and return to )
-**Why:** Necessary safety feature for interruptions and accidental actions.
-**Role affected:** All users, especially those with time constraints or technical issues.
+**Outputs:** Confirmation of choice (internally, stop attempt and return to menu)
+**Why:** Necessary safety feature for interruptions and accidental actions
+**Role affected:** All users, especially those with time constraints or technical issues
 **Benefit:** Prevents data loss, improves UX, and gives users control over the flow.
 
 ### 7. Point Counter
-**As a user, I want a point counter/final grade/percentage presented, in order to check my performance.**  
-**Description:** The application displays the results of the finished attempt and shows the score (correct questions out of total), grade and percentage.
-**Inputs:**  internally recognizing the users choice and adding to counter if correct choice has been selected
-**Outputs:** internally calling the results.csv and creating a new entry with achieved score, date, time, final grade and percentage reached 
-**Why:** Measurable results are central for tracking learning progress and evaluation.
-**Role affected:** Learners who want to check their performance; instructors (optional).
+**As a user, I want a point counter/final grade/percentage presented, in order to check my performance**  
+**Description:** The application displays the results of the finished attempt and shows the score (correct questions out of total amount of chosen questions), grade and percentage
+**Inputs:**  Internally recognizing the users choice and adding to counter if correct choice has been selected
+**Outputs:** Internally calling the quiz.db and creating a new entry with achieved score, date, time, final grade and percentage reached 
+**Why:** Measurable results are central for tracking learning progress and evaluation
+**Role affected:** Users who want to check their performance; instructors (optional)
 **Benefit:** Clear performance overview enabling reflection and targeted improvement.
 
 ### 8. Scoreboard (Arcade Format)
 **As a User, I want to be able to see my score in a scoreboard with other local users in order to compare my final attempt score with previous attempts**  
 **Description:** Once an attempt is complete, the user is able to view their score and input a user name into a scoreboard
 **Inputs:**  Username entry ("str" and limited characters, excluding special characters)
-**Outputs:** Confirmation of choice (internally: results.csv)
-**Why:** A competitive element that motivates repeated practice.
-**Role affected:** Users who seek motivation through comparison; community-oriented features.
+**Outputs:** Confirmation of choice (internally: quiz.db)
+**Why:** A competitive element that motivates repeated practice
+**Role affected:** Users who seek motivation through comparison and community-oriented features
 **Benefit:** Increases motivation, engagement, and encourages repeated practice.
 
-### 9. Admin Login
+### 9. Receive an Explanation on Correct and Incorrect Answers
+**As a User, I want to be able to receive and explanation on what answer is correct or incorrect in the quiz after having completed a question**  
+**Description:** Once a question in a quiz has been answered, the user shall receive an explanation on why their choice was correct or incorrect
+**Inputs:**  Internally recognizing the users choice 
+**Outputs:** Internally recognizing the users choice and issuing an explanation of correct answer
+**Why:** To help improve the Users understanding of mistakes made
+**Role affected:** Users who want to see the reasoning why an answer is correct/incorrect
+**Benefit:** Lessens the harshness of an incorrect answer and possibly failed quiz.
+
+### 10. Admin Login
 **As an Admin, I want to be able to login to a separate Admin Panel with a password in order to manage to data**  
-**Description:** To gain entry into the Admin Panel, a correct answer must be entered.  
-**Inputs:**  Admin Password (Hardcoded) and input from admin user
+**Description:** To gain entry into the Admin Panel, a correct answer must be entered  
+**Inputs:**  Admin Password (password.env) and input from admin user
 **Outputs:** -
-**Why:** Protects administrative functions from unauthorized access.
-**Role affected:** Administrators (instructors/maintainers) with elevated privileges.
+**Why:** Protects administrative functions from unauthorized access
+**Role affected:** Administrators (instructors/maintainers) with elevated privileges
 **Benefit:** Ensures integrity of the question database and prevents unwanted changes.
 
-### 10. Admin - Add questions
+### 11. Admin - Add questions
 **As an Admin, I want to be able to add questions, in order to keep the quiz relevant.**  
-**Description:** In the form of an Admin Panel, the Admin has the ability to add questions, including assigning them to a subject, topic and difficulty. 
+**Description:** In the form of an Admin Panel, the Admin has the ability to add questions, including assigning them to a subject, topic and difficulty 
 **Inputs:**  Input from admin user
 **Outputs:** New Question is added to the database
-**Why:** Allows updating and expanding the question pool.
-**Role affected:** Administrators / content owners.
-**Benefit:** Keeps the quiz up-to-date, supports course alignment and quality control.
+**Why:** Allows updating and expanding the question pool
+**Role affected:** Administrators
+**Benefit:** Keeps the quiz up to date, supports course alignment and quality control.
 
-### 11. Admin - Remove questions
+### 12. Admin - Remove questions
 **As an Admin, I want to be able to remove questions, in order to keep the quiz relevant.**  
 **Description:** In the form of an Admin Panel, the Admin has the ability to delete questions from the database.
 **Inputs:**  Input from admin user
 **Outputs:** (Confirmation of deletion)
-**Why:** Removing outdated or incorrect questions is necessary for data quality.
-**Role affected:** Administrators with moderation privileges.
+**Why:** Removing outdated or incorrect questions is necessary for data quality
+**Role affected:** Administrators with moderation privileges
 **Benefit:** Clean, reliable question pool and avoidance of incorrect learning content.
 
-### 12. Admin - Confirmation of deletion
+### 13. Admin - Confirmation of deletion
 **As an Admin, I want to receive a confirmation before permanently deleting a question**  
-**Description:** After having selected the Question ID and chosen "Delete", the admin must receieve a confirmation that this was correctly chosen.  
+**Description:** After having selected the Question ID and chosen "Delete", the admin must receieve a confirmation that this was correctly chosen 
 **Inputs:**  Input from admin user 
 **Outputs:** Confirmation of deletion
-**Why:** Prevents accidental deletion through an extra confirmation step.
-**Role affected:** Administrators performing delete actions.
+**Why:** Prevents accidental deletion through an extra confirmation step
+**Role affected:** Administrators performing delete actions
 **Benefit:** Protects against data loss and enables controlled changes.
 
 ### Use cases
@@ -243,8 +247,8 @@ User Story Flow (Now with Subject Selection)
 ┌──────────────────────────────────────────────────────────────────┐
 │                    MAIN MENU                                     │
 ├──────────────────────────────────────────────────────────────────┤
-│  1. User Mode (Stories 1-7)                                      │
-│  2. Admin Mode (Story 8)                                         │
+│  1. User Mode (Stories 1-9)                                      │
+│  2. Admin Mode (Story 10-13)                                     │
 │  3. Exit                                                         │
 └──────────────────────────────────────────────────────────────────┘
         │                                         │
@@ -252,32 +256,32 @@ User Story Flow (Now with Subject Selection)
     ┌──────────────────────┐       ┌────────────────────────────┐
     │   USER MODE          │       │     ADMIN MODE             │
     ├──────────────────────┤       ├────────────────────────────┤
-    │ 1. Select Subject    │       │ 1. Add Question (S8)       │
-    │    (Story 1)         │       │    - Select subject/topic  │
+    │ 1. Select Subject    │       │ 1. Add Question (S11)      │
+    │    (Story 2)         │       │    - Select subject/topic  │
     │    DIB or POM        │       │    - Question text         │
     │                      │       │    - 4 Answers             │
     │ 2. Select Topic      │       │    - Correct answer        │
-    │    (Story 4)         │       │    - Explanation           │
+    │    (Story 2)         │       │    - Explanation           │
     │    (from selected    │       │    - Difficulty            │
     │     subject)         │       │                            │
-    │                      │       │ 2. Remove Question (S8)    │
+    │                      │       │ 2. Remove Question (S12)   │
     │ 3. Select Difficulty │       │    - Select Question ID    │
     │    (Story 3)         │       │    - Confirmation of       │
-    │    Easy/Medium/Hard  │       │      Termination           │
+    │    Easy/Medium/Hard  │       │      Termination (S13)     │
     │                      │       │                            │
     │ 4. Run Quiz          │       │ 3. Return to Main          │
-    │    (Story 2)         │       │                            │
+    │    (Story 1)         │       │                            │
     │    - Display Q&A     │       │ 4. Exit                    │
     │    - Validate answer │       │                            │
     │    - Show results    │       │                            │
     │                      │       │                            │
     │ 5. View Scoreboard   │       │                            │
-    │    (Story 7)         │       │                            │
+    │    (Story 8)         │       │                            │
     │    - Top scores      │       │                            │
     │                      │       │                            │
     │ 6. Exit              │       │                            │
     │                      │       │                            │
-    │ (S1-S7)              │       │                            │
+    │ (S1-S9)              │       │ (S10-13)                   │
     └──────────────────────┘       └────────────────────────────┘
 
 
@@ -315,8 +319,6 @@ User (quiz results & admin accounts)
 
 ### Software Architecture
 
-> 🚧 Insert your UML class diagram(s). Split into multiple diagrams if needed.
-
 ![UML Class Diagram] -> Diagrams.md
 
 **Layers / components:**
@@ -329,7 +331,7 @@ User (quiz results & admin accounts)
    - **Model:** domain + ORM entities (e.g. "domain.models.Question")
    - **View:** NiceGUI UI components/pages
    - **Controller:** event handlers and coordination logic between UI, services, and persistence (e.g.`quiz_service.py` )
-- Separate UI (`app/main.py`) from domain logic (e.g. ``) and persistence (e.g. `models.py`, `db.py`)
+- Separate UI (`gui.py`) from domain logic (e.g. `models.py`) and persistence (e.g. `services`, `quiz.db`)
 - Use and interaction of modules to minimize dependencies, by minimizing cohesion and maximizing coupling
 
 -**Data Access Object (DAO):**
@@ -343,8 +345,6 @@ Overall, MVC gives our Big Snek Quiz a scalable, maintainable structure that’s
 ---
 
 ### 🗄️ Database and ORM
-
-> 🚧 Describe the database and your ORM entities. Ideally, a diagram documents the database and it is described together with the ORM entities.
 
 ![ER Diagram] -> Diagrams.md
 
@@ -362,8 +362,6 @@ In addition, Question.correct_answer references a valid Answer entry. User-relat
 
 ---
 
-> 🚧 Requirements act as a contract: implement and demonstrate each point below.
-
 Each app must meet the following criteria in order to be accepted (see also the official project guidelines PDF on Moodle):
 
 1. Using NiceGUI for building an interactive web app
@@ -374,8 +372,6 @@ Each app must meet the following criteria in order to be accepted (see also the 
 
 ### 1. Browser-based App (NiceGUI)
 
-> 🚧 In this section, document how your project fulfills each criterion.
-
 The application interacts with the user via the browser. Users can:
 
 - Login through a username of their choice
@@ -384,7 +380,7 @@ The application interacts with the user via the browser. Users can:
 - End their quiz at any time and still receive a grading based on achieved progress
 - View their score and compare it to previous and other users in "View Scoreboard"
 
-- Admins can log in through a (hardcoded) password
+- Admins can log in through a password (password.env).
 - Admins have access to the Admin Panel and can manage questions (Add and Remove)
 - The added or removed questions are linked to the database.
 
@@ -417,21 +413,21 @@ All relevant data is managed via an ORM (SQLModel). This Includes, "subjects, "t
 ### Libraries Used
 
 #Third Party Libraries 
-1. sqlmodel
-2. nicegui
-3. pytest
+1. sqlmodel -> ORM and used for defining and persisting the models Subject, Topic, Question, Answer, User and QuizResult
+2. nicegui -> Web UI to build the browser interface
+3. pytest -> Used for testing the unit, database and integration tests
 
 #Standard Libraries and it's uses
-4. os
-5. sys
-6. json
-7. random
-8. uuid
-9. datetime
-10. zoneinfo
-11. sqlite3
-12. pathlib
-13. typing
+4. os -> filepaths and environment handling (e.g.: DB path)
+5. sys -> filepaths and environment handling (e.g.: DB path)
+6. json -> reading JSON files (in DB/Legacy Files)
+7. random -> picking and shuffling quiz questions
+8. uuid -> generating unique IDs
+9. datetime -> timestamping quiz results
+10. zoneinfo -> timestamping quiz results
+11. sqlite3 -> SQLite usage in some scripts and legacy code
+12. pathlib -> filepaths and environment handling (e.g.: DB path)
+13. typing -> type hints across models and services.
 
 ---
 
@@ -518,7 +514,10 @@ PROJECT_PF_ADV/
 │  │  └─  gui.py
 │  ├─ __main__.py                   # entrypoint
 │  ├─ class.md
-│  └─ DESIGN_DECISIONS.md
+│  ├─ DESIGN_DECISIONS.md
+│  └─ password.env
+├─ .gitignore
+├─ pytest.ini
 ├─ README.md
 ├─ requirements-dev.txt
 └─ requirements.txt
@@ -526,8 +525,6 @@ PROJECT_PF_ADV/
 ---
 
 ### How to Run
-
-> 🚧 Adjust to your project.
 
 ### 1. Project Setup
 - Python 3.13 (or the course version) is required
@@ -545,7 +542,7 @@ PROJECT_PF_ADV/
 - Install dependencies:
    ```bash
    pip install -r requirements.txt
-   pip install -r requirements-dev.txt #specifically for Pytesting
+   pip install -r requirements-dev.txt    #specifically for Pytesting
    ```
 
 ### 2. Configuration
@@ -557,8 +554,6 @@ PROJECT_PF_ADV/
 
 ### 4. Usage (document as steps)
 
-> 🚧 Describe the usage of the main functions
-
 Doing a Quiz:
 1. Login with a Username of your choice
 2. Select "Start Quiz"
@@ -566,8 +561,6 @@ Doing a Quiz:
 4. Start Attempt 
 5. Once the Attempt has been completed, either by answering all the questions or quitting the quiz beforehand, the user is shown their results, including their achieved points, percentage and grade. 
 6. The user may compare their score to previous attempts or other users in "View Scoreboard". 
-
-> 🚧 Add UI screenshots of the main screens (or a short video link):
 
 [View UI Images & Mockups](docs/ui-images/ui_user_menu.png)
 [View UI Images & Mockups](docs/ui-images/ui_start_quiz.png)
@@ -798,7 +791,7 @@ pytest Project_PF_Phase_2/test/test_integration.py
 |                   |          | 4) Initial set-up of Pytest
 |                   |          | 5) Documentation and overhaul README
 |                   |          | 6) Proofreading and added comments for structure
-|                   |          | 7)  
+|                   |          | 7) Overall Troubleshooting of code
 |                   |          |  
 | Noe               | Dev      | 1) User Stories and Use Cases
 | Brönnimann        |          | 2) ER Diagram Continuation
@@ -806,7 +799,7 @@ pytest Project_PF_Phase_2/test/test_integration.py
 |                   |          | 4) Configuration of Pytest
 |                   |          | 5) Definition of Tescases 
 |                   |          | 6) NiceGUI Logic Overhaul
-|                   |          | 7) Troubelshooting of code 
+|                   |          | 7) Overall Troubleshooting of code
 |                   |          | 
 | Christian         | Senior   | 1) User Stories and User Story Flow
 | Lehmann           | Dev      | 2) Created the db.converter
