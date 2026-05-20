@@ -5,6 +5,8 @@ QuizGUI receives the same services as QuizCLI so no business logic changes
 when switching from CLI to browser.
 """
 
+from typing import Optional
+
 from nicegui import ui
 
 
