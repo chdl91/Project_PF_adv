@@ -451,6 +451,101 @@ class QuizGUI:
                 ui.button("Cancel", on_click=dlg.close)
         dlg.open()
 
+    def delete_topic_dialog(self):
+        subjects = self.subject_service.get_all_subjects()
+        if not subjects:
+            ui.notify("No subjects available")
+            return
+
+        with ui.dialog() as dlg:
+            with ui.card().classes("w-96"):
+                ui.label("Delete Topic").classes("text-h6")
+                subject_select = ui.select(subjects, label="Subject")
+                topic_select = ui.select([], label="Topic")
+
+                def load_topics():
+                    subject = subject_select.value
+                    if not subject:
+                        return
+                    topics = self.subject_service.get_topics_with_ids_by_subject(subject)
+                    topic_select.options = [t["topic_name"] for t in topics]
+                    topic_select.update()
+
+                ui.button("Load Topics", on_click=load_topics)
+
+                def remove_topic():
+                    subject = subject_select.value
+                    topic_name = topic_select.value
+                    if not subject or not topic_name:
+                        ui.notify("Select a subject and topic")
+                        return
+                    topics = self.subject_service.get_topics_with_ids_by_subject(subject)
+                    topic = next((t for t in topics if t["topic_name"] == topic_name), None)
+                    if not topic:
+                        ui.notify("Invalid topic")
+                        return
+
+                    with ui.dialog() as confirm_dlg:
+                        with ui.card().classes("w-96"):
+                            ui.label(f"Delete topic '{topic_name}' and all its questions?").classes("text-h6")
+                            with ui.row():
+                                def confirm_delete():
+                                    if self.subject_service.delete_topic(topic["topic_id"]):
+                                        ui.notify("Topic deleted")
+                                        dlg.close()
+                                        confirm_dlg.close()
+                                    else:
+                                        ui.notify("Could not delete topic")
+                                        confirm_dlg.close()
+                                ui.button("Yes, Delete", on_click=confirm_delete).classes("bg-red-500")
+                                ui.button("Cancel", on_click=confirm_dlg.close).classes("bg-gray-500")
+                    confirm_dlg.open()
+
+                ui.button("Delete", on_click=remove_topic)
+                ui.button("Cancel", on_click=dlg.close)
+        dlg.open()
+
+    def delete_subject_dialog(self):
+        subjects = self.subject_service.get_all_subjects()
+        if not subjects:
+            ui.notify("No subjects available")
+            return
+
+        with ui.dialog() as dlg:
+            with ui.card().classes("w-96"):
+                ui.label("Delete Subject").classes("text-h6")
+                subject_select = ui.select(subjects, label="Subject")
+
+                def remove_subject():
+                    subject_name = subject_select.value
+                    if not subject_name:
+                        ui.notify("Select a subject")
+                        return
+                    subject_id = self.subject_service.get_subject_id_by_name(subject_name)
+                    if not subject_id:
+                        ui.notify("Invalid subject")
+                        return
+
+                    with ui.dialog() as confirm_dlg:
+                        with ui.card().classes("w-96"):
+                            ui.label(f"Delete subject '{subject_name}' and ALL its topics and questions?").classes("text-h6")
+                            with ui.row():
+                                def confirm_delete():
+                                    if self.subject_service.delete_subject(subject_id):
+                                        ui.notify("Subject deleted")
+                                        dlg.close()
+                                        confirm_dlg.close()
+                                    else:
+                                        ui.notify("Could not delete subject")
+                                        confirm_dlg.close()
+                                ui.button("Yes, Delete", on_click=confirm_delete).classes("bg-red-500")
+                                ui.button("Cancel", on_click=confirm_dlg.close).classes("bg-gray-500")
+                    confirm_dlg.open()
+
+                ui.button("Delete", on_click=remove_subject)
+                ui.button("Cancel", on_click=dlg.close)
+        dlg.open()
+
     def delete_question_dialog(self):
         with ui.dialog() as dlg:
             with ui.card().classes("w-80"):
@@ -534,6 +629,9 @@ class QuizGUI:
                     with ui.row().classes("justify-center"):
                         ui.button("Add Subject", on_click=self.add_subject_dialog)
                         ui.button("Add Topic", on_click=self.add_topic_dialog)
+                    with ui.row().classes("justify-center"):
+                        ui.button("Delete Topic", on_click=self.delete_topic_dialog)
+                        ui.button("Delete Subject", on_click=self.delete_subject_dialog)
                     ui.label("Question management")
                     with ui.row().classes("justify-center"):
                         ui.button("Add Question",

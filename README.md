@@ -211,17 +211,19 @@ This project is intended to:
 
 ## 🏛️ Architecture
 
-Software Architecture (Layers)
-┌─────────────────────┐
-│   GUI Layer         │  ← Nice GUI
-├─────────────────────┤
-│   quiz.py (CLI)     │  ← User interface
-├─────────────────────┤
-│  Services (Folder)  │  ← Core quiz logic (reusable)
-│                     │  ← Database operations
-├─────────────────────┤
-│  SQLModel + SQLite  │  ← Data persistence
-└─────────────────────┘
+Software Architecture (N-Tier Layers)
+┌──────────────────────────────────────┐
+│  Presentation Layer  — ui/           │  ← QuizGUI (NiceGUI browser app)
+│                                      │  ← QuizCLI (command-line fallback)
+├──────────────────────────────────────┤
+│  Service Layer       — services/     │  ← Business logic, quiz session,
+│                                      │    scoring, user management
+├──────────────────────────────────────┤
+│  Data Access Layer   — data_access/  │  ← DAOs + Database facade (db.py)
+├──────────────────────────────────────┤
+│  Domain              — domain/       │  ← SQLModel ORM models
+│  Persistence         — DB/quiz.db    │  ← SQLite database
+└──────────────────────────────────────┘
 
 ## 🧪 Tests
 

@@ -95,6 +95,7 @@ classDiagram
         +int user_id
         +str user_name
         +bool admin_status
+        +int user_score
     }
     class QuizResult {
         +int result_id
@@ -109,7 +110,6 @@ classDiagram
     Topic    "1" --> "many" Question    : contains
     Question "1" --> "many" Answer      : has
     Question      -->       Answer      : correct_answer
-    User     "1" --> "many" QuizResult  : takes
 
     %% ── Data access layer ───────────────────────────────────────
     class Database {
