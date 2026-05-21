@@ -23,15 +23,15 @@ class QuizGUI:
         self.state = {"username": "", "admin_status": False}
 
         # UI element references (assigned in run())
-        self.login_card = None
-        self.app_card = None
-        self.user_panel = None
-        self.admin_panel = None
-        self.username_input = None
-        self.password_input = None
-        self.admin_checkbox = None
-        self.welcome_label = None
-        self.role_label = None
+        self.login_card: Optional[ui.card] = None
+        self.app_card: Optional[ui.column] = None
+        self.user_panel: Optional[ui.column] = None
+        self.admin_panel: Optional[ui.column] = None
+        self.username_input: Optional[ui.input] = None
+        self.password_input: Optional[ui.input] = None
+        self.admin_checkbox: Optional[ui.checkbox] = None
+        self.welcome_label: Optional[ui.label] = None
+        self.role_label: Optional[ui.label] = None
 
     def refresh_screen(self):
         logged_in = bool(self.state["username"])
@@ -245,7 +245,7 @@ class QuizGUI:
 
                     # Disable all answer buttons
                     for btn in answer_buttons:
-                        btn.enabled = False
+                        btn.disable()
 
                     # Show answer feedback dialog
                     with ui.dialog() as feedback_dlg:
@@ -530,6 +530,10 @@ class QuizGUI:
 
                 with ui.column().classes("items-center") as self.admin_panel:
                     ui.label("Admin menu").classes("text-h6 text-weight-bold")
+                    ui.label("Subject & Topic management")
+                    with ui.row().classes("justify-center"):
+                        ui.button("Add Subject", on_click=self.add_subject_dialog)
+                        ui.button("Add Topic", on_click=self.add_topic_dialog)
                     ui.label("Question management")
                     with ui.row().classes("justify-center"):
                         ui.button("Add Question",

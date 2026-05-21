@@ -8,33 +8,33 @@ class ScoreService:
     def __init__(self, score_dao: ScoreDAO):
         self.score_dao = score_dao
 
+    @staticmethod
+    def calculate_percentage(correct: int, total: int) -> float:
+        if total <= 0:
+            raise ValueError("total_questions must be greater than zero")
+        return (correct / total) * 100
+
+    @staticmethod
+    def calculate_grade(percentage: float) -> int:
+        if percentage >= 90:
+            return 6
+        if percentage >= 80:
+            return 5
+        if percentage >= 70:
+            return 4
+        if percentage >= 60:
+            return 3
+        if percentage >= 50:
+            return 2
+        return 1
+
     def save_quiz_result(
         self, username: str, subject_name: str, score: int, total_questions: int
     ) -> bool:
         try:
-            percentage = (score / total_questions * 100) if total_questions > 0 else 0
-
-            if percentage >= 90:
-                grade = 6
-            elif percentage >= 80:
-                grade = 5
-            elif percentage >= 70:
-                grade = 4
-            elif percentage >= 60:
-                grade = 3
-            elif percentage >= 50:
-                grade = 2
-            else:
-                grade = 1
-
             self.score_dao.save(username, subject_name, score, total_questions)
-            print(
-                f" Result saved for {username} ({subject_name}): "
-                f"{score}/{total_questions} ({percentage:.1f}%) - Grade: {grade}"
-            )
             return True
-        except Exception as e:
-            print(f"Error saving quiz result: {e}")
+        except Exception:
             return False
 
     def get_top_scores(self, limit: int = 10) -> List[dict]:
@@ -50,6 +50,5 @@ class ScoreService:
                 }
                 for r in results
             ]
-        except Exception as e:
-            print(f"Error retrieving top scores: {e}")
+        except Exception:
             return []

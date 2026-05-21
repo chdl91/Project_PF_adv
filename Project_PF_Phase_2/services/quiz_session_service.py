@@ -96,8 +96,7 @@ class QuizSessionService:
 
             return session_id, selected[0]
 
-        except Exception as e:
-            print(f"Error starting quiz session: {e}")
+        except Exception:
             raise
 
     def validate_answer(self, session_id: str, selected_answer_id: int) -> bool:
@@ -173,13 +172,10 @@ class QuizSessionService:
             total_questions=len(session["questions"])
         )
 
+        from services.score_service import ScoreService
         total = len(session["questions"])
         percentage = round((session["score"] / total) * 100, 2)
-
-        # Grade calculation: (Achieved Points × 5 / Max. possible Points) + 1
-        grade = round((session["score"] * 5 / total) + 1, 1)
-        # Cap grade between 1 and 6
-        grade = max(1, min(6, grade))
+        grade = ScoreService.calculate_grade(percentage)
 
         summary = {
             "username": session["username"],

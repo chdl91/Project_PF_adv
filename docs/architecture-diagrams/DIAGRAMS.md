@@ -11,10 +11,13 @@ Paste any block into [mermaid.live](https://mermaid.live) to export as PNG.
 > `QuizResult` is now a separate table — quiz scores are no longer stored in `User`.
 
 ```mermaid
+---
+id: 054dd15a-98cd-4a92-bd95-658cbfa984a0
+---
 erDiagram
     SUBJECT {
         int subject_id PK
-        string subject_name UK
+        string subject_name
     }
     TOPIC {
         int topic_id PK
@@ -35,23 +38,23 @@ erDiagram
     }
     USER {
         int user_id PK
-        string user_name UK
+        string user_name
         boolean admin_status
+        int user_score
     }
     QUIZ_RESULT {
         int result_id PK
         string user_name
-        int subject_id FK
+        string subject_name
         int score
         int total_questions
         string timestamp
     }
 
-    SUBJECT  ||--o{ TOPIC       : "contains"
-    TOPIC    ||--o{ QUESTION    : "contains"
-    QUESTION ||--o{ ANSWER      : "has"
-    QUESTION }o--|| ANSWER      : "correct_answer"
-    USER     ||--o{ QUIZ_RESULT : "takes"
+    SUBJECT  ||--o{ TOPIC    : "contains"
+    TOPIC    ||--o{ QUESTION : "contains"
+    QUESTION ||--o{ ANSWER   : "has"
+    QUESTION }o--|| ANSWER   : "correct_answer"
 ```
 
 ---
@@ -62,6 +65,9 @@ erDiagram
 > Calls flow downward (UI → Service → DAO → DB). Data returns upward.
 
 ```mermaid
+---
+id: 943adb5a-deb6-4be8-9ac5-08ae6a977f3d
+---
 classDiagram
     %% ── Domain models ──────────────────────────────────────────
     class Subject {
@@ -142,6 +148,7 @@ classDiagram
 
     %% ── Service layer ───────────────────────────────────────────
     class UserService {
+        +validate_username(value)$
         +get_or_create_user(username)
     }
     class SubjectService {
@@ -154,11 +161,15 @@ classDiagram
         +delete_subject(subject_id)
     }
     class QuestionService {
+        +normalize_difficulty(value)$
+        +validate_answer_index(choice, num_answers)$
         +get_questions_with_answers(topic_id, difficulty)
         +add_question(topic_id, text, answers, correct_idx, difficulty)
         +delete_question(question_id)
     }
     class ScoreService {
+        +calculate_percentage(correct, total)$
+        +calculate_grade(percentage)$
         +save_quiz_result(username, subject, score, total)
         +get_top_scores(limit)
     }
@@ -211,15 +222,17 @@ classDiagram
 ## 03 — N-Tier Architecture Diagram
 
 > Shows the four layers and the single entry point (`__main__.py`).
-> Dashed arrows = planned (NiceGUI, to be implemented).
 
 ```mermaid
+---
+id: 8edd9ee6-3aec-49fc-9e7e-9ec5b085f51e
+---
 graph TB
     MAIN["__main__.py\n(wires all layers)"]
 
     subgraph UI["Presentation Layer — ui/"]
         CLI["QuizCLI\ncli.py"]
-        GUI["QuizGUI\ngui.py\n(NiceGUI — planned)"]
+        GUI["QuizGUI\ngui.py\n(NiceGUI)"]
     end
 
     subgraph SVC["Service Layer — services/"]
@@ -245,10 +258,10 @@ graph TB
     DATABASE[("SQLite\nDB/quiz.db")]
 
     MAIN --> CLI
-    MAIN -.-> GUI
+    MAIN --> GUI
 
     CLI  --> US & SS & QS & SCS & QSS
-    GUI  -.-> US & SS & QS & SCS & QSS
+    GUI  --> US & SS & QS & SCS & QSS
 
     QSS  --> SS & QS & SCS
 
@@ -271,6 +284,9 @@ graph TB
 > Key change: results are saved to `QUIZ_RESULT`, not `USER`.
 
 ```mermaid
+---
+id: 8b4ffd08-c5a4-4cc2-a269-76ec6f8d056c
+---
 sequenceDiagram
     actor User
     participant CLI  as QuizCLI
@@ -334,6 +350,9 @@ sequenceDiagram
 > Shows all features available to each actor. No code changes affect this diagram.
 
 ```mermaid
+---
+id: c2625e07-7fdd-4a35-ac0e-4a96e17ab917
+---
 graph LR
     subgraph Admin["Admin Features"]
         A1[Admin Login]

@@ -3,8 +3,6 @@
 
 # 🐍 Big Snek Quiz - Advanced Programming Project
 
-> 🚧 Replace the screenshot with one that shows your main screen.
-
 [UI Showcase](docs/ui-images/ui_user_menu.png)
 
 ---
@@ -168,8 +166,6 @@ This project is intended to:
 
 ### Use cases
 
-![UML Use Case Diagram]
-
 **Use cases**
 ## Main Use Cases
 
@@ -198,8 +194,6 @@ This project is intended to:
 ---
 
 ### Mockups
-
-> 🚧 Add screenshots of the wireframe mockups you chose to implement.
 
 [View UI Images & Mockups](docs/ui-images/ui_login.png)
 [View UI Images & Mockups](docs/ui-images/ui_user_menu.png)
@@ -319,7 +313,7 @@ User (quiz results & admin accounts)
 
 ### Software Architecture
 
-![UML Class Diagram] -> Diagrams.md
+See [Architecture Diagrams](docs/architecture-diagrams/DIAGRAMS.md) for UML class and package diagrams.
 
 **Layers / components:**
 - UI (NiceGUI pages/components, browser as thin client)
@@ -332,7 +326,7 @@ User (quiz results & admin accounts)
    - **View:** NiceGUI UI components/pages
    - **Controller:** event handlers and coordination logic between UI, services, and persistence (e.g.`quiz_service.py` )
 - Separate UI (`gui.py`) from domain logic (e.g. `models.py`) and persistence (e.g. `services`, `quiz.db`)
-- Use and interaction of modules to minimize dependencies, by minimizing cohesion and maximizing coupling
+- Use and interaction of modules to minimize dependencies, by maximizing cohesion and minimizing coupling
 
 -**Data Access Object (DAO):**
 - Data access encapsulates all persistence logic so the application doesn't access the database directly. Additionally, it also separates the database into sections and doesn't access everything all at once. Finally, it makes testing easier and also allows the storage to be influenced without changing the logic and services. 
@@ -346,7 +340,7 @@ Overall, MVC gives our Big Snek Quiz a scalable, maintainable structure that’s
 
 ### 🗄️ Database and ORM
 
-![ER Diagram] -> Diagrams.md
+See [ER Diagram](docs/architecture-diagrams/DIAGRAMS.md) for the full entity-relationship diagram.
 
 **ORM and Entities (example):** In our project, data is persisted in an SQLite database and mapped to Python entities using SQLModel (ORM). The core entities are Subject, Topic, Question, Answer, User, and QuizResult. 
 The relationship chain:

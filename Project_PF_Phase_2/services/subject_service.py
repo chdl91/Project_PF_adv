@@ -29,20 +29,10 @@ class SubjectService:
         return [{"topic_id": t.topic_id, "topic_name": t.topic_name} for t in topics]
 
     def add_subject(self, name: str) -> bool:
-        result = self.subject_dao.add_subject(name)
-        if result is None:
-            print(f" Subject '{name}' already exists.")
-            return False
-        print(f" Subject '{name}' added (ID: {result.subject_id})")
-        return True
+        return self.subject_dao.add_subject(name) is not None
 
     def add_topic(self, topic_name: str, subject_id: int) -> bool:
-        result = self.subject_dao.add_topic(topic_name, subject_id)
-        if result is None:
-            print(f" Topic '{topic_name}' already exists.")
-            return False
-        print(f" Topic '{topic_name}' added (ID: {result.topic_id})")
-        return True
+        return self.subject_dao.add_topic(topic_name, subject_id) is not None
 
     def delete_topic(self, topic_id: int) -> bool:
         return self.subject_dao.delete_topic(topic_id)

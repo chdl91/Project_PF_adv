@@ -7,6 +7,11 @@ class UserService:
     def __init__(self, user_dao: UserDAO):
         self.user_dao = user_dao
 
+    @staticmethod
+    def validate_username(value: str) -> bool:
+        cleaned = value.strip()
+        return bool(cleaned) and len(cleaned) <= 30
+
     def get_or_create_user(self, username: str) -> dict:
         try:
             existing = self.user_dao.find_by_name(username)
@@ -19,7 +24,6 @@ class UserService:
                 }
 
             new_user = self.user_dao.create(username)
-            print(f"Welcome {username}! New account created.")
             return {
                 "user_id": new_user.user_id,
                 "user_name": new_user.user_name,
