@@ -571,199 +571,208 @@ Doing a Quiz:
 
 ## 🧪 Testing
 
-> 🚧 Explain what you test and how to run tests.
-
-**Test Protocoll**
+**Test Protocol**
 
 ### TC_001 - Score calculation and grade mapping
 
-| **Field** | **Details** |
-|-----------|-----------|
-| **Test type** | Unit |
-| **Preconditions** | Pytest environment available |
-| **Test steps** | Run the score helper with multiple cases |
-| **Actions Taken** | Calculate percentage and grade for each case |
-| **Test data/input** | 10/10, 8/10, 7/10 |
-| **Expected result** | Percentages and grades match the thresholds |
-| **Actual result** | Matches all expected values |
-| **Status** | ✅ pass |
-| **Comments** | Covers several grade bands in one test |
+| **Field**             | **Details**                                            |
+|-----------------------|--------------------------------------------------------|
+| **Test type**         | Unit                                                   |
+| **Preconditions**     | Pytest environment available                           |
+| **Test steps**        | Run the score helper with multiple cases               |
+| **Actions Taken**     | Calculate percentage and grade for each case           |
+| **Test data/input**   | 10/10, 8/10, 7/10                                      |
+| **Expected result**   | Percentages and grades match the thresholds            |
+| **Actual result**     | Matches all expected values                            |
+| **Status**            | Pass                                                   |
+| **Comments**          | Covers several grades in one test                      |
 
 ---
 
 ### TC_002 - Score calculation rejects zero total
 
-| **Field** | **Details** |
-|-----------|-----------|
-| **Test type** | Unit |
-| **Preconditions** | Pytest environment available |
-| **Test steps** | Call score calculation with zero total questions |
-| **Actions Taken** | Verify the helper raises an error |
-| **Test data/input** | 3 correct, 0 total |
-| **Expected result** | ValueError is raised |
-| **Actual result** | ValueError raised with the expected message |
-| **Status** | ✅ pass |
-| **Comments** | Boundary validation for invalid quiz setup |
+| **Field**             | **Details**                                            |
+|-----------------------|--------------------------------------------------------|
+| **Test type**         | Unit                                                   |
+| **Preconditions**     | Pytest environment available                           |
+| **Test steps**        | Call score calculation with zero total questions       |
+| **Actions Taken**     | Verify the helper raises an error                      |
+| **Test data/input**   | 3 correct, 0 total                                     |
+| **Expected result**   | ValueError is raised                                   |
+| **Actual result**     | ValueError raised with the expected message            |
+| **Status**            | Pass                                                   |
+| **Comments**          | Boundary validation for invalid quiz setup             |
 
 ---
 
 ### TC_003 - Difficulty normalization
 
-| **Field** | **Details** |
-|-----------|-----------|
-| **Test type** | Unit |
-| **Preconditions** | Pytest environment available |
-| **Test steps** | Pass formatted difficulty values into the helper |
-| **Actions Taken** | Normalize and compare the result |
-| **Test data/input** | easy, MEDIUM, Hard |
-| **Expected result** | Values normalize to easy, medium, hard |
-| **Actual result** | Values normalized correctly |
-| **Status** | ✅ pass |
-| **Comments** | Uses multiple assertions in one test |
+| **Field**             | **Details**                                            |
+|-----------------------|--------------------------------------------------------|
+| **Test type**         | Unit                                                   |
+| **Preconditions**     | Pytest environment available                           |
+| **Test steps**        | Pass formatted difficulty values into the helper       |
+| **Actions Taken**     | Normalize and compare the result                       |
+| **Test data/input**   | Easy, Medium, Hard                                     |
+| **Expected result**   | Values normalize to Easy, Medium, Hard                 |
+| **Actual result**     | Values normalized correctly                            |
+| **Status**            | Pass                                                   |
+| **Comments**          | Uses multiple assertions in one test                   |
 
 ---
 
 ### TC_004 - Difficulty rejects unknown value
 
-| **Field** | **Details** |
-|-----------|-----------|
-| **Test type** | Unit |
-| **Preconditions** | Pytest environment available |
-| **Test steps** | Pass an unsupported difficulty value |
-| **Actions Taken** | Verify the helper rejects it |
-| **Test data/input** | expert |
-| **Expected result** | ValueError is raised |
-| **Actual result** | ValueError raised |
-| **Status** | ✅ pass |
-| **Comments** | Negative validation case |
+| **Field**             | **Details**                                            |
+|-----------------------|--------------------------------------------------------|
+| **Test type**         | Unit                                                   |
+| **Preconditions**     | Pytest environment available                           |
+| **Test steps**        | Pass an unsupported difficulty value                   |
+| **Actions Taken**     | Verify the helper rejects it                           |
+| **Test data/input**   | Expert                                                 |
+| **Expected result**   | ValueError is raised                                   |
+| **Actual result**     | ValueError raised                                      |
+| **Status**            | Pass                                                   |
+| **Comments**          | Negative validation case                               |
 
 ---
 
 ### TC_005 - Username validation rules
 
-| **Field** | **Details** |
-|-----------|-----------|
-| **Test type** | Unit |
-| **Preconditions** | Pytest environment available |
-| **Test steps** | Check valid, blank, and too-long usernames |
-| **Actions Taken** | Evaluate trim and length rules |
-| **Test data/input** | student, blank string, 31 chars |
-| **Expected result** | Valid names pass, invalid names fail |
-| **Actual result** | Validation behaves as expected |
-| **Status** | ✅ pass |
-| **Comments** | Covers whitespace and length edge cases |
+| **Field**             | **Details**                                            |
+|-----------------------|--------------------------------------------------------|
+| **Test type**         | Unit                                                   |
+| **Preconditions**     | Pytest environment available                           |
+| **Test steps**        | Check valid, blank, and too-long usernames             |
+| **Actions Taken**     | Evaluate trim and length rules                         |
+| **Test data/input**   | student, blank string, 31 chars                        |
+| **Expected result**   | Valid names pass, invalid names fail                   |
+| **Actual result**     | Validation behaves as expected                         |
+| **Status**            | Pass                                                   |
+| **Comments**          | Covers whitespace and length edge cases                |
 
 ---
 
 ### TC_006 - Answer selection rules
 
-| **Field** | **Details** |
-|-----------|-----------|
-| **Test type** | Unit |
-| **Preconditions** | Pytest environment available |
-| **Test steps** | Check several answer choices |
-| **Actions Taken** | Compare against the valid answer range |
-| **Test data/input** | 1, 2, 4, 0, 5 |
-| **Expected result** | Choices 1-4 pass, others fail |
-| **Actual result** | Valid range enforced |
-| **Status** | ✅ pass |
-| **Comments** | Compact range validation test |
+| **Field**             | **Details**                                            |
+|-----------------------|--------------------------------------------------------|
+| **Test type**         | Unit                                                   |
+| **Preconditions**     | Pytest environment available                           |
+| **Test steps**        | Check several answer choices                           |
+| **Actions Taken**     | Compare against the valid answer range                 |
+| **Test data/input**   | 1, 2, 4, 0, 5                                          |
+| **Expected result**   | Choices 1-4 pass, others fail                          |
+| **Actual result**     | Valid range enforced                                   |
+| **Status**            | Pass                                                   |
+| **Comments**          | Compact range validation test                          |
 
 ---
 
 ### TC_007 - Persist question with answers
 
-| **Field** | **Details** |
-|-----------|-----------|
-| **Test type** | DB |
-| **Preconditions** | In-memory SQLite session and seeded subject/topic fixture |
-| **Test steps** | Create a question, add four answers, mark the correct one, read it back |
-| **Actions Taken** | Persist one question with one correct answer and three distractors |
-| **Test data/input** | Question: What is AI?, 4 answers |
-| **Expected result** | Question and all answers are stored; correct answer link is correct |
-| **Actual result** | All rows persisted and linked correctly |
-| **Status** | ✅ pass |
-| **Comments** | Checks both persistence and relationship integrity |
+| **Field**             | **Details**                                            |
+|-----------------------|--------------------------------------------------------|
+| **Test type**         | DB                                                     |
+| **Preconditions**     | In-memory SQLite session and subject/topic fixture     |
+| **Test steps**        | Create a question, add four answers,                   |
+|                       | mark the correct one, read it back                     |
+| **Actions Taken**     | Persist one question with one correct answer and       |
+|                       | three distractors                                      |
+| **Test data/input**   | Question: What is AI?, 4 answers                       |
+| **Expected result**   | Question and all answers are stored;                   |
+|                       | correct answer link is correct                         |
+| **Actual result**     | All rows persisted and linked correctly                |
+| **Status**            | Pass                                                   |
+| **Comments**          | Checks both persistence and relationship integrity     |
 
 ---
 
 ### TC_008 - Filter by difficulty and topic
 
-| **Field** | **Details** |
-|-----------|-----------|
-| **Test type** | DB |
-| **Preconditions** | In-memory SQLite session and seeded subject/topic fixture |
-| **Test steps** | Insert several questions across topics and difficulties, then query a subset |
-| **Actions Taken** | Select only medium AI questions and sort them |
-| **Test data/input** | Mixed AI and IoT questions |
-| **Expected result** | Only the matching AI medium questions are returned in order |
-| **Actual result** | Query returns exactly the expected rows |
-| **Status** | ✅ pass |
-| **Comments** | Exercises a multi-condition query |
+| **Field**             | **Details**                                            |
+|-----------------------|--------------------------------------------------------|
+| **Test type**         | DB                                                     |
+| **Preconditions**     | In-memory SQLite session and subject/topic fixture     |
+| **Test steps**        | Insert several questions across topics                 |
+|                       | and difficulties, then query a subset                  |
+| **Actions Taken**     | Select only medium AI questions and sort them          |
+| **Test data/input**   | Mixed AI and IoT questions                             |
+| **Expected result**   | Only the matching AI medium questions are              |
+|                       | returned in order                                      |
+| **Actual result**     | Query returns exactly the expected rows                |
+| **Status**            | Pass                                                   |
+| **Comments**          | Exercises a multi-condition query                      |
 
 ---
 
 ### TC_009 - Save result and scoreboard order
 
-| **Field** | **Details** |
-|-----------|-----------|
-| **Test type** | DB |
-| **Preconditions** | In-memory SQLite session and seeded subject/topic fixture |
-| **Test steps** | Insert multiple quiz results, then query by score descending |
-| **Actions Taken** | Persist results for multiple users and calculate the average |
-| **Test data/input** | Scores 9, 8, 5 |
-| **Expected result** | Results ordered by score; average is correct |
-| **Actual result** | Ordering and average match expectations |
-| **Status** | ✅ pass |
-| **Comments** | Slightly more complex than a simple save test |
+| **Field**             | **Details**                                            |
+|-----------------------|--------------------------------------------------------|
+| **Test type**         | DB                                                     |
+| **Preconditions**     | In-memory SQLite session and subject/topic fixture     |
+| **Test steps**        | Insert multiple quiz results, then query by score      |
+|                       | descending                                             |
+| **Actions Taken**     | Persist results for multiple users and                 |
+|                       | calculate the average                                  |
+| **Test data/input**   | Scores 9, 8, 5                                         |
+| **Expected result**   | Results ordered by score; average is correct           |
+| **Actual result**     | Ordering and average match expectations                |
+| **Status**            | Pass                                                   |
+| **Comments**          | Slightly more complex than a simple save test          |
 
 ---
 
 ### TC_010 - Quiz workflow mixed answers
 
-| **Field** | **Details** |
-|-----------|-----------|
-| **Test type** | Integration |
-| **Preconditions** | In-memory DB with subject/topic support |
-| **Test steps** | Create questions, answer most of them correctly, save result |
-| **Actions Taken** | Simulate a quiz run with one wrong answer |
-| **Test data/input** | 5 questions, 4 correct answers |
-| **Expected result** | Final score is stored as 4/5 |
-| **Actual result** | Score stored as 4/5 |
-| **Status** | ✅ pass |
-| **Comments** | Uses a helper to seed question/answer data |
+| **Field**             | **Details**                                            |
+|-----------------------|--------------------------------------------------------|
+| **Test type**         | Integration                                            |
+| **Preconditions**     | In-memory DB with subject/topic support                |
+| **Test steps**        | Create questions, answer most of them correctly,       |
+|                       | save result                                            |
+| **Actions Taken**     | Simulate a quiz run with one wrong answer              |
+| **Test data/input**   | 5 questions, 4 correct answers                         |
+| **Expected result**   | Final score is stored as 4/5                           |
+| **Actual result**     | Score stored as 4/5                                    |
+| **Status**            | Pass                                                   |
+| **Comments**          | Uses a helper to load question/answer data             |
 
 ---
 
-### TC_011 - Admin update and delete
+### TC_011 - Admin add and remove questions
 
-| **Field** | **Details** |
-|-----------|-----------|
-| **Test type** | Integration |
-| **Preconditions** | In-memory DB with subject/topic support |
-| **Test steps** | Create a question, update its difficulty, verify the update, then delete everything |
-| **Actions Taken** | Change question difficulty and remove question plus answers |
-| **Test data/input** | One question with four answers |
-| **Expected result** | Updated question is queryable; delete removes question and answers |
-| **Actual result** | Update and delete both succeed |
-| **Status** | ✅ pass |
-| **Comments** | Combines update, query, and cleanup in one flow |
+| **Field**             | **Details**                                            |
+|-----------------------|--------------------------------------------------------|
+| **Test type**         | Integration                                            |
+| **Preconditions**     | In-memory DB with subject/topic support                |
+| **Test steps**        | Create a question, update its difficulty,              |
+|                       | verify the update, then delete everything              |
+| **Actions Taken**     | Change question difficulty and remove question         |
+|                       | and answers                                            |
+| **Test data/input**   | One question with four answers                         |
+| **Expected result**   | Updated question is queryable; delete removes question |
+|                       | and answers                                            |
+| **Actual result**     | Update and delete both succeed                         |
+| **Status**            | Pass                                                   |
+| **Comments**          | Combines update, query, and cleanup in one flow        |
 
 ---
 
 ### TC_012 - Scoreboard orders attempts
 
-| **Field** | **Details** |
-|-----------|-----------|
-| **Test type** | Integration |
-| **Preconditions** | In-memory DB with quiz result support |
-| **Test steps** | Insert several quiz attempts and order them by score |
-| **Actions Taken** | Build a mini scoreboard from multiple attempts |
-| **Test data/input** | Attempts: 9, 8, 7 |
-| **Expected result** | Results are sorted from highest to lowest |
-| **Actual result** | Scoreboard order is correct |
-| **Status** | ✅ pass |
-| **Comments** | Covers duplicate user attempts and leaderboard ranking |
+| **Field**             | **Details**                                            |
+|-----------------------|--------------------------------------------------------|
+| **Test type**         | Integration                                            |
+| **Preconditions**     | In-memory DB with quiz result support                  |
+| **Test steps**        | Insert several quiz attempts and order them by score   |
+| **Actions Taken**     | Build a mini scoreboard from multiple attempts         |
+| **Test data/input**   | Attempts: 9, 8, 7                                      |
+| **Expected result**   | Results are sorted from highest to lowest              |
+| **Actual result**     | Scoreboard order is correct                            |
+| **Status**            | Pass                                                   |
+| **Comments**          | Covers duplicate user attempts and leaderboard ranking |
 
 ---
 
@@ -774,41 +783,38 @@ pytest Project_PF_Phase_2/test/test_database.py
 pytest Project_PF_Phase_2/test/test_integration.py
 ```
 
-
 ---
-
 
 
 ## 👥 Team & Contributions
 
 ---
 
-| Name              | Role     | Contribution                               |
-|-------------------|----------|--------------------------------------------|
-| Steven            | Junior   | 1) User Stories and Use Cases
-| Joggi             | Dev      | 2) ER Diagram Continuation
-|                   |          | 3) Initial set-up of NiceGUI
-|                   |          | 4) Initial set-up of Pytest
-|                   |          | 5) Documentation and overhaul README
-|                   |          | 6) Proofreading and added comments for structure
-|                   |          | 7) Overall Troubleshooting of code
-|                   |          |  
-| Noe               | Dev      | 1) User Stories and Use Cases
-| Brönnimann        |          | 2) ER Diagram Continuation
-|                   |          | 3) Continuation of NiceGUI
-|                   |          | 4) Configuration of Pytest
-|                   |          | 5) Definition of Tescases 
-|                   |          | 6) NiceGUI Logic Overhaul
-|                   |          | 7) Overall Troubleshooting of code
-|                   |          | 
-| Christian         | Senior   | 1) User Stories and User Story Flow
-| Lehmann           | Dev      | 2) Created the db.converter
-|                   |          | 3) Created the quiz_engine.py
-|                   |          | 4) Created the quiz_service.py
-|                   |          | 5) Restructured the Database into classes
-|                   |          | 6) Major Overhaul of Code and Restructure 
-|                   |          | 7) Overall Troubleshooting of code
-
+| Name              | Role     | Contribution                                             |
+|-------------------|----------|----------------------------------------------------------|
+| Steven            | Junior   | 1) User Stories and Use Cases                            |
+| Joggi             | Dev      | 2) ER Diagram Continuation                               |
+|                   |          | 3) Initial set-up of NiceGUI                             |
+|                   |          | 4) Initial set-up of Pytest                              |
+|                   |          | 5) Documentation and overhaul README                     |
+|                   |          | 6) Proofreading and added comments for structure         |
+|                   |          | 7) Overall Troubleshooting of code                       |
+|                   |          |                                                          |
+| Noe               | Dev      | 1) User Stories and Use Cases                            |
+| Brönnimann        |          | 2) ER Diagram Continuation                               |
+|                   |          | 3) Continuation of NiceGUI                               |
+|                   |          | 4) Configuration of Pytest                               |
+|                   |          | 5) Definition of Tescases                                |
+|                   |          | 6) NiceGUI Logic Overhaul                                |
+|                   |          | 7) Overall Troubleshooting of code                       |
+|                   |          |                                                          |
+| Christian         | Senior   | 1) User Stories and User Story Flow                      |
+| Lehmann           | Dev      | 2) Created the db.converter                              |
+|                   |          | 3) Created the quiz_engine.py                            |
+|                   |          | 4) Created the quiz_service.py                           |
+|                   |          | 5) Restructured the Database into classes                |
+|                   |          | 6) Major Overhaul of Code and Restructure                |
+|                   |          | 7) Overall Troubleshooting of code                       |
 
 ---
 
@@ -818,7 +824,9 @@ The following features and enhancements are candidates for future development:
 
 ### ER Adaptations (Test Class)
 
-**Description:** Extend the Entity-Relationship model to include a dedicated `TestCase` class for tracking and managing automated test metadata.
+**Description:** 
+Extend the Entity-Relationship model to include a dedicated `TestCase` class for tracking 
+and managing automated test metadata.
 
 **Proposed Implementation:**
 - Create a `TestCase` entity to store test metadata (ID, name, type, status, execution timestamp)
@@ -835,7 +843,9 @@ The following features and enhancements are candidates for future development:
 
 ### Add and Remove Topics
 
-**Description:** Implement admin functionality to dynamically manage quiz topics without requiring database schema changes.
+**Description:** 
+Implement admin functionality to dynamically manage quiz topics without requiring database schema
+changes.
 
 **Proposed Implementation:**
 - Add UI screens in the Admin Panel for topic creation with naming validation
@@ -854,7 +864,9 @@ The following features and enhancements are candidates for future development:
 
 ### Add and Remove Subjects
 
-**Description:** Implement admin functionality to manage quiz subjects (e.g., add new courses or remove outdated ones).
+**Description:** 
+Implement admin functionality to manage quiz subjects 
+(e.g., add new courses or remove outdated ones).
 
 **Proposed Implementation:**
 - Create subject management screens in the Admin Panel
