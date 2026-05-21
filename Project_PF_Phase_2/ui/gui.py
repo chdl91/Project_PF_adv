@@ -492,51 +492,50 @@ class QuizGUI:
         dlg.open()
 
     def run(self):
-        ui.label("Quiz Application").classes("text-h4")
+        with ui.column().classes("items-center justify-center w-full").style("min-height: 100vh;"):
+            ui.label("Quiz Application").classes("text-h4")
 
-        with ui.card().classes("w-96") as self.login_card:
-            ui.label("Login").classes("text-h6")
-            self.username_input = ui.input("Username")
-            # Checkbox to request admin login
-            self.admin_checkbox = ui.checkbox("Login as administrator")
-            self.password_input = ui.input(
-                "Admin password", password=True, password_toggle_button=True)
-            # hide the password field until admin checkbox is checked or username is a known admin
-            self.password_input.visible = False
+            with ui.card().classes("w-96") as self.login_card:
+                ui.label("Login").classes("text-h6")
+                self.username_input = ui.input("Username")
+                self.admin_checkbox = ui.checkbox("Login as administrator")
+                self.password_input = ui.input(
+                    "Admin password", password=True, password_toggle_button=True)
+                self.password_input.visible = False
 
-            def _update_password_visibility(_=None):
-                uname = (self.username_input.value or "").strip().lower()
-                show = bool(self.admin_checkbox.value) or (
-                    uname in self.admin_users)
-                self.password_input.visible = show
-                self.password_input.update()
+                def _update_password_visibility(_=None):
+                    uname = (self.username_input.value or "").strip().lower()
+                    show = bool(self.admin_checkbox.value) or (
+                        uname in self.admin_users)
+                    self.password_input.visible = show
+                    self.password_input.update()
 
-            self.username_input.on("update:model-value",
-                                   _update_password_visibility)
-            self.admin_checkbox.on("update:model-value",
-                                   _update_password_visibility)
-            ui.button("Login", on_click=self.login_user)
+                self.username_input.on("update:model-value",
+                                       _update_password_visibility)
+                self.admin_checkbox.on("update:model-value",
+                                       _update_password_visibility)
+                ui.button("Login", on_click=self.login_user)
 
-        with ui.column().classes("gap-2") as self.app_card:
-            self.welcome_label = ui.label("")
-            self.role_label = ui.label("")
+            with ui.column().classes("gap-2 items-center") as self.app_card:
+                self.welcome_label = ui.label("")
+                self.role_label = ui.label("")
 
-            with ui.column() as self.user_panel:
-                ui.label("User menu").classes("text-h6 text-weight-bold")
+                with ui.column().classes("items-center") as self.user_panel:
+                    ui.label("User menu").classes("text-h6 text-weight-bold")
 
-            with ui.row():
-                ui.button("Take a Quiz", on_click=self.open_subject_menu)
-                ui.button("View Scoreboard", on_click=self.view_scoreboard)
-                ui.button("Logout", on_click=self.logout_user)
+                with ui.row().classes("justify-center"):
+                    ui.button("Take a Quiz", on_click=self.open_subject_menu)
+                    ui.button("View Scoreboard", on_click=self.view_scoreboard)
+                    ui.button("Logout", on_click=self.logout_user)
 
-            with ui.column() as self.admin_panel:
-                ui.label("Admin menu").classes("text-h6 text-weight-bold")
-                ui.label("Question management")
-                with ui.row():
-                    ui.button("Add Question",
-                              on_click=self.add_question_dialog)
-                    ui.button("Delete Question",
-                              on_click=self.delete_question_dialog)
+                with ui.column().classes("items-center") as self.admin_panel:
+                    ui.label("Admin menu").classes("text-h6 text-weight-bold")
+                    ui.label("Question management")
+                    with ui.row().classes("justify-center"):
+                        ui.button("Add Question",
+                                  on_click=self.add_question_dialog)
+                        ui.button("Delete Question",
+                                  on_click=self.delete_question_dialog)
 
         self.refresh_screen()
         ui.run(port=8080, reload=False)
