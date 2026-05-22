@@ -616,6 +616,7 @@ class QuizGUI:
                 self.password_input = ui.input(
                     "Admin password", password=True, password_toggle_button=True)
                 self.password_input.visible = False
+                ui.button("Login", on_click=self.login_user)
 
                 def _update_password_visibility(_=None):
                     uname = (self.username_input.value or "").strip().lower()
@@ -628,7 +629,6 @@ class QuizGUI:
                                    _update_password_visibility)
             self.admin_checkbox.on("update:model-value",
                                    _update_password_visibility)
-            ui.button("Login", on_click=self.login_user)
 
             with ui.column().classes("gap-2 items-center") as self.app_card:
                 self.welcome_label = ui.label("")
