@@ -438,7 +438,12 @@ PROJECT_PF_ADV/
 ├─ .vscode
 ├─ .docs
 │  ├─ architecture-diagrams
-│  │  └─ DIAGRAMS.md
+│  │  ├─ class_diagram.png
+│  │  ├─ DIAGRAMS.md
+│  │  ├─ ER.png
+│  │  ├─ N-Tier.png
+│  │  ├─ sequence_diagram.png
+│  │  └─ use_case_diagram.png
 │  └─ ui-images
 │     ├─ FIGMA_DESIGN_SPEC.md
 │     ├─ ui_admin_add_question.png
@@ -494,12 +499,11 @@ PROJECT_PF_ADV/
 │  │  ├─ question_service.py
 │  │  ├─ quiz_session_service.py
 │  │  ├─ score_service.py
-│  │  ├─ subject_session_service.py
+│  │  ├─ subject_service.py
 │  │  └─ user_service.py
 │  ├─ test
 │  │  ├─ __pycache__
 │  │  ├─ conftest.py
-│  │  ├─ pytest.ini
 │  │  ├─ test_database.py
 │  │  ├─ test_integration.py
 │  │  └─ test_unit.py
@@ -509,7 +513,6 @@ PROJECT_PF_ADV/
 │  │  ├─ cli.py
 │  │  └─  gui.py
 │  ├─ __main__.py                   # entrypoint
-│  ├─ class.md
 │  ├─ DESIGN_DECISIONS.md
 │  └─ password.env
 ├─ .gitignore

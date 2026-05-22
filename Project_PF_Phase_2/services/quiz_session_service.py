@@ -80,7 +80,11 @@ class QuizSessionService:
 
             selected = random.sample(all_questions, num_questions)
             session_id = str(uuid.uuid4())
-            tz = zoneinfo.ZoneInfo("Europe/Zurich")
+            try:
+                tz = zoneinfo.ZoneInfo("Europe/Zurich")
+            except zoneinfo.ZoneInfoNotFoundError:
+                # Fallback when the system has no tzdata (common on some Windows setups)
+                tz = datetime.timezone.utc
 
             self.active_sessions[session_id] = {
                 "username": username,

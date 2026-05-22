@@ -44,7 +44,10 @@ def export_results_to_csv(subject, score, total_questions=None, filename="result
     header = ["result", "subject", "time", "date"]
 
     # timestamp in Europe/Zurich timezone configuration
-    tz = zoneinfo.ZoneInfo("Europe/Zurich")
+    try:
+        tz = zoneinfo.ZoneInfo("Europe/Zurich")
+    except zoneinfo.ZoneInfoNotFoundError:
+        tz = datetime.timezone.utc
     now = datetime.datetime.now(tz)
     time_str = now.strftime("%H:%M:%S")
     date_str = now.strftime("%Y-%m-%d")
