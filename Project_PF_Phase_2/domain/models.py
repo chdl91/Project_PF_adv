@@ -1,18 +1,26 @@
 # correct_answer is Optional because a Question is created before its Answers exist;
 # the FK is set in a second step once all Answer rows have been flushed.
-from typing import Optional
-from sqlmodel import SQLModel, Field
+# Question↔Answer Relationships are omitted: two FK paths exist between the tables
+# (Answer.question_id and Question.correct_answer), causing SQLAlchemy ambiguity.
+# Answer lookup is handled explicitly in the DAO layer instead.
+from typing import List, Optional
+from sqlmodel import SQLModel, Field, Relationship
 
 
 class Subject(SQLModel, table=True):
     subject_id: int = Field(default=None, primary_key=True)
     subject_name: str = Field(..., max_length=30)
 
+    topics: List["Topic"] = Relationship(back_populates="subject")
+
 
 class Topic(SQLModel, table=True):
     topic_id: int = Field(default=None, primary_key=True)
     topic_name: str = Field(..., max_length=30)
     subject_id: int = Field(..., foreign_key="subject.subject_id")
+
+    subject: Optional["Subject"] = Relationship(back_populates="topics")
+    questions: List["Question"] = Relationship(back_populates="topic")
 
 
 class Question(SQLModel, table=True):
@@ -22,6 +30,8 @@ class Question(SQLModel, table=True):
     correct_answer: Optional[int] = Field(
         default=None, foreign_key="answer.answer_id")
     difficulty: str = Field(..., max_length=10)
+
+    topic: Optional["Topic"] = Relationship(back_populates="questions")
 
 
 class Answer(SQLModel, table=True):
@@ -34,7 +44,6 @@ class User(SQLModel, table=True):
     user_id: int = Field(default=None, primary_key=True)
     user_name: str = Field(..., max_length=30)
     admin_status: bool = Field(default=False)
-    user_score: int = Field(default=0)
 
 
 class QuizResult(SQLModel, table=True):

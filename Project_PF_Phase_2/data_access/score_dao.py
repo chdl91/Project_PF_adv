@@ -13,9 +13,7 @@ class ScoreDAO:
 
     def save(self, user_name: str, subject_name: str, score: int, total_questions: int) -> QuizResult:
 
-        tz = zoneinfo.ZoneInfo("Europe/Zurich")
-        
-        timestamp = datetime.datetime.now(tz).isoformat()
+        timestamp = datetime.datetime.now(zoneinfo.ZoneInfo("Europe/Zurich")).isoformat()
 
         with self.database.get_session() as session:
             result = QuizResult(

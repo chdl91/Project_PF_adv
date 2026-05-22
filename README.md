@@ -567,7 +567,11 @@ PROJECT_PF_ADV/
    ```
 
 ### 2. Configuration
-- E.g., setup of parameters or environment variables
+- The admin password is read from `Project_PF_Phase_2/password.env`. Create or edit that file and set:
+   ```
+   ADMIN_PASSWORD=your_password_here
+   ```
+- If the file is missing or empty, the admin password defaults to an empty string and any password will be accepted. The file is listed in `.gitignore` and is never committed.
 
 ### 3. Launch
 - Start the NiceGUI app in __main__.py by running the programm as a Python File. 

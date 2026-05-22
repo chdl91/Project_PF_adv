@@ -81,10 +81,6 @@ class QuizSessionService:
             selected = random.sample(all_questions, num_questions)
             session_id = str(uuid.uuid4())
 
-            tz = zoneinfo.ZoneInfo("Europe/Zurich")
-            
-            tz = datetime.timezone.utc
-
             self.active_sessions[session_id] = {
                 "username": username,
                 "subject_name": subject_name,
@@ -93,7 +89,7 @@ class QuizSessionService:
                 "current_idx": 0,
                 "user_answers": [],
                 "score": 0,
-                "start_time": datetime.datetime.now(tz),
+                "start_time": datetime.datetime.now(zoneinfo.ZoneInfo("Europe/Zurich")),
                 "end_time": None
             }
 

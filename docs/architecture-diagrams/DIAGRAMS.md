@@ -40,7 +40,6 @@ erDiagram
         int user_id PK
         string user_name
         boolean admin_status
-        int user_score
     }
     QUIZ_RESULT {
         int result_id PK
@@ -95,7 +94,6 @@ classDiagram
         +int user_id
         +str user_name
         +bool admin_status
-        +int user_score
     }
     class QuizResult {
         +int result_id
