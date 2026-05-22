@@ -7,7 +7,7 @@ when switching from CLI to browser.
 
 from typing import Optional
 
-from nicegui import ui
+from nicegui import app, ui
 
 
 class QuizGUI:
@@ -605,11 +605,11 @@ class QuizGUI:
                     self.password_input.visible = show
                     self.password_input.update()
 
-                self.username_input.on("update:model-value",
-                                       _update_password_visibility)
-                self.admin_checkbox.on("update:model-value",
-                                       _update_password_visibility)
-                ui.button("Login", on_click=self.login_user)
+            self.username_input.on("update:model-value",
+                                   _update_password_visibility)
+            self.admin_checkbox.on("update:model-value",
+                                   _update_password_visibility)
+            ui.button("Login", on_click=self.login_user)
 
             with ui.column().classes("gap-2 items-center") as self.app_card:
                 self.welcome_label = ui.label("")
