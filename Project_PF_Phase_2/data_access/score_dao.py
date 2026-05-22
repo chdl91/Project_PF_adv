@@ -12,10 +12,9 @@ class ScoreDAO:
         self.database = database
 
     def save(self, user_name: str, subject_name: str, score: int, total_questions: int) -> QuizResult:
-        try:
-            tz = zoneinfo.ZoneInfo("Europe/Zurich")
-        except zoneinfo.ZoneInfoNotFoundError:
-            tz = datetime.timezone.utc
+
+        tz = zoneinfo.ZoneInfo("Europe/Zurich")
+        
         timestamp = datetime.datetime.now(tz).isoformat()
 
         with self.database.get_session() as session:
