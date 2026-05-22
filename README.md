@@ -169,6 +169,8 @@ This project is intended to:
 **Use cases**
 ## Main Use Cases
 
+See [Use Case Diagram](docs/architecture-diagrams/use_case_diagram.png)
+
 - Show Menu
 - Select Subject 
 - Select Parameters for Quiz
@@ -185,6 +187,10 @@ This project is intended to:
 - Return to Menu at any point in time
 - As an Admin, have the ability to add questions
 - As an Admin, have the ability to remove questions
+- As an Admin, have the ability to add topics
+- As an Admin, have the ability to remove topics
+- As an Admin, have the ability to add subjects
+- As an Admin, have the ability to remove subjects
 
 
 **Actors**
@@ -204,14 +210,21 @@ This project is intended to:
 [View UI Images & Mockups](docs/ui-images/ui_admin_login.png)
 [View UI Images & Mockups](docs/ui-images/ui_admin_panel.png)
 [View UI Images & Mockups](docs/ui-images/ui_admin_add_question.png)
+[View UI Images & Mockups](docs/ui-images/ui_admin_add_topic.png)
+[View UI Images & Mockups](docs/ui-images/ui_admin_add_subject.png)
 [View UI Images & Mockups](docs/ui-images/ui_admin_delete_question.png)
-[View UI Images & Mockups](docs/ui-images/ui_admin_confirmation_delete.png)
+[View UI Images & Mockups](docs/ui-images/ui_admin_delete_question_confirmation.png)
+[View UI Images & Mockups](docs/ui-images/ui_admin_delete_topic.png)
+[View UI Images & Mockups](docs/ui-images/ui_admin_delete_topic_confirmation.png)
+[View UI Images & Mockups](docs/ui-images/ui_admin_delete_subject.png)
+[View UI Images & Mockups](docs/ui-images/ui_admin_delete_subject_confirmation.png)
 
 ---
 
 ## 🏛️ Architecture
 
 Software Architecture (N-Tier Layers)
+See [N-Tier Diagram](docs/architecture-diagrams/N-Tier.png)
 ┌──────────────────────────────────────┐
 │  Presentation Layer  — ui/           │  ← QuizGUI (NiceGUI browser app)
 │                                      │  ← QuizCLI (command-line fallback)
@@ -342,7 +355,10 @@ Overall, MVC gives our Big Snek Quiz a scalable, maintainable structure that’s
 
 ### 🗄️ Database and ORM
 
-See [ER Diagram](docs/architecture-diagrams/DIAGRAMS.md) for the full entity-relationship diagram.
+See [ER Diagram](docs/architecture-diagrams/ER.png) for the full entity-relationship diagram.
+
+See [Sequence Diagram](docs/architecture-diagrams/sequence_diagram.png)
+See [Class Diagram](docs/architecture-diagrams/class_diagram.png)
 
 **ORM and Entities (example):** In our project, data is persisted in an SQLite database and mapped to Python entities using SQLModel (ORM). The core entities are Subject, Topic, Question, Answer, User, and QuizResult. 
 The relationship chain:
@@ -447,8 +463,14 @@ PROJECT_PF_ADV/
 │  └─ ui-images
 │     ├─ FIGMA_DESIGN_SPEC.md
 │     ├─ ui_admin_add_question.png
-│     ├─ ui_admin_confirmation_delete.png
+│     ├─ ui_admin_add_subject.png
+│     ├─ ui_admin_add_topic.png
+│     ├─ ui_admin_delete_question_confirmation.png
 │     ├─ ui_admin_delete_question.png
+│     ├─ ui_admin_delete_subject_confirmation.png
+│     ├─ ui_admin_delete_subject.png
+│     ├─ ui_admin_delete_topic_confirmation.png
+│     ├─ ui_admin_delete_topic.png
 │     ├─ ui_admin_login.png
 │     ├─ ui_admin_panel.png
 │     ├─ ui_login.png
@@ -837,49 +859,6 @@ and managing automated test metadata.
 - Improved test visibility and traceability
 - Better data-driven insights into quiz quality
 - Support for historical test analysis
-
----
-
-### Add and Remove Topics
-
-**Description:** 
-Implement admin functionality to dynamically manage quiz topics without requiring database schema
-changes.
-
-**Proposed Implementation:**
-- Add UI screens in the Admin Panel for topic creation with naming validation
-- Implement topic deletion with cascading rules (delete topics and orphaned questions)
-- Add confirmation dialogs to prevent accidental removal
-- Support bulk operations for managing multiple topics
-- Include validation to prevent duplicate topic names within a subject
-
-
-**Benefits:**
-- Course content stays current without developer involvement
-- Flexible curriculum adaptation
-- Reduced maintenance burden on administrators
-
----
-
-### Add and Remove Subjects
-
-**Description:** 
-Implement admin functionality to manage quiz subjects 
-(e.g., add new courses or remove outdated ones).
-
-**Proposed Implementation:**
-- Create subject management screens in the Admin Panel
-- Subject creation with validation (non-empty name, uniqueness check)
-- Subject deletion with comprehensive cascade rules (delete all dependent topics, questions, and results)
-- Support subject archiving as an alternative to permanent deletion
-- Include audit logging for subject changes
-
-
-**Benefits:**
-- Full curriculum management without code changes
-- Support for multi-course deployments
-- Historical data preservation through archiving
-- Scalable to accommodate institutional growth
 
 ---
 
